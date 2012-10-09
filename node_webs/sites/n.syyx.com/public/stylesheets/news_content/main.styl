@@ -1,0 +1,271 @@
+@import '../reset'
+@import 'url'
+a
+    outline none
+    text-decoration none
+.clear
+    clear both
+    overflow hidden
+    height 0
+body
+    font-size 12px
+    font-family '宋体'
+    color #665798
+.container
+    min-width 1000px
+    background #1C180F url($bg) center top no-repeat
+    .content
+        min-height 800px
+        width 1000px
+        margin 0 auto
+        position relative
+        .logo_link
+            position absolute
+            top 50px
+            left 10px
+            width 210px
+            height 80px
+        .nav
+            position absolute
+            width 600px
+            height 25px
+            left 427px
+            top 12px
+            overflow hidden
+            a
+                display block
+                float left
+                height 21px
+                width 65px
+                margin-right 16px
+                &.fn_main
+                    &:hover
+                        background url($nav_tip) -2px 0px no-repeat
+                &.fn_news
+                    &:hover
+                        background url($nav_tip) -83px 0px no-repeat
+                &.fn_download
+                    &:hover
+                        background url($nav_tip) -164px 0px no-repeat
+                &.fn_usercenter
+                    &:hover
+                        background url($nav_tip) -245px 0px no-repeat
+                &.fn_gameinfo
+                    &:hover
+                        background url($nav_tip) -326px 0px no-repeat
+                 &.fn_service
+                    &:hover
+                        background url($nav_tip) -407px 0px no-repeat
+                 &.fn_bbs
+                    &:hover
+                        background url($nav_tip) -488px 0px no-repeat
+        .fn_group
+            position absolute
+            top 296px
+            left 9px
+            width 203px
+            height 300px
+            a
+                display block
+                height 44px
+                &.fn_download_btn
+                    height 75px
+                    margin-bottom 3px
+                    &:hover
+                        background url($btn) 0 0 no-repeat
+                &.fn_reg_btn:hover
+                    background url($btn) 0 -78px no-repeat
+                &.fn_charge_btn:hover
+                    background url($btn) 0 -122px no-repeat
+                &.fn_active_btn:hover
+                    background url($btn) 0 -210px no-repeat
+                &.fn_get_gift_btn:hover
+                    background url($btn) 0 -166px no-repeat
+        .promotions
+            position absolute
+            top 600px
+            left 14px
+            a
+                display block
+                width 190px
+                height 92px
+                border 1px solid #4C278E
+                margin-bottom 1px
+                img
+                    width 190px
+                    height 92px
+        .bread_path
+            position absolute
+            top 312px
+            right 45px
+            color #BAA3E9
+            a
+                color #BAA3E9
+                &:hover
+                    text-decoration underline
+        .news_detail
+            padding 370px 0 0 219px
+            width 771px
+            h1
+                text-align center
+                font-size 16px
+                font-weight bold
+                color #BDDAE8
+                padding-bottom 5px
+            .time
+                text-align center
+                padding-top 5px
+            .news_text
+                padding 30px 40px 20px 40px
+                font-size 14px
+                line-height 24px
+                background-color #26182F
+                color #776893
+                img
+                    margin 10px 0
+                a
+                    color #fff
+                p
+                    text-indent 28px
+                strong
+                    font-weight bold
+                .biaoti_1
+                    background url($biaoti1) 0 0 no-repeat
+                    width 620px
+                    height 29px
+                    line-height 31px
+                    color #bba3eb
+                    padding-left 35px
+                .biaoti_2
+                    height 30px
+                    line-height 32px
+                    padding-left 55px
+                    width 620px
+                    color #bba3eb
+                    background url($biaoti2) 0 0 no-repeat
+            .forward
+                padding 30px 0 30px 50px
+                background #26182F url($weibo) 130px 30px no-repeat
+                color #786793
+                a
+                    display inline-block
+                    width 15px
+                    height 15px
+                    margin-left 9px
+            .emotion
+                background-color #26182F
+                padding 0 50px
+                color #786793
+                margin-bottom 10px
+                .emotion_content
+                    border-top solid 1px #342550
+                    padding 30px 0
+                    .vote_result
+                        padding 30px 0 0 50px
+                        height 80px
+                        .result_chat
+                            float left
+                            position relative
+                            width 80px
+                            height 80px
+                            margin-right 20px
+                            span
+                                position absolute
+                                display block
+                                left 0
+                                bottom 0
+                                height 1px
+                                width 80px
+                                background url($vote) center bottom repeat-y
+                                .text
+                                    position absolute
+                                    text-align center
+                                    top -20px
+                                    width 80px
+                    .vote_btn
+                        height 80px
+                        padding 20px 0 30px 50px
+                        a
+                            float left
+                            width 80px
+                            height 80px
+                            position relative
+                            margin-right 20px
+                            span
+                                position absolute
+                                width 80px
+                                text-align center
+                                bottom -30px
+                                height 20px
+                                color #5F8EA0
+                            &.jiong
+                                background url($emotion) 10px 0 no-repeat
+                                &:hover
+                                    background-position 10px -90px
+                            &.qidai
+                                background url($emotion) -80px 0 no-repeat
+                                &:hover
+                                    background-position -80px -90px
+                            &.geili
+                                background url($emotion) -175px 0 no-repeat
+                                &:hover
+                                    background-position -175px -90px
+                            &.guanzhu
+                                background url($emotion) -270px 0 no-repeat
+                                &:hover
+                                    background-position -270px -90px
+                            &.nanguo
+                                background url($emotion) -365px 0 no-repeat
+                                &:hover
+                                    background-position -365px -90px
+                            &.luguo
+                                background url($emotion) -460px 0 no-repeat
+                                &:hover
+                                    background-position -460px -90px
+            .related_news
+                background #26182F url($related) 10px 10px no-repeat
+                padding 55px 20px 20px 30px
+                height 150px
+                overflow hidden
+                margin-bottom 40px
+                img
+                    float left
+                    border solid 1px #054666
+                    width 250px
+                    height 142px
+                    margin-right 20px
+                ul
+                    float left
+                    width 440px
+                    li
+                        line-height 24px
+                        height 24px
+                        padding-left 10px
+                        background url($news_icon) 0 9px no-repeat
+                        a
+                            width 330px
+                            float left
+                            color #786696
+                            height 24px
+                            overflow hidden
+                        span
+                            float right
+                            width 60px
+                            height 24px
+                            overflow hidden
+            #copyright
+                padding-bottom 60px
+                position relative
+                margin-top 20px
+                .copyright_content
+                    background url($copyright_bg)
+                    padding 10px 10px 10px 140px
+                    line-height 20px
+                .syyx_logo
+                    width 117px
+                    height 49px
+                    position absolute
+                    top 10px
+                    left 15px
+@import '../top_iframe/main'
+@import '../float_reg/main'

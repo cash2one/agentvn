@@ -1,0 +1,28 @@
+body{margin:0;font:14px "宋体";color:#000;line-height:20px;background:#fff}
+a{outline:none;text-decoration:none;color:#07c;}
+a:hover{color:#000}
+img{border:none;vertical-align:top;cursor:pointer}
+.main{width:400px;height:300px;position:relative;}
+.main .title{border-bottom:1px solid #b3b3b3;height:35px;background:url("/images/syyx_login/top_bg.png") repeat-x;line-height:34px;padding:0 30px;margin-bottom:25px;font-weight:700;}
+.main .title span{width:30px;height:34px;position:absolute;right:5px;top:0;background:url("/images/syyx_login/btn.png") -1px -150px}
+.main .int{background:url("/images/syyx_login/loading.gif") center center no-repeat;height:170px}
+.main .login{padding:0 55px;display:none;}
+.main .login div{padding:5px 0;height:27px;line-height:27px}
+.main .login input{background:url("/images/syyx_login/btn.png") -1px 0;height:17px;line-height:17px;padding:4px;width:160px;border:1px solid #ccc;font:14px Monaco,Consolas,monospace,arial}
+.main .login a{font-size:12px;margin-left:10px}
+.main .login .verify_code{background:url("/images/syyx_login/btn.png") -1px -30px;width:60px}
+.main .login .err{border-color:#c00}
+.main .login .focus{border-color:#0082de}
+.main .login #err_tip{color:#f00;font-size:12px;line-height:12px;padding:9px 0 9px 20px;background:url("/images/syyx_login/tips.png") no-repeat left center;color:#c00;display:none}
+.main .login .center{text-align:center;height:30px;line-height:30px}
+.main .login_out{display:none;}
+.main .login_out .center{text-align:center;height:30px;line-height:30px}
+.main .login_out .user{font:700 30px Monaco,Consolas,monospace,arial;line-height:80px;height:100px}
+.main .login_out .right{margin-top:20px;font-size:12px;text-align:right;padding-right:10px;}
+.main .login_out .right #to_login{color:#666;text-decoration:underline;}
+.main .login_out .right #to_login:hover{color:#000;text-decoration:undeline}
+.main a.sub{height:29px;width:90px;background:url("/images/syyx_login/btn.png") -1px -60px;color:#fff;font-size:14px;line-height:29px;display:block;margin:0 auto;}
+.main a.sub:hover{background-position:-1px -90px}
+.main a.dis,.main a.dis:hover{background-position:-1px -120px;cursor:default}
+.main .nav{position:absolute;bottom:0;left:0;background:#e5e5e5;border-top:1px solid #b3b3b3;width:100%;font-size:14px;height:30px;line-height:30px;text-align:center;color:#07c;}
+.main .nav a{margin:0 5px}

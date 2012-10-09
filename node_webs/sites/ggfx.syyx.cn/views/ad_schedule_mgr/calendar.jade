@@ -1,0 +1,56 @@
+div(style="padding:5px;")
+	a#btnAdd(href="javascript:void(0)",class="easyui-linkbutton",onclick="clear_form();")	新增
+	
+div.calendar
+	input#hidID(type="hidden",value="0")
+
+	table(class="wiki-content-table", style="width:360px;")
+		tr
+			th(style="width:80px")	媒体类型
+			td
+				select#ddlSelectClass	
+		tr
+			th	所属媒体
+			td
+				select#ddlSelectMedia
+		tr
+			th	广告
+			td
+				select#ddlSelectAd
+		tr
+			th	预设颜色
+			td
+				input#txtColor(type="text",class="color-picker",size="7",value="#abCdeF")
+	br
+	table.calendar				
+		tr
+			td
+				select#ddlYear	
+				年&nbsp
+				select#ddlMonth					
+				月
+				&nbsp
+				input#chkAll(type="checkbox")
+				全选
+		tr
+			td#cc
+	table
+		tr
+			td
+				收费模式
+				select#ddlModel
+					option(value=1)	固定费用
+					option(value=2)	按CPC收费
+					option(value=3)	按CPM收费
+					option(value=4)	按CPA收费
+					option(value=5)	20级成本收费
+			td
+				单价
+				input#txtPrice(type="text", style="width:120px", class="easyui-numberbox" ,min="0", precision="2")
+	
+	div#dlg-buttons.p_center
+			input#btnOK.input_btn(type="button", value="保存排期")
+			&nbsp&nbsp
+			input#btnCancel.input_btn(type="button", value="取消排期")
+			&nbsp&nbsp
+			input#btnView.input_btn(type="button", value="查看排期")

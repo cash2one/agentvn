@@ -1,0 +1,35 @@
+html
+    head
+        title 类别配置
+        include script
+    body
+        .cont_form
+            | 所属项：
+            span.form_select 
+                select#configClass
+        .cont_f_lb
+        #configPara.table_info(style="margin-left:3%")
+            table#listconfigPara
+        .tab_v
+            table(width="100%",cellspacing="0",cellpadding="0",border="0")
+                tbody    
+                    tr
+                        td.td_l  所属项
+                        td.td_r
+                            input#hiddenID(type="hidden")
+                            select#configClassDel
+                    tr
+                        td.td_l  编号
+                        td.td_r.form_input
+                            input#txtClassNo(type="text")
+                    tr
+                        td.td_l  名称
+                        td.td_r.form_input
+                            input#txtClassName(type="text")
+                    tr
+                        td.td_l  操作
+                        td.td_r
+                            input#btnAdd(type="button",value="添加")
+                            input#btnSave(type="button",value="保存")   
+                            
+        

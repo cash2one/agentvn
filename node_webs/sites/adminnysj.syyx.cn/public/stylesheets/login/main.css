@@ -1,0 +1,37 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+.clearfix:after{clear:both}
+.clearfix:before,.clearfix:after{content:"";display:table}
+.clear{clear:both;height:0;overflow:hidden}
+a{text-decoration:none;outline:none}
+.hide{visibility:hidden}
+.loading{background:url("http://r.syyx.com/adminnysj/loading.gif") 0 0 no-repeat;width:32px;height:32px;display:inline-block}
+.disnone{display:none}
+.scrollable{overflow-x:hidden;overflow-y:auto}
+button{outline:none}
+input[type="text"],input[type='url'],input[type='color'],input[type='password']{border:1px solid #dedede;border-radius:3px 3px 3px 3px;width:100%;padding:2px;background-color:rgba(255,255,255,0.85);box-shadow:0 1px 0 #fff;}
+input[type="text"]:focus,input[type='url']:focus,input[type='color']:focus,input[type='password']:focus{border:1px solid #668fcc;box-shadow:0 0 4px #1e63cc,0 0 4px #1e63cc inset}
+button.blue,.dialogue.create button.done,.button.blue,.dialogue.create button.button.done,input.blue[type="button"],input.blue[type="submit"]{background:-webkit-linear-gradient(#3694df,#0268d8) repeat scroll 0 0 #0268d8;background:-moz-linear-gradient(#3694df,#0268d8) repeat scroll 0 0 #0268d8;border:1px solid #00489a;box-shadow:0 1px 0 #5aa7e5 inset;color:#fff;border-radius:3px;text-align:center;padding:4px 10px 5px;font-weight:bold;font-size:13px;text-shadow:0 -1px 1px rgba(0,0,0,0.33);cursor:pointer;outline:none}
+button.grey,input.grey[type="button"],input.grey[type="submit"]{background:-webkit-linear-gradient(#f2f2f2,#dadada) repeat scroll 0 0 transparent;background:-moz-linear-gradient(#f2f2f2,#dadada) repeat scroll 0 0 transparent;border:1px solid #a2a4a6;box-shadow:0 1px 0 rgba(255,255,255,0.18) inset;color:#555;text-shadow:0 1px 0 #fff;padding:4px 10px 5px;cursor:pointer;border-radius:3px;font-weight:bold;outline:none}
+button.green,.button.green,input.green[type="button"],input.green[type="submit"]{background:-webkit-linear-gradient(#72d93f,#57a334) repeat scroll 0 0 transparent;background:-moz-linear-gradient(#72d93f,#57a334) repeat scroll 0 0 transparent;border:1px solid #348234;border-radius:3px;box-shadow:0 1px 0 #a0e67e inset;color:rgba(255,255,255,0.95);text-shadow:0 -1px 0 rgba(0,0,0,0.33);cursor:pointer;padding:2px 10px 3px;color:rgba(255,255,255,0.95);text-shadow:0 -1px 0 rgba(0,0,0,0.33);outline:none}
+textarea{-moz-transition:all .2s ease 0;outline:0 none;overflow:auto;padding:5px 4px;resize:none;border-radius:3px 3px 3px 3px;box-shadow:0 1px 0 #fff;min-height:30px;width:100%;border:1px solid #dedede;vertical-align:top;}
+textarea:focus{border:1px solid #668fcc;box-shadow:0 0 4px #1e63cc,0 0 4px #1e63cc inset}
+body{font-size:12px;font-family:'宋体';color:#444;background:url("http://r.syyx.com/adminnysj/login_bg.gif") 0 0 repeat;}
+body .container{position:relative;}
+body .container header{position:relative;background:#fff;}
+body .container header .logo{width:1200px;margin:0 auto;height:100px;font-weight:bold;font-size:22px;line-height:100px}
+body .container header .pop_stripe{background-color:#ff961c;background-image:linear-gradient(0,#e75239 0%,#e75239 12.5%,#ff961c 12.5%,#ff961c 25%,#ffcc27 25%,#ffcc27 37.5%,#fce62f 37.5%,#fce62f 50%,#cde35b 50%,#cde35b 62.5%,#82cc33 62.5%,#82cc33 75%,#41bece 75%,#41bece 87.5%,#049cdb 87.5%,#049cdb 100%);background-image:-webkit-linear-gradient(0,#e75239 0%,#e75239 12.5%,#ff961c 12.5%,#ff961c 25%,#ffcc27 25%,#ffcc27 37.5%,#fce62f 37.5%,#fce62f 50%,#cde35b 50%,#cde35b 62.5%,#82cc33 62.5%,#82cc33 75%,#41bece 75%,#41bece 87.5%,#049cdb 87.5%,#049cdb 100%);background-image:-moz-linear-gradient(0,#e75239 0%,#e75239 12.5%,#ff961c 12.5%,#ff961c 25%,#ffcc27 25%,#ffcc27 37.5%,#fce62f 37.5%,#fce62f 50%,#cde35b 50%,#cde35b 62.5%,#82cc33 62.5%,#82cc33 75%,#41bece 75%,#41bece 87.5%,#049cdb 87.5%,#049cdb 100%);background-position:50% 0;box-shadow:0 1px 2px rgba(0,0,0,0.06) inset;height:6px;position:relative}
+body .container .content{width:1200px;margin:0 auto;}
+body .container .content #message{width:600px;background:linear-gradient(#fff8b5,#ffee70) repeat 0 0;background:-webkit-linear-gradient(#fff8b5,#ffee70) repeat 0 0;background:-moz-linear-gradient(#fff8b5,#ffee70) repeat 0 0;box-shadow:0 1px 0 #ffffbe inset,0 4px 0 rgba(255,255,255,0.12) inset,0 2px 4px rgba(0,0,0,0.12);color:rgba(0,0,0,0.80);font-size:14px;text-align:center;margin:40px auto 0 auto;text-shadow:0 1px 0 rgba(255,255,255,0.33);border:1px solid #aea976;height:40px;line-height:40px;display:none}
+body .container .content .login_area{background:url("http://r.syyx.com/adminnysj/login_form.png") 0 0 repeat;margin:80px auto 0 auto;width:600px;padding:20px 0;}
+body .container .content .login_area input[type='text'],body .container .content .login_area input[type='password']{padding:7px 12px;border-radius:3px;box-shadow:0 1px 1px rgba(255,255,255,0.75) inset;text-shadow:0 1px 0 rgba(255,255,255,0.75);border:solid 1px rgba(0,0,0,0.13);font-size:16px;margin:0 auto 20px auto;width:550px;display:block;}
+body .container .content .login_area input[type='text']:hover,body .container .content .login_area input[type='password']:hover{background-color:#e0f5fe}
+body .container .content .login_area .login_btn{float:right;padding-right:20px;}
+body .container .content .login_area .login_btn input{background-color:rgba(3,120,169,0.75);background-image:-webkit-linear-gradient(270deg,rgba(255,255,255,0.50),rgba(255,255,255,0.00));background-image:-moz-linear-gradient(270deg,rgba(255,255,255,0.50),rgba(255,255,255,0.00));background-repeat:repeat-x;border-style:solid;border-color:rgba(0,0,0,0.13) rgba(0,0,0,0.13) rgba(0,0,0,0.50);border-radius:3px;border-width:1px;box-shadow:0 1px 0 rgba(255,255,255,0.50) inset,0 1px 1px rgba(0,0,0,0.13);color:#fff;display:inline-block;font-size:16px;padding:3px 32px;text-align:center;text-shadow:0 -1px 0 rgba(0,0,0,0.25);vertical-align:middle;white-space:nowrap;cursor:pointer;font-weight:bold}

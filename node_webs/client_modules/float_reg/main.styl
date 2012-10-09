@@ -1,0 +1,178 @@
+@import 'url'
+.disnone
+    display none
+#float_reg_btn
+    background url($float_reg_btn) 0 0 no-repeat
+    width 64px
+    height 269px
+    position fixed
+    _position absolute
+    top 200px
+    right 10px
+    display none
+    overflow hidden
+    &:hover
+        background url($float_reg_btn) -64px 0 no-repeat
+#float_reg_panel
+    position fixed
+    _position absolute
+    top 200px
+    right 10px
+    display block
+    background url($float_reg_bg) 0 0 no-repeat
+    width 258px
+    height 365px
+    overflow hidden
+    .close
+        height 30px
+        overflow hidden
+        a
+            float right
+            width 30px
+            height 30px
+    #reg_step1
+        padding 5px 0 0 11px
+        width 245px
+        height 235px
+        position relative
+        overflow hidden
+        color #98d9ff
+        display block
+        .reg_form
+            td
+                padding 0 2px
+                height 26px
+                &.reg_form_item_name
+                    width 60px
+                    text-align right
+                &.reg_form_item_input
+                    input
+                        background-color #00253f
+                        border solid 1px #2a7ca2
+                        height 20px
+                        line-height 20px
+                        color #98d9ff
+                        width 146px
+                    input.focus_in_inut
+                        background-color #fff
+                        border solid 1px #C8EDFF
+                        color #000
+                    #validateimg
+                        vertical-align middle
+                        cursor pointer
+                        height 29px
+                        width 100px
+                        margin-left 3px
+                &.validate_num_input
+                    height 35px
+                    input
+                        width 40px
+        .agreement
+            text-align center
+            padding-top 5px
+            a
+                text-align center
+                text-decoration underline
+                color #0ba6c7
+                outline none
+            input
+                margin-right 3px
+        .reg_submit
+            position absolute
+            top 202px
+            left 75px
+            a
+                display inline-block
+                width 107px
+                height 31px
+                background url($btn) -5px -6px no-repeat
+                outline none
+                &:hover
+                    background-position -5px -45px
+    #reg_step2
+        display none
+        background url($reg_success) 30px 20px no-repeat
+        padding 60px 0 0 35px
+        width 200px
+        height 178px
+        overflow hidden
+        color #60CDC7
+        line-height 24px
+        a
+            width 107px
+            height 31px
+            background url($btn) -6px -246px no-repeat
+            margin 30px 0 0 40px
+            display inline-block
+    #reg_step3
+        display none
+        background url($reg_success) 30px 20px no-repeat
+        padding 60px 0 0 35px
+        width 200px
+        height 178px
+        overflow hidden
+        color #60CDC7
+        line-height 24px
+        a
+            margin 30px 0 0 70px
+            display inline-block
+            color #60CDC7
+            text-decoration underline
+    #reg_step4
+        display none
+        font-size 14px
+        left 35px
+        color #7DC2D1
+        #pad_l_10
+            background url($active_success) 65px 35px no-repeat
+            padding-top 75px
+            text-align center
+            line-height 25px
+            margin-bottom 15px
+        #down_ico
+            width 75px
+            height 70px
+            background url($dowm_ico) no-repeat
+            margin 0 0 35px 90px
+    #reg_account1,#reg_account2
+        color #02FBF3
+    .get_gift
+        padding-top 45px
+        position relative
+    .download_area
+        padding-left 30px
+        padding-top 45px
+        position relative
+	    .link1
+            display inline-block
+            margin-right 10px
+            width 95px
+            height 26px
+            background url($btn) -7px -88px no-repeat
+            &:hover
+                background-position -7px -115px
+        .link2
+            display inline-block
+            width 95px
+            height 26px
+            background url($btn) -5px -147px no-repeat
+            &:hover
+                background-position -5px -174px
+    .get_gift
+        padding-top 50px
+        a
+            background-position -164px -199px
+            &:hover
+                background-position -163px -240px
+    .check_result_right
+        background url($reg_tip_icon) 0 4px no-repeat
+        width 16px
+        height 25px
+    .check_result_wrong
+        background url($reg_tip_icon) 0 -32px no-repeat
+        width 16px
+        height 25px
+    .check_result_loading
+        background url($loading) 0 4px no-repeat
+        width 16px
+        height 25px

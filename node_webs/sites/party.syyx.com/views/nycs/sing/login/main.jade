@@ -1,0 +1,38 @@
+!!!5
+html
+    head
+        link(rel= "shortcut icon", href = "http://s.syyx.com/nycs/img/favicon.ico", type = "image/x-icon")
+        meta(http-equiv = "Content-Type",content="text/html; charset=utf-8")
+        meta(name = "keywords", content = "用户登录")
+        meta(name = "description", content = "用户登录")
+        title 用户登录-《诺亚传说》官方网站
+        link(href="/stylesheets/nycs/sing/login/main.css",rel="stylesheet",type="text/css")     
+    body
+        .fmcontent
+            .fmtitle
+            .fmtab
+                table.loginfrom(border="0",cellpadding="0",cellspacing="0",width="350")
+                    tr
+                        td.t_r(width="100") 尚游通行证账号：
+                        td.cont_input(width="175")
+                            input#txtAccount.input_tc(maxlength="20",type="text",tabindex="1")
+                        td
+                            a.fmlink(href="javascript:undefined",hidefocus="true") 没有账号？
+                    tr
+                        td.t_r 尚游通行证密码：
+                        td.cont_input
+                            input#txtpwd.input_tc(maxlength="20",type="password",tabindex="2")
+                        td
+                            a.fmlink(href="http://service.syyx.com/SelfService/GetPassword.aspx",hidefocus="true",target="_blank")  忘记密码？
+                    tr
+                        td.t_r 验证码：
+                        td.cont_yzm
+                            input#txtValidate.input_tc(maxlength="4",type="text",tabindex="3")
+                        td
+                            span.validateimg
+                                img#validateimg.disnone(src='',alt='点击刷新验证码')
+                .loginerror#loginerror   
+                a#chkloginrole.fmbtn(hidefocus="true",href="javascript:void(0);",title="确定",tabindex="4") 确 定
+    
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js",type="text/javascript")
+        script(src="/javascripts/nycs/sing/login/out.js",type="text/javascript")

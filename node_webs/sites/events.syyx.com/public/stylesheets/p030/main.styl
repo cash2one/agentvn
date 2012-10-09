@@ -1,0 +1,209 @@
+$path        = "http://r.syyx.com/events/p030/"
+$bg          = $path"bg.jpg"
+$main        = $path"main.jpg"
+$btn         = $path"btn.jpg"
+$right_wrong = $path'right_wrong.png'
+$loader      = $path'ajax-loader.gif'
+$success     = $path'success.png'
+$fail        = $path'fail.png'
+$reg         = $path'reg.jpg'
+$reg_success = $path'reg_success.jpg'
+$act_success = $path'act_success.jpg'
+$act         = $path'act.jpg'
+$act_fail    = $path'act_fail.jpg'
+body
+    margin 0
+    font 12px/2em "宋体"
+    color #C799FF
+    background #442A59
+a
+    color #C799FF
+    outline none
+    &:hover
+        color #fff
+img
+    border none
+.container
+    position relative
+    background url($bg) no-repeat center top 
+    min-width 980px
+.wrap
+    background url($main) no-repeat center 360px 
+    position relative
+    min-width 980px
+.main
+    width 980px
+    margin 0 auto
+    height 1005px
+    position relative
+.logo
+    position absolute
+    width 140px
+    height 76px
+    right 0
+    top 12px
+.reg_panel
+    width 350px
+    left 445px
+    top 302px
+    overflow hidden
+    position absolute
+    height 480px
+    .reg
+        padding 80px 20px 0 55px
+        height 300px
+        background url($reg) no-repeat center top
+    table
+        height 162px
+        td
+            height 28px
+            width 20px
+        input
+            background #9C80CD
+            border 1px solid #8B35FF
+            height 18px
+            color #321438
+            line-height 18px
+            width 170px
+        .focus_in_inut
+            background #A58AD0
+    .agreement
+        height 21px
+    .reg_form_item_name
+        width 60px
+    .reg_form_item_input
+        width 175px
+    .validate_num_input
+        height 30px
+        vertical-align top
+        padding-top 3px
+    #txtValidate
+        width 60px
+    #validateimg
+        width 100px
+        margin-left 5px
+        height 27px
+        vertical-align top
+        cursor pointer
+    #reg_step2,#reg_step3,#reg_step4,#reg_step5
+        margin 0 auto
+        padding-top 90px
+        display none
+        line-height 30px
+        height 300px
+        font-size 14px
+        text-align center
+        input
+            background #9C80CD
+            border 1px solid #8B35FF
+            height 18px
+            color #321438
+            line-height 18px
+            width 170px
+    #reg_step2
+        background url($reg_success) no-repeat center top
+        .active
+            height 200px
+            line-height 30px
+        #reg_account, #active_code
+            color #96FFDC
+    #reg_step3
+        background url($reg_success) no-repeat center top
+    #reg_step4
+        background url($act_success) no-repeat center top
+        height 240px
+        .reg_success
+            width 357px
+            height 126px
+            background url($act) no-repeat -2px 0
+            margin-bottom 10px
+    #reg_step5
+        background url($act_fail) no-repeat center top
+    #active_link
+        display block
+        margin 60px auto 0
+        width 197px
+        height 50px
+        background url($btn) no-repeat 0 -180px
+        &:hover
+            background-position 0 -120px
+    .rungame_bg
+        height 50px
+        width 266px
+        margin 0 auto
+        .rungame
+            display block 
+            width 159px
+            height 38px
+            background url($btn) -556px -95px
+            margin 0 auto
+            &:hover
+                background-position -393px -94px
+    .reg_submit
+        height 55px
+        position relative
+        margin-top 50px
+    #reg_button
+        width 197px
+        height 50px
+        position absolute
+        left 31px
+        background url($btn) no-repeat 0 -60px
+        &:hover
+            background-position 0 0
+    .fail
+        font-size 18px
+        height 50px
+        width 40px
+        background url($fail) no-repeat left center
+        margin 0 auto
+    .success
+        font-size 18px
+        height 50px
+        width 40px
+        background url($success) no-repeat left center
+        margin 0 auto
+    #back
+        text-decoration underline
+        cursor pointer
+        margin-top 20px
+    .check_result_wrong
+        background url($right_wrong) no-repeat 0 -32px
+        height 100%
+        width 16px
+    .check_result_right 
+        background: url($right_wrong) no-repeat 0 4px
+        height: 25px;
+        width: 16px;
+
+    .check_result_loading 
+        background url($loader) no-repeat 0 4px
+        height 25px
+        width 16px
+
+    .tip
+        display none
+    #tip3
+        padding 0 50px
+        font-size 14px
+        line-height 35px
+        span
+            color #96FFDC
+.copy_right
+    width 980px
+    text-align center
+    position absolute
+    top 850px
+    line-height 18px
+    color #C4AACE
+    .feet_txt
+        text-align left
+        margin 10px 0 0 380px
+    .feet_logo
+        position absolute
+        width 140px
+        height 60px
+        left 225px
+        top 30px
+.disnone
+    display none

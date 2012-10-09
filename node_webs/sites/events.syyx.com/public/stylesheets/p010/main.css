@@ -1,0 +1,77 @@
+.hide{visibility:hidden}
+a{text-decoration:none;outline:none;outline:none;zoom:1}
+.disnone{display:none}
+body{font-size:12px;font-family:"宋体";background:#0f132e;margin:0}
+.container{background:url("http://r.syyx.com/events/p010/bg.jpg") center top no-repeat;min-width:984px;}
+.container .container_inner{min-width:984px;}
+.container .container_inner .content{width:984px;margin:0 auto;position:relative;height:1446px;overflow:hidden;}
+.container .container_inner .content .match{position:absolute;width:78px;height:32px;left:700px;top:150px}
+.container .container_inner .content .links_topbar{width:260px;height:22px;line-height:22px;position:absolute;top:0;left:804px;}
+.container .container_inner .content .links_topbar a{display:inline-block;width:38px}
+.container .container_inner .content .logo_to_index{position:absolute;display:block;width:190px;height:80px;top:30px;left:500px}
+.container .container_inner .content .link_to_offical_index{position:absolute;width:170px;height:60px;top:408px;left:768px;}
+.container .container_inner .content .link_to_offical_index a{display:block;width:170px;height:60px;outline:none}
+.container .container_inner .content #logo_360{position:absolute;top:30px;left:280px;width:195px;height:68px;display:block}
+.container .container_inner .content #flash_video{position:absolute;width:174px;height:106px;top:354px;left:270px;display:block;}
+.container .container_inner .content #flash_video .flash_cusor{position:absolute;width:174px;height:106px;z-index:10;top:0;left:0;display:block;outline:none;background:url("http://r.syyx.com/events/p010/blank.gif") 0 0 no-repeat}
+.container .container_inner .content .top_min_down_load{position:absolute;top:387px;left:466px;width:177px;height:41px;background:url("http://r.syyx.com/events/p010/down.jpg") 0 0 no-repeat;}
+.container .container_inner .content .top_min_down_load:hover{background:url("http://r.syyx.com/events/p010/down.jpg") -177px 0 no-repeat}
+.container .container_inner .content .top_down_load{position:absolute;top:424px;left:466px;width:177px;height:41px;background:url("http://r.syyx.com/events/p010/down.jpg") 0 -37px no-repeat;}
+.container .container_inner .content .top_down_load:hover{background:url("http://r.syyx.com/events/p010/down.jpg") -177px -37px no-repeat}
+.container .container_inner .content .gamefeature_tabs{position:absolute;top:780px;left:37px;width:720px;height:292px;overflow:hidden;}
+.container .container_inner .content .gamefeature_tabs #gamefeature{position:relative;}
+.container .container_inner .content .gamefeature_tabs #gamefeature ul{position:absolute;z-index:10;top:0;left:541px;width:142px;}
+.container .container_inner .content .gamefeature_tabs #gamefeature ul li{float:left;height:72px;width:142px;}
+.container .container_inner .content .gamefeature_tabs #gamefeature ul li a{display:block;height:72px;width:142px;outline:none;margin-bottom:1px}
+.container .container_inner .content .gamefeature_tabs #gamefeature .ui-tabs-selected .first_selected_btn{background:url("http://r.syyx.com/events/p010/tabs_selected.png") 0 0 no-repeat}
+.container .container_inner .content .gamefeature_tabs #gamefeature .ui-tabs-selected .second_selected_btn{background:url("http://r.syyx.com/events/p010/tabs_selected.png") 0 -73px no-repeat}
+.container .container_inner .content .gamefeature_tabs #gamefeature .ui-tabs-selected .third_selected_btn{background:url("http://r.syyx.com/events/p010/tabs_selected.png") 0 -146px no-repeat}
+.container .container_inner .content .gamefeature_tabs #gamefeature .ui-tabs-selected .fourth_selected_btn{background:url("http://r.syyx.com/events/p010/tabs_selected.png") 0 -219px no-repeat}
+.container .container_inner .content .gamefeature_tabs #gamefeature .feature_content{position:absolute;top:0;left:0;}
+.container .container_inner .content .gamefeature_tabs #gamefeature .feature_content img{width:550px;height:292px}
+.container .container_inner .content .reg{position:absolute;top:530px;left:740px;height:255px;width:240px;color:#98d9ff;}
+.container .container_inner .content .reg .reg_form td{padding:0 2px;height:28px;width:20px}
+.container .container_inner .content .reg .reg_form .reg_form_item_name{width:60px;text-align:right;}
+.container .container_inner .content .reg .reg_form .reg_form_item_name .focus_in_inut{background-color:#fff;border:solid 1px #c8edff;color:#000}
+.container .container_inner .content .reg .reg_form .reg_form_item_input input{background-color:#577784;border:solid 1px #00122a;height:20px;line-height:20px;color:#98d9ff;width:130px}
+.container .container_inner .content .reg .reg_form .validate_num_input{height:35px;width:auto;}
+.container .container_inner .content .reg .reg_form .validate_num_input input{width:40px;float:left}
+.container .container_inner .content .reg .reg_form .validate_num_input #validateimg{cursor:pointer;height:29px;width:85px;float:right}
+.container .container_inner .content .reg .agreement{text-align:center;padding-top:5px;}
+.container .container_inner .content .reg .agreement a{text-decoration:underline;color:#0ba6c7;outline:none}
+.container .container_inner .content .reg .agreement input{margin-right:3px}
+.container .container_inner .content .reg .reg_submit{padding:10px 0 0 45px;}
+.container .container_inner .content .reg .reg_submit a{float:left;width:142px;height:34px;background:url("http://r.syyx.com/events/p010/btn.jpg") 0 0 no-repeat;outline:none;}
+.container .container_inner .content .reg .reg_submit a:hover{background:url("http://r.syyx.com/events/p010/btn.jpg") 0 -126px no-repeat}
+.container .container_inner .content .reg .check_result_right{background:url("http://r.syyx.com/events/p010/right_wrong.png") 0 4px no-repeat;width:16px;height:25px}
+.container .container_inner .content .reg .check_result_wrong{background:url("http://r.syyx.com/events/p010/right_wrong.png") 0 -32px no-repeat;width:16px;height:25px}
+.container .container_inner .content .reg .check_result_loading{background:url("$ajax-loader") 0 4px no-repeat;width:16px;height:25px}
+.container .container_inner .content .reg #regProcessTip{float:left;margin:5px 0 0 5px}
+.container .container_inner .content #reg_step2{width:200px;height:200px;position:absolute;top:551px;left:755px;overflow:hidden;line-height:30px;color:#ddf;font-size:14px;display:none;}
+.container .container_inner .content #reg_step2 a{display:block;position:absolute;width:142px;height:34px;top:160px;left:30px;background:url("http://r.syyx.com/events/p010/btn.jpg") 0 -40px no-repeat;}
+.container .container_inner .content #reg_step2 a:hover{background:url("http://r.syyx.com/events/p010/btn.jpg") 0 -278px no-repeat}
+.container .container_inner .content #reg_step2 a span{color:#00ddfb}
+.container .container_inner .content #reg_step3{position:absolute;top:551px;height:200px;display:none;left:755px;overflow:hidden;line-height:30px;color:#ddf;font-size:14px;}
+.container .container_inner .content #reg_step3 span{color:#00ddfb}
+.container .container_inner .content #reg_step3 a{display:block;position:absolute;width:142px;height:34px;top:140px;left:30px;background:url("http://r.syyx.com/events/p010/btn.jpg") 0 -84px no-repeat}
+.container .container_inner .content #olduser_get_code{position:absolute;top:995px;left:750px;color:#ddf;}
+.container .container_inner .content #olduser_get_code .validate_area_old_user{height:33px;overflow:hidden;position:relative;width:220px;}
+.container .container_inner .content #olduser_get_code .validate_area_old_user input{width:60px;background-color:#577784;border:solid 1px #00122a;height:20px;line-height:20px;color:#fff;font-weight:bold;margin:0}
+.container .container_inner .content #olduser_get_code .validate_area_old_user #olduser_get_code_validate_img{position:absolute;width:82px;height:22px;display:none;cursor:pointer;top:0;left:118px}
+.container .container_inner .content #olduser_get_code .olduser_get_code_btn{background:url("http://r.syyx.com/events/p010/btn.jpg") 0 -343px no-repeat;display:block;width:81px;height:26px;color:#98f7ff;text-align:center;line-height:26px;margin:0 0 0 63px;}
+.container .container_inner .content #olduser_get_code .olduser_get_code_btn:hover{background:url("http://r.syyx.com/events/p010/btn.jpg") -114px -169px no-repeat}
+.container .container_inner .content #olduser_get_code_success{position:absolute;top:990px;left:780px;display:none;color:#ddf;line-height:20px;}
+.container .container_inner .content #olduser_get_code_success #old_user_active{width:81px;height:26px;display:block;background:url("http://r.syyx.com/events/p010/btn.jpg") 0 -314px no-repeat;position:absolute;top:45px;left:40px;}
+.container .container_inner .content #olduser_get_code_success #old_user_active:hover{background:url("http://r.syyx.com/events/p010/btn.jpg") -87px -314px no-repeat}
+.container .container_inner .content .down{width:204px;height:26px;background:url("http://r.syyx.com/events/p010/down_bg.jpg") no-repeat;position:absolute;top:883px;left:750px;}
+.container .container_inner .content .down .download_min_client{display:block;width:100px;height:26px;float:left;}
+.container .container_inner .content .down .download_min_client:hover{background:url("http://r.syyx.com/events/p010/down_bg.jpg") 0 -26px no-repeat}
+.container .container_inner .content .down .download_client{display:block;width:100px;height:26px;float:left;margin-left:4px;}
+.container .container_inner .content .down .download_client:hover{background:url("http://r.syyx.com/events/p010/down_bg.jpg") -104px -26px no-repeat}
+.container .container_inner .content .nycs360_intor{position:absolute;top:1074px;left:725px;width:256px;height:128px;display:block}
+.container .container_inner .content .copy_right{position:absolute;top:1306px;width:980px;color:#698593;left:0;text-align:center;}
+.container .container_inner .content .copy_right .feet_txt{text-align:left;margin:10px 0 0 380px}
+.container .container_inner .content .copy_right .feet_logo{position:absolute;width:140px;height:60px;left:225px;top:26px}
+.pop_video_detail{background-color:#002544}
+object{cursor:pointer}
+#pop_flash{border:solid 1px #056c5c}

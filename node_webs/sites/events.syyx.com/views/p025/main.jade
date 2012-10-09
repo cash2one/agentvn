@@ -1,0 +1,32 @@
+extends ../include/_frame
+
+block p_variable
+    -var p           = "p025"
+    -var title       = "蔡依林代言网游《诺亚传说》10月12日战放公测"
+    -var description = " 亚洲天后蔡依林正式代言《诺亚传说》。蔡依林代言网游《诺亚传说》，10月12日战放公测！珍稀豪礼，新玩法，全网征友，史诗概念片，四大活动如约震撼来袭！与蔡依林一起，战放每个人的宇宙！"
+
+block body
+    .container
+        .wrap
+            .main
+                .nav
+                    a(href="#{url_nycs}",target="_blank",title="官网首页",hidefocus="true")
+                    a(href="#{url_reg_page}",target="_blank",title="注册账号",hidefocus="true")
+                    a(href="#{url_download_page}",target="_blank",title="下载游戏",hidefocus="true")
+                    a(href="#{url_bbs}",target="_blank",title="玩家论坛",hidefocus="true")
+                #banner
+                #time
+                a.a1(href="http://activity.syyx.com/role/rushindex.html",target="_blank")
+                a.a2#scroll(href="javascript:undefined")
+                a.a3(href="http://weibo.com/nuoyachuanshuo",target="_blank")
+                a.a4(href="http://t.qq.com/nycs_sy",target="_blank")
+                a.a5(href="http://party.syyx.com/nycs/dating/index.html",target="_blank")
+                a.a6(href="http://bbs.nycs.syyx.com/showtopic-111652.aspx",target="_blank")
+                a.a7(href="http://party.syyx.com/nycs/regular_customer/index.html",target="_blank")
+                a.logo(href="#{url_nycs}",target="_blank")
+                include ../include/copyright2
+            #reg_scroll
+                a#reg_but(href="javascript:undefined")
+                #reg_box
+                    include ../include/reg_8
+                    span#close

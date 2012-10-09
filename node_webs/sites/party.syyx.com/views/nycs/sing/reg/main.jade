@@ -1,0 +1,57 @@
+!!!5
+html
+    head
+        link(rel= "shortcut icon", href = "http://s.syyx.com/nycs/img/favicon.ico", type = "image/x-icon")
+        meta(http-equiv = "Content-Type",content="text/html; charset=utf-8")
+        meta(name = "keywords", content = "用户注册")
+        meta(name = "description", content = "用户注册")
+        title 用户注册-《诺亚传说》官方网站
+        link(href="/stylesheets/nycs/sing/reg/main.css",rel="stylesheet",type="text/css")     
+    body
+        .fmcontent
+            .fmtitle
+            .fmtab
+                .reg_panel
+                    table.reg_form(border="0",cellpadding="0",cellspacing="0",width="350")
+                        tr
+                            td.t_r(width="80") 账&nbsp;&nbsp;&nbsp;&nbsp;号：
+                            td.reg_form_item_input
+                                input#txtUserAccount.input_tc(type="text",tabindex="1",maxlength="16")
+                        tr
+                            td.t_r 密&nbsp;&nbsp;&nbsp;&nbsp;码：
+                            td.reg_form_item_input
+                                input#txtPasswords.input_tc(type='password',maxlength="16",tabindex="2")
+                        tr
+                            td.t_r 重复密码：
+                            td.reg_form_item_input
+                                input#txtConfirm.input_tc(type="password",tabindex="3")
+                        tr
+                            td.t_r 真实姓名：
+                            td.reg_form_item_input
+                                input#txtTrueName.input_tc(type='text',maxlength="20",tabindex="4")
+
+                        tr
+                            td.t_r 身&nbsp;份&nbsp;证：
+                            td.reg_form_item_input
+                                input#txtCardID.input_tc(type="text",maxlength="18",tabindex="5")
+                        
+                        tr
+                            td.t_r 验&nbsp;证&nbsp;码：
+                            td.reg_form_item_input.validate_num_input
+                                input#txtValidate.input_tc(type='text',maxlength='4',tabindex="6")
+                                span.validateimg
+                                    img#validateimg.disnone(src='',alt='点击刷新验证码')
+                    .agreement
+                        input#chk_XieYi(type="checkbox",checked)
+                        | 同意
+                        a(href='http://user.syyx.com/policy/userpolicy.aspx',target="_blank",hidefocus="true") 《使用协议及隐私协议》
+                    .reg_submit
+                        .loginerror#loginerror   
+                        a#reg_button.fmbtn(hidefocus="true",href="javascript:void(0);",tabindex="7") 注册   
+                .fmmsg.disnone
+                    span 注册成功！
+                        br
+                        |点击"确定"关闭窗口，即可参与活动赢取好礼！
+                    a#chkbtn.fmbtn2(hidefocus="true",href="javascript:void(0);",title="确定",tabindex="4") 确 定
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js",type="text/javascript")
+        script(src="/javascripts/nycs/sing/reg/out.js",type="text/javascript")

@@ -1,0 +1,114 @@
+!!!5
+html
+    head
+        title 诺亚时间版官网管理后台
+        link(href='/stylesheets/index/main.css', rel='stylesheet')
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js")
+        script(src='/javascripts/index/out.js')
+    body
+        .container
+            header#header
+                #logo 诺亚时间版官网管理后台
+            #main
+                nav#sidebar
+                    .content
+                        ul
+                            li
+                                a.workspace_name.selected(href='#') CMS
+                                ul.sub_elements
+                                    li
+                                        a(href='/article') 新闻
+                                    li
+                                        a.selected(href='/') 发布列表
+                            li
+                                a.workspace_name(href='#') 下载管理
+                                ul.sub_elements
+                                    li
+                                        a(href='/client') 客户端下载
+                            li
+                                a.workspace_name(href='#') 游戏激活
+                                ul.sub_elements
+                                    li
+                                        a(href='/activate') 游戏激活
+                            li
+                                a.workspace_name(href='#') 数据分析
+                                ul.sub_elements
+                                    li
+                                        a(href='/nysjdm_link.html', target='_blank') 数据分析
+                    .setting
+                        button.set
+                        .add_publish_category.disnone
+                            form#add_publish_category_form(action='/publish_category/upsert')
+                                header 添加发布类别
+                                .publish_category_content
+                                    input(type='text', name='name', maxlength="20", placeholder='类别名称', required='true')
+                                footer
+                                    input.blue(type='submit', value='保存')
+                                    button.grey 取消
+                                    span.loading
+                                    span.show_result 添加成功
+                #content
+                    .content_layout
+                        .detail_wrapper
+                            #detail
+                            #detail_overlay
+                                #save_publish_item_panel
+                                    .panel
+                                        .panel_action
+                                            span.progress 正在保存
+                                            input.save.green(type='submit', form='category_item_form', value='保存')
+                                        .panel_content.scrollable
+                                            .inner
+                                                form#category_item_form(action='/publish_item/upsert')
+                                                    input(type='hidden', name='item_id', value='')
+                                                    input(type='hidden',name='category_id', value='')
+                                                    input(type='text', name='title', placeholder='标题,不能为空', required='true')
+                                                    input(type='color',name='color',pattern='^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$', placeholder='标题颜色,例如：#FFFFFF,可以为空,默认颜色前台控制')
+                                                    input(type='url', name='link', placeholder='标题链接地址,不能为空', required='true')
+                                                    textarea(name='summary', placeholder='摘要,可以为空')
+                                                    input(type='url', name='thumb_url', placeholder='缩略图链接地址,可以没有缩略图')
+                                                .thumb
+                                                    input.upload_img_input(type='file',name='category_item_thumb')
+                                                    button.grey 上传
+                                                    span.loading
+                                                    span.result  上传完成
+                                                .thumb_preview
+                                                    img(src='')
+                                                    .size
+                                        .panel_action_bottom
+                                            a.close_panel(href='#')
+                                            a.trash_item(href='/publish_item/remove')
+                        .list
+                            nav.action_bar
+                                .controls
+                                    #publish_list_action
+                                        .publish_filter
+                                            a.filter_btn(href='#') 选择发布列表
+                                            ul.filter_menu
+                                        .related_btn
+                                            button#insert_publish_itme_button.grey 添加列表项
+                                            button#save_publish_item_button.blue 发布列表
+                                    #save_article_action.disnone
+                                        button#submit_article.blue 保存
+                                    #list_article_action.disnone
+                                        button#add_article.blue 添加文章
+                            .list_body.scrollable
+                                section
+                                    .section_bar
+                                        button.switch_section_btn 
+                                        span.section_name 已发布
+                                    #published_item_list
+                                        ul.item_wrapper
+                                section
+                                    .section_bar
+                                        button.switch_section_btn 
+                                        span.section_name 未发布
+                                    #item_list
+                                        ul.item_wrapper
+                                section
+                                    #article_list.disnone
+                                        ul.item_wrapper
+                                    #save_article.disnone
+                                        form#article_form
+                                            input#article_title(type='text', value='', name='title', placeholder='标题')
+                                            textarea#article_text(name='text')

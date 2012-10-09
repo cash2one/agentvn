@@ -1,0 +1,33 @@
+body{font:12px/24px arial,"宋体";margin:0}
+h1{margin:0}
+a{color:#08193a;text-decoration:none;}
+a:hover{color:#104bbb}
+.head{background:#52668c;margin:0 auto;line-height:48px;border-bottom:4px #1d345e solid;padding:0 20px;height:48px;}
+.head h1{color:#fff;font-size:24px;float:left}
+#main{padding:20px;min-width:920px}
+.action{height:35px;}
+.action #add{float:left;padding:2px 0 2px 20px;background:url("http://r.syyx.com/adminparty/nycs/questionnaire/add.png") no-repeat 0 center}
+.action .pages_top{float:right}
+#list table{width:100%;border-collapse:collapse;border-spacing:0;line-height:32px;color:#777;border:1px solid #cbd7ed;border-bottom:none;}
+#list table thead,#list table tfoot{background:#dee7f8}
+#list table td,#list table th{border-bottom:1px solid #cbd7ed;border-collapse:collapse;padding:0 10px;text-align:center}
+#list table .title{text-align:left}
+#list table span{color:#f00;margin-left:5px}
+#list table a{margin:0 3px}
+#list table th{color:#333}
+#list table .hover{background:#f1f5fb}
+#list table .edit{padding:2px 0 2px 16px;background:url("http://r.syyx.com/adminparty/nycs/questionnaire/edit.png") no-repeat 0 center}
+#list table .del{padding:2px 0 2px 16px;background:url("http://r.syyx.com/adminparty/nycs/questionnaire/remove.png") no-repeat 0 center}
+#list table .out{padding:2px 0 2px 16px;background:url("http://r.syyx.com/adminparty/nycs/questionnaire/down.png") no-repeat 0 center}
+#list table .view{padding:2px 0 2px 16px;background:url("http://r.syyx.com/adminparty/nycs/questionnaire/view.png") no-repeat 0 center}
+.pages{line-height:40px;font-size:12px;text-align:right;padding:10px 0}
+.check_page{width:45px}
+#puple_bg{display:none;opacity:.8;position:absolute;top:0;left:0;background:#000}
+#add_new{border:5px #cbd7ed solid;position:absolute;padding:20px;width:540px;top:100px;left:50%;margin-left:-285px;background:#fff;color:#666;display:none;overflow:hidden;}
+#add_new .tit,#add_new strong{font-weight:700;color:#222;text-align:right}
+#add_new h2{font-size:18px;font-weight:700;text-align:center;color:#222;margin:0}
+#add_new input,#add_new textarea{width:450px;font-size:12px}
+#add_new #login_yes,#add_new #login_no,#add_new #ip_yes,#add_new #ip_no{width:auto}
+#add_new #interval{width:24px}
+#add_new .center{text-align:center;height:40px}
+#add_new strong{padding-left:30px}

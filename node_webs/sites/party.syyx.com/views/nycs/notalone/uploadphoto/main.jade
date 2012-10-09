@@ -1,0 +1,81 @@
+!!!5
+html
+    head
+        include ../title
+        link(href="/stylesheets/nycs/notalone/uploadphoto/main.css",rel="stylesheet",type="text/css")        
+    body
+        .div_close
+        .uploadphoto#loginfrom
+            h1  上传照片，参与行动！
+            .uprule 
+                |1、参与行动需要账号至少在一个服务器建立过角色；
+                br
+                |2、成功参与行动即可参与抽奖赢珍贵双人坐骑，海量点卡奖励；
+                br
+                |3、坐骑奖励将直接发放至诺米选择的服务器里最高等级的角色下，请慎重选择；
+                br
+                |4、点卡奖励将发放至诺米的账号下，诺米可以自由划拨至所需服务器；
+                div.upnotice
+                |上传照片提示：
+                br
+                |1、照片必须为本人真实照片；
+                br
+                |2、照片需要显示面部、无过多PS、清晰；
+                br
+                |3、图片最大为1024K,支持类型有jpg,png,jpeg,gif
+                br
+
+            .upimg
+                
+                table
+                    tr
+                        td.tdleft 选择你的服务器：
+                        td
+                            .selectdiv
+                                select.input#txtServername(name="txtServername")
+                    tr
+                        td.tdleft 输入你的昵称：
+                        td
+                            input.input#txtNickname(maxlength="20",type="text")
+                    tr
+                        td.tdleft 职业：
+                        td
+                            .selectdiv
+                                div
+                                    select.input#roletype(name="roletype")
+                                        option(value="枪械师") 枪械师
+                                        option(value="异能者") 异能者
+                                        option(value="格斗家") 格斗家
+                                        option(value="剑武士") 剑武士
+                    tr
+                        td.tdleft 选择你所在的省份：
+                        td
+                            .selectdiv
+                                select.input#province(name="province")
+                    tr
+                        td.tdleft 选择你所在的城市：
+                        td
+                            .selectdiv
+                                select.input#city(name="city")
+                    tr
+                        td 
+                            .viewimg
+                        td
+                            |请选择图片路径：
+                            br
+                            iframe(name="iframe1",src="/nycs/notalone/uploadimg.html",width="220",height="100",scrolling="no",frameborder="0")
+                    tr
+                        td.tdleft 书写你的故事：
+                        td
+                            textarea.input#txtContent(maxlength="100",type="text")
+            input#txtUserPic(type="hidden")
+            input#txtUserPicSmall(type="hidden")
+            input#imgw(type="hidden")
+            input#imgh(type="hidden")
+            .upbtn
+                .loginerr#loginerr
+                .loginbtn
+                    a.btn#chkupload(href="javascript:undefined") 确 定
+                    a.btn#cancel_upload(href="javascript:undefined") 清 空
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js",type="text/javascript")
+        script(src="/javascripts/nycs/notalone/uploadphoto/out.js",type="text/javascript")

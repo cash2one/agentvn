@@ -1,0 +1,127 @@
+$path     = "http://r.syyx.com/adminparty/nycs/questionnaire/"
+$add      = $path"add.png"
+$down     = $path"down.png"
+$edit     = $path"edit.png"
+$remove   = $path"remove.png"
+$view     = $path"view.png"
+
+body
+    font 12px/24px arial,"宋体"
+    margin 0
+h1
+    margin 0
+a
+    color #08193a
+    text-decoration none
+    &:hover
+        color #104bbb
+.head
+    background #52668c
+    margin 0 auto
+    line-height 48px
+    border-bottom 4px #1d345e solid
+    padding 0 20px
+    height 48px
+    h1
+        color #fff
+        font-size 24px
+        float left
+#main
+    padding 20px
+    min-width 920px
+.action
+    height 35px
+    #add
+        float left
+        padding 2px 0 2px 20px
+        background url($add) no-repeat 0 center
+    .pages_top
+        float right
+#list
+    table
+        width 100%
+        border-collapse collapse
+        border-spacing 0
+        line-height 32px
+        color #777
+        border 1px solid #cbd7ed
+        border-bottom none
+        thead,tfoot
+            background #dee7f8
+        td,th
+            border-bottom 1px solid #cbd7ed
+            border-collapse collapse
+            padding 0 10px
+            text-align center
+        .title
+            text-align left
+        span
+            color red
+            margin-left 5px
+        a
+            margin 0 3px
+        th
+            color #333
+        .hover       
+            background #f1f5fb
+        .edit
+            padding 2px 0 2px 16px
+            background url($edit) no-repeat 0 center
+        .del
+            padding 2px 0 2px 16px
+            background url($remove) no-repeat 0 center
+        .out
+            padding 2px 0 2px 16px
+            background url($down) no-repeat 0 center
+        .view
+            padding 2px 0 2px 16px
+            background url($view) no-repeat 0 center
+.pages
+    line-height 40px
+    font-size 12px
+    text-align right
+    padding 10px 0
+.check_page
+    width 45px
+#puple_bg
+    display none
+    opacity .8
+    position absolute
+    top 0
+    left 0
+    background #000    
+#add_new
+    border  5px #cbd7ed solid
+    position absolute
+    padding 20px
+    width 540px
+    top 100px
+    left 50%
+    margin-left -285px
+    background #fff
+    color #666
+    display none
+    overflow hidden
+    .tit,strong
+        font-weight 700
+        color #222
+        text-align right
+    h2
+        font-size 18px
+        font-weight 700
+        text-align center
+        color #222
+        margin 0
+    input,textarea
+        width 450px
+        font-size 12px
+    #login_yes,#login_no,#ip_yes,#ip_no
+        width auto
+    #interval
+        width 24px
+    .center
+        text-align center
+        height 40px
+    strong
+        padding-left 30px
+

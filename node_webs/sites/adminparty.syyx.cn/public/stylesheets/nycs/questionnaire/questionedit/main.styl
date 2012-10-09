@@ -1,0 +1,64 @@
+body,html
+    margin 0
+    height 100%
+#editor
+    position absolute
+    width 50%
+    height 100%
+    float left
+.apply
+    width 50%
+    height 100%
+    position relative
+    float right
+    background #232323
+    .action
+        width 100px
+        position absolute
+        top 0
+        left 0
+        text-align center
+        padding-top 200px
+        input
+            height 60px
+            cursor pointer
+            margin-top 20px
+.show
+    margin-left 100px
+    height 100%
+    overflow auto
+    background #141414
+    color #f8f8f8
+    font-size 12px
+    font:12px/19px 'Monaco','Menlo','Ubuntu Mono','Droid Sans Mono','Consolas'
+    #hidden_comment
+        color red
+        margin 0 5px
+        &:hover
+            color #fff
+    h1,.tip
+        text-align center
+    .tip
+        border-bottom 1px solid #666
+    ul
+        padding 0 0 0 3em
+        margin 0
+    li 
+        list-style decimal-leading-zero
+        height 16px
+        line-height 16px
+    .tab
+        padding-left 2em
+    .tab2
+        padding-left 4em
+    .tab3
+        padding-left 6em
+    .tab4
+        padding-left 8em
+    .str
+        color #8F9D6A
+    .bool,.num
+        color #CF6A4C
+    .comment
+        color #666
+        margin-left 1em

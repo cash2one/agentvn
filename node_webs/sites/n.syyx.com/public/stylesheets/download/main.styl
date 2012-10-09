@@ -1,0 +1,418 @@
+@import '../reset'
+@import 'url'
+//opacity_support------------------------------------------------------------------------------------------
+support-for-ie ?= true
+
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+//------------------------------------------------------------------------------------------
+a
+    text-decoration none
+    outline none
+.disnone
+    display none
+.hide
+    visibility hidden
+.ui-tabs-hide
+    display none
+.clear
+    clear both
+    overflow hidden
+    height 0
+body
+    font-size 12px
+    font-family '宋体'
+    background-color #1C180F
+    color #65CDCC
+.container
+    min-width 1000px
+    background url($bg) center top no-repeat
+    .content
+        width 1000px
+        margin 0 auto
+        position relative
+        padding-bottom 400px
+        .logo_link
+            position absolute
+            top 45px
+            left 10px
+            width 210px
+            height 80px
+        .nav
+            position absolute
+            width 664px
+            height 62px
+            left 425px
+            top 12px
+            overflow hidden
+            a
+                display block
+                float left
+                height 21px
+                width 65px
+                margin-right 16px
+                &.fn_main
+                    &:hover
+                        background url($nav) 0 0 no-repeat
+                &.fn_news
+                    &:hover
+                        background url($nav) -81px 0 no-repeat
+                &.fn_download
+                    &:hover
+                        background url($nav) -162px 0 no-repeat
+                &.fn_usercenter
+                    &:hover
+                        background url($nav) -243px 0px no-repeat
+                &.fn_gameinfo
+                    &:hover
+                        background url($nav) -324px 0 no-repeat
+                 &.fn_service
+                    &:hover
+                        background url($nav) -405px 0 no-repeat
+                 &.fn_bbs
+                    &:hover
+                        background url($nav) -486px 0 no-repeat
+        .bread_path
+            position absolute
+            right 30px
+            top 310px
+            height 20px
+            a
+                margin-right 10px
+                height 20px
+                width 43px
+                float left
+        .fn_group
+            position absolute
+            top 296px
+            left 9px
+            width 203px
+            height 300px
+            a
+                display block
+                height 44px
+                &.fn_download_btn
+                    height 75px
+                    margin-bottom 3px
+                    &:hover
+                        background url($fn_btn) 0 0 no-repeat
+                &.fn_reg_btn:hover
+                    background url($fn_btn) 0 -78px no-repeat
+                &.fn_charge_btn:hover
+                    background url($fn_btn) 0 -122px no-repeat
+                &.fn_active_btn:hover
+                    background url($fn_btn) 0 -210px no-repeat
+                &.fn_get_gift_btn:hover
+                    background url($fn_btn) 0 -166px no-repeat
+        .promotions
+            position absolute
+            top 600px
+            left 14px
+            a
+                display block
+                width 190px
+                height 92px
+                border solid 1px #003E4D
+                margin-bottom 1px
+                img
+                    width 190px
+                    height 92px
+        .others_download_content
+            left 218px
+            top 354px
+            position relative
+            width 771px
+            .inner_bg
+                background-color #1E1324
+                padding 5px 36px 10px 36px
+                min-height 500px
+                _height 500px
+                .tiny_download
+                    background-color #2C1947
+                    border solid 1px #754CCC
+                    position relative
+                    height 280px
+                    margin-bottom 5px
+                    overflow hidden
+                    h3
+                        background url($title_bg) 0 0 no-repeat
+                        width 695px
+                        height 44px
+                        position absolute
+                        top 0
+                        left 0
+                    .des
+                        position absolute
+                        left 30px
+                        bottom 20px
+                        padding-left 20px
+                        width 600px
+                        line-height 22px
+                        overflow hidden
+                        height 44px
+                        line-height 20px
+                        color #B9A3EB
+                    .tiny_download_btn
+                        position absolute
+                        top 64px
+                        left 65px
+                        a
+                            width 231px
+                            height 67px
+                            display block
+                            margin-bottom 5px
+                            background url($download_btn) -264px -167px no-repeat
+                            &.official:hover
+                                background-position -11px -167px
+                    .tiny_download_173_btn
+                        position absolute
+                        top 139px
+                        left 65px
+                        a
+                            width 231px
+                            height 67px
+                            display block
+                            margin-bottom 5px
+                            background url($download_173_btn) -0px -0px no-repeat
+                            &:hover
+                                background url($download_173_btn_hover) -0px -0px no-repeat
+                    .version
+                        position absolute
+                        top 72px
+                        left 320px
+                        padding-left 30px
+                        width 300px
+                        line-height 24px
+                        color #B9A3EB
+                        height 124px
+                        background url($gap) 0 0 no-repeat
+                        a
+                            background #221237
+                            display inline-block
+                            padding 2px
+                            color #D7A0F3
+                    .download_173_box
+                        display none
+                        position absolute
+                        top 52px
+                        left 27px
+                        width 645px
+                        height 220px
+                        background url($download_173_box_bg) 0px 0px no-repeat
+                        .close_btn
+                            position absolute
+                            top 0px
+                            right 0px
+                            width 30px
+                            height 30px
+                        .download_173_list
+                            overflow hidden
+                            position absolute
+                            top 45px
+                            left 43px
+                            width 600px
+                            height 120px
+                            //padding 10px 0 10px 30px
+                            line-height 24px
+                            a
+                                float left
+                                width 100px
+                                color #B9A3EB
+                                height 32px
+                                overflow hidden
+                                &:hover
+                                    color #a2ebfd
+                        .download_173_info
+                            overflow hidden;
+                            position absolute;
+                            top 185px;
+                            left 43px;
+                            width 560px;
+                            height 30px;
+                            line-height 24px;
+                            word-break break-all;
+                            color #B9A3EB
+                .full_client
+                    background-color #2C1947
+                    border solid 1px #754CCC
+                    position relative
+                    height 245px
+                    margin-bottom 5px
+                    overflow hidden
+                    h3
+                        background url($title_bg) 0 -52px no-repeat
+                        width 695px
+                        height 44px
+                        position absolute
+                        top 0
+                        left 0
+                    .download_btn
+                        position absolute
+                        top 65px
+                        left 60px
+                        display none
+                        a
+                            width 230px
+                            height 65px
+                            display block
+                            margin-bottom 25px
+                            background url($download_btn) -10px -18px no-repeat
+                            &.official:hover
+                                background-position -10px -90px
+                            &.xunlei
+                                background-position -264px -18px
+                                &:hover
+                                    background-position -264px -92px
+                            &.only
+                                margin-top 45px
+                    .version
+                        position absolute
+                        color #B9A3EB
+                        top 80px
+                        left 320px
+                        width 300px
+                        line-height 30px
+                        padding-left 30px
+                        height 124px
+                        background url($gap) 0 0 no-repeat
+                .patch
+                    background-color #2C1947
+                    border solid 1px #754CCC
+                    position relative
+                    margin-bottom 5px
+                    height 300px
+                    h3
+                        position absolute
+                        top 0
+                        left 0
+                        background url($title_bg) 0 -162px no-repeat
+                        width 695px
+                        height 44px
+                    .des
+                        position absolute
+                        left 5px
+                        top 50px
+                        padding-left 20px
+                        line-height 22px
+                        width 600px
+                        color #F3D2FF
+                        overflow hidden
+                        a
+                            color #8D6ECB
+                    .check_version
+                        width 418px
+                        height 94px
+                        position absolute
+                        top 70px
+                        left 300px
+                        display none
+                        background url($check_version) 0 0 no-repeat
+                        z-index 100
+                    .patch_title
+                        position absolute
+                        top 80px
+                        left 10px
+                        width 670px
+                        height 24px
+                        line-height 24px
+                        border solid 1px #754CCC
+                        background-color #26163D
+                        color #F2D3FD
+                        div
+                            float left
+                            text-align center
+                            &.update_time
+                                width 130px
+                            &.file_name
+                                width 138px
+                            &.file_size
+                                width 110px
+                            &.file_des
+                                width 205px
+                            &.update_des
+                                width 60px
+                    .patch_list
+                        position absolute
+                        width 670px
+                        height 179px
+                        top 105px
+                        left 10px
+                        overflow-y scroll
+                        border solid 1px #754CCC
+                        a
+                            color #F2D3FD
+                        table
+                            color #F2D3FD
+                            tr.odd
+                                background-color #221237
+                            td
+                                height 26px
+                                line-height 26px
+                                text-align center
+                                &.time
+                                    width 130px
+                                &.file_name
+                                    width 138px
+                                &.file_size
+                                    width 120px
+                                &.file_des
+                                    width 215px
+                                &.update_des
+                                    width 70px
+                .tool
+                    background-color #2C1947
+                    border solid 1px #754CCC
+                    padding-bottom 10px
+                    h3
+                        background url($title_bg) 0 -218px no-repeat
+                        height 44px
+                        margin-bottom 15px
+                    ul
+                        width 660px
+                        margin 0 auto
+                        background #2C1947
+                        border solid 1px #754CCC
+                        padding 3px
+                        li
+                            height 30px
+                            margin-bottom 3px
+                            background #221237
+                            a
+                                width 90px
+                                height 30px
+                                float left
+                                margin-right 20px
+                                img
+                                    width 90px
+                                    height 30px
+                            span
+                                float left
+                                width 500px
+                                height 30px
+                                color #8F6DCC
+                                line-height 30px
+#copyright
+    height 80px            
+    width 771px
+    background-color #26182F
+    position relative
+    margin-top 40px
+    .copyright_content
+        position absolute
+        width 610px
+        padding 20px 10px 20px 0
+        line-height 20px
+        color #8F6DCC
+        left 150px
+    .syyx_logo
+        background url($copyright_logo) 0 0 no-repeat
+        width 117px
+        height 49px
+        position absolute
+        top 15px
+        left 18px
+        z-index 100
+@import '../top_iframe/main'
+@import '../float_reg/main'

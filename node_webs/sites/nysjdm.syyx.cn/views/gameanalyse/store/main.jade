@@ -1,0 +1,32 @@
+html
+    head
+        title  商城物品统计
+        include script
+    body
+        .cont_form
+            .f_b_333 商城物品统计
+        .cont_f_lb
+        .cont_link
+            tr 
+                td
+                    span 服务器：
+                        select#serverList
+                td
+                    span 时间：
+                        input#txtStartDate(type="text")
+                        | 至
+                        input#txtEndDate(type="text")
+                td
+                    span 类型：
+                        select#storeTypeList
+                td
+                    span 产出回收:
+                            select#InOutTypeList
+                                option(value=1) 产出
+                                option(value=2) 回收
+                td
+                    input#btnQuery(type="button",value="查询")
+        #divStore.table_info
+            table#tableStore.wiki-content-table
+div#loading(style="top: 50%; right: 50%; position: absolute; padding: 0px;margin: 0px; z-index: 999; display: none;")
+    img(src="http://s1.syyx.com/nysjdm/Script/spinner3-greenie.gif")

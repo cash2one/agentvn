@@ -1,0 +1,756 @@
+@import '../reset'
+//@import '../base'
+//opacity_support------------------------------------------------------------------------------------------
+support-for-ie ?= true
+
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+//-------------------------------------------------------------------------------------------------------------
+$index_bg_top       = 'http://r.syyx.com/nysj/index/bg_top.jpg'
+$index_bg           = 'http://r.syyx.com/nysj/index/bg.jpg'
+$blank              = 'http://r.syyx.com/nysj/index/blank.png'
+$btn                = 'http://r.syyx.com/nysj/index/btn.jpg'
+$tab_index          = 'http://r.syyx.com/nysj/index/tab_index.png'
+$dialog_download    = 'http://r.syyx.com/nysj/index/download_panel.jpg'
+$download_not_open  = 'http://r.syyx.com/nysj/index/download_not_open.jpg'
+$dialog_active      = 'http://r.syyx.com/nysj/index/dialog_active.jpg'
+$yineng             = 'http://r.syyx.com/nysj/index/yineng.jpg'
+$qiangxie           = 'http://r.syyx.com/nysj/index/qiangxie.jpg'
+$jianwu             = 'http://r.syyx.com/nysj/index/jianwu.jpg'
+$gedou              = 'http://r.syyx.com/nysj/index/gedou.jpg'
+$close_dialog       = 'http://r.syyx.com/nysj/index/close_dialog.png'
+$success            = 'http://r.syyx.com/nysj/activate/success.jpg'
+$failure            = 'http://r.syyx.com/nysj/activate/failure.jpg'
+$activate_btn       = 'http://r.syyx.com/nysj/activate/btn.jpg'
+//---------------------------------------------------------------------------------------
+//reg_url
+$loading            = 'http://s1.syyx.com/nycs/images/float_reg/loader.gif'
+$reg_tip_icon       = 'http://s1.syyx.com/nycs/images/float_reg/right_wrong.png'
+//---------------------------------------------------------------------------------------------
+a
+    text-decoration none
+    outline none
+.disnone
+    display none
+.hide
+    visibility hidden
+.ui-tabs-hide
+    display none
+body
+    font-size 12px
+    font-family '宋体'
+    background-color #15212F
+.container_out
+    min-width 1000px
+    background url($index_bg_top) center top no-repeat
+.container
+    min-width 1000px
+    background url($index_bg) center 860px no-repeat
+    .content
+        width 1000px
+        margin 0 auto
+        height 1628px
+        overflow hidden
+        position relative
+        .logo_link
+            position absolute
+            top 30px
+            left 40px
+            width 280px
+            height 120px
+        .flash_banner
+            position absolute
+            width 996px
+            height 494px
+            overflow hidden
+            top 45px
+            left 1px
+        .nav
+            position absolute
+            width 380px
+            height 39px
+            left 592px
+            top 4px
+            overflow hidden
+            a
+                position absolute
+                background url($blank) 0 0 no-repeat
+                top 0px
+                height 39px
+                width 88px
+                display inline-block
+                &.nav_index
+                    width 111px
+                    left 0px
+                    &:hover
+                        background url($btn) -403px -175px no-repeat
+                &.nav_guider
+                    left 111px
+                    &:hover
+                        background url($btn) -514px -175px no-repeat
+                &.nav_pay
+                    left 199px
+                    &:hover
+                        background url($btn) -602px -175px no-repeat
+                &.nav_bbs
+                    left 287px
+                    width 111px
+                    &:hover
+                        background url($btn) -690px -175px no-repeat
+        .top_video
+            position absolute
+            width 175px
+            height 98px
+            left 17px
+            top 358px
+            #top_video_container
+                position absolute
+                left 0
+                top 0
+                width 175px
+                height 98px
+            a.open_top_dialog
+                cursor pointer
+                position absolute
+                top 0
+                left 0
+                width 175px
+                height 98px
+                background url($blank) 0 0 no-repeat
+        .fn_group
+            position absolute
+            height 54px
+            left 10px
+            top 487px
+            a
+                float left            
+                height 54px
+                width 152px
+                &.fn_download_btn:hover
+                    background url($btn) -31px -37px no-repeat
+                &.fn_active_btn:hover
+                    background url($btn) -183px -37px no-repeat
+                &.fn_charge_btn:hover
+                    background url($btn) -335px -37px no-repeat
+        #tabs_picture_news
+            position absolute
+            top 542px
+            left 11px
+            width 678px
+            height 316px
+            overflow hidden
+            ul
+                position absolute
+                right 10px
+                top 295px
+                li
+                    float left
+                    a
+                        width 13px
+                        height 10px
+                        color #66A4BD
+                        float left
+                        margin-right 3px
+                        background url($tab_index) -17px 0 no-repeat
+                    &.ui-tabs-selected
+                        a
+                            background url($tab_index) 0 0 no-repeat
+            img
+                width 678px
+                height 316px
+        #game_hot
+            position absolute
+            top 860px
+            left 10px
+            width 680px
+            height 314px
+            overflow hidden
+            .more
+                position absolute
+                right 10px
+                top 10px
+                color #7A8A99
+            .top_news
+                .thumb
+                    border solid 1px #004169
+                    width 177px
+                    height 121px
+                    position absolute
+                    left 20px
+                    top 50px
+                    img
+                        width 177px
+                        height 121px
+                h1
+                    font-size 14px
+                    color #3D6FD2
+                    border-bottom solid 1px #1F416E
+                    position absolute
+                    right 10px
+                    height 22px
+                    left 220px
+                    top 50px
+                    overflow hidden
+                    a
+                        float left
+                        color #00CBFE
+                        &:hover
+                            text-decoration underline
+                    span
+                        float right
+                        font-size 12px
+                .summary
+                    position absolute
+                    line-height 20px
+                    text-indent 24px
+                    left 220px
+                    right 10px
+                    top 80px
+                    height 80px
+                    overflow hidden
+                    color #6AB8FF
+                .view_all
+                    position absolute
+                    top 165px
+                    right 10px
+                    color #6AB8FF
+                    &:hover
+                            text-decoration underline
+            .text_list
+                position absolute
+                top 190px
+                left 20px
+                color #0096FF
+                height 115px
+                overflow hidden
+                li
+                    width 380px
+                    height 22px
+                    line-height 22px
+                    overflow hidden
+                    a
+                        color #0096FF
+                        float left
+                        &:hover
+                            text-decoration underline
+                    span
+                        float right
+            .img_list
+                position absolute
+                top 195px
+                right 10px
+                width 226px
+                height 110px
+                a
+                    display block
+                    width 226px
+                    height 48px
+                    margin-bottom 10px
+                    img
+                        width 226px
+                        height 48px
+        .down_load_mini_client
+            position absolute
+            width 297px
+            height 81px
+            right 9px
+            top 898px
+            &:hover
+                background url($btn) -32px -95px no-repeat
+        .get_active_code
+            position absolute
+            width 297px
+            height 80px
+            right 9px
+            top 979px
+            &:hover
+                background url($btn) -331px -94px no-repeat
+        #tabs_role
+            width 680px
+            height 312px
+            position absolute
+            top 1178px
+            left 10px
+            overflow hidden
+            ul
+                position absolute
+                top 46px
+                left 201px
+                height 27px
+                li
+                    float left
+                    &.ui-tabs-selected
+                        a
+                            width 91px
+                            &.yineng
+                                background url($btn) -31px -175px no-repeat
+                            &.qiangxie
+                                background url($btn) -124px -175px no-repeat
+                            &.jianwu
+                                background url($btn) -217px -175px no-repeat
+                            &.gedou
+                                background url($btn) -310px -175px no-repeat
+                    a
+                        float left
+                        color #7DB5CC
+                        height 27px
+                        width 83px
+            #yineng,#jianwu,#qiangxie,#gedou
+                background url($yineng) 0 40px no-repeat
+                width 680px
+                height 315px
+                .video_container
+                    position absolute
+                    width 238px
+                    height 140px
+                    top 87px
+                    left 200px
+                    border solid 1px #015A86
+                .more
+                    position absolute
+                    top 269px
+                    left 519px
+                    height 20px
+                    width 80px
+                    display inline-block
+                    text-decoration none
+                    &:hover
+                        background url($btn) -186px -406px no-repeat
+                .jineng_name
+                    position absolute
+                    top 261px
+                    left 200px
+                    em
+                        float left
+                        width 33px
+                        height 33px
+                        margin-right 6px
+                        cursor pointer
+            #jianwu
+                background url($jianwu) 0 40px no-repeat
+            #qiangxie
+                background url($qiangxie) 0 40px no-repeat
+            #gedou
+                background url($gedou) 0 40px no-repeat
+        #screenshot
+            position absolute
+            height 174px
+            top 1110px
+            right 10px
+            width 296px 
+            overflow hidden
+            .pre
+                position absolute
+                top 63px
+                left 5px
+                width 15px
+                height 30px
+            .next
+                position absolute
+                top 63px
+                right 5px
+                width 15px
+                height 30px
+            .screenshot_list_outer
+                position absolute
+                top 0
+                left 22px
+                width 252px
+                height 174px
+                overflow hidden
+                .screenshot_list
+                    position relative
+                    a
+                        float left
+                        height 172px
+                        width 250px
+                        border solid 1px #0357BA
+                        img
+                            width 250px
+                            height 172px
+        .service_info
+            color #6AB9FE
+            line-height 20px
+            position absolute
+            right 40px
+            bottom 215px
+            a.login_service_center
+                display inline-block
+                color #6AB9FE
+                &:hover
+                    text-decoration underline
+        #download_panel
+            position absolute
+            display none
+            width 680px
+            height 318px
+            top 542px
+            left 11px
+            background url($dialog_download) 0 0 no-repeat
+            color #3D6FCE
+            a.close
+                position absolute
+                background url($blank) 0 0 no-repeat
+                right 0
+                top 0
+                width 50px
+                height 50px
+            .mini
+                position absolute
+                left 36px
+                top 92px
+            .full
+                position absolute
+                left 356px
+                top 92px
+            .download_btn_mini,.download_btn_full
+                width 285px
+                height 78px
+                display block
+            .download_btn_mini
+                &:hover
+                    background url($btn) -32px -217px no-repeat
+            .download_btn_full
+                &:hover
+                    background url($btn) -321px -217px no-repeat
+            .des
+                padding 12px 0 10px 15px
+                color #0095FF
+            .size
+                margin-right 15px
+            .md5
+                padding 10px 0
+            .get_active_code_in_download_panel
+                position absolute
+                padding 5px 10px
+                right 10px
+                bottom 10px
+                background-color #031835
+                a
+                    text-decoration underline
+                    color #0096FF
+                    font-size 12px
+        #download_panel_not_open
+            position absolute
+            display none
+            width 680px
+            height 318px
+            top 542px
+            left 11px
+            background url($download_not_open) 0 0 no-repeat
+            a.close
+                position absolute
+                background url($blank) 0 0 no-repeat
+                right 0
+                top 0
+                width 50px
+                height 50px
+        #activate_form
+            position absolute
+            top 542px
+            left 11px
+            width 680px
+            height 318px
+            color #00deff
+            background url($dialog_active) 0 0 no-repeat
+            display none
+            form
+                position absolute
+                left 110px
+                top 90px
+            .form_item
+                height 30px
+                margin-bottom 5px
+                span
+                    line-height 22px
+                    float left
+                    width 100px
+                    text-align right
+                    font-size 14px
+                    font-weight bold
+                    margin-right 10px
+                input
+                    float left
+                    width 240px
+                    background-color #092161
+                    color #fff
+                    border solid 1px #034292
+                    height 24px
+                    line-height 24px
+                    font-weight bold
+                    font-size 14px
+                    padding 0 3px
+            .reg_tip
+                padding 0 0 10px 110px
+                color #186afe
+                a
+                    color #0195FF
+                    text-decoration underline
+            .activate_form_submit_btn
+                padding 20px 0 0 150px
+                height 36px
+                a
+                    float left
+                    display block
+                    width 136px
+                    height 36px
+                    margin-right 10px
+                    background url($activate_btn) -495px -46px no-repeat
+                    &:hover
+                        background url($activate_btn) -9px -7px no-repeat
+                span
+                    font-size 14px
+            a.close
+                position absolute
+                background url($blank) 0 0 no-repeat
+                right 0
+                top 0
+                width 50px
+                height 50px
+        #activate_result_1
+            display none
+            position absolute
+            top 542px
+            left 11px
+            width 500px
+            height 248px
+            color #00deff
+            background url($dialog_active) 0 0 no-repeat
+            padding 70px 0 0 180px
+            a.close
+                position absolute
+                background url($blank) 0 0 no-repeat
+                right 0
+                top 0
+                width 50px
+                height 50px
+            h3
+                height 26px
+                padding 6px 0 0 50px
+                margin 0 0 10px 70px
+                color #ff8500
+                font-size 16px
+            p
+                font-size 14px
+                color #1569ff
+                line-height 22px
+            .download_mini
+                display inline-block
+                margin 20px 0 0 90px
+                width 136px
+                height 36px
+                background url($activate_btn) -283px -7px no-repeat
+        #activate_result_2
+            position absolute
+            top 542px
+            left 11px
+            width 500px
+            height 248px
+            color #00deff
+            padding 70px 0 0 180px
+            background url($dialog_active) 0 0 no-repeat
+            display none
+            a.close
+                position absolute
+                background url($blank) 0 0 no-repeat
+                right 0
+                top 0
+                width 50px
+                height 50px
+            h3
+                height 26px
+                padding 6px 0 0 50px
+                color #ff8500
+                font-size 16px
+                margin 0 0 10px 70px
+            p
+                text-align center
+                width 300px
+                font-size 14px
+                color #1569ff
+                line-height 22px
+                margin-bottom 20px
+            a
+                width 103px
+                height 27px
+                margin-left 100px
+                display block
+                background url($activate_btn) -114px -48px no-repeat
+        #reg
+            position absolute
+            top 630px
+            right 20px
+            width 265px
+            height 255px
+            overflow hidden
+            #reg_step1
+                height 245px
+                position relative
+                overflow hidden
+                color #6CB6FD
+                display block
+                .reg_form
+                    td
+                        padding 0 2px
+                        height 26px
+                        &.reg_form_item_name
+                            width 60px
+                            text-align right
+                        &.reg_form_item_input
+                            input
+                                background-color #86BBE5
+                                border solid 1px #009BFF
+                                height 20px
+                                line-height 20px
+                                color #000
+                                width 150px
+                            input.focus_in_inut
+                                background-color #fff
+                                border solid 1px #C8EDFF
+                                color #000
+                            #validateimg
+                                vertical-align middle
+                                cursor pointer
+                                height 29px
+                                width 100px
+                                margin-left 3px
+                        &.validate_num_input
+                            height 35px
+                            input
+                                width 40px
+                .agreement
+                    text-align center
+                    padding-top 5px
+                    a
+                        text-align center
+                        text-decoration underline
+                        color #3E6ED0
+                        outline none
+                    input
+                        margin-right 3px
+                .reg_submit
+                    position absolute
+                    top 202px
+                    left 53px
+                    a
+                        display inline-block
+                        width 153px
+                        height 44px
+                        background url($btn) -31px -380px no-repeat
+                        outline none
+                        &:hover
+                            background-position -31px -426px
+            #reg_step2
+                position absolute
+                width 265px
+                height 255px
+                color #6BB8FE
+                display none
+                .success_icon
+                    position absolute
+                    width 39px
+                    height 36px
+                    left 50px
+                    top 10px
+                    background url($btn) -608px -217px no-repeat
+                .success_text
+                    color #FFB900
+                    font-size 14px
+                    position absolute
+                    top 10px
+                    left 100px
+                .success_account
+                    position absolute
+                    color #FFB900
+                    top 35px
+                    left 100px
+                .get_active_code_text_after_reg
+                    position absolute
+                    top 70px
+                    color #6BB8FE
+                    left 0
+                    h3
+                        font-weight bold
+                        padding 0 10px 5px 0
+                    p
+                        text-indent 24px
+                        line-height 20px
+                .get_code_link
+                    background url($btn) -366px -380px no-repeat
+                    width 131px
+                    height 24px
+                    position absolute
+                    top 145px
+                    left 60px
+                    display block
+                    &:hover
+                        background url($btn) -366px -406px no-repeat
+                .download_text_after_reg
+                    position absolute
+                    top 190px
+                    font-weight bold
+                .down_load_mini_client_after_reg
+                    position absolute
+                    width 131px
+                    height 24px
+                    top 220px
+                    left 60px
+                    background url($btn) -499px -380px no-repeat
+                    &:hover
+                        background url($btn) -499px -406px no-repeat
+            .check_result_right
+                background url($reg_tip_icon) 0 4px no-repeat
+                width 16px
+                height 25px
+            .check_result_wrong
+                background url($reg_tip_icon) 0 -32px no-repeat
+                width 16px
+                height 25px
+            .check_result_loading
+                background url($loading) 0 4px no-repeat
+                width 16px
+                height 25px
+        #copyright
+            position absolute
+            top 1520px
+            left 110px
+            width 981px
+            height 62px
+            overflow hidden
+            .syyx_logo
+                position absolute
+                top 10px
+                left 10px
+                width 120px
+                height 45px
+            .copyright_content
+                position absolute
+                top 10px
+                left 160px
+                line-height 20px
+                color #526F91
+//dialog-----------------------------------------------------------------------
+.pop_video_detail
+    background-color #032E53
+    border 1px solid #0062B3
+    padding 25px 0 0 20px
+.ui-dialog-titlebar-close
+    background url($close_dialog) no-repeat 0 0
+    height 24px
+    padding 1px
+    position absolute
+    right 0px
+    top 10px
+    width 66px
+.ui-icon-closethick
+    display none
+.ui-widget-overlay
+    opacity 0.8
+    background-color #000
+    position absolute
+    top 0
+    left 0
+#top_video_detail
+    _padding-bottom 20px

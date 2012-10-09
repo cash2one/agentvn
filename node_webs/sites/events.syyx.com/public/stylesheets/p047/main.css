@@ -1,0 +1,86 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+body{background:#000;font-family:"宋体";font-size:12px;margin:0;padding:0}
+a{text-decoration:none;outline:none;font-size:14px;text-align:center;line-height:25px;color:#cbcbcb;cursor:pointer}
+.bg1{position:relative;background:url("http://r.syyx.com/events/p047/bg1.jpg") no-repeat top center;height:2050px;min-width:1020px;overflow:hidden}
+.bg2{background:url("http://r.syyx.com/events/p047/bg2.jpg") no-repeat center 720px;position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden}
+.main{width:1020px;margin:0 auto;position:relative;height:100%}
+.nav{text-align:right;line-height:25px;margin-right:170px;padding-top:4px;}
+.nav a{font-size:12px;color:#d7d7d7;}
+.nav a:hover{color:#fff}
+#main_flv{position:absolute;top:443px;left:15px;width:476px;height:265px}
+a.logo{position:absolute;width:238px;height:105px;left:12px;top:25px}
+a.register{position:absolute;width:136px;height:45px;left:377px;top:1063px;}
+a.register:hover{background:url("http://r.syyx.com/events/p047/btn.jpg") no-repeat -733px -64px}
+#tel{position:absolute;padding-top:4px;width:162px;height:18px;line-height:14px;left:625px;top:943px}
+#dialog{background:url("http://r.syyx.com/events/p047/success.jpg") no-repeat top center;position:absolute;width:411px;height:250px;overflow:hidden;z-index:4;display:none;left:50%;margin-left:-205px;line-height:22px;font-size:14px;color:#f7dd67;}
+#dialog a.close{position:absolute;width:32px;height:33px;left:378px;top:1px}
+#dialog a.confirm{position:absolute;width:138px;height:45px;left:143px;top:188px;}
+#dialog a.confirm:hover{background:url("http://r.syyx.com/events/p047/btn.jpg") no-repeat -453px -64px}
+#dialog .tag{position:absolute;width:214px;height:100px;left:103px;top:100px}
+a.gift{position:absolute;width:77px;height:26px;left:795px;top:943px;}
+a.gift:hover{background:url("http://r.syyx.com/events/p047/btn.jpg") no-repeat -256px -125px}
+a.download1{position:absolute;top:506px;left:518px;width:252px;height:92px;}
+a.download1:hover{background:url("http://r.syyx.com/events/p047/btn.jpg") no-repeat -1px -64px}
+a.download2{position:absolute;top:815px;left:647px;width:197px;height:58px;}
+a.download2:hover{background:url("http://r.syyx.com/events/p047/btn.jpg") no-repeat -255px -64px}
+div.intro{position:absolute;top:1189px;left:36px;width:816px;height:78px;color:#b59bdc;line-height:25px}
+#first{position:absolute;top:1517px;width:234px;height:62px;left:9px;}
+#first.hover{background:url("http://r.syyx.com/events/p047/btn.jpg") no-repeat -1px -1px}
+#second{position:absolute;top:1517px;width:222px;height:62px;left:245px;}
+#second.hover{background:url("http://r.syyx.com/events/p047/btn.jpg") no-repeat -238px -1px;width:246px;left:212px}
+#third{position:absolute;top:1517px;width:224px;height:62px;left:460px;}
+#third.hover{background:url("http://r.syyx.com/events/p047/btn.jpg") no-repeat -488px -1px;width:251px;left:430px}
+#fourth{position:absolute;top:1517px;width:197px;height:62px;left:680px;}
+#fourth.hover{background:url("http://r.syyx.com/events/p047/btn.jpg") no-repeat -742px -1px;width:223px;left:652px}
+#main_img{position:absolute;top:1570px;left:9px;width:866px;height:323px}
+.copy_right{position:absolute;text-align:center;width:980px;top:1959px;line-height:22px;}
+.copy_right .feet_txt{margin-left:260px;margin-top:10px;color:#473e53;text-align:left}
+.copy_right .feet_logo{position:absolute;top:0;left:105px;width:125px;height:57px}
+.disnone{display:none}
+#popup_bg{width:100%;min-width:1000px;height:1660px;opacity:.7;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);background:#000;position:absolute;top:0;left:0;display:none;z-index:2}
+#down_flash div{width:184px;height:103px;position:absolute;cursor:pointer;overflow:hidden;top:0;left:0}
+#down_flash .flash_div{background:#f00;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#down_flash #flash_bg1{top:1337px;left:36px}
+#down_flash #flash_bg2{top:1337px;left:238px}
+#down_flash #flash_bg3{top:1337px;left:440px}
+#down_flash #flash_bg4{top:1337px;left:642px}
+.pop_video_detail{background-color:#032e53;border:1px solid #0062b3}
+#pop_flash{border:1px solid #004680;background:#000;line-height:0}
+object{outline:none}
+.reg_panel{position:absolute;width:280px;height:290px;color:#f7df37;top:826px;left:300px;}
+.reg_panel a{color:#fff;font-size:12px;}
+.reg_panel a:hover{color:#f7df37}
+.reg_panel .reg{padding-left:20px}
+.reg_panel table{height:210px;}
+.reg_panel table td{height:35px;width:20px}
+.reg_panel table input{background:#cdbfe2;border:1px solid #2f155e;height:23px;color:#2f155e;line-height:23px;width:165px}
+.reg_panel table .focus_in_inut{background:#fff}
+.reg_panel .agreement{height:22px;text-align:center;color:#fff;}
+.reg_panel .agreement input{vertical-align:middle;margin-right:5px}
+.reg_panel .reg_form_item_name{width:70px}
+.reg_panel .reg_form_item_input{width:170px}
+.reg_panel .validate_num_input{height:30px;vertical-align:top;padding-top:3px}
+.reg_panel #txtValidate{width:70px}
+.reg_panel #validateimg{width:90px;margin-left:5px;height:27px;vertical-align:top;cursor:pointer}
+.reg_panel #reg_step2,.reg_panel #reg_step3,.reg_panel #reg_step4,.reg_panel #reg_step5{margin:0 auto;padding-top:30px;line-height:25px;display:none;height:120px;text-align:center;}
+.reg_panel #reg_step2 input,.reg_panel #reg_step3 input,.reg_panel #reg_step4 input,.reg_panel #reg_step5 input{background:#cdbfe2;border:1px solid #2f155e;height:23px;color:#2f155e;line-height:23px;width:165px}
+.reg_panel #reg_step2{height:auto;}
+.reg_panel #reg_step2 .active{height:200px;line-height:50px}
+.reg_panel #active_link{display:block;margin:50px auto 0;width:138px;height:45px;background:url("http://r.syyx.com/events/p047/btn.jpg") no-repeat -592px -64px}
+.reg_panel .reg_submit{height:55px;position:relative}
+.reg_panel #reg_button{width:138px;height:45px;position:absolute;left:51px;top:7px;background:url("http://r.syyx.com/events/p047/btn.jpg") no-repeat -731px -64px;}
+.reg_panel #reg_button:hover{background-position:-731px -110px}
+.reg_panel .success{height:50px;padding:10px 0 10px 50px;line-height:50px;background:url("http://r.syyx.com/events/p047/success.png") no-repeat left center;display:inline}
+.reg_panel .fail{height:50px;padding:10px 0 10px 50px;line-height:50px;background:url("http://r.syyx.com/events/p047/fail.png") no-repeat left center;display:inline}
+.reg_panel #back{text-decoration:underline;cursor:pointer}
+.reg_panel .check_result_wrong{background:url("http://r.syyx.com/events/p047/right_wrong.png") no-repeat 0 -32px;height:100%;width:16px}
+.reg_panel .check_result_right{background:url("http://r.syyx.com/events/p047/right_wrong.png") no-repeat 0 4px;height:25px;width:16px}
+.reg_panel .check_result_loading{background:url("http://r.syyx.com/events/p047/ajax-loader.gif") no-repeat 0 4px;height:25px;width:16px}

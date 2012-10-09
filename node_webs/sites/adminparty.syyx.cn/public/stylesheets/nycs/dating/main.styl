@@ -1,0 +1,95 @@
+$path     = "http://r.syyx.com/adminparty/nycs/dating/"
+$pass      = $path"pass.png"
+$reject     = $path"reject.png"
+$delete     = $path"delete.png"
+
+body
+    font 12px/24px arial,"宋体"
+    margin 0
+
+h1
+    margin 0
+a
+    color #08193a
+    text-decoration none
+    &:hover
+        color #104bbb
+.head
+    background #52668c
+    margin 0 auto
+    line-height 48px
+    border-bottom 4px #1d345e solid
+    padding 0 20px
+    height 48px
+    h1
+        color #fff
+        font-size 24px
+        float left
+#main
+    padding 10px
+    min-width 920px
+
+#greet
+    font-size 14px
+    padding-left 10px
+
+.action
+    font-size 12px
+    margin 0 auto
+    padding 7px 1%
+    text-align right
+    background: none repeat scroll 0 0 #CDE1F5
+
+#list
+    margin-top 10px
+    table
+        width 100%
+        border-collapse collapse
+        border-spacing 0
+        line-height 32px
+        color #777
+        border 1px solid #cbd7ed
+        border-bottom none
+        margin-bottom 12px
+        thead
+            background #dee7f8
+        tfoot
+            th
+                text-align right
+        td,th
+            border-bottom 1px solid #cbd7ed
+            border-collapse collapse
+            padding 0 10px
+            text-align center
+        span
+            color red
+            margin-left 5px
+        a
+            margin 0 3px
+        th
+            color #333
+        .hover       
+            background #f1f5fb
+        .pass
+            padding 2px 0 2px 16px
+            background url($pass) no-repeat 0 center
+        .reject
+            padding 2px 0 2px 16px
+            background url($reject) no-repeat 0 center
+        .delete
+            padding 2px 0 2px 16px
+            background url($delete) no-repeat 0 center
+.pages    
+    margin 0 20px 0 30px 
+.check_page
+    width 45px
+#puple_bg
+    display none
+    opacity .8
+    position absolute
+    top 0
+    left 0
+    background #000
+img 
+    max-width 150px
+    max-height 100px

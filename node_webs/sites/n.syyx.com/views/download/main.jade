@@ -1,0 +1,21 @@
+!!!5
+html
+    include ../include/url
+    head
+        include ../include/meta
+        title 《诺亚传说》下载站-微端下载-完整客户端下载-《诺亚传说》官方网站
+        meta(name="description" ,content="《诺亚传说》官方下载站，提供最新版本的完整客户端下载、微端下载、最近更新补丁包下载。公测客户端版本已更新，请玩家朋友们下载最新的客户端。" )
+        include script_style
+    body
+        include ../include/top_iframe
+        .container
+            .content
+                include others_download_content
+                include ../include/logo_link
+                include ../include/nav_new
+                include ../include/promotions
+                .bread_path
+                    a(href='#{nycs_index}')
+                    a(href='#{download}') 
+                include ../include/fn_group
+        include ../include/reg

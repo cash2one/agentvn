@@ -1,0 +1,221 @@
+extends ../include/_frame
+
+block p_variable
+    -var p           = "p058"
+    -var keywords    = "诺亚传说,网游,2012题材,网络游戏,人气,新世界,公平,免费,热门,2d,新游,排行榜"
+    -var description = "全新2012题材人气巨作《诺亚传说》，科技与魔法完美融合的未来新世界，揭秘2012末日预言！唯美的未来世界，个性的异能职业，革新的趣味玩法，激爽的跨服PK，首创“微消费”公平模式，终极内测火爆进行中，7组万人新服等你开启！ "
+    -var p_css       = ["http://s.syyx.com/nycs/plugin/default_page_plugin/jquery-ui-1.8.13.custom.css","http://s.syyx.com/nycs/plugin/light-box/jquery.lightbox-0.5.css"]
+
+block body
+    .container
+        .wrap
+            .main
+                .nav
+                    include ../include/nav
+                #num
+                a.logo(href="#{url_nycs}",target="_blank") 诺亚传说
+                #prize
+                #flash
+                #flash_but
+                #flash_btn
+                a.mini(href="#{url_mini_client}",target="_blank") 15分钟微端下载
+                a.nycs(href="#{url_nycs}",target="_blank")
+                #img_focus
+                    #img_focus_tab
+                        a.check_0
+                        a
+                        a
+                        a
+                    #img_focus_img
+                        img(src="#{img_path}feature1.jpg",width="678",height="354",style="display:inline")
+                        img(delay="#{img_path}feature2.jpg",width="678",height="354")
+                        img(delay="#{img_path}feature3.jpg",width="678",height="354")
+                        img(delay="#{img_path}feature4.jpg",width="678",height="354")
+                 #job
+                    #j_con
+                        .con.jws
+                            .info
+                                strong 职业特点：
+                                ul
+                                    li 单挑切磋：★★★★★
+                                    li 团队作战：★★★
+                                    li 升级打怪：★★★★
+                                    li 操作难度：★★★
+                                p
+                                    strong 攻击类型：
+                                    |物理攻击 
+                                    br
+                                    strong 职业定位：
+                                    |近程、瞬间爆发、快速突进
+                                strong 特色技能：
+                                p.skill
+                                #jws.video
+                        .con.ynz
+                            .info
+                                strong 职业特点：
+                                ul
+                                    li 单挑切磋：★★★
+                                    li 团队作战：★★★★
+                                    li 升级打怪：★★★★★
+                                    li 操作难度：★★★★★
+                                p
+                                    strong 攻击类型：
+                                    |魔法攻击 
+                                    br
+                                    strong 职业定位：
+                                    |远程、群体伤害、瞬间移动
+                                strong 特色技能：
+                                p.skill
+                                #ynz.video
+                        .con.qxs
+                            .info
+                                strong 职业特点：
+                                ul
+                                    li 单挑切磋：★★★★
+                                    li 团队作战：★★★★ 
+                                    li 升级打怪：★★★
+                                    li 操作难度：★★★★★
+                                p
+                                    strong 攻击类型：
+                                    |物理攻击 
+                                    br
+                                    strong 职业定位：
+                                    |远程、超高攻速、隐身杀手
+                                strong 特色技能：
+                                p.skill
+                                #qxs.video
+                        .con.gdj
+                            .info
+                                strong 职业特点：
+                                ul
+                                    li 单挑切磋：★★★★
+                                    li 团队作战：★★★★★
+                                    li 升级打怪：★★★
+                                    li 操作难度：★★★★
+                                p
+                                    strong 攻击类型：
+                                    |物理攻击 
+                                    br
+                                    strong 职业定位：
+                                    |近程、不死金刚、减速控制
+                                strong 特色技能：
+                                p.skill
+                                #gdj.video
+                    #j_tab
+                        span.check_0
+                        span
+                        span
+                        span
+                    a#to_reg_3(href="javascript:undefined")
+                    #flash_but_2.video
+                    #j_video.video
+                .reg_panel
+                    .reg
+                        table.reg_form(border="0",cellpadding="0",cellspacing="0")
+                            tr
+                                td.reg_form_item_name 账&nbsp;&nbsp;&nbsp;&nbsp;号：
+                                td.reg_form_item_input
+                                    input#txtUserAccount(type="text",maxlength="16")
+                                td
+                                    #txtUserAccountTip
+                            tr
+                                td.reg_form_item_name 密&nbsp;&nbsp;&nbsp;&nbsp;码：
+                                td.reg_form_item_input
+                                    input#txtPasswords(type='password',maxlength="16")
+                                    input#txtPasswordsVal.disnone(type="text")
+                                td
+                                    #txtPasswordsTip
+                            tr
+                                td.reg_form_item_name 重复密码：
+                                td.reg_form_item_input
+                                    input#txtConfirm(type="password")
+                                    input#txtConfirmVal.disnone(type="text")
+                                td
+                                    #txtConfirmTip
+                            tr
+                                td.reg_form_item_name 真实姓名：
+                                td.reg_form_item_input
+                                    input#txtTrueName(type='text',maxlength="20")
+                                td
+                                    #txtTrueNameTip
+                            tr
+                                td.reg_form_item_name 身&nbsp;份&nbsp;证：
+                                td.reg_form_item_input
+                                    input#txtCardID(type="text",maxlength="18")
+                                td
+                                    #txtCardIDTip
+                            tr
+                                td.reg_form_item_name 验&nbsp;证&nbsp;码：
+                                td.reg_form_item_input.validate_num_input
+                                    input#txtValidate(type='text',maxlength='20')
+                                    img#validateimg.disnone(src='',alt='点击刷新验证码')
+                                td
+                                    #txtValidateVal
+                        .agreement
+                            input#chk_XieYi(type="checkbox",checked)
+                            | 同意
+                            a(href='http://user.syyx.com/policy/userpolicy.aspx',target="_blank",hidefocus="true")
+                                《使用协议及隐私协议》
+                        .reg_submit
+                            a#reg_button(href='#',hidefocus="true")
+                            span#regProcessTip
+                    #reg_step2
+                        .success 注册成功!
+                        p 恭喜您获得
+                            span#card_type 17173特权礼包
+                        |您的账号：
+                        input#reg_account(type="text")
+                        br 
+                        |激活码为：
+                        input#active_code(type="text")
+                        a#active_link(href='#',hidefocus="true")
+                    #reg_step3
+                        .success 注册成功!
+                        p 恭喜您注册成功，今天的礼包卡已发完。
+                        p
+                    #reg_step4
+                        .success 激活成功!
+                        .active_info 立即下载客户端，抢注新服赢取5重豪礼
+                    #reg_step5
+                        .fail 激活失败!
+                        p
+                            span#active_tip
+                            span#back 返回
+                    .download
+                        a(href="#{url_mini_client}",hidefocus="true",class="mini_download")
+                        a(href="#{url_full_client}",hidefocus="true",class="full_download")
+                    .download_tip 特权礼包可在游戏内礼包大使处直接领取
+                #img_scroll
+                    #prev.button
+                    .scroll_box
+                        #scroll_body(style="margin-left:0px")
+                            a(href="#{img_path}l1.jpg")
+                                img(src="#{img_path}s1.jpg",width="210",height="190",style="display:inline")
+                                br
+                                |分享胜利奖励
+                            a(href="#{img_path}l2.jpg")
+                                img(delay="#{img_path}s2.jpg",width="210",height="190")
+                                br
+                                |奋勇围殴BOSS
+                            a(href="#{img_path}l3.jpg")
+                                img(delay="#{img_path}s3.jpg",width="210",height="190")
+                                br
+                                |各色坐骑齐聚
+                            a(href="#{img_path}l4.jpg")
+                                img(delay="#{img_path}s4.jpg",width="210",height="190")
+                                br
+                                |军团荣耀PK
+                            a(href="#{img_path}l5.jpg")
+                                img(delay="#{img_path}s5.jpg",width="210",height="190")
+                                br
+                                |极品装备人人有
+                            a(href="#{img_path}l6.jpg")
+                                img(delay="#{img_path}s6.jpg",width="210",height="190")
+                                br
+                                |休闲游乐场
+                            a(href="#{img_path}l7.jpg")
+                                img(delay="#{img_path}s7.jpg",width="210",height="190")
+                                br
+                                |兄弟众志成城
+                    #next.button
+                include ../include/copyright

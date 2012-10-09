@@ -1,0 +1,45 @@
+@import '../reset'
+@import 'url'
+//opacity_support------------------------------------------------------------------------------------------
+support-for-ie ?= true
+
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+//------------------------------------------------------------------------------------------
+div
+    outline none
+a
+    text-decoration none
+    outline none
+    color #CABDD9
+    &:hover
+        color #fff
+.disnone
+    display none
+.hide
+    visibility hidden
+.ui-tabs-hide
+    display none
+.clear
+    clear both
+    overflow hidden
+    height 0
+body
+    font-size 12px
+    font-family '宋体'
+    background-color #1C180F
+    color #b4a2c8
+//------------------------------------------------------------------------------------------
+.container1
+    min-width 1100px
+    background url($bg1) center top no-repeat
+    .container2
+        min-width 1100px
+        background url($bg2) center 463px no-repeat
+        .content
+            width 1100px
+            height 1610px
+            margin 0 auto
+            position relative

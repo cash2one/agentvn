@@ -1,0 +1,85 @@
+!!!5
+html
+    include ../include/url
+    head
+        meta(charset="utf-8")
+        meta(name="keywords", content="诺亚传说,攻略,玩家中心,相册")
+        meta(name="description" ,content="《诺亚传说》玩家中心收集了玩家们的原创文章，包括游戏攻略、游戏心情故事、玩家风采相片等！" )
+        link(rel="shortcut icon", href="http://s1.syyx.com/nycs/images/favicon.ico",type="image/x-icon")
+        title 玩家中心-《诺亚传说》官方网站
+        include script_style
+    body
+        include ../include/top_iframe
+        .container
+            .content
+                include ../include/logo_link
+                include ../include/nav_new
+                include ../include/fn_group_2
+                include ../include/recommended_server
+                a.join_btn(href='#')
+                #interview
+                    a.more(href='http://nycs.syyx.com/UserCenter/article_list.html#1',target='_blank') 查看全部>>
+                    a.interview_img(href='#',target='_blank')
+                        img(src='')
+                    a.title(target='_blank')  标题
+                    a.top_artical(target='_blank')
+                    a.view_all_top_artical(href='#',target='_blank') 查看全文>>
+                    ul.interview_list
+                        //- li
+                        //-     a(href='#') 内容内容内容
+                #emotion
+                    a.first(href='vote1')
+                    a.second(href='vote2')
+                    a.third(href='vote3')
+                    .result1
+                        span
+                    .result2
+                        span
+                    .result3
+                        span
+                #emotion_artical
+                    a.more(href='http://nycs.syyx.com/UserCenter/article_list.html#2',target='_blank')  查看全部>>
+                    .user_pics
+                        a(href='#',target='_blank')
+                            img(src='')
+                            .text_bg
+                            .text
+                        a(href='#',target='_blank',class='second')
+                            img(src='')
+                            .text_bg
+                            .text
+                    ul.user_article
+                        //- li
+                        //-     a(href='#') [攻略] 12月20日《诺亚传说》例行公告
+                        //-     span 12-12
+                #war_record
+                    a.more(href='http://nycs.syyx.com/UserCenter/article_list.html#4',target='_blank') 查看全部>>
+                    //- .record_info
+                    //-     a.record_img(href='#')
+                    //-         img(src='')
+                    //-     .record_artical
+                    //-         h3 标题
+                    //-         p 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+                #user_interview
+                    a.more(href='http://nycs.syyx.com/UserCenter/article_list.html#5',target='_blank') 查看全部>>
+                    .user_pics
+                        //- a(href='#',target='_blank')
+                        //-     img(src='')
+                        //-     .text_bg
+                        //-     .text
+                        //- a(href='#',target='_blank',class='second')
+                        //-     img(src='')
+                        //-     .text_bg
+                        //-     .text
+                        //- a(href='#',target='_blank',class='third')
+                        //-     img(src='')
+                        //-     .text_bg
+                        //-     .text
+                        //- a(href='#',target='_blank',class='fouth')
+                        //-     img(src='')
+                        //-     .text_bg
+                        //-     .text
+                include ../include/copyright
+        include ../include/reg
+        #div_logout
+        #div_dialog

@@ -1,0 +1,161 @@
+$path               = 'http://r.syyx.com/events/p005/'
+
+$bg                 = $path'reg_bg.jpg'
+$btn                = $path'reg_btn.jpg'
+$right_wrong_icon   = $path'right_wrong.png'
+$loading            = $path'ajax-loader.gif'
+
+body
+    font-size 12px
+    margin 0
+a
+    outline none
+.reg_iframe
+    padding-top 50px
+    background url($bg) no-repeat
+    position relative
+    height 251px
+    width 296px
+    .reg_outer
+        position relative
+        width 250px
+        height 276px
+    .reg
+        position absolute
+        top 10px
+        left 7px
+        width 240px
+        height 255px
+        color #98d9ff
+        display block
+        .reg_form
+            td
+                padding 0 2px
+                height 25px
+                vertical-align top
+            .reg_form_item_name
+                width 60px
+                text-align right
+                vertical-align middle
+            .reg_form_item_input
+                input
+                    background-color #86BBE5
+                    border solid 1px #009CFF
+                    height 18px
+                    line-height 18px
+                    color #012EAD
+                    width 135px
+                input.focus_in_inut
+                    background-color #fff
+                    border solid 1px #C8EDFF
+                    color #000
+                #validateimg
+                    vertical-align top
+                    cursor pointer
+                    height 27px
+                    width 88px
+                    margin-left 3px
+            .validate_num_input
+                height 30px
+                input
+                    width 40px
+        .agreement
+            text-align center
+            padding-top 3px
+            color #0BA5C7
+            a
+                text-align center
+                text-decoration underline
+                color #0BA5C7
+                outline none
+            input
+                margin-right 3px
+        .reg_submit
+            padding 10px 0 0 65px
+            a
+                float left
+                width 127px
+                height 30px
+                background url($btn) no-repeat -15px -5px
+                outline none
+                &:hover
+                    background url($btn) -15px -36px no-repeat
+    #reg_account,#active_code,#reg_account3
+        color #e2cc7c
+        font-size 14px
+    #reg_step2
+        height 275px
+        position absolute
+        top 0
+        overflow hidden
+        display none
+        width 240px
+        left 0
+        #reg_account_outer
+            color #98d9ff
+            font-size 14px
+            position absolute
+            top 10px
+            width 250px
+            left 30px
+            line-height 28px
+        #active_link
+            display block
+            position absolute
+            width 127px
+            height 30px
+            top 160px
+            left 75px
+            background url($btn) -143px -5px no-repeat
+            &:hover
+                background:url($btn) -143px -36px no-repeat
+        .game_start
+            display block
+            position absolute
+            width 177px
+            height 64px
+            top 200px
+            left 40px
+    #reg_step3
+        position absolute
+        height 275px
+        top 0
+        overflow hidden
+        display none
+        width 240px
+        left 0
+        background url($reg_success_panel) left bottom no-repeat
+        font-size 14px
+        .reg_success_no_card
+            position absolute
+            left 45px
+            top 20px
+            line-height 27px
+            color #98d9ff
+            a
+                display block
+                position absolute
+                width 170px
+                height 64px
+                top 178px
+                left 0px
+    .check_result_right
+        background url($right_wrong_icon) 0 4px no-repeat
+        width 16px
+        height 23px
+    .check_result_wrong
+        background url($right_wrong_icon) 0 -32px no-repeat
+        width 16px
+        height 23px
+    .check_result_loading
+        background url($loading) 0 4px no-repeat
+        width 16px
+        height 23px
+    #regProcessTip
+        float left
+        margin 5px 0 0 5px
+.disnone
+    display none
+
+#reg_button,#active_link
+    text-indent -999px;

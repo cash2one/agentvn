@@ -1,0 +1,13 @@
+html
+	head
+		title	广告周期分析
+		include script
+	body.easyui-layout
+		div(region="north", border="true", style="height: 70px;", class="header")  
+			include ../ad_menu/menu_main
+
+		div(region="west",icon="icon-reload", border="true",split="true",title="效果分析",style="width: 185px; padding: 10px;")	
+			include ../ad_menu/menu_xiaoguo
+			
+		div(region="center")
+			include contents

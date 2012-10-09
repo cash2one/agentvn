@@ -1,0 +1,69 @@
+﻿*{padding:0;margin:0;}
+/*html{overflow-y:scroll;}*/
+
+body{font-size:12px;font-familY:"Microsoft Yahei",Arial,Helvetica,sans-serif;}
+
+/*内容*/
+div#content{width:96%; margin:0 auto;}
+
+/*位置*/
+.postion{ width:92%; padding:7px 1% 7px 3% ; margin:0 auto 3px; background:url(/images/index_icon_01.jpg) 0 7px no-repeat; font-size:14px;}
+.cont_f_lb{width:96%; margin:0 auto; border-top:#deecf9 1px solid; border-bottom:#fff 1px solid; height:1px; background:#95beeb;}
+.f_b_blue{ color:#093665; font-weight:bold;}
+.p_center{text-align:center; margin: 10px}
+
+/*表格*/
+table.wiki-content-table{border-collapse: collapse;border-spacing: 0; font-size: 13px;}
+table.wiki-content-table td{border: 1px solid #DBDBDB;padding: 5px 10px;}
+table.wiki-content-table th{background:url(/images/datagrid_title_bg.gif) ;border: 1px solid #ccc;padding: 5px 10px;background-color: #ffffff; text-align:left;}
+
+table.wiki-list-table{border-collapse: collapse; border-spacing: 0; margin: 0.1em auto; font-size: 13px;}
+table.wiki-list-table td{background:#fff; padding:3px 10px; border: 1px solid #ccc;}
+table.wiki-list-table th{/*background:url(/images/datagrid_title_bg.gif);*/ border: 1px solid #ccc; padding: 0.3em 0.7em;background-color: #efefef; text-align:center;}
+
+table a{text-decoration:none;font-weight:normal;color:#0F8BDA;}
+table a:visited{text-decoration:none;font-weight:normal;color:#0F8BDA;}
+table a:hover{text-decoration:underline;font-weight:normal;color:#0F8BDA;}
+
+/*分页*/
+.pager{width:100%; background:#efefef;border:1px solid #ccc;margin:0 auto;}
+
+/*查询*/
+div#search{margin:0 auto; }
+div#search table{border-collapse: collapse;border-spacing: 0; font-size: 14px;}
+div#search table td{padding:1px 3px;}
+
+/*tip*/
+.tip_error {background:url(/images/icon_error.gif) 40px center no-repeat;padding:20px 0 15px 115px; text-align:left; margin:20px 0 0 0; font-size:14px; color:Red;}
+.tip_info { background:url(/images/icon_info.gif) 40px center no-repeat;padding:20px 0 15px 115px; text-align:left; margin:20px 0 0 0;}
+
+/*loading*/
+div#loading {top: 50%; right: 50%; position: absolute; padding: 0px;margin: 0px; z-index: 999; display: none; }
+
+/*控件*/
+.input_btn {width:80px;height:25px;}
+table.calendar {width:360px; height: 306px; border:0px;}
+table.calendar td {text-align:center;}
+table.MonthView {width:100%; height: 256px;border:1px solid #ccc;}
+table.MonthView td {text-align:center;}
+
+div.calendar{margin: 5px; border:0px;}
+
+/*头部*/
+div#logo{float:left;width:240px;height:30px;margin-top:0px; /*background:url(/images/toolbar_bg.jpg) 0 0 no-repeat;*/}
+div#logo a{display:block;width:240px;height:30px;}
+
+.header{ position: relative; margin: 0px; padding: 0px; width: 100%;background:url(/images/page_bg.png) repeat-x scroll 0 0 #F0F2F5;/*background:#ca0000;*/}
+.header a:link{text-decoration:none;color: #0F8BDA; font-size: 15px;}
+.header a:visited{text-decoration:none;color: #0F8BDA;font-size: 15px;}
+.header a:hover{text-decoration:none;color: #0F8BDA;font-size: 15px;}
+
+.loginDisplay{font-size: 1.1em; display: block; text-align: right;  padding: 10px; color: blue;}
+
+/*菜单导航*/
+ul#navmenu li{list-style:none inside none;width:164px;height:30px;*margin-left:-12px;_margin-left:-12px;}
+ul#navmenu li.active{background:url(/images/arrow_right.png) no-repeat scroll 0 0 transparent;}
+ul#navmenu a{display:block;width:152px;height:30px;line-height:30px;color:#5A5A5A;padding-left:12px;text-decoration:none;}
+ul#navmenu a:hover{background:url(/images/arrow_right.png) no-repeat scroll 0 0 transparent;color:#0F8BDA;text-decoration:none;}
+ul#navmenu a{position:relative;}
+ul#navmenu a img{position:absolute;top:8.5px;left:65px;}

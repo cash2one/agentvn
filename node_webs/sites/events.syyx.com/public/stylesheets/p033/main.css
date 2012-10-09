@@ -1,0 +1,88 @@
+body{font-size:12px;margin:0;color:#26424d;background:#07102f}
+img{border:none}
+a{outline:none;color:#4d4a83;text-decoration:none;}
+a:hover{color:#fff}
+.disnone{display:none}
+.wrapper{width:100%;height:100%;background:url("http://r.syyx.com/events/p033/main.jpg") no-repeat center 480px}
+.container{position:relative;width:100%;height:1030px;min-width:980px;background:url("http://r.syyx.com/events/p033/bg.jpg") no-repeat center top}
+.main{height:100%;width:980px;margin:0 auto;position:relative}
+.nav{color:#4d4a83;padding-left:20px;line-height:30px}
+.logo{width:151px;height:76px;position:absolute;left:5px;top:40px}
+.download_17173{position:absolute;width:125px;height:30px;top:471px;left:86px;background:url("http://r.syyx.com/events/p033/btn.jpg") no-repeat 999cm;}
+.download_17173:hover{background-position:-13px -157px}
+.download_nycs{position:absolute;width:125px;height:30px;top:471px;left:221px;background:url("http://r.syyx.com/events/p033/btn.jpg") no-repeat 999cm;}
+.download_nycs:hover{background-position:-140px -157px}
+#flash{height:238px;left:4px;position:absolute;top:540px;width:425px}
+#job{width:540px;position:absolute;right:1px;top:30px;height:755px;color:#8c95a4;}
+#job .con{height:755px;width:100%;display:none;position:absolute;top:0;left:0}
+#job div.qxs{display:block;}
+#job div.qxs .skill{background-position:-8px -6px}
+#job div.ynz .skill{background-position:-8px -45px}
+#job div.jws .skill{background-position:-8px -84px}
+#job div.gdj .skill{background-position:-8px -123px}
+#job #j_tab{height:38px;width:100%;position:absolute;top:508px;}
+#job #j_tab span{display:block;height:38px;width:112px;background:url("http://r.syyx.com/events/p033/tab.jpg") no-repeat 999cm;float:left;cursor:pointer}
+#job #j_tab .check_0{background-position:0 0}
+#job #j_tab .check_1{background-position:-112px 0}
+#job #j_tab .check_2{background-position:-224px 0}
+#job #j_tab .check_3{background-position:-336px 0}
+#job .info{position:absolute;top:560px;left:25px;}
+#job .info strong{color:#9082d1}
+#job .info ul{padding:5px 0 10px;width:320px;height:40px;margin:0;}
+#job .info ul li{list-style:none;width:160px;float:left;height:20px;line-height:20px}
+#job .info p{line-height:20px;margin:0 0 10px}
+#job .info .skill{height:33px;margin:5px 0 0;width:271px;background:url("http://r.syyx.com/events/p033/skill.png") 999cm no-repeat;}
+#job .info .skill em{display:inline-block;width:33px;height:33px;cursor:pointer;float:left;margin-right:5px}
+#job #j_swf{width:188px;height:105px;border:1px solid #0165ff;position:absolute;right:20px;top:565px;background:#000;}
+#job #j_swf span{visibility:hidden;position:absolute;width:188px;height:105px;top:0;left:0}
+#job #reg_1{position:absolute;width:185px;height:37px;top:460px;right:0;background:url("http://r.syyx.com/events/p033/btn.jpg") no-repeat 999cm;}
+#job #reg_1:hover{background-position:-13px -13px}
+#job #reg_2{position:absolute;width:109px;height:30px;background:url("http://r.syyx.com/events/p033/btn.jpg") no-repeat -13px -61px;top:695px;right:45px;}
+#job #reg_2:hover{background-position:-13px -93px}
+.copy_right{width:700px;position:absolute;top:953px;line-height:23px;padding-left:240px;}
+.copy_right .feet_logo{position:absolute;width:130px;height:45px;left:95px;top:0}
+.reg_box{right:0;top:80px;position:absolute;height:462px;width:72px;left:auto;z-index:10;}
+.reg_box #reg1{width:72px;height:293px;background:url("http://r.syyx.com/events/p033/reg.jpg") no-repeat;text-indent:-9999cm;position:absolute;}
+.reg_box #reg1:hover{background-position:-74px 0}
+.reg_box #reg2{display:none;position:absolute;left:-212px;background:url("http://r.syyx.com/events/p033/reg_head.jpg") #061c3b no-repeat;width:282px;height:360px;padding-top:100px;border:1px solid #0876b3;color:#bdf1ff;overflow:hidden;}
+.reg_box #reg2 a{color:#00e5e2;}
+.reg_box #reg2 a:hover{color:#fff}
+.reg_box #reg2 .reg{padding:0 20px 0 25px}
+.reg_box #reg2 table{height:162px;}
+.reg_box #reg2 table td{height:27px;width:20px}
+.reg_box #reg2 table input{background:#85bbe5;border:1px solid #009cff;height:18px;color:#002c7a;line-height:18px;width:145px}
+.reg_box #reg2 table .focus_in_inut{background:#cce9ff}
+.reg_box #reg2 .agreement{height:21px}
+.reg_box #reg2 .reg_form_item_name{width:60px}
+.reg_box #reg2 .reg_form_item_input{width:150px}
+.reg_box #reg2 .validate_num_input{height:30px;vertical-align:top;padding-top:3px}
+.reg_box #reg2 #txtValidate{width:50px}
+.reg_box #reg2 #validateimg{width:90px;margin-left:5px;height:27px;vertical-align:top;cursor:pointer}
+.reg_box #reg2 #reg_step2,.reg_box #reg2 #reg_step3,.reg_box #reg2 #reg_step4,.reg_box #reg2 #reg_step5{width:250px;margin:0 auto;line-height:25px;display:none;height:150px;text-align:center;}
+.reg_box #reg2 #reg_step2 input,.reg_box #reg2 #reg_step3 input,.reg_box #reg2 #reg_step4 input,.reg_box #reg2 #reg_step5 input{background:#85bbe5;border:1px solid #009cff;height:18px;color:#002c7a;line-height:18px;width:145px}
+.reg_box #reg2 #reg_step2{height:241px;}
+.reg_box #reg2 #reg_step2 .active{height:200px;line-height:30px}
+.reg_box #reg2 #reg_step3{height:241px}
+.reg_box #reg2 #reg_step5{height:360px;width:100%;}
+.reg_box #reg2 #reg_step5 #active_tip{padding:20px 25px;text-align:left}
+.reg_box #reg2 #active_link{display:block;margin:20px auto;width:120px;height:30px;background:url("http://r.syyx.com/events/p033/btn.jpg") no-repeat -246px -61px;}
+.reg_box #reg2 #active_link:hover{background-position:-246px -93px}
+.reg_box #reg2 .download{height:50px;width:266px;margin:0 auto;background:url("http://r.syyx.com/events/p033/download.jpg") no-repeat;position:relative;}
+.reg_box #reg2 .download a{position:relative;top:60px}
+.reg_box #reg2 .download .download_17173_2{height:30px;width:125px;position:absolute;left:0;background:url("http://r.syyx.com/events/p033/btn.jpg") no-repeat -13px -125px;}
+.reg_box #reg2 .download .download_17173_2:hover{background-position:-13px -157px}
+.reg_box #reg2 .download .download_mini_2{height:30px;width:125px;position:absolute;right:0;background:url("http://r.syyx.com/events/p033/btn.jpg") no-repeat -140px -125px;}
+.reg_box #reg2 .download .download_mini_2:hover{background-position:-140px -157px}
+.reg_box #reg2 .reg_submit{height:55px;position:relative}
+.reg_box #reg2 #reg_button{width:120px;height:30px;position:absolute;left:54px;top:7px;background:url("http://r.syyx.com/events/p033/btn.jpg") no-repeat -124px -61px;}
+.reg_box #reg2 #reg_button:hover{background-position:-124px -93px}
+.reg_box #reg2 .success{padding:10px 0 10px 40px;line-height:50px;background:url("http://r.syyx.com/events/p033/success.png") no-repeat left center;color:#ffbf00;display:inline}
+.reg_box #reg2 .fail{height:50px;padding:10px 0 10px 40px;line-height:50px;background:url("http://r.syyx.com/events/p033/fail.png") no-repeat left center;color:#ffbf00;display:inline}
+.reg_box #reg2 .back_bg{background:url("http://r.syyx.com/events/p033/download.jpg") no-repeat;height:20px;width:266px;position:absolute;top:360px;left:10px}
+.reg_box #reg2 #back{text-decoration:underline;cursor:pointer;position:absolute;top:40px;width:120px;height:30px;left:68px;background:url("http://r.syyx.com/events/p033/btn.jpg") -267px -125px;}
+.reg_box #reg2 #back:hover{background-position:-267px -157px}
+.reg_box #reg2 .download_tip{text-align:center;padding-top:90px}
+.reg_box #close{width:22px;height:22px;cursor:pointer;position:absolute;top:0;right:0}
+.check_result_wrong{background:url("http://r.syyx.com/events/p033/right_wrong.png") no-repeat 0 -32px;height:100%;width:16px}
+.check_result_right{background:url("http://r.syyx.com/events/p033/right_wrong.png") no-repeat 0 4px;height:25px;width:16px}
+.check_result_loading{background:url("http://r.syyx.com/events/p033/ajax-loader.gif") no-repeat 0 4px;height:25px;width:16px}

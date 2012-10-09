@@ -1,0 +1,129 @@
+!!!5
+html
+    head
+        title 诺亚时间版官网管理后台
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js")
+        //编辑器插件------------------------
+        link(rel='stylesheet', href='http://s.syyx.cn/plugins/kindeditor/themes/default/default.css')
+        link(rel='stylesheet', href='http://s.syyx.cn/plugins/kindeditor/plugins/code/prettify.css')
+        script(charset="utf-8",src="http://s.syyx.cn/plugins/kindeditor/kindeditor-min.js")
+        script(charset="utf-8",src="http://s.syyx.cn/plugins/kindeditor/lang/zh_CN.js")
+        script(charset="utf-8",src="http://s.syyx.cn/plugins/kindeditor/plugins/code/prettify.js")
+        //--------------------------------
+        link(href='/stylesheets/article/main.css', rel='stylesheet')
+        script(src='/javascripts/article/out.js')
+    body
+        .container
+            header#header
+                #logo 诺亚时间版官网管理后台
+            #main
+                nav#sidebar
+                    .content
+                        ul
+                            li
+                                a.workspace_name.selected(href='#') CMS
+                                ul.sub_elements
+                                    li
+                                        a.selected(href='/article') 新闻
+                                    li
+                                        a(href='/') 发布列表
+                            li
+                                a.workspace_name(href='#') 下载管理
+                                ul.sub_elements
+                                    li
+                                        a(href='/client') 客户端下载
+                            li
+                                a.workspace_name(href='#') 游戏激活
+                                ul.sub_elements
+                                    li
+                                        a(href='/activate') 游戏激活
+                            li
+                                a.workspace_name(href='#') 数据分析
+                                ul.sub_elements
+                                    li
+                                        a(href='/nysjdm_link.html', target='_blank') 数据分析   
+                    .setting
+                        button.set
+                        .add_article_category
+                            form#add_article_category_form(action='/article_category/upsert')
+                                header 添加文章类别
+                                .article_category_content
+                                    input(type='text', name='name', maxlength="20", placeholder='类别名称', required='true')
+                                footer
+                                    input.blue(type='submit', value='保存')
+                                    button.grey 取消
+                                    span.loading
+                                    span.show_result 添加成功
+                #content
+                    #edit_article.scrollable
+                        .inner
+                            header 添加文章
+                            .edit_article_area
+                                form#edit_article_form(action='/article/upsert')
+                                    input(type='hidden', name='article_id')
+                                    input#article_title_input(type='text', name='title', placeholder='文章标题',required='true')
+                                    .article_text_wrapper
+                                        textarea#article_text(name='text')
+                            footer
+                                input.blue(type='submit', value='保存', form='edit_article_form')
+                                button.grey 取消
+                                span.loading
+                                span.show_result 保存成功
+                    .content_layout
+                        .detail_wrapper
+                            #detail
+                            #detail_overlay
+                                #save_article_item_panel
+                                    .panel
+                                        .panel_action
+                                            span.progress 正在保存
+                                            input.save.green(type='submit', form='article_item_form', value='保存')
+                                        .panel_content.scrollable
+                                            .inner
+                                                form#article_item_form(action='/article/upsert')
+                                                    input(type='hidden', name='article_id', value='')
+                                                    input(type='hidden',name='category_id', value='')
+                                                    .article_option_outer
+                                                        .popstripe
+                                                        a.title(target='_blank')
+                                                        a.category(href='#')
+                                                        ul.category_data_list
+                                                            li
+                                                                button(data-id='unpublish') 草稿
+                                                        .display_time
+                                                            span.date_icon
+                                                            input(type='date', name='display_time', placeholder='自定义时间:年/月/日',pattern='^[0-9]{4}/(((0[13578]|(10|12))/(0[1-9]|[1-2][0-9]|3[0-1]))|(02-(0[1-9]|[1-2][0-9]))|((0[469]|11)/(0[1-9]|[1-2][0-9]|30)))$')
+                                                        a.edit_article(href='#') 
+                                                            span.icon_edit
+                                                            | 编辑内容
+                                        .panel_action_bottom
+                                            a.close_panel(href='#')
+                                            a.trash_item(href='/article/')
+                        .list
+                            nav.action_bar
+                                .controls
+                                    #article_list_action
+                                        .article_filter
+                                            a.filter_btn(href='#') 已发布
+                                            ul.filter_menu
+                                                li
+                                                    button.selected(data-id='all') 已发布
+                                                li
+                                                    button(data-id='unpublish') 草稿
+                                        .related_btn
+                                            button#save_article_item_button.blue 添加文章
+                                        .search_article
+                                            form#search_article_form(action='/articles_by_title')
+                                                input#search_article_input(type='search', name='title', placeholder='新闻标题', required='true',maxlength='40')
+                            .list_body.scrollable
+                                section
+                                    .section_bar
+                                        .page_turn_btn_gruop
+                                            .page_turn_info
+                                                span.current
+                                                | of
+                                                span.total
+                                            button.prev(title='上页')
+                                            button.next(title='下页')
+                                #article_list
+                                    ul.item_wrapper

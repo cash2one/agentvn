@@ -1,0 +1,53 @@
+.news_detail
+    h1
+    .time
+    .news_text
+    .forward 转播到微博：
+        include ../include/share
+    //-.emotion
+        .emotion_content 
+            | 看完这篇文章有何感觉？已经有
+            span#feedback_stat
+            |  人表态
+            .vote_result
+                .result_chat
+                    span#jiong
+                        .text 
+                .result_chat
+                    span#qidai
+                        .text 
+                .result_chat
+                    span#geili
+                        .text 
+                .result_chat
+                    span#guanzhu
+                        .text 
+                .result_chat
+                    span#nanguo
+                        .text 
+                .result_chat
+                    span#luguo
+                        .text 
+            .vote_btn
+                a(href='#jiong',class='jiong')
+                    span 囧
+                a(href='#qidai',class='qidai')
+                    span 期待
+                a(href='#geili',class='geili')
+                    span 给力
+                a(href='#guanzhu',class='guanzhu')
+                    span 关注
+                a(href='#nanguo',class='nanguo')
+                    span 难过
+                a(href='#luguo',class='luguo')
+                    span 路过
+    .related_news
+        a(href='#',target='_blank')
+            img(src='#')
+        ul
+            //- li
+            //-     a(href='#') 
+            //-     span
+        .clear
+    include ../include/copyright
+.clear

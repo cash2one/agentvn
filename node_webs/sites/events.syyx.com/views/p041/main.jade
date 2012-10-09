@@ -1,0 +1,296 @@
+extends ../include/_frame
+
+block p_variable
+    -var p           = "p041"
+    -var keywords    = "诺亚传说,网游,2012题材,网络游戏,人气,新世界,公平,免费,热门,2d,新游,排行榜"
+    -var description = "全新2012题材人气巨作《诺亚传说》，科技与魔法完美融合的未来新世界，揭秘2012末日预言！唯美的未来世界，个性的异能职业，革新的趣味玩法，激爽的跨服PK，首创“微消费”公平模式，终极内测火爆进行中，7组万人新服等你开启！ "
+    -var p_css       = ["http://s.syyx.com/nycs/plugin/default_page_plugin/jquery-ui-1.8.13.custom.css","http://s.syyx.com/nycs/plugin/light-box/jquery.lightbox-0.5.css"]
+
+block body
+    .container
+        .wrap
+            .main
+                .nav
+                    include ../include/nav
+                #num
+                a.logo(href="#{url_nycs}",target="_blank") 诺亚传说
+                #prize
+                #flash
+                #flash_but
+                #flash_btn
+                a.mini(href="#{url_mini_client}",target="_blank") 15分钟微端下载
+                a#reg3(href="javascript:undefined")
+                a.nycs(href="#{url_nycs}",target="_blank")
+                #img_focus
+                    #img_focus_tab
+                        a.check_0
+                        a
+                        a
+                        a
+                    #img_focus_img
+                        img(src="#{img_path}feature1.jpg",width="678",height="354",style="display:inline")
+                        img(delay="#{img_path}feature2.jpg",width="678",height="354")
+                        img(delay="#{img_path}feature3.jpg",width="678",height="354")
+                        img(delay="#{img_path}feature4.jpg",width="678",height="354")
+                #job
+                    #j_con
+                        .con.jws
+                            .info
+                                strong 职业特点：
+                                ul
+                                    li 单挑切磋：★★★★★
+                                    li 团队作战：★★★
+                                    li 升级打怪：★★★★
+                                    li 操作难度：★★★
+                                p
+                                    strong 攻击类型：
+                                    |物理攻击 
+                                    br
+                                    strong 职业定位：
+                                    |近程、瞬间爆发、快速突进
+                                strong 特色技能：
+                                p.skill
+                                #jws.video
+                        .con.ynz
+                            .info
+                                strong 职业特点：
+                                ul
+                                    li 单挑切磋：★★★
+                                    li 团队作战：★★★★
+                                    li 升级打怪：★★★★★
+                                    li 操作难度：★★★★★
+                                p
+                                    strong 攻击类型：
+                                    |魔法攻击 
+                                    br
+                                    strong 职业定位：
+                                    |远程、群体伤害、瞬间移动
+                                strong 特色技能：
+                                p.skill
+                                #ynz.video
+                        .con.qxs
+                            .info
+                                strong 职业特点：
+                                ul
+                                    li 单挑切磋：★★★★
+                                    li 团队作战：★★★★ 
+                                    li 升级打怪：★★★
+                                    li 操作难度：★★★★★
+                                p
+                                    strong 攻击类型：
+                                    |物理攻击 
+                                    br
+                                    strong 职业定位：
+                                    |远程、超高攻速、隐身杀手
+                                strong 特色技能：
+                                p.skill
+                                #qxs.video
+                        .con.gdj
+                            .info
+                                strong 职业特点：
+                                ul
+                                    li 单挑切磋：★★★★
+                                    li 团队作战：★★★★★
+                                    li 升级打怪：★★★
+                                    li 操作难度：★★★★
+                                p
+                                    strong 攻击类型：
+                                    |物理攻击 
+                                    br
+                                    strong 职业定位：
+                                    |近程、不死金刚、减速控制
+                                strong 特色技能：
+                                p.skill
+                                #gdj.video
+                    #j_tab
+                        span.check_0
+                        span
+                        span
+                        span
+                    a#to_reg_3(href="#reg")
+                    #flash_but_2.video
+                    #j_video.video
+                .comment
+                    ul#com_con
+                        li
+                            img(src="#{img_path}user/1.jpg",width="45",height="45")
+                            span 江苏省无锡市网友
+                            p 第一感觉，蔡依林新形象眼睛好大
+                        li
+                            img(src="#{img_path}user/2.jpg",width="45",height="45")
+                            span 湖南省岳阳市网友
+                            p 好喜欢依林，游戏也去尝试下吧
+                        li
+                            img(src="#{img_path}user/3.jpg",width="45",height="45")
+                            span Aisa(Pacific)网友
+                            p Dr.Jolin 游戏主题曲 没太听清楚唱啥，不过旋律不错
+                        li
+                            img(src="#{img_path}user/4.jpg",width="45",height="45")
+                            span 海南省网友
+                            p 蔡依林呐  好牛的游戏能请到蔡依林
+                        li
+                            img(src="#{img_path}user/5.jpg",width="45",height="45")
+                            span 广东省深圳市网友
+                            p 游戏好玩不？奔着Jolin，我去下载玩玩看
+                        li
+                            img(src="#{img_path}user/6.jpg",width="45",height="45")
+                            span 北京市网友
+                            p 诺亚居然连我最喜欢的公主都请动了，游戏应该不错
+                        li
+                            img(delay="#{img_path}user/7.jpg",width="45",height="45")
+                            span 广东省深圳市网友
+                            p 诺亚传说都把蔡女神都请过来了，看来是有大动作了
+                        li
+                            img(delay="#{img_path}user/8.jpg",width="45",height="45")
+                            span 贵州省贵阳市网友
+                            p 我玩半年喽，看诺亚这么大动作，连蔡依林都请了，so给力呀！
+                        li
+                            img(delay="#{img_path}user/9.jpg",width="45",height="45")
+                            span 重庆市市网友
+                            p 看来是想在公测的时候，推出最好的游戏
+                        li
+                            img(delay="#{img_path}user/10.jpg",width="45",height="45")
+                            span 四川省德阳市网友
+                            p 比较期待，这次公测能有一些大的改变~
+                        li
+                            img(delay="#{img_path}user/11.jpg",width="45",height="45")
+                            span 四川省德阳市网友
+                            p 期待诺亚10月12号公测，连代言人都请了，公测肯定很给力！！
+                        li
+                            img(delay="#{img_path}user/12.jpg",width="45",height="45")
+                            span 四川省雅安市网友
+                            p 画面很漂亮，有些心动，朋友在哪个服
+                        li
+                            img(delay="#{img_path}user/13.jpg",width="45",height="45")
+                            span 广东省深圳市网友
+                            p 奖励还真不少的，不过还是要游戏好玩才可以的
+                        li
+                            img(delay="#{img_path}user/14.jpg",width="45",height="45")
+                            span 四川省成都市网友
+                            p 我想要jolin的亲笔签名专辑~~赶脚是不是比别的礼包要好？
+                        li
+                            img(delay="#{img_path}user/15.jpg",width="45",height="45")
+                            span 国内未能识别的地区网友
+                            p Jolin女神NB，游戏不错去看看。
+                        li
+                            img(delay="#{img_path}user/16.jpg",width="45",height="45")
+                            span 广东省深圳市网友
+                            p 这游戏不错的，很平民，下班后玩玩，又不黑钱 
+                #img_scroll
+                    #prev.button
+                    .scroll_box
+                        #scroll_body(style="margin-left:0px")
+                            a(href="#{img_path}l1.jpg")
+                                img(src="#{img_path}s1.jpg",width="210",height="190",style="display:inline")
+                                br
+                                |分享胜利奖励
+                            a(href="#{img_path}l2.jpg")
+                                img(delay="#{img_path}s2.jpg",width="210",height="190")
+                                br
+                                |奋勇围殴BOSS
+                            a(href="#{img_path}l3.jpg")
+                                img(delay="#{img_path}s3.jpg",width="210",height="190")
+                                br
+                                |各色坐骑齐聚
+                            a(href="#{img_path}l4.jpg")
+                                img(delay="#{img_path}s4.jpg",width="210",height="190")
+                                br
+                                |军团荣耀PK
+                            a(href="#{img_path}l5.jpg")
+                                img(delay="#{img_path}s5.jpg",width="210",height="190")
+                                br
+                                |极品装备人人有
+                            a(href="#{img_path}l6.jpg")
+                                img(delay="#{img_path}s6.jpg",width="210",height="190")
+                                br
+                                |休闲游乐场
+                            a(href="#{img_path}l7.jpg")
+                                img(delay="#{img_path}s7.jpg",width="210",height="190")
+                                br
+                                |兄弟众志成城
+                    #next.button
+                include ../include/copyright
+            #reg_scroll
+                a#reg_but(href="javascript:undefined")
+                #reg_box
+                    .reg_panel
+                        .reg
+                            table.reg_form(border="0",cellpadding="0",cellspacing="0")
+                                tr
+                                    td.reg_form_item_name 账&nbsp;&nbsp;&nbsp;&nbsp;号：
+                                    td.reg_form_item_input
+                                        input#txtUserAccount(type="text",maxlength="16")
+                                    td
+                                        #txtUserAccountTip
+                                tr
+                                    td.reg_form_item_name 密&nbsp;&nbsp;&nbsp;&nbsp;码：
+                                    td.reg_form_item_input
+                                        input#txtPasswords(type='password',maxlength="16")
+                                        input#txtPasswordsVal.disnone(type="text")
+                                    td
+                                        #txtPasswordsTip
+                                tr
+                                    td.reg_form_item_name 重复密码：
+                                    td.reg_form_item_input
+                                        input#txtConfirm(type="password")
+                                        input#txtConfirmVal.disnone(type="text")
+                                    td
+                                        #txtConfirmTip
+                                tr
+                                    td.reg_form_item_name 真实姓名：
+                                    td.reg_form_item_input
+                                        input#txtTrueName(type='text',maxlength="20")
+                                    td
+                                        #txtTrueNameTip
+                                tr
+                                    td.reg_form_item_name 身&nbsp;份&nbsp;证：
+                                    td.reg_form_item_input
+                                        input#txtCardID(type="text",maxlength="18")
+                                    td
+                                        #txtCardIDTip
+                                tr
+                                    td.reg_form_item_name 验&nbsp;证&nbsp;码：
+                                    td.reg_form_item_input.validate_num_input
+                                        input#txtValidate(type='text',maxlength='20')
+                                        img#validateimg.disnone(src='',alt='点击刷新验证码')
+                                    td
+                                        #txtValidateVal
+                            .agreement
+                                input#chk_XieYi(type="checkbox",checked)
+                                | 同意
+                                a(href='http://user.syyx.com/policy/userpolicy.aspx',target="_blank",hidefocus="true")
+                                    《使用协议及隐私协议》
+                            .reg_submit
+                                a#reg_button(href='#',hidefocus="true")
+                                span#regProcessTip
+                        #reg_step2
+                            .success 注册成功!
+                            p 恭喜您获得
+                                span#card_type 公测战放礼包
+                            |您的账号：
+                            input#reg_account(type="text")
+                            br 
+                            |激活码为：
+                            input#active_code(type="text")
+                            a#active_link(href='#',hidefocus="true")
+                        #reg_step3
+                            .success 注册成功!
+                            p 恭喜您注册成功，今天的礼包卡已发完。
+                            p
+                        #reg_step4
+                            .success 激活成功!
+                            .active_info 立即下载客户端，畅享战放礼包福利
+                        #reg_step5
+                            .fail 激活失败!
+                            p
+                                span 激活信息有误，您可以在客户端下载期间，返回上一页重新激活礼包
+                            .download
+                                a(href="http://download.17173.com/11205/10/63486/#highdown",hidefocus="true",class="mini_download",target="_blank")
+                                a(href="#{url_mini_client}",hidefocus="true",class="full_download",target="_blank")
+                            .back_bg
+                                a#back(href="javascript:undefined")
+                        .download
+                            a(href="http://download.17173.com/11205/10/63486/#highdown",hidefocus="true",class="mini_download",target="_blank")
+                            a(href="#{url_mini_client}",hidefocus="true",class="full_download",target="_blank")
+                        .download_tip 特权礼包可在游戏内礼包大使处直接领取
+                    span#close

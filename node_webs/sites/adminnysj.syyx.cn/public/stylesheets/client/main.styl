@@ -1,0 +1,371 @@
+@import '../reset'
+@import '../url'
+@import '../base'
+//-----------------------------------------------------------------------
+body
+    font-size 12px
+    font-family '宋体'
+    color #222
+    background url($bg) 0 0 repeat
+.container
+    min-width 1200px
+    #header
+        background #222 url($header_bg) 0 0 repeat-x
+        border-bottom 1px solid #010101
+        box-shadow 0 1px 20px rgba(0, 0, 0, 0.85)
+        height 48px
+        #logo
+            color #D0D0D0
+            font-weight bold
+            font-size 22px
+            padding 12px 0 0 20px
+    #main
+        bottom 0
+        left 0
+        min-width 1200px
+        overflow hidden
+        position absolute
+        right 0
+        top 49px
+        #sidebar
+            background #EDF2FF url($sidebar_bg) 0 0 repeat
+            border-right 1px solid #A3A09E
+            float left
+            height 100%
+            position relative
+            width 180px
+            .content
+                background-color #EDF2FF
+                overflow-y auto
+                position absolute
+                top 0
+                bottom 34px
+                width 100%
+                a.workspace_name
+                    border-bottom 1px solid rgba(0, 0, 0, 0.18)
+                    border-top 1px solid rgba(255, 255, 255, 0.18)
+                    font-weight bold
+                    letter-spacing 0.5px
+                    overflow hidden
+                    text-overflow ellipsis
+                    white-space nowrap
+                    text-shadow 0 1px 0 rgba(255, 255, 255, 0.66)
+                    background-color #D3DAE5
+                    display block
+                    line-height 35px
+                    padding 0 30px 0 10px
+                    color rgba(0, 0, 0, 0.5)
+                    &.selected
+                        -moz-transition color 0s ease 0s
+                        color rgba(0, 0, 0, 0.85)
+                .sub_elements
+                    border-bottom 1px solid rgba(0, 0, 0, 0.18)
+                    padding 6px 0
+                    a
+                        color rgba(0, 0, 0, 0.5)
+                        display block
+                        line-height 35px
+                        padding-left 38px
+                        &.selected
+                            color rgba(0, 0, 0, 0.85)
+                            background url($page_selected) 10px center no-repeat
+            .setting
+                border-top 1px solid rgba(0, 0, 0, 0.18)
+                bottom 0
+                box-shadow 0 1px 0 rgba(255, 255, 255, 0.18) inset
+                padding 0
+                position absolute
+                width 180px
+                background-color #D3DAE5
+                button.set
+                    background: url($gear) center center no-repeat
+                    border none
+                    float right
+                    height 32px
+                    padding-left 10px
+                    width 32px
+                    cursor pointer
+                .add_client_category
+                    border-radius 5px
+                    box-shadow 0 1px 16px rgba(0, 0, 0, 0.75), 0 1px 0 rgba(255, 255, 255, 0.15) inset
+                    position absolute
+                    z-index 9001
+                    top -150px
+                    left 200px
+                    width 300px
+                    display none
+                    header
+                        background: -webkit-linear-gradient(#474747, #151515) repeat 0 0
+                        background: -moz-linear-gradient(#474747, #151515) repeat 0 0
+                        border-color rgba(0, 0, 0, 0.85) rgba(0, 0, 0, 0.85) #111111
+                        border-style solid
+                        border-top-left-radius 5px
+                        border-top-right-radius 5px
+                        border-width 1px
+                        box-shadow 0 1px 0 #666666 inset
+                        padding 6px
+                        text-align center
+                        color #fff
+                        font-weight bold
+                        opacit 0.9
+                        text-shadow 0 1px 1px rgba(0, 0, 0, 0.33)
+                    .client_category_content
+                        padding 20px
+                        input
+                            height 24px
+                            line-height 24px
+                    footer
+                        text-align right
+                        padding 5px 10px 0 10px
+                        height 32px
+                        overflow hidden
+                        background #E8E8E8
+                        border-radius 0 0 3px 3px
+                        border-top 1px solid #D1D1D1
+                        button
+                            float right
+                            margin-left 10px
+                        input
+                            float right
+                            margin-left 10px
+                        .loading
+                            float right
+                            display none
+                        .show_result
+                            float right
+                            font-weight bold
+                            color #57A334
+                            height 28px
+                            line-height 28px
+                            display none
+        #content
+            bottom 0
+            left 181px
+            position absolute
+            right 0
+            top 0
+            #edit_article
+                position absolute
+                top 0
+                left 0
+                bottom 0
+                right 0
+                box-shadow 0 1px 16px rgba(0, 0, 0, 0.75), 0 1px 0 rgba(255, 255, 255, 0.15) inset
+                z-index 9999
+                background-color rgba(0,0,0,0.5)
+                -moz-transition opacity 0.5s ease-in-out 0s
+                visibility hidden
+                .inner
+                    position absolute
+                    top 20px
+                    left 30px
+                    bottom 30px
+                    right 400px
+                    background-color #F4F3F1
+                    box-shadow 0 1px 16px rgba(255, 255, 255, 0.25), 0 1px 0 rgba(255, 255, 255, 0.15) inset
+                    border-radius 5px
+                    header
+                        background -webkit-linear-gradient(#474747, #151515) repeat 0 0
+                        background -moz-linear-gradient(#474747, #151515) repeat 0 0
+                        border-color rgba(0, 0, 0, 0.85) rgba(0, 0, 0, 0.85) #111111
+                        border-style solid
+                        border-top-left-radius 5px
+                        border-top-right-radius 5px
+                        border-width 1px
+                        box-shadow 0 1px 0 #666666 inset
+                        padding 6px
+                        text-align center
+                        color #fff
+                        font-weight bold
+                        opacit 0.9
+                        text-shadow 0 1px 1px rgba(0, 0, 0, 0.33)
+                    footer
+                        text-align right
+                        padding 5px 10px 0 10px
+                        height 32px
+                        overflow hidden
+                        background #E8E8E8
+                        border-radius 0 0 3px 3px
+                        border-top 1px solid #D1D1D1
+                        position absolute
+                        bottom 0
+                        left 0
+                        right 0
+                        button
+                            float right
+                            margin-left 10px
+                        input
+                            float right
+                            margin-left 10px
+                        .loading
+                            float right
+                            display none
+                        .show_result
+                            float right
+                            font-weight bold
+                            color #57A334
+                            height 28px
+                            line-height 28px
+                            display none
+                    .edit_article_area
+                        position absolute
+                        top 40px
+                        left 20px
+                        right 20px
+                        bottom 50px
+                        #article_title_input
+                            height 32px
+                            line-height 32px
+                            font-size 14px
+                            padding 0 3px
+                            background #F4F3F1
+                            border none
+                            border-bottom solid 1px #ddd
+                            width 99%
+                            font-weight bold
+                        .article_text_wrapper
+                            position absolute
+                            top 50px
+                            left 0
+                            right 0
+                            bottom 20px
+                            #article_text
+                                position absolute
+                                top 0
+                                left 0
+                                right 0px
+                                bottom 0
+                                width 99%
+                                height 100%
+            .content_layout
+                height 100%
+                .detail_wrapper
+                    float right
+                    height 100%
+                    position relative
+                    width 432px
+                    z-index 99
+                    #detail
+                        bottom 28px
+                        left 0
+                        position absolute
+                        right 28px
+                        top 37px
+                    #detail_overlay
+                        background-color #F5F5F5
+                        border-bottom-right-radius 4px
+                        border-top-right-radius: 4px
+                        bottom 28px
+                        left -394px
+                        width 404px
+                        position absolute
+                        right 28px
+                        top 37px
+                        #save_client_option_panel
+                            display none
+                            .panel
+                                background-color #F5F5F5
+                                border-bottom-right-radius 4px
+                                border-top-right-radius 4px
+                                height 100%
+                                .panel_action
+                                    background url($panel_controls_bg) left top repeat
+                                    border-bottom solid 1px #BBB
+                                    border-top-right-radius 4px
+                                    padding 5px 5px 4px 4px
+                                    text-align right
+                                    .progress
+                                        padding-right 10px
+                                        font-weight bold
+                                        color #57A334
+                                        display none
+                                .panel_action_bottom
+                                    border-top 1px solid #BBBBBB
+                                    padding 5px 10px 4px
+                                    box-shadow 0 2px 4px -2px rgba(0, 0, 0, 0.4)
+                                    border-bottom-right-radius 4px
+                                    bottom 0
+                                    display block
+                                    left 0
+                                    position absolute
+                                    right 0
+                                    background url($panel_controls_bg) left top repeat
+                                    .close_panel
+                                        background url($close_panel) 0 0 no-repeat
+                                        width 20px
+                                        height 20px
+                                        display inline-block
+                                    .trash_item
+                                        background url($trash) 0 0 no-repeat
+                                        height 20px
+                                        width 20px
+                                        float right
+                                .panel_content
+                                    bottom 36px
+                                    left 0
+                                    position absolute
+                                    right 0
+                                    top 33px
+                                    color #444
+                                    font-size 13px
+                                    .inner
+                                        padding 12px 15px 10px 10px
+                                        input[type='text']
+                                            height 24px
+                                            line-height 24px
+                                            margin-bottom 15px
+                                        #client_link_group
+                                            font-size 13px
+                                            line-height 18px
+                                            height 100px
+                .list
+                    background-color #FFFFFF
+                    box-shadow 4px 0 11px rgba(0, 0, 0, 0.33)
+                    height 100%
+                    overflow hidden
+                    position relative
+                    z-index: 100
+                    .action_bar
+                        box-shadow 0 2px 4px -2px rgba(0, 0, 0, 0.4)
+                        line-height 28px
+                        height 36px
+                        background url($control_bg) 0 0 repeat
+                        .controls
+                            padding 4px 10px 0 8px
+                            border-bottom 1px solid #9E9FA0
+                            height 32px
+                    .list_body
+                        bottom 0
+                        left 0
+                        position absolute
+                        right 0
+                        top 37px
+                        #client_list
+                            .item_wrapper
+                                li
+                                    background-color #fff
+                                    -moz-transition opacity 0.5s ease 0s
+                                    a
+                                        display block
+                                        margin 8px
+                                        padding 12px 16px 5px 16px
+                                        background-color #F8F8F8
+                                        border 1px solid #DCDCDC
+                                        border-radius 3px
+                                        box-shadow 0 1px 0 rgba(255, 255, 255, 0.66) inset
+                                        color #444
+                                        &.editing
+                                            background-color #0E72DA
+                                            color #fff
+                                            .downloads,.install,.client_size,.client_version
+                                                color #fff
+                                        h3
+                                            font-size 14px
+                                            font-weight bold
+                                            padding-bottom 10px
+                                        .downloads,.install,.client_size,.client_version
+                                            color #999
+                                            display inline-block
+                                            width 100px
+                                            overflow hidden
+                                            margin-right 20px

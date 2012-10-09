@@ -1,0 +1,23 @@
+!!!5
+html
+    head
+        link(rel= "shortcut icon", href = "http://s.syyx.com/nycs/img/favicon.ico", type = "image/x-icon")
+        meta(http-equiv = "Content-Type",content="text/html; charset=utf-8")
+        meta(name = "keywords", content = "四海九州齐聚，诺米从不孤单")
+        meta(name = "description", content = "四海九州齐聚，诺米从不孤单")
+        title 四海九州齐聚，诺米从不孤单-《诺亚传说》官方网站-全新2012题材人气巨作，终极内测，震撼来袭！  
+        style(type = "text/css")
+            body{background : #011D42,font-size:12px};
+        script
+            parent.get_upstate('#{r}','#{p1}','#{p2}','#{w}','#{h}')
+    body(style="background:rgb(1,29,66)")
+
+        - if(r == 'success')
+            span(style="color:#9EA39F") 图片上传成功!
+        - else
+            span(style="color:#9EA39F") 图片上传失败!
+        br
+        - if(r == 'success')
+            a(href="javascript:document.location='/nycs/notalone/uploadimg.html';",style="color:#8BD3FB") 返回
+        else
+            a(href="javascript:history.back();",style="color:#8BD3FB") 返回

@@ -1,0 +1,317 @@
+//-----------------------------------------------------------------------------------------------
+// vhosts.js
+//-----------------------------------------------------------------------------------------------
+require('./_class')
+//-------------------------------------------------------------------------------------------------------
+ms   = require('./ms')
+cmd  = ms.cmd
+//-------------------------------------------------------------------------------------------------------
+var sites_dir = __dirname + "/../sites/"
+//-------------------------------------------------------------------------------------------------------
+ms.all_apps = {}
+//-------------------------------------------------------------------------------------------------------
+var init = function() {
+    init_config()
+
+    var init_emitter = new ms.events.EventEmitter()
+    init_emitter
+        .once('begin' ,            init_dbs)
+        .once('db_ready' ,         init_ws)
+        .once('ws_ready' ,         init_persistence)        
+        .once('persistence_ready', init_vhosts)
+        .once('vhosts_ready',      init_telnet)
+        // .once('telnet_ready',      init_admin_server)
+        .emit('begin', init_emitter)
+}
+//-------------------------------------------------------------------------------------------------------
+var init_config = function() {
+    ms.common_config = require(process.env['HOME'] + '/syyx_conf/common_config.js')    
+    ms.global_config = require(__dirname + "/../global_config.js")
+    ms.sites_config  = {}
+
+    var sites = ms.common_config.vhosts
+    for(var i in sites) {
+        ms.sites_config[ sites[i] ] = require(sites_dir + sites[i] + '/config.js')
+    }
+}
+//-------------------------------------------------------------------------------------------------------
+var init_dbs = function(emitter) {
+    var mssql_servers = ms.common_config.db_server.mssql
+    var mysql_servers = ms.common_config.db_server.mysql
+    var mongo_servers = ms.common_config.db_server.mongo
+
+    var dbs_init_emitter = new ms.events.EventEmitter()
+
+    ms.u2.on_multi_events(dbs_init_emitter, ['mssql', 'mysql', 'mongo'], function() {
+        emitter.emit('db_ready', emitter)
+    })
+
+    conn_dbs(mssql_servers, 'mssql', dbs_init_emitter)
+    conn_dbs(mysql_servers, 'mysql', dbs_init_emitter)
+    conn_dbs(mongo_servers, 'mongo', dbs_init_emitter)
+}
+//-------------------------------------------------------------------------------------------------------
+var conn_dbs = function(db_servers, db_type, emiter) {   
+    var dbs_count = db_servers.length
+    if(dbs_count == 0) {
+        emiter.emit(db_type)
+        return
+    }   
+    
+    var connected_count = 0
+
+    for(var i in db_servers) {
+        var password = db_servers[i].password
+        var key = ms.common_config.security['db']
+        
+        db_servers[i].password = ms.cipher.decipher(password, key)
+        
+        ms.db.conn_dbs(db_type, db_servers[i], function() {
+            connected_count ++ 
+            if(connected_count >= dbs_count) {
+                emiter.emit(db_type)
+            }
+        })
+    }
+}
+//-------------------------------------------------------------------------------------------------------
+var init_ws = function(emitter) {
+    var ws_url = {}
+    var ws_name_map = ms.global_config.ws_name_map
+
+    ms.ws = {}
+
+    for(var i in ms.sites_config) {
+        var ws_config = ms.sites_config[i].ws
+
+        for(var j in ws_config) {
+            var name = ws_config[j]
+            var url  = ws_name_map[name]
+            ws_url[name] = url
+        }
+    }    
+
+    var ws_count   = 0
+    var open_count = 0
+    for(var name in ws_url) {
+        ws_count++
+        
+        open_ws(name, ws_url[name], function() {
+            open_count++
+            
+            if(open_count == ws_count) {
+                emitter.emit('ws_ready', emitter)
+            }
+        })
+    }
+
+    if(ws_count == 0) {
+        emitter.emit('ws_ready', emitter)
+    }
+}
+//-------------------------------------------------------------------------------------------------------
+var open_ws = function(name, url, cb) {
+    ms.soap.createClient(url, function(err, client) {
+        if (err) {
+            throw err
+            return
+        }
+
+        console.log('\n' +  name + '  ' + url)
+
+        ms.ws[name] = client
+
+        for(var i in client) {
+            console.log('\t', i)
+        }
+        
+        cb()
+    })
+}
+//-------------------------------------------------------------------------------------------------------
+var init_persistence = function(emitter) {  
+    var use_persistence = false
+
+    for(var i in ms.sites_config) {
+        if(ms.sites_config[i].use_persistence == true) {
+            use_persistence = true
+            break
+        }
+    }    
+
+    if(use_persistence) {
+        var cmd  = '~/code/script/run_mongo.sh'
+        var child = ms.child_proc.exec(cmd, function(error, stdout, stderr) {
+            if (error) {
+                console.log('exec error: ' + error)
+                return
+            }
+        })
+
+        child.on("exit", function() {
+            setTimeout(function() {
+                ms.persistence.init(function(err) {
+                    if(err) {
+                        console.log('\npersistence_module init failed: ' + err)
+                        return 
+                    }
+
+                    console.log('persistence_module init success')
+                    emitter.emit('persistence_ready', emitter)
+                })       
+            }, 100)
+        })
+    } 
+
+    else {
+        emitter.emit('persistence_ready', emitter)
+    }
+}
+//-------------------------------------------------------------------------------------------------------
+var init_telnet = function(emitter) {   
+    ms.telnet.set_login_check(function(account, password) {
+        var telnet_user = ms.common_config.telnet.user
+        var telnet_pwd  = ms.common_config.telnet.password
+
+        if (account != telnet_user) {
+            return false
+        }
+
+        var key = ms.common_config.security.telnet
+
+        if (password != ms.cipher.decipher(telnet_pwd, key)) {
+            return false
+        }
+        
+        return true
+    })
+
+    var telnet_ip   = ms.common_config.telnet.ip
+    var telnet_port = ms.common_config.telnet.port 
+
+    if (parseInt(process.argv[2], 10)) {
+        telnet_port = parseInt('80' + process.argv[2], 10)
+    }
+
+    if (!telnet_port || !telnet_ip) {
+        console.error("no telnet config")
+        return
+    }
+
+    var telnet_server = ms.telnet.listen(telnet_port, telnet_ip, function(err) {
+        if (err) {
+            console.error('telnet start failed', err)
+            return
+        }
+
+        console.log('telnet started at ' + ms.u.inspect(telnet_server.address()))     
+        emitter.emit('telnet_ready', emitter)
+    })    
+}
+//------------------------------------------------------------------------------------------------------------
+var init_admin_server = function(emitter) {
+    var server_ip   = ms.common_config.admin.ip
+    var server_port = ms.common_config.admin.port
+
+    if (!server_ip || !server_port) {
+        console.error("no admin server config")
+        return
+    }
+
+    var app_path = sites_dir + 'admin_server/app'
+
+    var admin_server = require(app_path).app
+
+    admin_server.on('ready', function() {
+
+        admin_server.listen(server_port, server_ip, function(err) {
+            if (err) {
+                console.error('admin server start failed', err)
+                return
+            }
+
+            console.log('admin started at ' + ms.u.inspect(admin_server.address()))     
+            emitter.emit('admin_ready', emitter)
+        })  
+    })
+}
+//------------------------------------------------------------------------------------------------------------
+var init_vhosts = function(emitter) {    
+    var sites = ms.common_config.vhosts
+    var ready_count = 0
+    var vhosts = []
+
+    for(var i in sites) {
+        var domain   = sites[i]
+        var app_path = sites_dir + domain + '/app'
+
+        var app   = ms.module_mgr.load_vhost(domain, app_path)
+        var vhost = app //.vhost
+        vhosts.push(vhost)
+        ms.stat.app_setting(app)
+
+        app.et.on('ready', function() {
+            ready_count++
+
+            if(ready_count >= sites.length) {
+                run_server(vhosts, emitter)
+            }
+        })
+    }
+}
+//-------------------------------------------------------------------------------------------------------
+var run_server = function(vhosts, emitter) {
+    var server_ip   = ms.common_config.host.ip
+    var server_port = ms.common_config.host.port
+
+    if (parseInt(process.argv[2], 10)) {
+        server_port = parseInt(process.argv[2], 10)
+    }
+
+    // ms.server = ms.express.createServer.apply(this, vhosts)
+    ms.server = ms.express() // .apply(this, vhosts)
+    for (var i = 0; i < vhosts.length; ++i) {
+        var app = vhosts[i]
+        var dn = app.domain
+        ms.server.use(ms.express.vhost(dn, app))
+    }
+
+    if (!server_ip || !server_port) {
+        console.error("no server config")
+        return
+    }
+
+    var server = ms.server.listen(server_port, server_ip, function(err) {
+        if (err) {
+            console.error('server start failed', err)
+            return
+        }
+        
+        ms.stat.server_setting(ms.server)
+
+        console.log('\nserver started at ' + ms.u.inspect(server.address()))
+        
+        process.on('uncaughtException', function(err) {
+            ms.u.log('uncaughtException: ' + err.stack)
+        })
+
+        process.on('SIGINT', function() {
+            ms.u.log('recv SIGINT')
+            shutdown_server()
+        })
+
+        process.on('SIGTERM', function() {
+            ms.u.log('recv SIGTERM')
+            shutdown_server()
+        })
+
+        emitter.emit('vhosts_ready', emitter)
+    })
+}
+//-------------------------------------------------------------------------------------------------------
+var shutdown_server = function() {
+    process.exit()
+}
+//-------------------------------------------------------------------------------------------------------
+init()
+//-------------------------------------------------------------------------------------------------------

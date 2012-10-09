@@ -1,0 +1,51 @@
+body{margin:0;background:#060a13}
+a{color:#82522c;text-decoration:none;outline:none}
+a:hover{color:#d4d4d4}
+.container{background:url("http://r.syyx.com/party/nycs/new_play201209/bg.jpg") no-repeat top center;height:1400px;min-width:980px;overflow:hidden;font-size:12px}
+.main{width:980px;margin:0 auto;position:relative;height:100%}
+.nav{text-align:center;line-height:30px;color:#82522c}
+.logo{position:absolute;width:190px;height:90px;left:400px;top:60px}
+.flash{width:356px;height:138px;position:absolute;top:119px;left:312px}
+#play,.flash img{position:absolute;top:0;left:0}
+#banner{width:456px;height:282px;position:absolute;top:280px;left:271px}
+#tab{width:968px;height:84px;position:absolute;top:540px;left:7px;}
+#tab div{float:left;height:84px;width:242px;float:left;background:url("http://r.syyx.com/party/nycs/new_play201209/tab.jpg") no-repeat 999cm;cursor:pointer}
+#tab .t0{background-position:0 0}
+#tab .t1{background-position:-242px 0}
+#tab .t2{background-position:-484px 0}
+#tab .t3{background-position:-726px 0}
+#con{width:978px;height:510px;border:1px solid #a33301;position:absolute;top:633px;overflow:hidden}
+#con .scroll{height:2040px}
+#con .con{width:978px;height:510px;position:relative;color:#9ea1a6}
+#con .con0{background:url("http://r.syyx.com/party/nycs/new_play201209/con0.jpg") no-repeat}
+#con .con1{background:url("http://r.syyx.com/party/nycs/new_play201209/con1.jpg") no-repeat}
+#con .con2{background:url("http://r.syyx.com/party/nycs/new_play201209/con2.jpg") no-repeat}
+#con .con3{background:url("http://r.syyx.com/party/nycs/new_play201209/con3.jpg") no-repeat}
+#con p{margin:0;position:absolute;line-height:22px}
+#con span{font-weight:700;color:#0a59d8}
+#con .p1{width:325px;left:74px;top:140px}
+#con .p2{width:350px;left:554px;top:150px}
+#con .p3{width:643px;left:101px;top:370px}
+#con .p4{top:140px;width:325px;left:81px}
+#con .p5{width:350px;left:554px;top:147px}
+#con .p6{width:643px;top:345px;left:105px}
+#con .p7{top:376px;left:565px;width:340px}
+#con .p8{width:325px;left:74px;top:140px}
+#con .p9{width:350px;left:554px;top:150px}
+#con .p10{width:643px;left:101px;top:370px}
+#con .p11{color:#a8763b;left:125px;top:161px;width:655px}
+#con .p12{left:123px;top:372px;width:300px}
+#con .p13{left:615px;top:338px;width:300px}
+#con .to4{color:#0a59d8;font-weight:700;cursor:pointer}
+.share{display:block;width:173px;height:32px;margin-top:30px;background:url("http://r.syyx.com/party/nycs/new_play201209/btn.jpg") no-repeat -406px -20px}
+.share:hover{background-position:-406px -56px}
+.more{display:block;width:173px;height:32px;margin-top:30px;background:url("http://r.syyx.com/party/nycs/new_play201209/btn.jpg") no-repeat -583px -20px}
+.more:hover{background-position:-583px -56px}
+.copy_right{position:absolute;text-align:center;width:980px;top:1270px;color:#344557;line-height:25px}
+.copy_right .feet_txt{margin-left:240px;text-align:left}
+.copy_right .feet_logo{position:absolute;top:0;left:100px;width:123px;height:51px;background:url("http://r.syyx.com/party/nycs/new_play201209/syyx.jpg") no-repeat}
+.weibo{position:absolute;right:0;top:1170px;color:#9da2a8;width:410px}
+.weibo span{color:#005cdd;margin-right:5px}
+.weibo a,.see{color:#005cdd;text-decoration:underline;margin-right:10px}
+.weibo a:hover,.see:hover{color:#9da2a8}
+.disnone{display:none}

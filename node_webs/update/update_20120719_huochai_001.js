@@ -1,0 +1,1 @@
+ms.all_apps['events.syyx.com'].url_map['/nycs/index40.html'] = '/pages/p013.html'

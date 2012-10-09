@@ -1,0 +1,71 @@
+!!!5
+html
+    head
+        link(rel= "shortcut icon", href = "http://s.syyx.com/nycs/img/favicon.ico", type = "image/x-icon")
+        meta(http-equiv = "Content-Type",content="text/html; charset=utf-8")
+        meta(name = "keywords", content = "角色,查询,诺亚传说.服务器名字.角色所在服务器.")
+        meta(name = "description", content = "《诺亚传说》角色查询专题提供两种查询方式，玩家可通过账号、密码、邮箱等信息查询角色名和角色所在服务器。")
+        title 《诺亚传说》角色查询-《诺亚传说》官方网站
+        link(href="/stylesheets/nycs/role/loginrole/main.css",rel="stylesheet",type="text/css")     
+    body
+        .fmtitle
+            #loginserver
+            #fmclose
+        .fmcontent
+            table.loginfrom(border="0",cellpadding="0",cellspacing="0",width="100%")
+                tr
+                    td.t_r(width="120") 账 号：
+                    td.cont_input(width="170")
+                        input#txtAccount.input(maxlength="20",type="text",tabindex="1")
+                    td
+                        a(href="http://user.syyx.com/reg.aspx",hidefocus="true",target="_blank") 注册账号
+                tr
+                    td.t_r 密 码：
+                    td.cont_input
+                        input#txtpwd.input(maxlength="20",type="password",tabindex="2")
+                    td
+                        a(href="http://service.syyx.com/SelfService/GetPassword.aspx",hidefocus="true",target="_blank") 忘记密码?
+                tr
+                    td.t_r 角色名：
+                    td.cont_input
+                        input#txtrolename.input(maxlength="50",type="text",tabindex="3")
+                    td
+                        a#toforgotrole(href="/nycs/role/loginrole.html",hidefocus="true") 忘记角色名?
+                tr
+                    td.t_r 验证码：
+                    td.cont_yzm(width="100",colspan="2")
+                        input#txtValidate.input(maxlength="4",type="text",tabindex="4")
+                        span.validateimg
+                            img#validateimg.disnone(src='',alt='点击刷新验证码')
+            .loginerror#loginerror   
+            a#chkloginrole.btn(hidefocus="true",href="javascript:void(0);",title="确定",tabindex="5") 确 定
+        .msgview#sendok.disnone 亲爱的
+            span.username
+            |:
+            br
+            .sendokmsg &nbsp;&nbsp;&nbsp;&nbsp;您好！以下是
+                span#rolename
+                |角色名所对应的服务器信息：
+            table(border="0",cellspacing="0",cellpadding="0",width="400")
+                tr 
+                    td 服务器
+                    td 职业
+                    td 性别
+                tr
+                    td#servername
+                    td#roletype
+                    td#sex
+            .servermsg 温馨提示：为了您的账号安全，请妥善保管您的信息。
+            a.msgback(hidefocus="true",href="javascript:void(0);") &gt;&gt;返回查询其他账号            
+        .msgview#noemail.disnone
+            span.username
+            |&nbsp;您好！
+            br
+            .sendokmsg &nbsp;&nbsp;&nbsp;&nbsp;为了保护您的角色信息安全，请先进行
+                a.openemail(hidefocus="true",href="javascript:void(0);",target="_blank") 邮箱验证
+                |,角色查询结果将发送到您的验证邮箱中，谢谢!
+            .msgbtn
+                a.openemail.btn(hidefocus="true",href="javascript:void(0);",target="_blank") 邮箱验证
+            a.msgback(hidefocus="true",href="javascript:void(0);") &gt;&gt;返回查询其他账号  
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js",type="text/javascript")
+        script(src="/javascripts/nycs/role/loginserver/out.js",type="text/javascript")

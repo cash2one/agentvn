@@ -1,0 +1,224 @@
+@import '../reset'
+@import 'url'
+//opacity_support------------------------------------------------------------------------------------------
+support-for-ie ?= true
+
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+//------------------------------------------------------------------------------------------
+a
+    text-decoration none
+    outline none
+.disnone
+    display none
+.hide
+    visibility hidden
+.ui-tabs-hide
+    display none
+body
+    font-size 12px
+    font-family '宋体'
+    background-color #011327
+.container
+    min-width 1000px
+    background url($bg) center top no-repeat
+    .content
+        width 1000px
+        margin 0 auto
+        height 1220px
+        position relative
+        .logo_link
+            position absolute
+            top 30px
+            left 10px
+            width 210px
+            height 80px
+        .nav
+            position absolute
+            width 664px
+            height 62px
+            left 336px
+            top 0px
+            overflow hidden    
+        .fn_group
+            position absolute
+            top 293px
+            left -1px
+            width 615px
+            height 172px             
+        #recommended_server
+            position absolute
+            top 394px
+            left 730px
+            height 29px
+            overflow hidden
+            color #D2F0FF
+            display none
+            .list
+                width 260px
+                span
+                    line-height 29px
+                    height 29px
+                    display inline-block
+                    width 120px
+                    margin-right 5px
+                    position absolute
+        .screenshot
+            position absolute
+            top 446px
+            left 20px
+            width 560px
+            height 240px
+            padding-top 40px
+            padding-left 10px
+            color #4F97A5
+            overflow hidden
+            .all
+                position absolute
+                right 7px
+                top 7px
+                color #4A95BD
+            .item
+                float left
+                width 176px
+                height 120px
+                text-align center
+                margin-right 10px
+                a
+                    display block
+                    width 176px
+                    height 95px
+                    margin-bottom 5px
+                    img
+                        width 174px
+                        height 93px
+                        border solid 1px #044F92
+        .game_video
+            position absolute
+            width 385px
+            height 270px
+            left 600px
+            top 445px
+            color #50DAE4
+            .all
+                position absolute
+                top 7px
+                right 7px
+                color #4A95BD
+            #video1,#video2
+                position absolute
+                left 20px
+                top 40px
+                height 105px
+                width 360px
+                a
+                    position absolute
+                    top 0
+                    left 0
+                    width 174px
+                    height 94px
+                    display inline-block
+                    img
+                        border solid 1px #055091
+                        width 172px
+                        height 92px
+                h3
+                    position absolute
+                    left 183px
+                    width 170px
+                    height 20px
+                    overflow hidden
+                    font-weight bold
+                    font-size 13px
+                    top 3px
+                .des
+                    position absolute
+                    left 183px
+                    top 25px
+                    width 170px
+                    line-height 20px
+                    height 60px
+                    overflow hidden
+            #video2
+                top 170px
+        .wallpaper
+            position absolute
+            width 942px
+            height 120px
+            overflow hidden
+            color #4F97A5
+            top 741px
+            left 5px
+            padding 40px 0 0 33px
+            .all
+                position absolute
+                right 7px
+                top 6px
+                color #4A95BD
+            .item
+                float left
+                width 176px
+                height 120px
+                text-align center
+                margin-right 10px
+                a
+                    display block
+                    width 176px
+                    height 95px
+                    margin-bottom 5px
+                    img
+                        width 174px
+                        height 93px
+                        border solid 1px #044F92
+        .cartoon
+            position absolute
+            width 942px
+            height 100px
+            overflow hidden
+            color #4F97A5
+            top 920px
+            left 5px
+            padding 40px 0 0 33px
+            .all
+                position absolute
+                right 7px
+                top 6px
+                color #4A95BD
+            .item
+                float left
+                width 176px
+                height 120px
+                text-align center
+                margin-right 10px
+                a
+                    display block
+                    width 176px
+                    height 95px
+                    margin-bottom 5px
+                    img
+                        width 174px
+                        height 93px
+                        border solid 1px #044F92
+        #copyright
+            position absolute
+            top 1093px
+            left 10px
+            width 981px
+            height 62px
+            overflow hidden
+            .syyx_logo
+                position absolute
+                top 10px
+                left 10px
+                width 120px
+                height 45px
+            .copyright_content
+                position absolute
+                top 15px
+                left 160px
+                line-height 20px
+                color #526F91
+@import '../top_iframe/main'
+@import '../float_reg/main'

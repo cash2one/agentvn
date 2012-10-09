@@ -1,0 +1,35 @@
+html
+    head
+        title  角色在线时长统计
+        include script
+    body
+        .cont_form
+            .f_b_333 角色在线时长统计
+        .cont_f_lb
+        .cont_link
+            tr
+                td
+                    span 服务器：
+                        select#serverList
+                td
+                    span 时间：
+                        input#txtStartDate(type="text")
+                        | 至
+                        input#txtEndDate(type="text")
+                td
+                    input#btnQuery(type="button",value="查询")
+        #divOnlineTime.table_info
+            table#tableOnlineTime.wiki-content-table
+                tr  
+                    th 日期 
+                    th 1小时以内
+                    th 1-2小时
+                    th 2-3小时
+                    th 3-5小时
+                    th 5-7小时
+                    th 7-10小时
+                    th 10-15小时
+                    th 15小时以上 
+                    th 总计
+    div#loading(style="top: 50%; right: 50%; position: absolute; padding: 0px;margin: 0px; z-index: 999; display: none;")
+        img(src="http://s1.syyx.com/nysjdm/Script/spinner3-greenie.gif")

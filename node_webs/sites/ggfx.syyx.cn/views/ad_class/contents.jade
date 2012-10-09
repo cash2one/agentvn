@@ -1,0 +1,44 @@
+div#loading
+	img(src="/images/spinner3-greenie.gif")
+
+div(class="postion")
+	span.f_b_blue	您的当前位置：
+	span	广告管理 &gt;&gt; 媒体类型
+div(class="cont_f_lb")
+
+div#content
+	table#tt(class="wiki-list-table", style="width:100%")
+		tr
+			th	媒体类型
+			th	备注
+			th	媒体数
+			th(style="width:80px")	是否启用
+			th(style="width:80px")	是否显示
+			th(style="width:80px")	操作
+	div#pp(class="pager")
+
+	br
+	div(style="padding:5px;")
+		a#btnAdd(href="javascript:void(0)",class="easyui-linkbutton",onclick="clear_form();")	新增
+		
+	input#hidID(type="hidden")
+	table(class="wiki-content-table",style="width:460px;")
+		tr
+			th(style="width:100px")	媒体类型
+			td	
+				input#txtClassName(type="text",maxlength="50")
+		tr
+			th	备注
+			td	
+				input#txtRemark(type="text",maxlength="50")
+		tr
+			th	是否启用
+			td	
+				input#chkIsEnabled(type="checkbox")
+		tr
+			th	是否显示
+			td	
+				input#chkIsShow(type="checkbox")
+	br
+	div#dlg-buttons
+			input#btnOK.input_btn(type="button", value="确定")

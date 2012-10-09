@@ -1,0 +1,131 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+a{text-decoration:none;outline:none}
+.disnone{display:none}
+.hide{visibility:hidden}
+.ui-tabs-hide{display:none}
+.clear{clear:both;overflow:hidden;height:0}
+body{font-size:12px;font-family:'宋体';background-color:#15212f}
+.container{min-width:1000px;background:url("http://r.syyx.com/nysj/activate/bg.jpg") center top no-repeat;}
+.container .content{width:1000px;margin:0 auto;height:1470px;overflow:hidden;position:relative;}
+.container .content .logo_link{position:absolute;top:20px;left:40px;width:200px;height:100px}
+.container .content .nav{position:absolute;left:565px;top:13px;overflow:hidden;}
+.container .content .nav a{float:left;margin-right:10px;color:#37c9ff}
+.container .content .activate_btn_hash{position:absolute;width:134px;height:35px;top:243px;left:368px;}
+.container .content .activate_btn_hash:hover{background:url("http://r.syyx.com/nysj/activate/btn.jpg") -428px -10px no-repeat}
+.container .content #get_code_step_1{position:absolute;top:475px;left:80px;color:#2761cc;font-weight:bold;font-size:14px;}
+.container .content #get_code_step_1 .question{background:url("http://r.syyx.com/nysj/activate/question_icon.jpg") left center no-repeat;height:20px;line-height:20px;padding-left:15px;margin-bottom:10px}
+.container .content #get_code_step_1 .answer{font-size:14px;padding:0 0 15px 10px;}
+.container .content #get_code_step_1 .answer input{vertical-align:middle;margin:0 5px 0 15px}
+.container .content #get_code_step_1 .mobile{padding:0 0 0 15px;background:url("http://r.syyx.com/nysj/activate/question_icon.jpg") left center no-repeat;margin-bottom:10px;height:22px;}
+.container .content #get_code_step_1 .mobile input{float:left;background-color:#151d34;border:solid 1px #050c26;height:20px;line-height:20px;width:200px;color:#fff}
+.container .content #get_code_step_1 .mobile span{width:110px;float:left}
+.container .content #get_code_step_1 .mobile_code{height:22px;padding:0 0 0 15px;background:url("http://r.syyx.com/nysj/activate/question_icon.jpg") left center no-repeat;}
+.container .content #get_code_step_1 .mobile_code span{width:110px;float:left}
+.container .content #get_code_step_1 .mobile_code input{float:left;background-color:#151d34;border:solid 1px #050c26;height:20px;line-height:20px;width:100px;margin-right:10px;color:#fff}
+.container .content #get_code_step_1 .mobile_code a{float:left;width:97px;height:24px;background:url("http://r.syyx.com/nysj/activate/btn.jpg") -396px -51px no-repeat;margin-right:10px}
+.container .content #get_code_step_1 .submit_step1{padding:10px 0 0 128px;height:27px;}
+.container .content #get_code_step_1 .submit_step1 a{background:url("http://r.syyx.com/nysj/activate/btn.jpg") -284px -49px no-repeat;width:103px;height:27px;float:left;margin-right:10px;}
+.container .content #get_code_step_1 .submit_step1 a:hover{background:url("http://r.syyx.com/nysj/activate/btn.jpg") -10px -48px no-repeat}
+.container .content #get_code_result_1,.container .content #get_code_result_2,.container .content #get_code_result_3{position:absolute;top:490px;left:60px;display:none;}
+.container .content #get_code_result_1 h3,.container .content #get_code_result_2 h3,.container .content #get_code_result_3 h3{color:#ff8600;font-size:16px;margin-bottom:10px}
+.container .content #get_code_result_1 p,.container .content #get_code_result_2 p,.container .content #get_code_result_3 p{font-size:14px;color:#156bff;line-height:22px;margin-bottom:10px}
+.container .content #get_code_result_3 a{background:url("http://r.syyx.com/nysj/activate/btn.jpg") -146px -7px no-repeat;width:136px;height:36px;display:block}
+.container .content #activate_hash{position:absolute;top:730px;left:60px;height:30px;width:30px}
+.container .content #activate_form{position:absolute;top:840px;left:60px;color:#00deff;}
+.container .content #activate_form .form_item{height:30px;margin-bottom:5px;}
+.container .content #activate_form .form_item span{line-height:22px;float:left;width:100px;text-align:right;font-size:16px;font-weight:bold;margin-right:10px}
+.container .content #activate_form .form_item input{float:left;width:240px;background-color:#092161;color:#fff;border:solid 1px #034292;height:24px;line-height:24px;font-weight:bold;font-size:14px;padding:0 3px}
+.container .content #activate_form .reg_tip{padding:0 0 0 110px;}
+.container .content #activate_form .reg_tip a{color:#186afe;text-decoration:underline}
+.container .content #activate_form .activate_form_submit_btn{padding:20px 0 0 150px;height:36px;}
+.container .content #activate_form .activate_form_submit_btn a{float:left;display:block;width:136px;height:36px;margin-right:10px;background:url("http://r.syyx.com/nysj/activate/btn.jpg") -495px -46px no-repeat;}
+.container .content #activate_form .activate_form_submit_btn a:hover{background:url("http://r.syyx.com/nysj/activate/btn.jpg") -9px -7px no-repeat}
+.container .content #activate_form .activate_form_submit_btn span{font-size:14px}
+.container .content #activate_result_1{display:none;position:absolute;top:835px;left:80px;}
+.container .content #activate_result_1 h3{height:26px;padding:6px 0 0 50px;margin:0 0 10px 70px;color:#ff8500;font-size:16px;background:url("http://r.syyx.com/nysj/activate/success.jpg") 0 0 no-repeat}
+.container .content #activate_result_1 p{font-size:14px;color:#1569ff;line-height:22px}
+.container .content #activate_result_1 .download_mini{display:inline-block;margin:20px 0 0 90px;width:136px;height:36px;background:url("http://r.syyx.com/nysj/activate/btn.jpg") -283px -7px no-repeat}
+.container .content #activate_result_2{position:absolute;top:835px;left:80px;width:400px;display:none;}
+.container .content #activate_result_2 h3{height:26px;padding:6px 0 0 50px;color:#ff8500;font-size:16px;margin:0 0 10px 70px;background:url("http://r.syyx.com/nysj/activate/failure.jpg") 0 0 no-repeat}
+.container .content #activate_result_2 p{text-align:center;font-size:14px;color:#1569ff;line-height:22px;margin-bottom:20px}
+.container .content #activate_result_2 a{width:103px;height:27px;margin-left:100px;display:block;background:url("http://r.syyx.com/nysj/activate/btn.jpg") -114px -48px no-repeat}
+.container .content #reg{position:absolute;top:630px;right:20px;width:265px;height:255px;overflow:hidden;}
+.container .content #reg #reg_step1{height:245px;position:relative;overflow:hidden;color:#6cb6fd;display:block;}
+.container .content #reg #reg_step1 .reg_form td{padding:0 2px;height:26px;}
+.container .content #reg #reg_step1 .reg_form td.reg_form_item_name{width:60px;text-align:right}
+.container .content #reg #reg_step1 .reg_form td.reg_form_item_input input{background-color:#86bbe5;border:solid 1px #009bff;height:20px;line-height:20px;color:#000;width:150px}
+.container .content #reg #reg_step1 .reg_form td.reg_form_item_input input.focus_in_inut{background-color:#fff;border:solid 1px #c8edff;color:#000}
+.container .content #reg #reg_step1 .reg_form td.reg_form_item_input #validateimg{vertical-align:middle;cursor:pointer;height:29px;width:100px;margin-left:3px}
+.container .content #reg #reg_step1 .reg_form td.validate_num_input{height:35px;}
+.container .content #reg #reg_step1 .reg_form td.validate_num_input input{width:40px}
+.container .content #reg #reg_step1 .agreement{text-align:center;padding-top:5px;}
+.container .content #reg #reg_step1 .agreement a{text-align:center;text-decoration:underline;color:#3e6ed0;outline:none}
+.container .content #reg #reg_step1 .agreement input{margin-right:3px}
+.container .content #reg #reg_step1 .reg_submit{position:absolute;top:202px;left:53px;}
+.container .content #reg #reg_step1 .reg_submit a{display:inline-block;width:153px;height:44px;background:url("http://r.syyx.com/nysj/activate/btn.jpg") -31px -380px no-repeat;outline:none;}
+.container .content #reg #reg_step1 .reg_submit a:hover{background-position:-31px -426px}
+.container .content #reg #reg_step2{position:absolute;width:265px;height:255px;color:#6bb8fe;display:none;}
+.container .content #reg #reg_step2 .success_icon{position:absolute;width:39px;height:36px;left:50px;top:10px;background:url("http://r.syyx.com/nysj/activate/btn.jpg") -608px -217px no-repeat}
+.container .content #reg #reg_step2 .success_text{color:#ffb900;font-size:14px;position:absolute;top:10px;left:100px}
+.container .content #reg #reg_step2 .success_account{position:absolute;color:#ffb900;top:35px;left:100px}
+.container .content #reg #reg_step2 .get_active_code_text_after_reg{position:absolute;top:70px;color:#6bb8fe;left:0;}
+.container .content #reg #reg_step2 .get_active_code_text_after_reg h3{font-weight:bold;padding:0 10px 5px 0}
+.container .content #reg #reg_step2 .get_active_code_text_after_reg p{text-indent:24px;line-height:20px}
+.container .content #reg #reg_step2 .get_code_link{background:url("http://r.syyx.com/nysj/activate/btn.jpg") -366px -380px no-repeat;width:131px;height:24px;position:absolute;top:145px;left:60px;display:block;}
+.container .content #reg #reg_step2 .get_code_link:hover{background:url("http://r.syyx.com/nysj/activate/btn.jpg") -366px -406px no-repeat}
+.container .content #reg #reg_step2 .download_text_after_reg{position:absolute;top:190px;font-weight:bold}
+.container .content #reg #reg_step2 .down_load_mini_client_after_reg{position:absolute;width:131px;height:24px;top:220px;left:60px;background:url("http://r.syyx.com/nysj/activate/btn.jpg") -499px -380px no-repeat;}
+.container .content #reg #reg_step2 .down_load_mini_client_after_reg:hover{background:url("http://r.syyx.com/nysj/activate/btn.jpg") -499px -406px no-repeat}
+.container .content #reg .check_result_right{background:url("http://s1.syyx.com/nycs/images/float_reg/right_wrong.png") 0 4px no-repeat;width:16px;height:25px}
+.container .content #reg .check_result_wrong{background:url("http://s1.syyx.com/nycs/images/float_reg/right_wrong.png") 0 -32px no-repeat;width:16px;height:25px}
+.container .content #reg .check_result_loading{background:url("http://s1.syyx.com/nycs/images/float_reg/loader.gif") 0 4px no-repeat;width:16px;height:25px}
+.container .content .download_area{position:absolute;top:1112px;left:10px;}
+.container .content .download_area a{width:293px;height:78px;float:left;margin-right:26px;}
+.container .content .download_area a.download_mini:hover{background:url("http://r.syyx.com/nysj/activate/btn.jpg") -10px -85px no-repeat}
+.container .content .download_area a.download_full:hover{background:url("http://r.syyx.com/nysj/activate/btn.jpg") -329px -85px no-repeat}
+.container .content .download_area span{width:293px;float:left;margin-right:26px;padding-top:5px;text-align:right;height:20px;color:#166aff}
+.container .content #copyright{position:absolute;top:1320px;left:130px;width:981px;height:62px;overflow:hidden;}
+.container .content #copyright .syyx_logo{position:absolute;top:10px;left:10px;width:130px;height:45px}
+.container .content #copyright .copyright_content{position:absolute;top:10px;left:160px;line-height:20px;color:#526f91}
+.disnone{display:none}
+#float_reg_btn{background:url("http://r.syyx.com/nysj/float_reg/activate_bg.jpg") -343px -42px no-repeat;width:70px;height:291px;position:fixed;_position:absolute;top:100px;right:10px;display:block;overflow:hidden;}
+#float_reg_btn:hover{background:url("http://r.syyx.com/nysj/float_reg/activate_bg.jpg") -423px -42px no-repeat}
+#float_reg_panel{position:fixed;_position:absolute;top:100px;right:10px;display:none;background:url("http://r.syyx.com/nysj/float_reg/activate_bg.jpg") -10px -10px no-repeat;width:284px;height:492px;overflow:hidden;}
+#float_reg_panel .close{height:30px;overflow:hidden;}
+#float_reg_panel .close a{float:right;width:30px;height:30px}
+#float_reg_panel #reg_step1{padding:40px 0 0 15px;width:245px;height:235px;position:relative;overflow:hidden;color:#98d9ff;display:block;}
+#float_reg_panel #reg_step1 .reg_form td{padding:0 2px;height:26px;}
+#float_reg_panel #reg_step1 .reg_form td.reg_form_item_name{width:60px;text-align:right}
+#float_reg_panel #reg_step1 .reg_form td.reg_form_item_input input{background-color:#5b8cb4;border:solid 1px #09f;height:20px;line-height:20px;color:#000;width:146px}
+#float_reg_panel #reg_step1 .reg_form td.reg_form_item_input input.focus_in_inut{background-color:#fff;border:solid 1px #c8edff;color:#000}
+#float_reg_panel #reg_step1 .reg_form td.reg_form_item_input #validateimg{vertical-align:middle;cursor:pointer;height:29px;width:100px;margin-left:3px}
+#float_reg_panel #reg_step1 .reg_form td.validate_num_input{height:35px;}
+#float_reg_panel #reg_step1 .reg_form td.validate_num_input input{width:40px}
+#float_reg_panel #reg_step1 .agreement{text-align:center;padding-top:5px;}
+#float_reg_panel #reg_step1 .agreement a{text-align:center;text-decoration:underline;color:#0ba6c7;outline:none}
+#float_reg_panel #reg_step1 .agreement input{margin-right:3px}
+#float_reg_panel #reg_step1 .reg_submit{position:absolute;top:242px;left:80px;}
+#float_reg_panel #reg_step1 .reg_submit a{display:inline-block;width:107px;height:31px;background:url("http://s1.syyx.com/nycs/images/float_reg/btn2.jpg") -5px -6px no-repeat;outline:none;}
+#float_reg_panel #reg_step1 .reg_submit a:hover{background-position:-5px -45px}
+#float_reg_panel #reg_step2{display:none;padding:60px 0 0 0;width:200px;margin:0 auto;overflow:hidden;color:#5bbae6;line-height:24px;}
+#float_reg_panel #reg_step2 h3{font-size:14px;text-align:center;margin-bottom:30px;color:#fc8900}
+#float_reg_panel #reg_step2 .account{text-align:center;margin-bottom:20px}
+#float_reg_panel #reg_step2 p{line-height:22px}
+#float_reg_panel .download_area{position:absolute;top:380px;left:8px;height:30px;width:276px}
+#float_reg_panel .link1{float:left;margin-right:15px;width:127px;height:30px;}
+#float_reg_panel .link1:hover{background:url("http://r.syyx.com/nysj/float_reg/btn.jpg") -5px -100px no-repeat}
+#float_reg_panel .link2{float:left;width:127px;height:30px;margin-right:0;}
+#float_reg_panel .link2:hover{background:url("http://r.syyx.com/nysj/float_reg/btn.jpg") -5px -165px no-repeat}
+#float_reg_panel .get_code{position:absolute;top:420px;width:276px;left:8px;}
+#float_reg_panel .get_code a{display:block;width:270px;height:60px}
+#float_reg_panel .check_result_right{background:url("http://s1.syyx.com/nycs/images/float_reg/right_wrong.png") 0 4px no-repeat;width:16px;height:25px}
+#float_reg_panel .check_result_wrong{background:url("http://s1.syyx.com/nycs/images/float_reg/right_wrong.png") 0 -32px no-repeat;width:16px;height:25px}
+#float_reg_panel .check_result_loading{background:url("http://s1.syyx.com/nycs/images/float_reg/loader.gif") 0 4px no-repeat;width:16px;height:25px}

@@ -1,0 +1,47 @@
+html
+    head
+        title 参数配置
+        include script
+    body
+        .cont_form
+            | 所属项：
+            span.form_select 
+                select#configParams
+            | 统计类：
+            span.form_select 
+                select#configClass
+            | 类型：
+            span.form_select
+                select#configType
+                    option(value="0")无
+                    option(value="1")产出
+                    option(value="2")回收
+            input#btnQuery(type="button",value="查询")
+        .cont_f_lb
+        .tab_v
+            table(width="100%",cellspacing="0",cellpadding="0",border="0")
+                tbody    
+                    tr
+                        td.td_l 编号
+                        td.td_r
+                            input#hiddenID(type="hidden")
+                            input#txtItemNo(type="text")
+                    tr
+                        td.td_l  名称
+                        td.td_r
+                            input#txtItemName(type="text")
+                    tr
+                        td.td_l  排序
+                        td.td_r
+                            input#txtOrderNo(type="text")
+                    tr
+                        td.td_l  是否启用
+                        td.td_r
+                            input#chkEnable(type="checkbox")
+                    tr
+                        td.td_l  操作
+                        td.td_r
+                            input#btnAdd(type="button",value="添加")
+                            input#btnSave(type="button",value="保存")   
+        .table_info(style="margin-left:3%")
+            table#listconfigItems

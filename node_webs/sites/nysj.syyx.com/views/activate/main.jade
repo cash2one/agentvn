@@ -1,0 +1,95 @@
+!!!5
+html
+    include ../include/url
+    head
+        include ./meta
+        link(href='/stylesheets/activate/main.css',rel='stylesheet')
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js")
+        script(src='/javascripts/activate/out.js')
+    body
+        .container
+            .content
+                a.logo_link(href='#{nysj_main}')
+                .nav
+                    a(href='#{nysj_main}',target='_blank') 官网首页
+                    a(href='#{nav_bbs}', target='_blank') 玩家论坛
+                a.activate_btn_hash(href='#activate_hash')
+                #get_code_step_1
+                    form(action='#')
+                        .question 您之前是否玩过《诺亚传说》免费版？
+                        .answer
+                            input(type='radio', name='q1', value='1') 
+                            | 玩过
+                            input(type='radio', name='q1', value='2') 
+                            | 没玩过
+                        .question 您通过什么渠道得知《诺亚传说·时间版》首次删档封测的消息？
+                        .answer
+                            input(type='radio', name='q2', value='1') 
+                            | 游戏媒体
+                            input(type='radio', name='q2', value='2')
+                            | 朋友介绍
+                            input(type='radio', name='q2', value='3') 
+                            |《诺亚传说》免费版官网
+                        .mobile 
+                            span 您的手机号码：
+                            input(type='text', name='mobile_number', maxlength='13')
+                        .mobile_code 
+                            span 短信验证码：
+                            input(type='text', name='mobile_code', maxlength='6')
+                            a#get_mobile_code(href='#')
+                            span.send_tip 
+                        .submit_step1
+                            a(href='#')
+                            span
+                #get_code_result_1
+                    h3 很遗憾！
+                    p 您未能获得《诺亚传说·时间版》首次删档封测激活码，请明日再来参加。
+                    a(href='#{activate}')
+                #get_code_result_2
+                    h3 很遗憾！
+                    p 今日已经参与过活动并且没有获奖，请明日再来参加。
+                    a(href='#{activate}')
+                #get_code_result_3
+                    h3 中奖啦！
+                    p 
+                        | 恭喜您获得《诺亚传说·时间版》首次删档封测激活码：
+                        span
+                        br
+                        | 请复制后保存并尽快使用！
+                    a(href='#')
+                #activate_hash
+                #activate_form
+                    form(action='#')
+                        .form_item
+                            span 激活码：
+                            input(type='text', name='code', maxlength='16')
+                        .form_item
+                            span 游戏账号：
+                            input(type='text', name='account', maxlength='20')
+                        .reg_tip
+                            a(href='#') 没有账号？立即注册！
+                        .activate_form_submit_btn
+                            a(href='#')
+                            span
+                #activate_result_1
+                    h3 激活成功
+                    p
+                        | 您的账号：
+                        span
+                        | 已成功激活，请下载游戏客户端。
+                    p 9月15日首次删档封测，有你更精彩！
+                    a.download_mini(href='#{download_mini}')
+                #activate_result_2
+                    h3 激活失败
+                    p
+                    a#activate_failure_btn(href='#')
+                .download_area
+                    a.download_mini(href='#{download_mini}')
+                    a.download_full(href='#{download_full}')
+                    .clear
+                    span 适合新用户使用
+                    span 适合所有用户使用
+                include ../include/copyright
+            include ../../components/activate_float_reg/reg
+        .disnone
+            script(src="http://s13.cnzz.com/stat.php?id=4509776&web_id=4509776")

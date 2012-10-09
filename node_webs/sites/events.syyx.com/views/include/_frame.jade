@@ -1,0 +1,55 @@
+//-public variable-----------------------------------------------------------------------------------------
+-   var p                   = ""
+-   var p_css               = []
+//-head
+-   var keywords            = "诺亚传说,网游,2012题材,网络游戏,人气,新世界,公平,激爽PK,热门2d新游"
+-   var description         = "全新2012题材人气巨作《诺亚传说》，科技与魔法完美融合的未来新世界，揭秘2012末日预言！唯美的未来世界，个性的异能职业，革新的趣味玩法，激爽的跨服PK，首创“微消费”公平模式，6月终极内测！玩法升级，全面升级，震撼来袭！"
+-   var title               = "蔡依林代言网游 2012人气巨作《诺亚传说》 10月12日 战放公测！"
+//-css & js & img
+-   var js_libraby          = ["http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js"]
+//-url
+-   var url_events          = "http://events.syyx.com/"
+-   var url_nycs            = "http://nycs.syyx.com/index.shtml"
+-   var url_reg_page        = "http://user.syyx.com/reg.aspx"
+-   var url_download_page   = "http://nycs.syyx.com/DownLoad/Index.shtml"
+-   var url_bbs             = "http://bbs.nycs.syyx.com/"
+-   var url_mini_client     = "http://nycs.syyx.com/DownLoad/miniDownLoadUrl.aspx"
+-   var url_full_client     = "http://nycs.syyx.com/DownLoad/DownLoadUrl.aspx"
+-   var url_policy          = "http://user.syyx.com/policy/userpolicy.aspx"
+-   var url_syyx            = "http://www.syyx.com/"
+
+//-private variable-----------------------------------------------------------------------------------------
+
+block p_variable
+
+-   var img_path            = "http://r.syyx.com/events/" + p + "/"
+
+!!!5
+html
+    head
+        link(rel= "shortcut icon", href = "http://s.syyx.com/nycs/img/favicon.ico", type = "image/x-icon")
+        meta(http-equiv = "Content-Type",content="text/html; charset=utf-8")
+        meta(name = "keywords", content = "#{keywords}")
+        meta(name = "description", content = "#{description}")
+        title #{title}
+        
+        link(href = "http://s.syyx.com/nycs/plugin/default_page_plugin/jquery-ui-1.8.13.custom.css", rel="stylesheet", type="text/css")
+        link(href = "http://s.syyx.com/nycs/plugin/light-box/jquery.lightbox-0.5.css", rel="stylesheet", type="text/css")
+        link(href = "/stylesheets/#{p}/main.css", rel="stylesheet", type="text/css")
+        block style
+
+    body
+        block stat_ok
+            iframe#stat_ok.disnone(src="")
+            img.disnone(src="#{img_path}bg.jpg",onload="document.getElementById('stat_ok').src='http://stat.syyx.com/stat_ok.aspx'")
+
+        block body
+
+        .disnone#stat
+            iframe(src="http://stat.syyx.com/stat.aspx")
+
+        -if(js_libraby !== [])
+            -each src in js_libraby
+                script(src = src, type="text/javascript")
+
+        script(src = "/javascripts/#{p}/out.js", type="text/javascript")

@@ -1,0 +1,21 @@
+!!!5
+html
+    include ../include/url
+    head
+        include ../include/game_lib_meta
+        include script_style
+    body
+        include ../include/top_iframe
+        .container
+            .content
+                include ../include/logo_link
+                include ../include/nav_new
+                include ../include/fn_group
+                .bread_path
+                    a(href='#{nycs_main}') 首页
+                    |  >
+                    a(href='#{nav_lib}') 游戏资料
+                    |  > 正文
+                include game_lib_detail
+                include ../include/game_lib_nav
+        include ../include/reg

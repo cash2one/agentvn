@@ -1,0 +1,104 @@
+extends ../include/_frame
+
+block p_variable
+    -var p           = "p030"
+    -var keywords    = "诺亚传说,网游,2012题材,网络游戏,人气,新世界,公平,免费,热门,2d,新游,排行榜"
+    -var description = "全新2012题材人气巨作《诺亚传说》，科技与魔法完美融合的未来新世界，揭秘2012末日预言！唯美的未来世界，个性的异能职业，革新的趣味玩法，激爽的跨服PK，首创“微消费”公平模式，终极内测火爆进行中，7组万人新服等你开启！"
+
+block body
+    .container
+        .wrap
+            .main
+                a.logo(href="#{url_nycs}",target="_blank")
+                .reg_panel
+                    .reg
+                        table.reg_form(border="0",cellpadding="0",cellspacing="0")
+                            tr
+                                td.reg_form_item_name 账&nbsp;&nbsp;&nbsp;&nbsp;号：
+                                td.reg_form_item_input
+                                    input#txtUserAccount(type="text",maxlength="16")
+                                td
+                                    #txtUserAccountTip
+                            tr
+                                td.reg_form_item_name 密&nbsp;&nbsp;&nbsp;&nbsp;码：
+                                td.reg_form_item_input
+                                    input#txtPasswords(type='password',maxlength="16")
+                                    input#txtPasswordsVal.disnone(type="text")
+                                td
+                                    #txtPasswordsTip
+                            tr
+                                td.reg_form_item_name 重复密码：
+                                td.reg_form_item_input
+                                    input#txtConfirm(type="password")
+                                    input#txtConfirmVal.disnone(type="text")
+                                td
+                                    #txtConfirmTip
+                            tr
+                                td.reg_form_item_name 真实姓名：
+                                td.reg_form_item_input
+                                    input#txtTrueName(type='text',maxlength="20")
+                                td
+                                    #txtTrueNameTip
+                            tr
+                                td.reg_form_item_name 身&nbsp;份&nbsp;证：
+                                td.reg_form_item_input
+                                    input#txtCardID(type="text",maxlength="18")
+                                td
+                                    #txtCardIDTip
+                            tr
+                                td.reg_form_item_name 验&nbsp;证&nbsp;码：
+                                td.reg_form_item_input.validate_num_input
+                                    input#txtValidate(type='text',maxlength='20')
+                                    img#validateimg.disnone(src='',alt='点击刷新验证码')
+                                td
+                                    #txtValidateVal
+                        .agreement
+                            input#chk_XieYi(type="checkbox",checked)
+                            | 同意
+                            a(href='http://user.syyx.com/policy/userpolicy.aspx',target="_blank",hidefocus="true")
+                                《使用协议及隐私协议》
+                        .reg_submit
+                            a#reg_button(href='#',hidefocus="true")
+                            span#regProcessTip
+
+                    #reg_step2
+                        .active
+                            div.success
+                            div 恭喜您，注册成功！
+                            div 您已经获得网吧特权大礼包！
+                            div 您的账号：
+                                span#reg_account
+                            div 激活码为：
+                                span#active_code
+                            a#active_link(href='#',hidefocus="true")
+                    #reg_step3
+                        .no_card
+                            div.success
+                            div 恭喜您，注册成功!
+                            div 今天的礼包卡已发放完毕。
+                            div 您的账号：
+                                span#reg_account3
+                    #reg_step4
+                        .active_success
+                            div.reg_success
+                            div 进游戏在曙光前哨站（235,130）
+                                br
+                                | 找NPC“礼包大使”对话即可领取礼包。
+                    #reg_step5
+                        .active_fail
+                            div.fail 
+                            div 激活失败，请返回!
+                            div#active_tip
+                            span#back 返回
+                    .tip#tip1(style="display:block") 全新2012题材人气巨作《诺亚传说》，亚洲天后蔡依林倾情代言！
+                        br
+                        | 玩的公平，站的纯粹！站放公测，站放，每个人的宇宙。
+                    .tip#tip2 开创未来星纪元，书写人类新史诗，魔法与科技的完美交融，
+                        br
+                        | 光与电的激情碰撞，战斗欲望额全情释放；
+                    .tip#tip3 推荐火爆新服:
+                        br
+                        span 雷霆战场[电信]&nbsp;&nbsp;&nbsp;&nbsp;伊甸园[网通] 
+                            br  
+                            | 英雄神殿[电信]
+                include ../include/copyright

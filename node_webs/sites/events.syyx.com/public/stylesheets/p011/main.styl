@@ -1,0 +1,126 @@
+$path               = 'http://r.syyx.com/events/p011/'
+$bg                 = $path'bg.jpg'
+$btn                = $path'btn.jpg'
+$right_wrong        = $path'right_wrong.png'
+$loader             = $path'ajax-loader.gif'
+html
+    overflow hidden
+body
+    font-size 12px
+    margin 0
+    color #cab4ff
+    overflow hidden
+    background #e1b5ff
+.main
+    background url($bg) no-repeat
+    width 546px
+    height 208px
+    overflow hidden
+    position relative
+a
+    color #a179ff
+    outline none
+a:hover
+    color #fff
+.reg_panel
+    width 500px
+    height 116px
+    position relative
+    left 25px
+    top 75px
+    table
+        td
+            height 27px
+            width 25px
+        input
+            background rgb(33,12,104)
+            border 1px solid rgb(92,55,188)
+            height 18px
+            color rgb(200,178,255)
+            line-height 18px
+            width 130px
+        .focus_in_inut
+            background rgb(60,25,143)
+    .agreement
+        height 21px
+        float left
+        margin-top 10px
+        a
+            text-decoration underline
+    .reg_form_item_name
+        width 60px
+    .reg_form_item_input
+        width 135px
+    .input_l
+        width 105px
+        input
+            width 100px
+    .validate_num_input
+        height 30px
+        vertical-align top
+        padding-top 3px
+    #txtValidate
+        width 40px
+    #validateimg
+        width 85px
+        margin-left 2px
+        height 25px
+        vertical-align top
+        cursor pointer
+    #reg_step2,#reg_step3
+        line-height 25px
+        display none
+        text-align center
+        width 400px
+        margin-top 20px
+        span
+            color #FFFF78
+            margin-right 10px
+            font-size 14px
+    .link        
+        margin 10px auto 0
+        width 290px
+        height 30px
+        #active_link
+            background url($btn) no-repeat -3px -58px
+            display block
+            width 105px
+            height 27px
+            margin 0 auto
+            &:hover
+                background-position -3px -85px
+    .reg_submit
+        float right
+        position absolute
+        top 90px
+        left 260px
+        width 140px
+        height 27px
+    #regProcessTip
+        width 20px
+        height 20px
+        float right
+    #reg_button
+        width 105px
+        height 27px
+        position absolute
+        background url($btn) no-repeat -3px -4px
+        &:hover
+            background-position -3px -31px
+
+.check_result_wrong
+    background url($right_wrong) no-repeat 0 -32px
+    height 100%
+    width 16px
+.check_result_right 
+    background: url($right_wrong) no-repeat 0 4px
+    height: 25px;
+    width: 16px;
+
+.check_result_loading 
+    background url($loader) no-repeat 0 4px
+    height 25px
+    width 16px
+
+.disnone
+    display none

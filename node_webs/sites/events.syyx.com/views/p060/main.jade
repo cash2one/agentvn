@@ -1,0 +1,229 @@
+extends ../include/_frame
+
+block p_variable
+    -var p           = "p060"
+    -var keywords    = "诺亚传说,网游,2012题材,网络游戏,人气,新世界,公平,免费,热门,2d,新游,排行榜"
+    -var description = "全新2012题材人气巨作《诺亚传说》，科技与魔法完美融合的未来新世界，揭秘2012末日预言！唯美的未来世界，个性的异能职业，革新的趣味玩法，激爽的跨服PK，首创“微消费”公平模式，终极内测火爆进行中，7组万人新服等你开启！ "
+    -var p_css       = ["http://s.syyx.com/nycs/plugin/default_page_plugin/jquery-ui-1.8.13.custom.css","http://s.syyx.com/nycs/plugin/light-box/jquery.lightbox-0.5.css"]
+
+//写正文啦
+block body
+    .container
+        .head
+            .w_980
+                .nav
+                    include ../include/nav
+                a.logo(href="#{url_nycs}",target="_blank") 诺亚传说
+                #prize
+                #flash
+                #flash_but
+                #flash_btn
+                a.mini(href="#{url_mini_client}") 15分钟微端下载
+                #to_reg_flash
+                #to_reg_flash2
+                a.to_reg#regs(href="javascript:undefined") 快速注册
+        .main
+            .w_980
+                #img_focus
+                    #img_focus_tab
+                        a.check_0
+                        a
+                        a
+                        a
+                    #img_focus_img
+                        img(src="#{img_path}feature1.jpg",width="678",height="354",style="display:inline")
+                        img(delay="#{img_path}feature2.jpg",width="678",height="354")
+                        img(delay="#{img_path}feature3.jpg",width="678",height="354")
+                        img(delay="#{img_path}feature4.jpg",width="678",height="354")
+                .comment
+                    ul#com_con
+                        li
+                            img(src="#{img_path}user/1.jpg",width="45",height="45")
+                            p 微消费实实在在，没花钱一样牛逼！
+                            span 腾讯玩家
+                        li
+                            img(src="#{img_path}user/2.jpg",width="45",height="45")
+                            p 画面很漂亮，不再是打打杀杀的游戏，喜欢。
+                            span 腾讯玩家
+                        li
+                            img(src="#{img_path}user/3.jpg",width="45",height="45")
+                            p 我觉得非常好玩。建议来新区，人气旺。
+                            span 百度玩家
+                        li
+                            img(src="#{img_path}user/4.jpg",width="45",height="45")
+                            p 游戏不黑，合装备不会爆，就是任务有点傻。
+                            span 17173玩家
+                        li
+                            img(src="#{img_path}user/5.jpg",width="45",height="45")
+                            p 游戏里面可以自给自足，适合长期玩哦
+                            span 试玩网玩家
+                        li
+                            img(delay="#{img_path}user/6.jpg",width="45",height="45")
+                            p 打造一流军团，打世界BOSS，欢迎朋友们一起来
+                            span 腾讯玩家
+                        li
+                            img(delay="#{img_path}user/7.jpg",width="45",height="45")
+                            p 不占用时间，可以边逛淘宝边下副本，哈哈。
+                            span 17173玩家
+                        li
+                            img(delay="#{img_path}user/8.jpg",width="45",height="45")
+                            p 合极品不是梦想，不用花钱的好游戏！
+                            span 腾讯玩家
+                        li
+                            img(delay="#{img_path}user/9.jpg",width="45",height="45")
+                            p 简单，玩起来不累，武器比较好看。
+                            span 17173玩家
+                        li
+                            img(delay="#{img_path}user/10.jpg",width="45",height="45")
+                            p 有离线，比那些天天在线的人升级慢不了多少。
+                            span 试玩网玩家
+                        li
+                            img(delay="#{img_path}user/11.jpg",width="45",height="45")
+                            p 玩了大半年，我是上班族，下班玩玩，适合我。
+                            span 百度玩家
+                        li
+                            img(delay="#{img_path}user/12.jpg",width="45",height="45")
+                            p 在诺亚收获了兄弟、收获了爱情，不得不爱。
+                            span 腾讯玩家
+                        li
+                            img(delay="#{img_path}user/13.jpg",width="45",height="45")
+                            p 这游戏需要慢慢的磨，你才知道这游戏的精华哈。
+                            span 腾讯玩家
+                        li
+                            img(delay="#{img_path}user/14.jpg",width="45",height="45")
+                            p 这游戏真不错，商城不卖装备，P起来有激情。
+                            span 17173玩家
+                        li
+                            img(delay="#{img_path}user/15.jpg",width="45",height="45")
+                            p 纯2D特色，果断内挂，题材新，老玩家福音。
+                            span 试玩网玩家
+                        li
+                            img(delay="#{img_path}user/16.jpg",width="45",height="45")
+                            p 容易上手 不花钱也能玩的很好 真的！
+                            span 腾讯玩家
+                        li
+                            img(delay="#{img_path}user/17.jpg",width="45",height="45")
+                            p 这是那种画面比较好的2D游戏，很容易上手
+                            span 百度玩家
+                        li
+                            img(delay="#{img_path}user/18.jpg",width="45",height="45")
+                            p 从来不碰网游的我 也爱上了这个游戏
+                            span 腾讯玩家
+                        li
+                            img(delay="#{img_path}user/19.jpg",width="45",height="45")
+                            p 这游戏商城不黑，RMB玩家除了好看没别的
+                            span 百度玩家
+                        li
+                            img(delay="#{img_path}user/20.jpg",width="45",height="45")
+                            p 题材上很新颖，有其他网游所没的的职业
+                            span 腾讯玩家
+                #job
+                    #j_tab
+                        span.check_0
+                        span
+                        span
+                        span
+                    #j_con
+                        div.con(style="visibility:visible;")
+                            img(src="http://r.syyx.com/events/p013/jws.jpg",width="339",height="235")
+                            .left
+                                .swf#jws
+                                p
+                                    span 攻击类型：
+                                    |物理攻击
+                                    br
+                                    span 职业定位：
+                                    |近程、瞬间爆发、快速突进
+                            .right                                
+                                b 职业特点
+                                |单挑切磋：★★★★★
+                                br
+                                |团队作战：★★★
+                                br
+                                |升级打怪：★★★★
+                                br
+                                |操作难度：★★★
+                        div.con
+                            img(src="http://r.syyx.com/events/p013/ynz.jpg",width="339",height="235")
+                            .left
+                                .swf#ynz
+                                p
+                                    span 攻击类型：
+                                    |魔法攻击
+                                    br
+                                    span 职业定位：
+                                    |远程、群体伤害、瞬间移动
+                            .right                                
+                                b 职业特点
+                                |单挑切磋：★★★
+                                br
+                                |团队作战：★★★★
+                                br
+                                |升级打怪：★★★★★
+                                br
+                                |操作难度：★★★★★
+                        div.con
+                            img(src="http://r.syyx.com/events/p013/qxs.jpg",width="339",height="235")
+                            .left
+                                .swf#qxs
+                                p
+                                    span 攻击类型：
+                                    |物理攻击
+                                    br
+                                    span 职业定位：
+                                    |远程、超高攻速、隐身杀手
+                            .right
+                                b 职业特点
+                                |单挑切磋：★★★★
+                                br
+                                |团队作战：★★★★
+                                br
+                                |升级打怪：★★★
+                                br
+                                |操作难度：★★★★★
+                        div.con
+                            img(src="http://r.syyx.com/events/p013/gdj.jpg",width="339",height="235")
+                            .left
+                                .swf#gdj
+                                p
+                                    span 攻击类型：
+                                    |物理攻击
+                                    br
+                                    span 职业定位：
+                                    |近程、不死金刚、减速控制                            
+                            .right
+                                b 职业特点
+                                |单挑切磋：★★★★
+                                br
+                                |团队作战：★★★★★
+                                br
+                                |升级打怪：★★★
+                                br
+                                |操作难度：★★★★
+                    a.to_reg(href="javascript:undefined") 马上注册
+                #img_scroll
+                    #prev.button
+                    .scroll_box
+                        #scroll_body(style="margin-left:0px")
+                            a(href="#{img_path}l1.jpg")
+                                img(src="#{img_path}s1.jpg",width="220",height="215",style="display:inline")
+                            a(href="#{img_path}l2.jpg")
+                                img(delay="#{img_path}s2.jpg",width="220",height="215")
+                            a(href="#{img_path}l3.jpg")
+                                img(delay="#{img_path}s3.jpg",width="220",height="215")
+                            a(href="#{img_path}l4.jpg")
+                                img(delay="#{img_path}s4.jpg",width="220",height="215")
+                            a(href="#{img_path}l5.jpg")
+                                img(delay="#{img_path}s5.jpg",width="220",height="215")
+                            a(href="#{img_path}l6.jpg")
+                                img(delay="#{img_path}s6.jpg",width="220",height="215")
+                    #next.button
+                include ../include/copyright
+        .ww
+            .res
+                .reg_box
+                    a.to_reg#reg1(href="javascript:undefined") 马上注册
+                    #reg2
+                        include ../include/reg_5
+                        #close
+    #pop_flash_dialog.disnone

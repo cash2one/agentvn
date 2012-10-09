@@ -1,0 +1,382 @@
+$path               = 'http://r.syyx.com/events/p010/'
+
+$bg                 = $path'bg.jpg'
+$down               = $path'down.jpg'
+$tabs_selected      = $path'tabs_selected.png'
+$down_bg            = $path'down_bg.jpg'
+$blank              = $path'blank.gif'
+$right_wrong_icon   = $path'right_wrong.png'
+$loading            = $path'ajax-loader.gif'
+$btn                = $path'btn.jpg'
+
+
+.hide
+    visibility hidden
+a
+    text-decoration none
+    outline none
+    outline none
+    zoom 1
+.disnone
+    display none
+body
+    font-size 12px
+    font-family "宋体"
+    background #0f132e
+    margin 0
+.container
+    background url($bg) center top no-repeat
+    min-width 984px
+    .container_inner
+        min-width 984px
+        .content
+            width 984px
+            margin 0 auto
+            position relative
+            height 1446px
+            overflow hidden
+            .match
+                position absolute
+                width 78px
+                height 32px
+                left 700px
+                top 150px
+            .links_topbar
+                width 260px
+                height 22px
+                line-height 22px
+                position absolute
+                top 0
+                left 804px
+                a
+                    display inline-block
+                    width 38px
+            .logo_to_index
+                position absolute
+                display block
+                width 190px
+                height 80px
+                top 30px
+                left 500px
+            .link_to_offical_index
+                position absolute
+                width 170px
+                height 60px
+                top 408px
+                left 768px
+                a
+                    display block
+                    width 170px
+                    height 60px
+                    outline none
+            #logo_360
+                 position absolute
+                 top 30px
+                 left 280px
+                 width 195px
+                 height 68px
+                 display block
+            #flash_video
+                position absolute
+                width 174px
+                height 106px
+                top 354px
+                left 270px
+                display block
+                .flash_cusor
+                    position absolute
+                    width 174px
+                    height 106px
+                    z-index 10
+                    top 0px
+                    left 0
+                    display block
+                    outline none
+                    background url($blank) 0 0 no-repeat
+            .top_min_down_load
+                position absolute
+                top 387px
+                left 466px
+                width 177px
+                height 41px
+                background url($down) 0 0 no-repeat
+                &:hover
+                    background url($down) -177px 0 no-repeat
+            .top_down_load
+                position absolute
+                top 424px
+                left 466px
+                width 177px
+                height 41px
+                background url($down) 0 -37px no-repeat
+                &:hover
+                    background url($down) -177px -37px no-repeat
+            .gamefeature_tabs
+                position absolute
+                top 780px
+                left 37px
+                width 720px
+                height 292px
+                overflow hidden
+                #gamefeature
+                    position relative
+                    ul
+                        position absolute
+                        z-index 10
+                        top 0
+                        left 541px
+                        width 142px
+                        li
+                            float left
+                            height 72px
+                            width 142px
+                            a
+                                display block
+                                height 72px
+                                width 142px
+                                outline none
+                                margin-bottom 1px
+                    .ui-tabs-selected
+                        .first_selected_btn
+                            background url($tabs_selected) 0 0 no-repeat
+                        .second_selected_btn
+                            background url($tabs_selected) 0 -73px no-repeat
+                        .third_selected_btn
+                            background url($tabs_selected) 0 -146px no-repeat
+                        .fourth_selected_btn
+                            background url($tabs_selected) 0 -219px no-repeat
+                    .feature_content
+                        position absolute
+                        top 0
+                        left 0
+                        img
+                            width 550px
+                            height 292px
+            .reg
+                position absolute
+                top 530px
+                left 740px
+                height 255px
+                width 240px
+                color #98d9ff
+                .reg_form
+                    td
+                        padding 0 2px
+                        height 28px
+                        width 20px
+                    .reg_form_item_name
+                        width:60px
+                        text-align right
+                        .focus_in_inut
+                            background-color #fff
+                            border solid 1px #C8EDFF
+                            color #000
+                    .reg_form_item_input
+                        input
+                            background-color #577784
+                            border solid 1px #00122a
+                            height 20px
+                            line-height 20px
+                            color #98d9ff
+                            width 130px
+                    .validate_num_input
+                        height 35px
+                        width auto
+                        input
+                            width 40px
+                            float left
+                        #validateimg
+                            cursor pointer
+                            height 29px
+                            width 85px
+                            float right
+                .agreement
+                    text-align center
+                    padding-top 5px
+                    a
+                        text-decoration underline
+                        color #0ba6c7
+                        outline none
+                    input
+                        margin-right 3px
+                .reg_submit
+                    padding 10px 0 0 45px
+                    a
+                        float left
+                        width 142px
+                        height 34px
+                        background url($btn) 0 0 no-repeat
+                        outline none
+                        &:hover
+                            background url($btn) 0 -126px  no-repeat
+                .check_result_right
+                    background:url($right_wrong_icon) 0 4px no-repeat
+                    width 16px
+                    height 25px
+                .check_result_wrong
+                    background:url($right_wrong_icon) 0 -32px no-repeat 
+                    width 16px
+                    height 25px
+                .check_result_loading
+                    background:url($ajax-loader) 0 4px no-repeat
+                    width 16px
+                    height 25px
+                #regProcessTip
+                    float left 
+                    margin 5px 0 0 5px
+            #reg_step2
+                width 200px
+                height 200px
+                position absolute
+                top 551px
+                left 755px
+                overflow hidden
+                line-height 30px
+                color #ddddff
+                font-size 14px
+                display none
+                a
+                    display block
+                    position absolute
+                    width 142px
+                    height 34px
+                    top 160px
+                    left 30px
+                    background url($btn) 0 -40px no-repeat
+                    &:hover
+                        background:url($btn) 0 -278px  no-repeat
+                    span
+                        color #00ddfb
+            #reg_step3
+                position absolute
+                top 551px 
+                height 200px
+                display none
+                left 755px 
+                overflow hidden
+                line-height 30px
+                color #ddddff 
+                font-size 14px
+                span
+                    color #00ddfb
+                a
+                    display block
+                    position absolute
+                    width 142px
+                    height 34px
+                    top 140px
+                    left 30px
+                    background url($btn) 0 -84px no-repeat
+            #olduser_get_code
+                position absolute
+                top 995px
+                left 750px
+                color #ddddff
+                .validate_area_old_user
+                    height 33px
+                    overflow hidden
+                    position relative
+                    width 220px
+                    input
+                        width 60px
+                        background-color #577784
+                        border solid 1px #00122a 
+                        height 20px
+                        line-height 20px
+                        color #fff
+                        font-weight bold
+                        margin 0
+                    #olduser_get_code_validate_img
+                        position absolute
+                        width 82px
+                        height 22px
+                        display none
+                        cursor pointer
+                        top 0
+                        left 118px
+                .olduser_get_code_btn
+                    background url($btn) 0 -343px  no-repeat
+                    display block
+                    width 81px
+                    height 26px
+                    color #98f7ff
+                    text-align center
+                    line-height 26px
+                    margin 0 0 0 63px
+                    &:hover
+                        background:url($btn) -114px -169px  no-repeat
+            #olduser_get_code_success
+                position absolute
+                top 990px
+                left 780px
+                display none
+                color #ddddff
+                line-height 20px
+                #old_user_active
+                    width 81px
+                    height 26px
+                    display block
+                    background url($btn) 0 -314px  no-repeat
+                    position absolute
+                    top 45px
+                    left 40px
+                    &:hover
+                        background:url($btn) -87px -314px  no-repeat 
+            .down
+                width 204px
+                height 26px
+                background url($down_bg) no-repeat
+                position absolute
+                top 883px
+                left 750px
+                .download_min_client
+                    display block
+                    width 100px
+                    height 26px
+                    float left
+                    &:hover
+                        background url($down_bg) 0 -26px  no-repeat
+                .download_client
+                    display block
+                    width 100px
+                    height 26px
+                    float left
+                    margin-left 4px
+                    &:hover
+                        background url($down_bg) -104px -26px no-repeat
+            .nycs360_intor
+                position absolute
+                top 1074px
+                left 725px
+                width 256px
+                height 128px
+                display block
+            .copy_right
+                position absolute
+                top 1306px
+                width 980px
+                color #698593
+                left 0
+                text-align center
+                .feet_txt
+                    text-align left
+                    margin 10px 0 0 380px
+                .feet_logo
+                    position absolute
+                    width 140px
+                    height 60px
+                    left 225px
+                    top 26px
+.pop_video_detail
+    background-color #002544
+object
+    cursor pointer
+#pop_flash
+    border solid 1px #056c5c
+
+
+
+
+
+                    
+

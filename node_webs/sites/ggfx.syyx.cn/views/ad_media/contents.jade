@@ -1,0 +1,71 @@
+div#loading
+	img(src="/images/spinner3-greenie.gif")
+
+div(class="postion")
+	span.f_b_blue	您的当前位置：
+	span	广告管理 &gt;&gt; 媒体管理
+div(class="cont_f_lb")
+
+div#content
+	div#search
+		table
+			tr
+				td 	关键字
+					input#txtKeyword
+				td 	媒体类型
+					select#ddlSearchClass
+				td	是否启用
+					select#ddlIsEnabled
+						option(value="-1")	全部
+						option(value="1")	启用
+						option(value="0")	禁用
+				td	是否显示
+					select#ddlIsShow
+						option(value="-1")	全部
+						option(value="1")	启用
+						option(value="0")	禁用
+				td  
+					&nbsp
+					a#btnSearch(href="javascript:void(0)",class="easyui-linkbutton")	查询
+	table#tt(class="wiki-list-table", style="width:100%")
+		tr
+			th	类型
+			th	媒体
+			th	说明
+			th	广告数
+			th	是否启用
+			th	是否显示
+			th	操作
+	div#pp(class="pager")
+
+	br
+	div(style="padding:5px;")
+		a#btnAdd(href="javascript:void(0)",class="easyui-linkbutton",onclick="clear_form();")	新增
+		
+	input#hidID(type="hidden")
+
+	table(class="wiki-content-table")
+		tr
+			th  类型
+			td
+				select#ddlClass
+		tr
+			th	媒体
+			td
+				input#txtMediaName(type="text")
+		tr
+			th	说明
+			td
+				input#txtMediaRemark(type="text")
+		tr
+			th	是否启用
+			td	
+				input#chkIsEnabled(type="checkbox")
+		tr
+			th	是否显示
+			td	
+				input#chkIsShow(type="checkbox")
+		tr
+			td
+			td
+				input#btnOK.input_btn(type="button", value="确定")

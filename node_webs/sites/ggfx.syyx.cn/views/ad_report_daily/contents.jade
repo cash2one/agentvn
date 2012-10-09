@@ -1,0 +1,48 @@
+div#loading
+	img(src="/images/spinner3-greenie.gif")
+
+div(class="postion")
+	span.f_b_blue	您的当前位置：
+	span	广告管理 &gt;&gt; 日报报表
+div(class="cont_f_lb")
+
+div#content
+	div#search
+		table
+			tr
+				td	游戏
+					select#ddlGame
+				td	日期
+					input#txtStartTime(type="text",class="easyui-datebox")
+				td  媒体类型
+					select#ddlClass
+				td	媒体
+					select#ddlMedia
+				td  广告
+					select#ddlAd
+				td  子站
+					select#ddlAdWebNumber
+				td  
+					input#chkSchedule(type="checkbox")
+					只看排期
+				td  
+					&nbsp
+					a#btnSearch(href="javascript:void(0)",class="easyui-linkbutton")	查询
+					&nbsp
+					a#btnExcel(href="javascript:void(0)",class="easyui-linkbutton")	导出Excel
+
+	table#tt(class="wiki-list-table", style="width:100%")
+		tr
+			th	媒体类型
+			th	媒体
+			th	位置
+			th	广告费
+			th	展示量
+			th	点击cookies
+			th	客户端安装
+			th	回滚注册
+			th	回滚登录
+			th	CPA
+			th	CPL
+			th	注册率
+			th	登录率

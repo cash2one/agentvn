@@ -1,0 +1,47 @@
+div#loading
+	img(src="/images/spinner3-greenie.gif")
+
+div(class="postion")
+	span.f_b_blue	您的当前位置：
+	span	广告管理 &gt;&gt; KPI月报
+div(class="cont_f_lb")
+
+br
+div#content
+	div#search
+		table
+			tr
+				td	
+					input#btnPreMonth.input_btn(type="button",value="上一个月")
+				td	日期
+					input#txtDateTime(type="text",class="easyui-datebox")
+				td  
+					input#btnNextMonth.input_btn(type="button",value="下一个月")
+				td  指标
+					select#ddlKey
+						option(value="1")	点击
+						option(value="2")	当日注册
+						option(value="3")	当日登录
+						option(value="4")	费用
+						option(value="5")	CPL
+				td  
+					&nbsp
+					a#btnSearch(href="javascript:void(0)",class="easyui-linkbutton")	查询
+					&nbsp
+					input#chkShowValue(type="checkbox",checked="true")	
+					label(for="chkShowValue")	显示数值
+	br
+	div(class="easyui-tabs",plain="true")
+		div#divChart(title="月KPI",style="padding:10px;")
+		div#divDetail(title="数据详情",style="padding:10px;")
+			table#tt(class="wiki-list-table", style="width:100%")
+				tr
+					th	日期
+					th	费用
+					th	CPL
+					th	展示量
+					th	点击量
+					th	当日注册
+					th	当日登录
+					th	注册率
+					th	登录率

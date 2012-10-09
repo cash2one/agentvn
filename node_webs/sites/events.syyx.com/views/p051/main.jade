@@ -1,0 +1,182 @@
+extends ../include/_frame
+
+block p_variable
+    -var p           = "p051"
+    -var keywords    = "诺亚传说,网游,2012题材,网络游戏,人气,新世界,公平,免费,热门,2d,新游,排行榜"
+    -var description = "全新2012题材人气巨作《诺亚传说》，科技与魔法完美融合的未来新世界，揭秘2012末日预言！唯美的未来世界，个性的异能职业，革新的趣味玩法，激爽的跨服PK，首创“微消费”公平模式，终极内测火爆进行中，8月万人新服等你开启！"
+
+block body    
+    .container
+        .wrapper
+            .main
+                .nav
+                    include ../include/nav
+                a.logo(href="#{url_nycs}",target="_blank")
+                a.mini_download(href="#{url_mini_client}",target="_blank")
+                #flash
+                #job
+                    .con.qxs
+                        .info
+                            strong 职业特点
+                            ul
+                                li 单挑切磋：★★★★
+                                li 团队作战：★★★★ 
+                                li 升级打怪：★★★
+                                li 操作难度：★★★★★
+                            p
+                                strong 攻击类型：
+                                |物理攻击 
+                                br
+                                strong 职业定位：
+                                |远程、超高攻速、隐身杀手
+                            strong 特色技能：
+                            p.skill
+                    .con.ynz
+                        .info
+                            strong 职业特点
+                            ul
+                                li 单挑切磋：★★★
+                                li 团队作战：★★★★
+                                li 升级打怪：★★★★★
+                                li 操作难度：★★★★★
+                            p
+                                strong 攻击类型：
+                                |魔法攻击 
+                                br
+                                strong 职业定位：
+                                |远程、群体伤害、瞬间移动
+                            strong 特色技能：
+                            p.skill
+                    .con.jws
+                        .info
+                            strong 职业特点
+                            ul
+                                li 单挑切磋：★★★★★
+                                li 团队作战：★★★
+                                li 升级打怪：★★★★
+                                li 操作难度：★★★
+                            p
+                                strong 攻击类型：
+                                |物理攻击 
+                                br
+                                strong 职业定位：
+                                |近程、瞬间爆发、快速突进
+                            strong 特色技能：
+                            p.skill
+                    .con.gdj
+                        .info
+                            strong 职业特点
+                            ul
+                                li 单挑切磋：★★★★
+                                li 团队作战：★★★★★
+                                li 升级打怪：★★★
+                                li 操作难度：★★★★
+                            p
+                                strong 攻击类型：
+                                |物理攻击 
+                                br
+                                strong 职业定位：
+                                |近程、不死金刚、减速控制
+                            strong 特色技能：
+                            p.skill
+                    #j_tab
+                        span.check_0
+                        span
+                        span
+                        span
+                    #j_swf
+                        span.qxs(style="visibility:visible")
+                        span.ynz
+                        span.jws
+                        span.gdj
+                    a#reg_1(href="javascript:undefined")
+                    a#reg_2(href="javascript:undefined")
+                #prize
+                include ../include/copyright2
+            .reg_box
+                a#reg1(href="javascript:undefined")
+                #reg2
+                    .reg_panel
+                        .reg
+                            table.reg_form(border="0",cellpadding="0",cellspacing="0")
+                                tr
+                                    td.reg_form_item_name 账&nbsp;&nbsp;&nbsp;&nbsp;号：
+                                    td.reg_form_item_input
+                                        input#txtUserAccount(type="text",maxlength="16")
+                                    td
+                                        #txtUserAccountTip
+                                tr
+                                    td.reg_form_item_name 密&nbsp;&nbsp;&nbsp;&nbsp;码：
+                                    td.reg_form_item_input
+                                        input#txtPasswords(type='password',maxlength="16")
+                                        input#txtPasswordsVal.disnone(type="text")
+                                    td
+                                        #txtPasswordsTip
+                                tr
+                                    td.reg_form_item_name 重复密码：
+                                    td.reg_form_item_input
+                                        input#txtConfirm(type="password")
+                                        input#txtConfirmVal.disnone(type="text")
+                                    td
+                                        #txtConfirmTip
+                                tr
+                                    td.reg_form_item_name 真实姓名：
+                                    td.reg_form_item_input
+                                        input#txtTrueName(type='text',maxlength="20")
+                                    td
+                                        #txtTrueNameTip
+                                tr
+                                    td.reg_form_item_name 身&nbsp;份&nbsp;证：
+                                    td.reg_form_item_input
+                                        input#txtCardID(type="text",maxlength="18")
+                                    td
+                                        #txtCardIDTip
+                                tr
+                                    td.reg_form_item_name 验&nbsp;证&nbsp;码：
+                                    td.reg_form_item_input.validate_num_input
+                                        input#txtValidate(type='text',maxlength='20')
+                                        img#validateimg.disnone(src='',alt='点击刷新验证码')
+                                    td
+                                        #txtValidateVal
+                            .agreement
+                                input#chk_XieYi(type="checkbox",checked)
+                                | 同意
+                                a(href='http://user.syyx.com/policy/userpolicy.aspx',target="_blank",hidefocus="true")
+                                    《使用协议及隐私协议》
+                            .reg_submit
+                                a#reg_button(href='#',hidefocus="true")
+                                span#regProcessTip
+                        #reg_step2
+                            .active
+                                div.success 恭喜您获得
+                                    span#card_type 公测战放礼包 
+                                div 您的账号：
+                                    input#reg_account(type="text")
+                                div 激活码为：
+                                    input#active_code(type="text")
+                                a#active_link(href='#',hidefocus="true")
+                        #reg_step3
+                            .no_card
+                                div.success 恭喜您，注册成功!
+                                div 今天的礼包卡已发放完毕。
+                                div 您的账号：
+                                    span#reg_account3
+                        #reg_step4
+                            .active_success
+                                div.success 恭喜您，激活成功!
+                                div 立即下载客户端，畅享战放礼包。
+                                div 
+                        #reg_step5
+                            .active_fail
+                                div.fail 激活失败!
+                                div#active_tip 激活信息有误，您可以在客户端下载期间，返回上一页重新激活礼包。
+                            .download
+                                a(href="#{url_mini_client}",hidefocus="true",class="download_17173_2",target="_blank")
+                                a(href="#{url_full_client}",hidefocus="true",class="download_mini_2",target="_blank")
+                            .back_bg
+                                a#back(href="javascript:undefined")
+                        .download
+                            a(href="#{url_mini_client}",hidefocus="true",class="download_17173_2",target="_blank")
+                            a(href="#{url_full_client}",hidefocus="true",class="download_mini_2",target="_blank")
+                        .download_tip 公测战放礼包可在游戏内礼包大使处直接领取
+                    span#close

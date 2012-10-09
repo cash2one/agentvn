@@ -1,0 +1,356 @@
+extends ../include/_frame
+
+block p_variable
+    -var p           = "p016"
+    -var keywords    = "诺亚传说,网游,2012题材,网络游戏,人气,新世界,公平,免费,热门,2d,新游,排行榜"
+    -var description = "全新2012题材人气巨作《诺亚传说》，科技与魔法完美融合的未来新世界，揭秘2012末日预言！唯美的未来世界，个性的异能职业，革新的趣味玩法，激爽的跨服PK，首创“微消费”公平模式，终极内测火爆进行中，8月万人新服等你开启！"
+    -var p_css       = ["http://s.syyx.com/nycs/plugin/default_page_plugin/jquery-ui-1.8.13.custom.css","http://s.syyx.com/nycs/plugin/light-box/jquery.lightbox-0.5.css"]
+
+block body
+    .container
+        .main
+            .nav
+                include ../include/nav
+            a.logo(href="#{url_nycs}",target="_blank")
+            #prize
+            .flash
+                #video
+                #flash_but_1
+                span#flash_active
+            a.mini_download(href="#{url_mini_client}",target="_blank")
+            .reg_but
+                #swf
+                #reg_but_hover
+                span#to_reg
+            #img_focus
+                #img_focus_tab
+                    a.check_0
+                    a
+                    a
+                    a
+                #img_focus_img
+                    img(src="#{img_path}feature1.jpg",width="678",height="354",style="display:inline")
+                    img(delay="#{img_path}feature2.jpg",width="678",height="354")
+                    img(delay="#{img_path}feature3.jpg",width="678",height="354")
+                    img(delay="#{img_path}feature4.jpg",width="678",height="354")
+            .comment
+                ul#com_con
+                    li
+                        img(src="#{img_path}user/1.jpg",width="45",height="45")
+                        span 神秘的男人
+                        div 
+                            em 画面感：
+                            |★★★★  
+                            br
+                            em 可玩性：
+                            |★★★★
+                        p 点评：玩起来很轻松不会觉得麻烦
+                    li
+                        img(src="#{img_path}user/2.jpg",width="45",height="45")
+                        span 钟声无恙
+                        div 
+                            em 画面感：
+                            |★★★★☆
+                            br
+                            em 可玩性：
+                            |★★★★★  
+                        p 点评：游戏不花钱也能玩的好，各种副本玩法也很省心，感觉是个    em 可玩性极强的好游戏！
+                    li     
+                        img(src="#{img_path}user/3.jpg",width="45",height="45")
+                        span 许小xing
+                        div 
+                            em 画面感：
+                            |★★★★☆ 
+                            br 
+                            em 可玩性：
+                            |★★★★☆  
+                        p 点评：最欣赏的就是玩家可以完全做到自给自足，不再是RMB玩家的天下啦~~
+                    li
+                        img(src="#{img_path}user/4.jpg",width="45",height="45")
+                        span 闪朵躲闪、
+                        div 
+                            em 画面感：
+                            |★★★★
+                            br
+                            em 可玩性：
+                            |★★★★  
+                        p 点评：游戏操作比较简单，老鸟菜鸟入手都快，喜欢未来奇幻题材
+                    li
+                        img(delay="#{img_path}user/5.jpg",width="45",height="45")
+                        span 布衣秋天
+                        div 
+                            em 画面感：
+                            |★★★★ 
+                            br 
+                            em 可玩性：
+                            |★★★★
+                        p 点评：配备了游戏助手，在轻松愉快进行游戏的同时，增添了许多趣味
+                    li
+                        img(delay="#{img_path}user/6.jpg",width="45",height="45")
+                        span 小_舒客_贝
+                        div 
+                            em 画面感：
+                            |★★★★★
+                            br
+                            em 可玩性：
+                            |★★★★★  
+                        p 点评：官方说的省钱、省时间都做到了，哈哈，爽，装备等级不必哪些花钱多的人差
+                    li
+                        img(delay="#{img_path}user/7.jpg",width="45",height="45")
+                        span 幽冥嗜血
+                        div 
+                            em 画面感：
+                            |★★★★
+                            br
+                            em 可玩性：
+                            |★★★★  
+                        p 点评：武器方面不得不说，炫目的光效和透明的升星几率，让我感觉极品武器不再是梦
+                    li
+                        img(delay="#{img_path}user/8.jpg",width="45",height="45")
+                        span 一起长大
+                        div 
+                            em 画面感：
+                            |★★★★☆
+                            br 
+                            em 可玩性：
+                            |★★★★☆   
+                        p 点评：对它感兴趣是因为是一款科幻奇幻题材的网游，市面上武侠、历史类的游戏太多了
+                    li
+                        img(delay="#{img_path}user/9.jpg",width="45",height="45")
+                        span 孤独的树
+                        div 
+                            em 画面感：
+                            |★★★★★
+                            br  
+                            em 可玩性：
+                            |★★★★★  
+                        p 点评：游戏画面不错，简单省心是特色，特效PK很简单
+                    li
+                        img(delay="#{img_path}user/10.jpg",width="45",height="45")
+                        span 这ge星炼天
+                        div 
+                            em 画面感：
+                            |★★★★
+                            br
+                            em 可玩性：
+                            |★★★★
+                        p 点评：我玩过几年网游了，新鲜、刺激的都玩过，这游戏不烧钱，职业也不错
+                    li
+                        img(delay="#{img_path}user/11.jpg",width="45",height="45")
+                        span 可喜可贺
+                        div 
+                            em 画面感：
+                            |★★★★
+                            br
+                            em 可玩性：
+                            |★★★☆ 
+                        p 点评：总的来说游戏本身不错，且2012末日题材的背景很吸引人
+                    li
+                        img(delay="#{img_path}user/12.jpg",width="45",height="45")
+                        span 安安V_V
+                        div 
+                            em 画面感：
+                            |★★★★
+                            br
+                            em 可玩性：
+                            |★★★★
+                        p 点评：画面来说很精致，职业个人觉得异能很漂亮，游戏不烧钱感觉很好耶
+                    li
+                        img(delay="#{img_path}user/13.jpg",width="45",height="45")
+                        span VFHH
+                        div 
+                            em 画面感：
+                            |★★★★
+                            br
+                            em 可玩性：
+                            |★★★★
+                        p 点评：嗯嗯很棒的游戏，画面音效都不错，而且还不用花太多钱，很会为我们”懒人“着想
+                    li
+                        img(delay="#{img_path}user/14.jpg",width="45",height="45")
+                        span 怀念宫威
+                        div 
+                            em 画面感：
+                            |★★★★
+                            br
+                            em 可玩性：
+                            |★★★★☆
+                        p 点评：上手容易，累了可以挂机，比较欣赏简单不麻烦的特点，希望诺亚越办越好
+                    li
+                        img(delay="#{img_path}user/15.jpg",width="45",height="45")
+                        span y1种思念~
+                        div 
+                            em 画面感：
+                            |★★★★☆
+                            br
+                            em 可玩性：
+                            |★★★★☆
+                        p 点评：任务简单易懂，自动打怪轻松升级，坐骑、机甲各种帅气
+                    li
+                        img(delay="#{img_path}user/16.jpg",width="45",height="45")
+                        span 无心
+                        div 
+                            em 画面感：
+                            |★★★★
+                            br
+                            em 可玩性：
+                            |★★★★★
+                        p 点评：很简单且不烧钱，很少有游戏能让我坚持玩下来的，现在我每天玩不下6小时
+                    li
+                        img(delay="#{img_path}user/17.jpg",width="45",height="45")
+                        span 变身弹簧人
+                        div 
+                            em 画面感：
+                            |★★★★★ 
+                            br 
+                            em 可玩性：
+                            |★★★★
+                        p 点评：消费、花钱都在可接受范围内，机子配置要求不好，最重要玩的不累！
+                    li
+                        img(delay="#{img_path}user/18.jpg",width="45",height="45")
+                        span 聆听曲终
+                        div 
+                            em 画面感：
+                            |★★★☆
+                            br
+                            em 可玩性：
+                            |★★★★  
+                        p 点评：朋友介绍来玩的，武器系统很不错，强化几率都看得见，比以前玩过的好多了
+                    li
+                        img(delay="#{img_path}user/19.jpg",width="45",height="45")
+                        span 大熊猫王
+                        div 
+                            em 画面感：
+                            |★★★★
+                            br  
+                            em 可玩性：
+                            |★★★★★
+                        p 点评：总体感觉不错，简单的副本设计和离线积攒经验方式，我很喜欢
+                    li
+                        img(delay="#{img_path}user/20.jpg",width="45",height="45")
+                        span 心VS晴
+                        div 
+                            em 画面感：
+                            |★★★★ 
+                            br   
+                            em 可玩性：
+                            |★★★★ 
+                        p 点评：商城不卖装备，全靠自己打拼，离线经验加速升级，这点超给力，我很喜欢
+            #job
+                #j_tab
+                    span.check_0
+                    span
+                    span
+                    span
+                #j_con
+                    .jws.con(style="display:block")
+                            .feat
+                                b 职业特点
+                                |单挑切磋：★★★★★
+                                br
+                                |团队作战：★★★
+                                br
+                                |升级打怪：★★★★
+                                br
+                                |操作难度：★★★
+                            .cate
+                                span 攻击类型：
+                                |物理攻击
+                                br
+                                span 职业定位：
+                                |近程、瞬间爆发、快速突进
+                            #jws.video
+                    .ynz.con
+                            .feat                                
+                                b 职业特点
+                                |单挑切磋：★★★
+                                br
+                                |团队作战：★★★★
+                                br
+                                |升级打怪：★★★★★
+                                br
+                                |操作难度：★★★★★
+                            .cate
+                                span 攻击类型：
+                                |魔法攻击
+                                br
+                                span 职业定位：
+                                |远程、群体伤害、瞬间移动
+                            #ynz.video
+                    .qxs.con
+                            .feat
+                                b 职业特点
+                                |单挑切磋：★★★★
+                                br
+                                |团队作战：★★★★
+                                br
+                                |升级打怪：★★★
+                                br
+                                |操作难度：★★★★★
+                            .cate
+                                span 攻击类型：
+                                |物理攻击
+                                br
+                                span 职业定位：
+                                |远程、超高攻速、隐身杀手
+                            #qxs.video
+                    .gdj.con
+                            .feat
+                                b 职业特点
+                                |单挑切磋：★★★★
+                                br
+                                |团队作战：★★★★★
+                                br
+                                |升级打怪：★★★
+                                br
+                                |操作难度：★★★★
+                            .cate
+                                span 攻击类型：
+                                |物理攻击
+                                br
+                                span 职业定位：
+                                |近程、不死金刚、减速控制                            
+                            #gdj.video
+                    #flash_but_2.video
+                    #j_video.video
+                    a#to_reg_3
+            #img_scroll
+                #prev.button
+                .scroll_box
+                    #scroll_body(style="margin-left:0px")
+                        a(href="#{img_path}l1.jpg")
+                            img(src="#{img_path}s1.jpg",width="210",height="190",style="display:inline")
+                            br
+                            |击倒世界BOSS
+                        a(href="#{img_path}l2.jpg")
+                            img(delay="#{img_path}s2.jpg",width="210",height="190")
+                            br
+                            |奋战“水母王”
+                        a(href="#{img_path}l3.jpg")
+                            img(delay="#{img_path}s3.jpg",width="210",height="190")
+                            br
+                            |华丽炫酷装备
+                        a(href="#{img_path}l4.jpg")
+                            img(delay="#{img_path}s4.jpg",width="210",height="190")
+                            br
+                            |爽快跨服战场
+                        a(href="#{img_path}l5.jpg")
+                            img(delay="#{img_path}s5.jpg",width="210",height="190")
+                            br
+                            |帅气职业坐骑
+                        a(href="#{img_path}l6.jpg")
+                            img(delay="#{img_path}s6.jpg",width="210",height="190")
+                            br
+                            |人气爆棚赛场
+                        a(href="#{img_path}l7.jpg")
+                            img(delay="#{img_path}s7.jpg",width="210",height="190")
+                            br
+                            |温馨私家庭院
+                #next.button
+            include ../include/copyright
+            .reg_box
+                a.to_reg#reg1(href="javascript:undefined") 马上注册
+                a.download_btn(href="#{url_mini_client}",target="_blank")
+                #reg2
+                    include ../include/reg_5
+                    #close
+        #pop_flash_dialog.disnone

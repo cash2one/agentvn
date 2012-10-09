@@ -1,0 +1,96 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+body{background:#000;font-family:"宋体"}
+a{text-decoration:none;outline:none;font-size:14px;text-align:center;line-height:25px;color:#cbcbcb;cursor:pointer}
+.container{background:url("http://r.syyx.com/party/nycs/dating/index2/bg.jpg") no-repeat top center;height:1260px;min-width:1000px;overflow:hidden;font-size:12px;display:none}
+.main{width:1000px;margin:0 auto;position:relative;height:100%}
+.nav{text-align:right;line-height:25px;margin-right:45px;}
+.nav a{font-size:12px;color:#d7d7d7;}
+.nav a:hover{color:#fff}
+.logo{position:absolute;width:208px;height:110px;left:20px;top:15px}
+.copy_right{position:absolute;text-align:center;width:980px;top:1165px;line-height:22px;}
+.copy_right .feet_txt{margin-left:260px;margin-top:10px;color:#473e53;text-align:left}
+.copy_right .feet_logo{position:absolute;top:0;left:105px;width:125px;height:57px}
+.disnone{display:none}
+#popup_bg{width:100%;min-width:1000px;height:1660px;opacity:.7;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);background:#000;position:absolute;top:0;left:0;display:none;z-index:2}
+#tag1,#tag2{position:absolute;top:599px;left:622px;width:377px;height:32px;color:#a18c9f;font-size:12px;text-align:left;line-height:17px}
+#tag2{top:724px}
+#first{background:url("http://r.syyx.com/party/nycs/dating/index2/first.jpg") no-repeat top center;position:absolute;width:325px;height:505px;overflow:hidden;z-index:3;display:none;left:50%;margin-left:-162px;font-size:12px;}
+#first #close_first{position:absolute;width:34px;height:28px;left:290px;top:6px}
+#first #next_step{position:absolute;width:163px;height:38px;left:82px;top:444px;}
+#first #next_step:hover{background:url("http://r.syyx.com/party/nycs/dating/index2/btn.jpg") no-repeat -7px -8px}
+#first #tag1{position:absolute;color:#fff;width:120px;height:43px;left:38px;top:100px;text-align:left;line-height:24px}
+#first #tag2{position:absolute;color:#fff;text-align:center;width:238px;height:19px;left:42px;top:419px}
+#first #jianwushi,#first #qiangxieshi,#first #yinengzhe,#first #gedoujia{position:absolute;width:122px;height:122px;}
+#first #jianwushi:hover,#first #qiangxieshi:hover,#first #yinengzhe:hover,#first #gedoujia:hover,#first #jianwushi.hover,#first #qiangxieshi.hover,#first #yinengzhe.hover,#first #gedoujia.hover{border:2px solid #c12b85}
+#first #gedoujia{left:36px;top:149px}
+#first #yinengzhe{left:164px;top:149px}
+#first #qiangxieshi{left:36px;top:276px}
+#first #jianwushi{left:164px;top:276px}
+#first #nickname{position:absolute;border:0;width:165px;height:19px;left:120px;top:101px;line-height:19px;background:none}
+#second{background:url("http://r.syyx.com/party/nycs/dating/index2/second.jpg") no-repeat top center;position:absolute;width:464px;height:444px;font-size:13px;overflow:hidden;z-index:3;display:none;left:50%;margin-left:-232px;}
+#second #close_second{position:absolute;width:34px;height:28px;left:427px;top:5px;cursor:pointer}
+#second #image{position:absolute;width:417px;height:179px;left:24px;top:73px}
+#second #tag{position:absolute;text-align:center;line-height:28px;color:#fff;width:190px;height:28px;left:143px;top:47px}
+#second #tel{position:absolute;border:0;width:304px;height:16px;left:82px;top:325px;background:none}
+#second #sina{position:absolute;top:388px;left:96px;width:133px;height:28px;}
+#second #sina:hover{background:url("http://r.syyx.com/party/nycs/dating/index2/btn.jpg") no-repeat -17px -381px}
+#second #tencent{position:absolute;top:388px;left:240px;width:133px;height:28px;}
+#second #tencent:hover{background:url("http://r.syyx.com/party/nycs/dating/index2/btn.jpg") no-repeat -160px -381px}
+#second #reset{position:absolute;width:60px;height:28px;left:381px;top:393px;color:#9c5539;font-size:12px;text-decoration:underline}
+#third{background:url("http://r.syyx.com/party/nycs/dating/index2/third.jpg") no-repeat top center;position:absolute;width:465px;height:261px;overflow:hidden;z-index:3;display:none;left:50%;margin-left:-232px;}
+#third #close_third{position:absolute;width:30px;height:30px;left:429px;top:5px;cursor:pointer}
+#third div{position:absolute;width:122px;height:123px;left:33px;top:65px;overflow:hidden;}
+#third div img{position:relative;height:137px;left:-10px;top:-8px}
+#third #tag{position:absolute;text-align:left;font-size:13px;line-height:20px;color:#a18c9f;width:270px;height:87px;left:173px;top:67px;}
+#third #tag span{color:#e976ed;font-weight:700}
+#third #register{position:absolute;top:157px;left:172px;width:131px;height:30px;}
+#third #register:hover{background:url("http://r.syyx.com/party/nycs/dating/index2/btn.jpg") no-repeat -17px -421px}
+#third #download{position:absolute;top:157px;left:316px;width:131px;height:30px;}
+#third #download:hover{background:url("http://r.syyx.com/party/nycs/dating/index2/btn.jpg") no-repeat -160px -421px}
+#third #more{position:absolute;width:300px;height:24px;left:88px;top:219px;font-size:12px;color:#a18c9f;text-decoration:underline}
+a#join{width:265px;height:43px;display:block;top:636px;left:656px;position:absolute;}
+a#join:hover{background:url("http://r.syyx.com/party/nycs/dating/index2/btn.jpg") no-repeat -20px -281px}
+a#join_{width:111px;height:20px;display:block;top:802px;left:449px;position:absolute;}
+a#join_:hover{background:url("http://r.syyx.com/party/nycs/dating/index2/btn.jpg") no-repeat -18px -336px}
+#cur_img{position:absolute;width:417px;height:179px;left:27px;top:644px}
+a.mini_img{position:absolute;width:62px;height:80px;top:831px;left:0;overflow:hidden;border:2px solid #141217;}
+a.mini_img:hover,a.mini_img.hover{border:2px solid #511450}
+a.mini_img img{position:absolute;height:69px;left:-5px;top:-4px}
+a.mini_img .nickname{position:absolute;top:60px;left:0;width:62px;height:18px;text-align:center;font-size:12px}
+#img_1{left:45px}
+#img_2{left:130px}
+#img_3{left:215px}
+#img_4{left:300px}
+#img_5{left:385px}
+#img_6{left:470px}
+a#refresh_img{width:111px;height:20px;display:block;top:922px;left:248px;position:absolute;}
+a#refresh_img:hover{background:url("http://r.syyx.com/party/nycs/dating/index2/btn.jpg") no-repeat -148px -336px}
+#little_flash,#little_flash_player,#little_flash_div{width:127px;height:71px;position:absolute;top:276px;left:209px;cursor:pointer}
+#little_flash_div{background:url("http://r.syyx.com/party/nycs/dating/index2/btn.jpg") no-repeat 2048px 2006px}
+div#dating_flash div{width:126px;height:85px;position:absolute;cursor:pointer;overflow:hidden;top:0;left:0}
+div#dating_flash .flash_div{background:#f00;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+div#dating_flash #flash_bg1{top:1030px;left:203px}
+div#dating_flash #flash_bg2{top:1030px;left:353px}
+div#dating_flash #flash_bg3{top:1030px;left:503px}
+div#dating_flash #flash_bg4{top:1030px;left:653px}
+div#dating_flash #prev_flash{top:1038px;left:101px;width:50px;height:52px}
+div#dating_flash #next_flash{top:1038px;left:831px;width:50px;height:52px}
+.pop_video_detail{background-color:#032e53;border:1px solid #0062b3}
+#pop_flash{border:1px solid #004680;background:#000;line-height:0}
+object{outline:none}
+.first_line,.second_line,.third_line,.fourth_line{position:absolute;width:224px;height:15px;left:193px}
+.first_line{top:20px;background:url("http://r.syyx.com/party/nycs/dating/index2/a.jpg") no-repeat}
+.second_line{top:70px;background:url("http://r.syyx.com/party/nycs/dating/index2/b.jpg") no-repeat}
+.third_line{top:124px;background:url("http://r.syyx.com/party/nycs/dating/index2/c.jpg") no-repeat}
+.fourth_line{top:142px;background:url("http://r.syyx.com/party/nycs/dating/index2/d.jpg") no-repeat}
+#main_flash{position:absolute;top:50%;left:50%;margin-left:-512px;margin-top:-288px;width:1024px;height:576px;background:url("http://r.syyx.com/party/nycs/dating/index2/flash_bg.jpg") no-repeat;}
+#main_flash #flash1{width:1024px;height:576px}
+#bg_swf{position:absolute;width:650px;height:500px;top:0;left:5px}

@@ -1,0 +1,116 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+a{outline:none;text-decoration:none}
+.clear{clear:both;overflow:hidden;height:0}
+body{font-size:12px;font-family:'宋体';color:#8975aa}
+.container{min-width:1000px;background:#1d1812 url("http://s1.syyx.com/nycs/images/pic_list/bg.jpg") center top no-repeat;}
+.container .content{min-height:800px;width:1000px;margin:0 auto;position:relative;}
+.container .content .logo_link{position:absolute;top:50px;left:10px;width:210px;height:80px}
+.container .content .nav{position:absolute;width:600px;height:25px;left:427px;top:12px;overflow:hidden;}
+.container .content .nav a{display:block;float:left;height:21px;width:65px;margin-right:16px;}
+.container .content .nav a.fn_main:hover{background:url("http://s1.syyx.com/nycs/images/news_content/nav_tip.jpg") -2px 0 no-repeat}
+.container .content .nav a.fn_news:hover{background:url("http://s1.syyx.com/nycs/images/news_content/nav_tip.jpg") -83px 0 no-repeat}
+.container .content .nav a.fn_download:hover{background:url("http://s1.syyx.com/nycs/images/news_content/nav_tip.jpg") -164px 0 no-repeat}
+.container .content .nav a.fn_usercenter:hover{background:url("http://s1.syyx.com/nycs/images/news_content/nav_tip.jpg") -245px 0 no-repeat}
+.container .content .nav a.fn_gameinfo:hover{background:url("http://s1.syyx.com/nycs/images/news_content/nav_tip.jpg") -326px 0 no-repeat}
+.container .content .nav a.fn_service:hover{background:url("http://s1.syyx.com/nycs/images/news_content/nav_tip.jpg") -407px 0 no-repeat}
+.container .content .nav a.fn_bbs:hover{background:url("http://s1.syyx.com/nycs/images/news_content/nav_tip.jpg") -488px 0 no-repeat}
+.container .content .fn_group{position:absolute;top:296px;left:9px;width:203px;height:300px;}
+.container .content .fn_group a{display:block;height:44px;}
+.container .content .fn_group a.fn_download_btn{height:75px;margin-bottom:3px;}
+.container .content .fn_group a.fn_download_btn:hover{background:url("http://s1.syyx.com/nycs/images/news_content/btn.jpg") 0 0 no-repeat}
+.container .content .fn_group a.fn_reg_btn:hover{background:url("http://s1.syyx.com/nycs/images/news_content/btn.jpg") 0 -78px no-repeat}
+.container .content .fn_group a.fn_charge_btn:hover{background:url("http://s1.syyx.com/nycs/images/news_content/btn.jpg") 0 -122px no-repeat}
+.container .content .fn_group a.fn_active_btn:hover{background:url("http://s1.syyx.com/nycs/images/news_content/btn.jpg") 0 -210px no-repeat}
+.container .content .fn_group a.fn_get_gift_btn:hover{background:url("http://s1.syyx.com/nycs/images/news_content/btn.jpg") 0 -166px no-repeat}
+.container .content .promotions{position:absolute;top:600px;left:14px;}
+.container .content .promotions a{display:block;width:190px;height:92px;border:1px solid #4c278e;margin-bottom:1px;}
+.container .content .promotions a img{width:190px;height:92px}
+.container .content .bread_path{position:absolute;top:315px;right:30px;color:#bca2ec;}
+.container .content .bread_path a{color:#bca2ec;}
+.container .content .bread_path a:hover{text-decoration:underline}
+.container .content .pic_detail{padding:370px 0 0 219px;top:380px;left:220px;width:771px;}
+.container .content .pic_detail .pic_class{padding:0 50px 0 50px;}
+.container .content .pic_detail .pic_class .border{background:url("http://s1.syyx.com/nycs/images/news_list/border.jpg") 0 bottom repeat-x;height:23px;position:relative}
+.container .content .pic_detail .pic_class a{float:left;padding:0 10px;height:22px;line-height:22px;margin-right:20px;color:#ddd;text-align:center;}
+.container .content .pic_detail .pic_class a.selected,.container .content .pic_detail .pic_class a:hover{background:url("http://s1.syyx.com/nycs/images/article_list/news_class.jpg") 0 0 repeat-x;color:#fff}
+.container .content .pic_detail .pic_class a.upload{background:url("http://s1.syyx.com/nycs/images/pic_list/upload.jpg") 0 0 no-repeat;float:none;position:absolute;display:block;width:99px;height:26px;padding:0;margin:0;right:0;top:-10px;}
+.container .content .pic_detail .pic_class a.upload:hover{background:url("http://s1.syyx.com/nycs/images/pic_list/upload.jpg") 0 -27px no-repeat}
+.container .content .pic_detail .pic_list{padding:30px 0 20px 50px;background-color:#26182f;min-height:300px;width:721px;zoom:1;}
+.container .content .pic_detail .pic_list:before,.container .content .pic_detail .pic_list:after{content:"";display:table}
+.container .content .pic_detail .pic_list:after{clear:both}
+.container .content .pic_detail .pic_list li{float:left;margin:0 35px 20px 0;_margin:0 30px 20px 0;width:197px;height:169px;}
+.container .content .pic_detail .pic_list li span{display:block;text-align:center;color:#796a95;font-size:12px;height:22px;line-height:22px;overflow:hidden}
+.container .content .pic_detail .pic_list li a{height:145px;width:195px;border:solid 1px #53405e;background-color:#3d274d;text-align:center;display:block;overflow:hidden;}
+.container .content .pic_detail .pic_list li a img{height:145px}
+.container .content .pic_detail .paging{text-align:center;background-color:#25192f;margin-bottom:20px;padding:20px 0;height:22px;line-height:22px;}
+.container .content .pic_detail .paging a{display:inline-block;margin-right:5px;background-color:#351e52;color:#8975aa;border:solid 1px #4d305c;height:20px;line-height:20px;padding:0 5px;}
+.container .content .pic_detail .paging a.current{color:#fdfffe;background-color:#8140ff}
+.container .content .pic_detail .paging span{margin-right:5px}
+.container .content .pic_detail #copyright{padding-bottom:60px;position:relative;margin-top:20px;}
+.container .content .pic_detail #copyright .copyright_content{background:url("http://s1.syyx.com/nycs/images/news_list/copyright.jpg");padding:10px 10px 10px 140px;line-height:20px}
+.container .content .pic_detail #copyright .syyx_logo{width:117px;height:49px;position:absolute;top:10px;left:15px}
+#div_dialog{display:none;padding:30px 0 0 60px}
+.dialog_login{background:url("http://s.syyx.com/nycs/img/login_bg.jpg") 0 0 no-repeat}
+.dialog_upload{background:#072c59 url("http://s1.syyx.com/nycs/images/pic_info/dialog_bg.jpg") 0 0 no-repeat;}
+.dialog_upload #div_dialog{padding:0 0 0 30px}
+.dialog_upload .ui-dialog-titlebar-close{right:15px}
+.ui-dialog-titlebar{position:relative}
+.ui-dialog .ui-dialog-title{display:none}
+.dialog_login .ui-dialog-titlebar-close{position:absolute;width:30px;height:30px;right:30px;top:10px;margin:0;z-index:5000;}
+.dialog_login .ui-dialog-titlebar-close .ui-icon-closethick{display:none}
+.ui-widget-overlay{opacity:.8;background-color:#000;position:absolute;top:0;left:0}
+.dialog_upload .ui-dialog-titlebar-close{position:absolute;width:21px;height:21px;right:10px;top:10px;margin:0;z-index:5000;}
+.dialog_upload .ui-dialog-titlebar-close .ui-icon-closethick{display:none}
+.ui-dialog .ui-dialog-titlebar{height:34px}
+.dialog_upload .ui-dialog-titlebar{height:55px}
+#lightbox-image-details-caption{font-weight:bold}
+.top_iframe{background:url("http://s1.syyx.com/nycs/images/top_iframe/syyx_iframe_bg.png") 0 0 repeat-x;height:40px;text-align:center;overflow:hidden}
+.disnone{display:none}
+#float_reg_btn{background:url("http://s1.syyx.com/nycs/images/float_reg/float_btn.jpg") 0 0 no-repeat;width:70px;height:273px;position:fixed;_position:absolute;top:200px;right:10px;display:none;overflow:hidden;}
+#float_reg_btn:hover{background:url("http://s1.syyx.com/nycs/images/float_reg/float_btn.jpg") -80px 0 no-repeat}
+#float_reg_panel{position:fixed;_position:absolute;top:200px;right:10px;display:block;background:url("http://s1.syyx.com/nycs/images/float_reg/reb_bg.jpg") 0 0 no-repeat;width:274px;height:458px;overflow:hidden;}
+#float_reg_panel .close{height:35px;overflow:hidden;}
+#float_reg_panel .close a{float:right;width:35px;height:35px}
+#float_reg_panel #reg_step1{padding:65px 0 0 20px;width:255px;height:235px;position:relative;overflow:hidden;color:#a593cd;display:block;}
+#float_reg_panel #reg_step1 .reg_form td{padding:0 2px;height:26px;}
+#float_reg_panel #reg_step1 .reg_form td.reg_form_item_name{width:60px;text-align:right}
+#float_reg_panel #reg_step1 .reg_form td.reg_form_item_input input{background-color:#776595;border:solid 1px #683ec6;height:20px;line-height:20px;color:#98d9ff;width:146px}
+#float_reg_panel #reg_step1 .reg_form td.reg_form_item_input input.focus_in_inut{background-color:#fff;border:solid 1px #c8edff;color:#000}
+#float_reg_panel #reg_step1 .reg_form td.reg_form_item_input #validateimg{vertical-align:middle;cursor:pointer;height:29px;width:100px;margin-left:3px}
+#float_reg_panel #reg_step1 .reg_form td.validate_num_input{height:35px;}
+#float_reg_panel #reg_step1 .reg_form td.validate_num_input input{width:40px}
+#float_reg_panel #reg_step1 .agreement{text-align:center;padding-top:5px;}
+#float_reg_panel #reg_step1 .agreement a{text-align:center;text-decoration:underline;color:#c899ff;outline:none}
+#float_reg_panel #reg_step1 .agreement input{margin-right:3px}
+#float_reg_panel #reg_step1 .reg_submit{position:absolute;top:265px;left:85px;}
+#float_reg_panel #reg_step1 .reg_submit a{display:inline-block;width:103px;height:26px;background:url("http://s1.syyx.com/nycs/images/float_reg/btn3.jpg") -12px -17px no-repeat;outline:none;}
+#float_reg_panel #reg_step1 .reg_submit a:hover{background-position:-142px -17px}
+#float_reg_panel #reg_step2{display:none;background:url("http://s1.syyx.com/nycs/images/float_reg/reg_success_title.jpg") 35px 80px no-repeat;padding:110px 0 0 40px;width:200px;height:195px;overflow:hidden;color:#a794cb;line-height:24px;}
+#float_reg_panel #reg_step2 a{width:106px;height:30px;background:url("http://s1.syyx.com/nycs/images/float_reg/btn.jpg") -8px -63px no-repeat;margin:30px 0 0 40px;display:inline-block;}
+#float_reg_panel #reg_step2 a:hover{background:url("http://s1.syyx.com/nycs/images/float_reg/btn.jpg") -8px -93px no-repeat}
+#float_reg_panel #reg_step3{display:none;background:url("http://s1.syyx.com/nycs/images/float_reg/reg_success_title.jpg") 35px 80px no-repeat;padding:110px 0 0 35px;width:200px;height:195px;overflow:hidden;color:#a794cb;line-height:24px;}
+#float_reg_panel #reg_step3 a{margin:30px 0 0 70px;display:inline-block;color:#a794cb;text-decoration:underline}
+#float_reg_panel #reg_step4{display:none;font-size:14px;left:35px;color:#a794cb;}
+#float_reg_panel #reg_step4 #pad_l_10{background:url("http://s1.syyx.com/nycs/images/float_reg/success2_bg.png") 60px 95px no-repeat;padding-top:125px;text-align:center;line-height:25px;margin-bottom:15px}
+#float_reg_panel #reg_step4 #down_ico{width:75px;height:80px;background:url("http://s1.syyx.com/nycs/images/float_reg/ico_down.png") no-repeat;margin:0 0 35px 90px}
+#float_reg_panel #reg_account1,#float_reg_panel #reg_account2{color:#02fbf3}
+#float_reg_panel .get_gift{padding-top:45px;position:relative}
+#float_reg_panel .download_area{padding-left:15px;padding-top:60px;position:relative}
+#float_reg_panel .link1{display:inline-block;margin-right:10px;width:119px;height:30px;background:url("http://s1.syyx.com/nycs/images/float_reg/btn3.jpg") -12px -45px no-repeat;}
+#float_reg_panel .link1:hover{background-position:-142px -45px}
+#float_reg_panel .link2{display:inline-block;width:119px;height:30px;background:url("http://s1.syyx.com/nycs/images/float_reg/btn3.jpg") -12px -79px no-repeat;}
+#float_reg_panel .link2:hover{background-position:-142px -79px}
+#float_reg_panel .get_gift{padding-top:50px;}
+#float_reg_panel .get_gift a{background-position:-164px -199px;}
+#float_reg_panel .get_gift a:hover{background-position:-163px -240px}
+#float_reg_panel .check_result_right{background:url("http://s1.syyx.com/nycs/images/float_reg/right_wrong.png") 0 4px no-repeat;width:16px;height:25px}
+#float_reg_panel .check_result_wrong{background:url("http://s1.syyx.com/nycs/images/float_reg/right_wrong.png") 0 -32px no-repeat;width:16px;height:25px}
+#float_reg_panel .check_result_loading{background:url("http://s1.syyx.com/nycs/images/float_reg/loader.gif") 0 4px no-repeat;width:16px;height:25px}

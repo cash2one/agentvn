@@ -1,0 +1,131 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+a{text-decoration:none;outline:none}
+.disnone{display:none}
+.hide{visibility:hidden}
+.ui-tabs-hide{display:none}
+.clear{clear:both;overflow:hidden;height:0}
+body{font-size:12px;font-family:'宋体';background-color:#011329;color:#65cdcc}
+.container{min-width:960px;background:url("http://r.syyx.com/nysj/guider/top_bg.jpg") center top no-repeat;}
+.container .content{width:960px;margin:0 auto;position:relative;height:2750px;overflow:hidden;}
+.container .content .logo_link{position:absolute;top:70px;right:0;width:240px;height:100px}
+.container .content .nav{position:absolute;width:380px;height:46px;right:48px;top:1px;overflow:hidden;}
+.container .content .nav a{position:absolute;background:url("http://r.syyx.com/nysj/index/blank.png") 0 0 no-repeat;top:0;height:46px;width:88px;display:inline-block;}
+.container .content .nav a.nav_index{width:111px;left:0;}
+.container .content .nav a.nav_index:hover{background:url("http://r.syyx.com/nysj/guider/nav.jpg") 0 0 no-repeat}
+.container .content .nav a.nav_guider{left:111px;}
+.container .content .nav a.nav_guider:hover{background:url("http://r.syyx.com/nysj/guider/nav.jpg") -111px 0 no-repeat}
+.container .content .nav a.nav_pay{left:199px;}
+.container .content .nav a.nav_pay:hover{background:url("http://r.syyx.com/nysj/guider/nav.jpg") -199px 0 no-repeat}
+.container .content .nav a.nav_bbs{left:287px;width:111px;}
+.container .content .nav a.nav_bbs:hover{background:url("http://r.syyx.com/nysj/guider/nav.jpg") -287px 0 no-repeat}
+.container .content .ready{background:url("http://r.syyx.com/nysj/guider/di_05.jpg") center top no-repeat;position:absolute;top:799px;width:701px;height:87px;left:10px;padding:9px 0 0 239px;}
+.container .content .ready a{float:left;width:168px;height:67px;}
+.container .content .ready a.reg:hover{width:189px;background:url("http://r.syyx.com/nysj/guider/hover.jpg") -302px -158px no-repeat}
+.container .content .ready a.download:hover{width:189px;background:url("http://r.syyx.com/nysj/guider/hover.jpg") -302px -253px no-repeat}
+.container .content .ready a.create:hover{width:189px;background:url("http://r.syyx.com/nysj/guider/hover.jpg") -302px -348px no-repeat}
+.container .content .ready a.begin:hover{width:189px;background:url("http://r.syyx.com/nysj/guider/hover.jpg") -303px -443px no-repeat}
+.container .content .chose_career{background:url("http://r.syyx.com/nysj/guider/di_11.jpg") center top no-repeat;position:absolute;top:901px;left:10px;width:940px;}
+.container .content .chose_career .chose{float:left;width:212px;padding:100px 20px 0 20px;line-height:22px;color:#05c2ff}
+.container .content .chose_career a{float:left;width:161px;height:476px;margin-right:10px;}
+.container .content .chose_career a.yineng:hover{background:url("http://r.syyx.com/nysj/guider/profession_hover.jpg") 0 0 no-repeat}
+.container .content .chose_career a.jianwu:hover{background:url("http://r.syyx.com/nysj/guider/profession_hover.jpg") -161px 0 no-repeat}
+.container .content .chose_career a.qiangxie:hover{background:url("http://r.syyx.com/nysj/guider/profession_hover.jpg") -322px 0 no-repeat}
+.container .content .chose_career a.gedou:hover{background:url("http://r.syyx.com/nysj/guider/profession_hover.jpg") -484px 0 no-repeat}
+.container .content .gonglue{background:url("http://r.syyx.com/nysj/guider/di_17.jpg") center top no-repeat;position:absolute;top:1400px;left:10px;width:940px;height:160px;}
+.container .content .gonglue a{position:absolute;width:287px;height:61px;display:block;}
+.container .content .gonglue a.btn1{left:283px;top:15px}
+.container .content .gonglue a.btn2{left:633px;top:15px}
+.container .content .gonglue a.btn3{left:283px;top:86px}
+.container .content .gonglue a.btn4{left:633px;top:86px}
+.container .content .gonglue a.btn1:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -10px -157px no-repeat}
+.container .content .gonglue a.btn2:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -10px -224px no-repeat}
+.container .content .gonglue a.btn3:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -10px -294px no-repeat}
+.container .content .gonglue a.btn4:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -10px -365px no-repeat}
+.container .content .upgrade{position:absolute;top:1580px;left:10px;background:url("http://r.syyx.com/nysj/guider/upgrade_bg.jpg") 0 0 no-repeat;width:939px;height:506px;}
+.container .content .upgrade .grade{position:absolute;top:20px;left:270px;width:658px;}
+.container .content .upgrade .grade .grade_1{background:url("http://r.syyx.com/nysj/guider/expansion.jpg") 0 0 no-repeat;height:378px;position:relative;}
+.container .content .upgrade .grade .grade_1 a{display:inline-block;width:153px;height:63px;position:absolute;top:126px;}
+.container .content .upgrade .grade .grade_1 a.btn1{left:52px;}
+.container .content .upgrade .grade .grade_1 a.btn1:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -10px -534px no-repeat}
+.container .content .upgrade .grade .grade_1 a.btn2{left:253px;}
+.container .content .upgrade .grade .grade_1 a.btn2:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -163px -534px no-repeat}
+.container .content .upgrade .grade .grade_1 a.btn3{left:453px;}
+.container .content .upgrade .grade .grade_1 a.btn3:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -316px -534px no-repeat}
+.container .content .upgrade .grade .grade_2{background:url("http://r.syyx.com/nysj/guider/expansion.jpg") 0 -378px no-repeat;height:378px;display:none;position:relative;}
+.container .content .upgrade .grade .grade_2 a{display:inline-block;width:153px;height:63px;position:absolute;top:126px;}
+.container .content .upgrade .grade .grade_2 a.btn1{left:52px;}
+.container .content .upgrade .grade .grade_2 a.btn1:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -10px -599px no-repeat}
+.container .content .upgrade .grade .grade_2 a.btn2{left:253px;}
+.container .content .upgrade .grade .grade_2 a.btn2:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -163px -599px no-repeat}
+.container .content .upgrade .grade .grade_2 a.btn3{left:453px;}
+.container .content .upgrade .grade .grade_2 a.btn3:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -316px -599px no-repeat}
+.container .content .upgrade .grade .grade_3{background:url("http://r.syyx.com/nysj/guider/expansion.jpg") 0 -756px no-repeat;height:378px;display:none;position:relative;}
+.container .content .upgrade .grade .grade_3 a{display:inline-block;width:153px;height:63px;position:absolute;top:126px;}
+.container .content .upgrade .grade .grade_3 a.btn1{left:52px;}
+.container .content .upgrade .grade .grade_3 a.btn1:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -9px -664px no-repeat}
+.container .content .upgrade .grade .grade_3 a.btn2{left:253px;}
+.container .content .upgrade .grade .grade_3 a.btn2:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -162px -664px no-repeat}
+.container .content .upgrade .grade .grade_3 a.btn3{left:453px;}
+.container .content .upgrade .grade .grade_3 a.btn3:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -315px -664px no-repeat}
+.container .content .upgrade .grade a#expand_1{width:658px;height:45px;display:none;background:url("http://r.syyx.com/nysj/guider/hover.jpg") -10px -12px no-repeat}
+.container .content .upgrade .grade a#expand_2{width:658px;height:45px;display:block;background:url("http://r.syyx.com/nysj/guider/hover.jpg") -10px -57px no-repeat}
+.container .content .upgrade .grade a#expand_3{width:658px;height:45px;display:block;background:url("http://r.syyx.com/nysj/guider/hover.jpg") -10px -102px no-repeat}
+.container .content .try{position:absolute;top:2100px;left:10px;width:939px;height:452px;background:url("http://r.syyx.com/nysj/guider/try_bg.jpg") 0 0 no-repeat;}
+.container .content .try a.reg{position:absolute;display:block;width:156px;height:43px;top:351px;left:306px;}
+.container .content .try a.reg:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -476px -534px no-repeat}
+.container .content .try a.download{position:absolute;display:block;width:156px;height:43px;top:351px;left:517px;}
+.container .content .try a.download:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -476px -577px no-repeat}
+.container .content .try a.pay{position:absolute;display:block;width:156px;height:43px;top:351px;left:729px;}
+.container .content .try a.pay:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -476px -620px no-repeat}
+.container .content .try a.more{position:absolute;display:block;width:100px;height:20px;left:640px;top:270px}
+.container .content #copyright{top:2650px;left:10px;width:939px;position:absolute;}
+.container .content #copyright .copyright_content{background-color:#011c37;padding:20px 10px 20px 140px;line-height:20px;color:#4a6f9b}
+.container .content #copyright .syyx_logo{background:url("http://r.syyx.com/nysj/guider/copyright_logo.jpg") 0 0 no-repeat;width:117px;height:49px;position:absolute;top:15px;left:10px}
+.download_dialog{position:absolute;width:258px;height:201px;background:url("http://r.syyx.com/nysj/guider/download_bg.jpg") 0 0 no-repeat;display:none;}
+.download_dialog a.close{position:absolute;right:0;top:0;width:25px;height:25px;display:inline-block}
+.download_dialog a.full_client{display:block;width:185px;height:42px;position:absolute;top:49px;left:34px;}
+.download_dialog a.full_client:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -499px -411px no-repeat}
+.download_dialog a.mini_client{display:block;width:185px;height:42px;position:absolute;top:107px;left:34px;}
+.download_dialog a.mini_client:hover{background:url("http://r.syyx.com/nysj/guider/hover.jpg") -499px -327px no-repeat}
+.disnone{display:none}
+#float_reg_btn{background:url("http://r.syyx.com/nysj/float_reg/bg.jpg") -343px -42px no-repeat;width:70px;height:291px;position:fixed;_position:absolute;top:100px;right:10px;display:block;overflow:hidden;}
+#float_reg_btn:hover{background:url("http://r.syyx.com/nysj/float_reg/bg.jpg") -423px -42px no-repeat}
+#float_reg_panel{position:fixed;_position:absolute;top:100px;right:10px;display:none;background:url("http://r.syyx.com/nysj/float_reg/bg.jpg") -10px -10px no-repeat;width:284px;height:492px;overflow:hidden;}
+#float_reg_panel .close{height:30px;overflow:hidden;}
+#float_reg_panel .close a{float:right;width:30px;height:30px}
+#float_reg_panel #reg_step1{padding:40px 0 0 15px;width:245px;height:235px;position:relative;overflow:hidden;color:#98d9ff;display:block;}
+#float_reg_panel #reg_step1 .reg_form td{padding:0 2px;height:26px;}
+#float_reg_panel #reg_step1 .reg_form td.reg_form_item_name{width:60px;text-align:right}
+#float_reg_panel #reg_step1 .reg_form td.reg_form_item_input input{background-color:#5b8cb4;border:solid 1px #09f;height:20px;line-height:20px;color:#000;width:146px}
+#float_reg_panel #reg_step1 .reg_form td.reg_form_item_input input.focus_in_inut{background-color:#fff;border:solid 1px #c8edff;color:#000}
+#float_reg_panel #reg_step1 .reg_form td.reg_form_item_input #validateimg{vertical-align:middle;cursor:pointer;height:29px;width:100px;margin-left:3px}
+#float_reg_panel #reg_step1 .reg_form td.validate_num_input{height:35px;}
+#float_reg_panel #reg_step1 .reg_form td.validate_num_input input{width:40px}
+#float_reg_panel #reg_step1 .agreement{text-align:center;padding-top:5px;}
+#float_reg_panel #reg_step1 .agreement a{text-align:center;text-decoration:underline;color:#0ba6c7;outline:none}
+#float_reg_panel #reg_step1 .agreement input{margin-right:3px}
+#float_reg_panel #reg_step1 .reg_submit{position:absolute;top:242px;left:80px;}
+#float_reg_panel #reg_step1 .reg_submit a{display:inline-block;width:107px;height:31px;background:url("http://s1.syyx.com/nycs/images/float_reg/btn2.jpg") -5px -6px no-repeat;outline:none;}
+#float_reg_panel #reg_step1 .reg_submit a:hover{background-position:-5px -45px}
+#float_reg_panel #reg_step2{display:none;padding:60px 0 0 0;width:200px;margin:0 auto;overflow:hidden;color:#5bbae6;line-height:24px;}
+#float_reg_panel #reg_step2 h3{font-size:14px;text-align:center;margin-bottom:30px;color:#fc8900}
+#float_reg_panel #reg_step2 .account{text-align:center;margin-bottom:20px}
+#float_reg_panel #reg_step2 p{line-height:22px}
+#float_reg_panel .download_area{position:absolute;top:380px;left:8px;height:30px;width:276px}
+#float_reg_panel .link1{float:left;margin-right:15px;width:127px;height:30px;}
+#float_reg_panel .link1:hover{background:url("http://r.syyx.com/nysj/float_reg/btn.jpg") -5px -100px no-repeat}
+#float_reg_panel .link2{float:left;width:127px;height:30px;margin-right:0;}
+#float_reg_panel .link2:hover{background:url("http://r.syyx.com/nysj/float_reg/btn.jpg") -5px -165px no-repeat}
+#float_reg_panel .get_code{position:absolute;top:420px;width:276px;left:8px;}
+#float_reg_panel .get_code a{display:block;width:270px;height:60px}
+#float_reg_panel .check_result_right{background:url("http://s1.syyx.com/nycs/images/float_reg/right_wrong.png") 0 4px no-repeat;width:16px;height:25px}
+#float_reg_panel .check_result_wrong{background:url("http://s1.syyx.com/nycs/images/float_reg/right_wrong.png") 0 -32px no-repeat;width:16px;height:25px}
+#float_reg_panel .check_result_loading{background:url("http://s1.syyx.com/nycs/images/float_reg/loader.gif") 0 4px no-repeat;width:16px;height:25px}

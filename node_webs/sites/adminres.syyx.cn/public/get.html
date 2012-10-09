@@ -1,0 +1,12 @@
+<!DOCTYPE html><html class="full"><head><meta charset="utf-8"><title>尚游图片管理</title><link href="/stylesheets/get/main.css" type="text/css" rel="stylesheet"><script src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js" type="text/javascript"></script></head><body class="full"><div id="sd" class="head"><div id="tab"><span class="check">地址分析</span><span>修改预览<em id="see_num">0</em></span><span>资源管理<em id="all_num">0</em></span><span>处理列队<em id="ok_num">0         </em></span></div><div class="menu"><span id="gettime"></span><span id="name"></span>|<a href="/login_out">登出</a><a href="javascript:undefined" class="all" id="git">Git</a><a class="all" href="/mylog" target="_blank">记录</a><span id="record"></span><span id="setftp"></span>
+</div></div><div id="main"><div class="box check"><div class="urlinput"><input name="url" id="url" size="100" value="输入页面地址或单图片、Flash地址，再点击右边的按钮。"><button id="get">分析地址</button><div id="ajax_info"></div><div id="wait"></div></div></div><div class="box preview"><div class="res_info">提示：您需要完成“地址分析”，才能显示内容，单图模式不显示。</div><iframe width="100%" id="preview" name="preview" height="100%" scrolling="no"></iframe><p class="ww"></p></div><div id="img_list" class="box"><div class="res_info">提示：您需要完成“地址分析”，才能显示内容。</div><p class="ww"></p></div></div><div id="mange"><div class="mange_bg"></div><div class="mange_box"><div class="show_img"><img id="b_img" src="/images/noimg.jpg"></div><div id="img_info"><div class="tit">文件信息</div><strong>地址：</strong><span></span>→
+<em></em><br><strong>名字：</strong><span></span>→
+<em></em><i></i><br><strong>格式：</strong><span></span>→
+<em></em><i></i><br><strong>宽度：</strong><span></span>→
+<em></em><i></i><br><strong>高度：</strong><span></span>→
+<em></em><i></i><br><label id="upload_l">替换：</label><br><b>请注意：名字、格式、宽高需要完全相同才能上传。</b><div class="buttons"><button id="newsee">确 定</button><button id="newurl">选择新图</button><button id="oldurl">选择原图</button></div></div><div class="url"></div></div></div><div id="time"><div class="timebg"></div><div class="timebox"><h2>您要定时替换吗？</h2><div id="settime"><input value="2012" type="text" maxlength="4">年
+<input value="1" type="text" maxlength="2">月
+<input value="1" type="text" maxlength="2">日
+<input value="0" type="text" maxlength="2">点
+<input value="0" type="text" maxlength="2">分
+</div><button onclick="settime()">设定定时</button><button onclick="cancel()">取消定时</button><button onclick="closetime()">关闭</button><div id="info"></div></div></div><img src="" id="imgcache"><script src="/javascripts/get/out.js" type="text/javascript"></script></body></html>

@@ -1,0 +1,411 @@
+@import '../reset'
+@import '../url'
+@import '../base'
+//-----------------------------------------------------------------------
+body
+    font-size 12px
+    font-family '宋体'
+    color #222
+    background url($bg) 0 0 repeat
+.container
+    min-width 1200px
+    #header
+        background #222 url($header_bg) 0 0 repeat-x
+        border-bottom 1px solid #010101
+        box-shadow 0 1px 20px rgba(0, 0, 0, 0.85)
+        height 48px
+        #logo
+            color #D0D0D0
+            font-weight bold
+            font-size 22px
+            padding 12px 0 0 20px
+    #main
+        bottom 0
+        left 0
+        min-width 1200px
+        overflow hidden
+        position absolute
+        right 0
+        top 49px
+        #sidebar
+            background #EDF2FF url($sidebar_bg) 0 0 repeat
+            border-right 1px solid #A3A09E
+            float left
+            height 100%
+            position relative
+            width 180px
+            .content
+                background-color #EDF2FF
+                overflow-y auto
+                position absolute
+                top 0
+                bottom 34px
+                width 100%
+                a.workspace_name
+                    border-bottom 1px solid rgba(0, 0, 0, 0.18)
+                    border-top 1px solid rgba(255, 255, 255, 0.18)
+                    font-weight bold
+                    letter-spacing 0.5px
+                    overflow hidden
+                    text-overflow ellipsis
+                    white-space nowrap
+                    text-shadow 0 1px 0 rgba(255, 255, 255, 0.66)
+                    background-color #D3DAE5
+                    display block
+                    line-height 35px
+                    padding 0 30px 0 10px
+                    color rgba(0, 0, 0, 0.5)
+                    &.selected
+                        -moz-transition color 0s ease 0s
+                        color rgba(0, 0, 0, 0.85)
+                .sub_elements
+                    border-bottom 1px solid rgba(0, 0, 0, 0.18)
+                    padding 6px 0
+                    a
+                        color rgba(0, 0, 0, 0.5)
+                        display block
+                        line-height 35px
+                        padding-left 38px
+                        &.selected
+                            color rgba(0, 0, 0, 0.85)
+                            background url($page_selected) 10px center no-repeat
+            .setting
+                border-top 1px solid rgba(0, 0, 0, 0.18)
+                bottom 0
+                box-shadow 0 1px 0 rgba(255, 255, 255, 0.18) inset
+                padding 0
+                position absolute
+                width 180px
+                background-color #D3DAE5
+                button.set
+                    background: url($gear) center center no-repeat
+                    border none
+                    float right
+                    height 32px
+                    padding-left 10px
+                    width 32px
+                    cursor pointer
+                .add_publish_category
+                    border-radius 5px
+                    box-shadow 0 1px 16px rgba(0, 0, 0, 0.75), 0 1px 0 rgba(255, 255, 255, 0.15) inset
+                    position absolute
+                    z-index 9001
+                    top -150px
+                    left 200px
+                    width 300px
+                    display none
+                    header
+                        background: -webkit-linear-gradient(#474747, #151515) repeat 0 0
+                        background: -moz-linear-gradient(#474747, #151515) repeat 0 0
+                        border-color rgba(0, 0, 0, 0.85) rgba(0, 0, 0, 0.85) #111111
+                        border-style solid
+                        border-top-left-radius 5px
+                        border-top-right-radius 5px
+                        border-width 1px
+                        box-shadow 0 1px 0 #666666 inset
+                        padding 6px
+                        text-align center
+                        color #fff
+                        font-weight bold
+                        opacit 0.9
+                        text-shadow 0 1px 1px rgba(0, 0, 0, 0.33)
+                    .publish_category_content
+                        padding 20px
+                        input
+                            height 24px
+                            line-height 24px
+                    footer
+                        text-align right
+                        padding 5px 10px 0 10px
+                        height 32px
+                        overflow hidden
+                        background #E8E8E8
+                        border-radius 0 0 3px 3px
+                        border-top 1px solid #D1D1D1
+                        button
+                            float right
+                            margin-left 10px
+                        input
+                            float right
+                            margin-left 10px
+                        .loading
+                            float right
+                            display none
+                        .show_result
+                            float right
+                            font-weight bold
+                            color #57A334
+                            height 28px
+                            line-height 28px
+                            display none
+        #content
+            bottom 0
+            left 181px
+            position absolute
+            right 0
+            top 0
+            .content_layout
+                height 100%
+                .detail_wrapper
+                    float right
+                    height 100%
+                    position relative
+                    width 432px
+                    z-index 99
+                    #detail
+                        bottom 28px
+                        left 0
+                        position absolute
+                        right 28px
+                        top 37px
+                    #detail_overlay
+                        background-color #F5F5F5
+                        border-bottom-right-radius 4px
+                        border-top-right-radius: 4px
+                        bottom 28px
+                        left -394px
+                        width 404px
+                        position absolute
+                        right 28px
+                        top 37px
+                        #save_publish_item_panel
+                            display none
+                            .panel
+                                background-color #F5F5F5
+                                border-bottom-right-radius 4px
+                                border-top-right-radius 4px
+                                height 100%
+                                .panel_action
+                                    background url($panel_controls_bg) left top repeat
+                                    border-bottom solid 1px #BBB
+                                    border-top-right-radius 4px
+                                    padding 5px 5px 4px 4px
+                                    text-align right
+                                    .progress
+                                        padding-right 10px
+                                        font-weight bold
+                                        color #57A334
+                                        display none
+                                .panel_action_bottom
+                                    border-top 1px solid #BBBBBB
+                                    padding 5px 10px 4px
+                                    box-shadow 0 2px 4px -2px rgba(0, 0, 0, 0.4)
+                                    border-bottom-right-radius 4px
+                                    bottom 0
+                                    display block
+                                    left 0
+                                    position absolute
+                                    right 0
+                                    background url($panel_controls_bg) left top repeat
+                                    .close_panel
+                                        background url($close_panel) 0 0 no-repeat
+                                        width 20px
+                                        height 20px
+                                        display inline-block
+                                    .trash_item
+                                        background url($trash) 0 0 no-repeat
+                                        height 20px
+                                        width 20px
+                                        float right
+                                .panel_content
+                                    bottom 36px
+                                    left 0
+                                    position absolute
+                                    right 0
+                                    top 33px
+                                    color #444
+                                    font-size 13px
+                                    .inner
+                                        padding 12px 15px 10px 10px
+                                        input[type='text'],input[type='url'],input[type='color']
+                                            height 24px
+                                            line-height 24px
+                                            margin-bottom 15px
+                                        textarea
+                                            margin-bottom 15px
+                                            font-size 14px
+                                            min-height 100px
+                                            max-height 150px
+                                        .thumb
+                                            margin-bottom 10px
+                                            height 35px
+                                            input[type='file']
+                                                margin-right 10px
+                                                float left
+                                                margin-top 2px 
+                                            button
+                                                float left
+                                                margin-right 10px
+                                            .loading
+                                                float left
+                                                display none
+                                            .result
+                                                float left
+                                                color #57A334
+                                                font-weight bold
+                                                display none
+                                                line-height 24px
+                                        .thumb_preview
+                                            text-align center
+                                            img
+                                                display inline-block
+                                                max-width 370px
+                                                max-height 500px
+                                            .size
+                                                text-align center
+                                                padding-top 5px
+                .list
+                    background-color #FFFFFF
+                    box-shadow 4px 0 11px rgba(0, 0, 0, 0.33)
+                    height 100%
+                    overflow hidden
+                    position relative
+                    z-index: 100
+                    .action_bar
+                        box-shadow 0 2px 4px -2px rgba(0, 0, 0, 0.4)
+                        line-height 28px
+                        height 36px
+                        background url($control_bg) 0 0 repeat
+                        .controls
+                            padding 4px 10px 0 8px
+                            border-bottom 1px solid #9E9FA0
+                            height 32px
+                            #publish_list_action
+                                .publish_filter
+                                    float left
+                                    height 29px
+                                    position relative
+                                    padding-left 10px
+                                    .filter_btn
+                                        display inline-block
+                                        background url($dropdown) right center no-repeat
+                                        padding-right 18px
+                                        height 15px
+                                        line-height 15px
+                                        color #757C81
+                                    .filter_menu
+                                        background-color #FAFAFA
+                                        border-radius 5px
+                                        box-shadow: 0 1px 16px rgba(0, 0, 0, 0.75), 0 1px 0 rgba(255, 255, 255, 0.75) inset
+                                        position: relative
+                                        top -25px
+                                        z-index 101
+                                        left 0
+                                        display none
+                                        li
+                                            border-bottom 1px solid #D9D9D9
+                                            button
+                                                border none
+                                                padding 10px 40px 10px 15px
+                                                font-size 13px
+                                                font-weight bold
+                                                color #444
+                                                width 100%
+                                                cursor pointer
+                                                border-radius 3px
+                                                box-shadow 0 1px 0 rgba(255, 255, 255, 0.15) inset, 1px 0 0 rgba(255, 255, 255, 0.08) inset, 0 1px 0 rgba(255, 255, 255, 0.08)
+                                                &.selected
+                                                    background url($check) 95% center no-repeat
+                                                    color #A8A6A6
+                                .related_btn
+                                    float right
+                                    button
+                                        float right
+                                        margin-left 10px
+                            #save_article_action,#list_article_action
+                                float right   
+                    .list_body
+                        bottom 0
+                        left 0
+                        position absolute
+                        right 0
+                        top 37px
+                        .section_bar
+                            background -webkit-linear-gradient(#CCCCCC, #BBBBBB) 0 0 repeat
+                            background -moz-linear-gradient(#CCCCCC, #BBBBBB) 0 0 repeat
+                            border solid 1px #999
+                            border-left none
+                            border-right none
+                            border-top none
+                            box-shadow 0 1px rgba(255, 255, 255, 0.33) inset
+                            height 30px
+                            line-height 30px
+                            padding 0 7px
+                            position relative
+                            button
+                                float left
+                                border none
+                                background url($open) center center no-repeat
+                                width 9px
+                                height 30px
+                                cursor pointer
+                                margin-right 10px
+                                margin-left 5px
+                                &.closed
+                                    background url($closed) center center no-repeat
+                            .section_name
+                                color #444
+                                font-size 12px
+                                text-shadow 0 1px 1px #DDDDDD
+                        #save_article
+                            padding 10px 20px
+                            #article_title
+                                font-weight bold
+                                height 34px
+                                line-height 28px
+                                font-size 16px
+                                display block
+                                margin-bottom 10px
+                            #article_text
+                                font-size 12px
+                                height 300px
+                        #article_list
+                            background-color #E9EEF7
+                            .item_wrapper
+                                li
+                                    background-color #E9EEF7
+                                    border-top 1px solid #DADDE6
+                                    min-height 32px
+                                    display block
+                                    padding 7px
+                        #item_list,#published_item_list
+                            background-color #E9EEF7
+                            .item_wrapper
+                                li
+                                    background-color #E9EEF7
+                                    border-bottom 1px solid #DADDE6
+                                    height 34px
+                                    line-height 34px
+                                    display block
+                                    padding 7px
+                                    color #444
+                                    font-size 13px
+                                    text-overflow: ellipsis
+                                    white-space: pre-wrap
+                                    .drag_handle
+                                        background url($drag_bg) center center no-repeat 
+                                        float left
+                                        height 34px
+                                        width 20px
+                                        margin-right 10px
+                                        cursor move
+                                    .list_thumb_preview
+                                        float left
+                                        margin-right 10px
+                                        border solid 1px #ccc
+                                        padding 1px
+                                        height 30px
+                                        width 30px
+                                        img
+                                            height 30px
+                                            width 30px
+                                    .item_title
+                                        color #444
+                                    &.editing
+                                        background-color #0E72DA
+                                        .item_title
+                                            color #fff
+                        #item_list
+                            .item_wrapper
+                                li
+                                    background-color #f9f9f9

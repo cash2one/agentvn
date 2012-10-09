@@ -1,0 +1,37 @@
+﻿exports.pages = [
+    { src : "nycs/acrosspk/index",         des : "nycs/acrosspk/" },
+    { src : "nycs/acrosspk/fire",          des : "nycs/acrosspk/" },
+    { src : "nycs/special201208/index",    des : "nycs/special201208/" },
+    { src : "nycs/new_play201209",         des : "nycs/new_play201209/index" },
+    { src : "nycs/notalone/index",         des : "nycs/notalone/" },
+    { src : "nycs/notalone/login",         des : "nycs/notalone/" },
+    { src : "nycs/notalone/uploadphoto",   des : "nycs/notalone/" },
+    { src : "nycs/notalone/uploadimg",     des : "nycs/notalone/" },
+    { src : "nycs/notalone/uploadsuccess", des : "nycs/notalone/" },
+    { src : "nycs/notalone/photolist",     des : "nycs/notalone/" },
+    { src : "nycs/dating/index",           des : "nycs/dating/" },
+    { src : "nycs/dating/index3",           des : "nycs/dating/" },
+
+    //问卷调查
+    { src : "nycs/questionnaire/examination", des : "nycs/questionnaire/"},
+    { src : "nycs/role/loginrole",         des : "nycs/role/" },
+    { src : "nycs/role/loginserver",       des : "nycs/role/" },
+    { src : "nycs/role/index",             des : "nycs/role/" },
+    { src : "nysj/role/loginrole",         des : "nysj/role/" },
+    { src : "nysj/role/loginserver",       des : "nysj/role/" },
+    { src : "nysj/role/index",             des : "nysj/role/" },
+    { src : "nycs/spokesman/index",        des : "nycs/spokesman/"},
+    { src : "nycs/regular_customer/index",        des : "nycs/regular_customer/"},
+    { src : "nycs/tvcaction/index",        des : "nycs/tvcaction/"},
+    { src : "nycs/sing/singshow",             des : "nycs/sing/" },
+    { src : "nycs/sing/login",             des : "nycs/sing/" },
+    { src : "nycs/sing/uploadmp3",             des : "nycs/sing/" },
+    { src : "nycs/sing/uploadsing",             des : "nycs/sing/" },
+    { src : "nycs/sing/singck",             des : "nycs/sing/" },
+    { src : "nycs/sing/index",             des : "nycs/sing/" },
+    { src : "nycs/sing/reg",             des : "nycs/sing/" },
+    { src : "nycs/sing/vote",             des : "nycs/sing/" },
+
+    { src : "nycs/betanewgame",             des : "nycs/betanewgame/index" },
+
+]

@@ -1,0 +1,45 @@
+!!!5
+html
+    head
+        include ../title
+        link(href="/stylesheets/nycs/notalone/login/main.css",rel="stylesheet",type="text/css")        
+    body
+        .div_close
+        .uploadphoto
+            .upphoto
+            .rule 活动规则：
+                br
+                |1、参与行动需要账号至少在一个服务器建立过角色；
+                br
+                |2、成功参与行动即可参与抽奖赢珍贵双人坐骑，海量点卡奖励；
+                br
+                |3、坐骑奖励将直接发放至诺米选择的服务器里最高等级的角色下；请慎重选择；
+                br
+                |4、点卡奖励将发放至诺米的账号下，诺米可以自由划拨至所需服务器；
+                br
+                |5、本活动最终解释权在法律允许的最大范围内归《诺亚传说》运营团队所有；
+            .login
+                h1 请登录
+                table#loginfrom
+                    tr
+                        td.tdleft 账 号：
+                        td
+                            input.input#txtAccount(maxlength="20",type="text")
+                    tr
+                        td.tdleft 密 码：
+                        td
+                            input.input#txtpwd(maxlength="20",type="password")
+                    tr
+                        td.tdleft 验证码：
+                        td
+                            input.input#txtValidate(maxlength="4",type="text")
+                            span.validateimg
+                                img#validateimg.disnone(src='',alt='点击刷新验证码',style="display:none")
+                .reg 没有账号？ &gt;&gt;
+                    a(href="http://user.syyx.com/reg.aspx",target="_blank")立即注册
+                .loginerr#loginerr 
+                .loginbtn
+                    a.btn#chklogin(href="javascript:undefined") 确 定
+                    a.btn#cancel_login(href="javascript:undefined") 取 消
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js",type="text/javascript")
+        script(src="/javascripts/nycs/notalone/login/out.js",type="text/javascript")

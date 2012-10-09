@@ -1,0 +1,77 @@
+!!!5
+html
+    head
+        title 诺亚时间版官网管理后台
+        link(href='/stylesheets/client/main.css', rel='stylesheet')
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js")
+        script(src='/javascripts/client/out.js')
+    body
+        .container
+            header#header
+                #logo 诺亚时间版官网管理后台
+            #main
+                nav#sidebar
+                    .content
+                        ul
+                            li
+                                a.workspace_name(href='#') CMS
+                                ul.sub_elements
+                                    li
+                                        a(href='/article') 新闻
+                                    li
+                                        a(href='/') 发布列表
+                            li
+                                a.workspace_name.selected(href='#') 下载管理
+                                ul.sub_elements
+                                    li
+                                        a.selected(href='/client') 客户端下载
+                            li
+                                a.workspace_name(href='#') 游戏激活
+                                ul.sub_elements
+                                    li
+                                        a(href='/activate') 游戏激活
+                            li
+                                a.workspace_name(href='#') 数据分析
+                                ul.sub_elements
+                                    li
+                                        a(href='/nysjdm_link.html', target='_blank') 数据分析
+                    .setting
+                        button.set
+                        .add_client_category.disnone
+                            form#add_client_category_form(action='/client/upsert')
+                                header 添加客户端下载类别
+                                .client_category_content
+                                    input(type='text', name='name', maxlength="20", placeholder='类别名称', required='true')
+                                footer
+                                    input.blue(type='submit', value='保存')
+                                    button.grey 取消
+                                    span.loading
+                                    span.show_result 添加成功
+                #content
+                    .content_layout
+                        .detail_wrapper
+                            #detail
+                            #detail_overlay
+                                #save_client_option_panel
+                                    .panel
+                                        .panel_action
+                                            span.progress 正在保存
+                                            input.save.green(type='submit', form='client_option_form', value='保存')
+                                        .panel_content.scrollable
+                                            .inner
+                                                form#client_option_form(action='/client/upsert')
+                                                    input(type='hidden', name='client_id', value='')
+                                                    input(type='text', name='name', placeholder='名称', required='true',maxlength="40")
+                                                    input(type='text', name='size', placeholder='大小', required='true',maxlength="40")
+                                                    input(type='text', name='version', placeholder='版本', required='true',maxlength="40")
+                                                    input(type='text', name='md5', placeholder='MD5', required='true',maxlength="60")
+                                                    textarea#client_link_group(name='link', placeholder='每行一个下载地址,不能有空白行', required='true')
+                                        .panel_action_bottom
+                                            a.close_panel(href='#')
+                                            a.trash_item(href='/client/remove')
+                        .list
+                            nav.action_bar
+                                .controls
+                            .list_body.scrollable
+                                #client_list
+                                    ul.item_wrapper

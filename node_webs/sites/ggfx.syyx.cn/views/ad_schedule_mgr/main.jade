@@ -1,0 +1,26 @@
+html
+	head
+		title	广告排期
+		include script
+	body.easyui-layout
+		div(region="north", border="true", style="height: 70px;", class="header")  
+			include ../ad_menu/menu_main
+
+		div(region="west",icon="icon-reload", border="true",split="true",title="广告管理",style="width: 185px; padding: 10px;")	
+			include ../ad_menu/menu_toufang
+
+		div(region="center")
+			div#loading
+				img(src="/images/spinner3-greenie.gif")
+
+			div(class="postion")
+				span.f_b_blue	您的当前位置：
+				span	广告管理 &gt;&gt; 广告排期
+			div(class="cont_f_lb")
+
+			div#content
+				div.easyui-layout(style="width:100%;height:600px;border:0")
+					div(region="center",border="false")		
+						include contents
+					div(region="east",style="width:380px; margin:0 auto;",border="false")	
+						include calendar

@@ -1,0 +1,348 @@
+$path               = 'http://r.syyx.com/party/nycs/regular_customer/'
+$bg                 = $path'cus_bg.jpg'
+$bg_nav             = $path'bg_nav.jpg'
+$bg_content         = $path'bg_content.jpg'
+$bg_bottom          = $path'bg_bottom.jpg'
+$btn                = $path'btn.jpg'
+$loading            = $path'loading.gif'
+$prev               = $path'prev.jpg'
+$next               = $path'next.jpg'
+$prev_point         = $path'prev_point.jpg'
+$next_point         = $path'next_point.jpg'
+$nav                = $path'nav.jpg'
+$back               = $path'back_btn.jpg'
+$login_btn          = $path'login_btn.jpg'
+$date               = $path'date.jpg'
+$date_login         = $path'date_login.jpg'
+$center_pop         = $path'center_pop.jpg'
+body
+    margin 0
+    background #0f002b
+    color #9ea39f
+    font-size 12px
+    line-height 22px
+.container
+    height 2122px
+    min-width 980px
+    overflow hidden
+    font-size 12px
+.bg_nav
+    height 520px
+    background url($bg_nav) no-repeat top center
+.bg_content
+    height 1390px
+    background url($bg_content) no-repeat top center
+.bg_bottom
+    height 212px
+    background url($bg_bottom) no-repeat top center
+.main
+    width 980px
+    margin 0 auto
+    position relative
+    height 100%
+    overflow hidden
+.nav_1,.nav_2,.nav_3,.nav_4,.nav_5,.nav_6,.nav_7
+    text-align right
+    line-height 41px
+    height 41px
+    color #c182fc
+    position absolute
+    display block
+    background url($nav)
+    font-size 12px
+    text-decoration none
+    outline none
+    width 79px
+    &:hover
+        color #fff
+        text-decoration underline 
+.nav_1
+    left 424px
+    background-position 0 0
+.nav_2
+    left 503px
+    background-position -79px 0
+.nav_3
+    left 582px
+    background-position -158px 0
+.nav_4
+    left 661px
+    background-position -237px 0 
+.nav_5
+    left 730px
+    background-position -316px 0 
+.nav_6
+    left 809px
+    background-position -395px 0 
+.nav_7
+    left 888px
+    background-position -474px 0 
+#a_nycs
+    top 55px
+    left 739px
+    width 218px
+    height 105px
+    display block
+    cursor pointer
+    outline none
+    position absolute
+    text-decoration none
+#prev
+    background url($prev) no-repeat  center
+    &:hover
+        background url($prev_point) no-repeat
+#next
+    background url($next) no-repeat center
+    &:hover
+        background url($next_point) no-repeat
+#img_scroll
+    width 895px
+    height 455px
+    position absolute
+    left 53px
+    top 70px
+    .button
+        width 37px
+        height 73px
+        float left
+        margin 210px 0 0 0
+        cursor pointer
+        display block
+    .scroll_box
+        overflow hidden
+        width 798px
+        float left
+        text-align center
+        height 100%
+        position relative
+        #scroll_body
+            width 1400px
+            position relative
+        .scroll_img
+            width 256px
+            float left
+            display block
+            height 446px
+            padding 5px
+            position relative
+            background url($loading) no-repeat center
+            a
+                position absolute
+                right 28px
+                bottom 10px
+                width 80px
+                height 16px
+                display block
+                background url($close) -200px -200px
+        img
+            display none
+            border 0
+#divide
+    top 480px
+    left 750px
+    width 200px
+    height 20px
+    color #fff
+    position absolute
+.honor,.honor_1,.honor_2,.honor_3
+    width 620px
+    height 100px
+    position absolute
+    left 160px
+    b
+        color #D0D390
+    p
+        margin 0 0 5px 20px
+        height 12px
+        line-height 10px
+        padding 3px
+        color #c7c4b3
+    .honor_content
+        margin 0 0 0 10px
+.honor
+    top 642px
+.honor_1
+    top 804px
+.honor_2
+    top 1080px
+.honor_3
+    top 1222px
+#login_btn
+    width 249px
+    height 58px
+    position absolute
+    top 1294px
+    left 364px
+    cursor pointer
+    display block
+    outline none
+    &:hover
+        background url($login_btn) no-repeat
+#back_scroll
+    width 100%
+    height 165px
+    position absolute
+    top 180px
+    right 0
+#back_box
+    width 55px
+    height 165px
+    position absolute
+    top 180px
+    right 0
+    cursor pointer
+    outline none
+    background url($back) -1px -1px
+#pop
+    height 165px
+    width 100%
+    position absolute
+    min-width 980px
+.pop_main2
+    width 980px
+.center_pop
+    position absolute
+    height 165px
+    width 100%
+    opacity 0.95
+    background url($center_pop) top center
+.pop_main
+    width 980px
+    margin-left -490px
+    left 50%
+    position absolute
+#role_server,#load_client,#back_pass,#new_lead
+    height 24px
+    width 161px
+    position absolute
+    cursor pointer
+    display block
+#role_server
+    top 105px
+    left 35px
+    background url($back) -57px -51px 
+    &:hover
+        background url($back) -57px -1px 
+#load_client
+    top 105px
+    left 280px
+    background url($back) -219px -51px 
+    &:hover
+        background url($back) -219px -1px 
+#back_pass
+    top 105px
+    left 538px
+    background url($back) -57px -76px 
+    &:hover
+        background url($back) -57px -26px 
+#new_lead
+    top 105px
+    left 783px
+    background url($back) -219px -76px 
+    &:hover
+        background url($back) -219px -26px 
+
+#popup_bg
+    width 100%
+    min-width 980px
+    height 100%
+    opacity 0.5
+    position  absolute
+    top 0 
+    left 0
+    display none
+    z-index 2
+#div_date
+    position absolute
+    width 806px
+    height 327px
+    overflow hidden
+    z-index 3
+    left 40%
+    margin-left -230px
+    top 50px
+    background url($date) top center
+#txtrole
+    margin 57px 0 0 213px
+    width 175px
+    height 27px
+    font-size 14px
+    line-height 27px
+    border 0
+    position absolute
+#txtmobile
+    margin 57px 0 0 553px
+    width 175px
+    height 27px
+    font-size 14px
+    line-height 27px
+    border 0
+    position absolute
+#txtemail
+    margin 117px 0 0 213px
+    width 175px
+    height 27px
+    font-size 14px
+    line-height 27px
+    border 0
+    position absolute
+.servername
+    top 117px
+    left 553px
+    width 178px
+    height 30px
+    background #451E01
+    position absolute
+#servername
+    // margin 117px 0 0 553px
+    width 178px
+    height 30px
+    border 0
+    position absolute
+#txtrolename
+    margin 176px 0 0 365px
+    width 175px
+    height 27px
+    line-height 27px
+    font-size 14px
+    border 0
+    position absolute
+#btndate
+    margin 245px 0 0 295px
+    width 214px
+    height 52px
+    position absolute
+    cursor pointer
+    outline none
+    &:hover
+        background url($date_login) no-repeat top center
+.div_close
+    position absolute
+    width 28px
+    height 28px
+    left 776px
+    top 2px
+    cursor pointer
+.copy_right
+    width 980px
+    text-align center
+    position absolute
+    top 45px
+    color #fff
+    margin 0 auto
+    .feet_txt
+        text-align left
+        top 35px
+        left 425px
+        position absolute
+        line-height 20px
+    .feet_logo
+        position absolute
+        width 140px
+        height 60px        
+        top 35px
+        left 240px
+        outline none
+
+.disnone
+    display none

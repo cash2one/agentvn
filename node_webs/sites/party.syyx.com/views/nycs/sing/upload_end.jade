@@ -1,0 +1,27 @@
+!!!5
+html
+    head
+        link(rel= "shortcut icon", href = "http://s.syyx.com/nycs/img/favicon.ico", type = "image/x-icon")
+        meta(http-equiv = "Content-Type",content="text/html; charset=utf-8")
+        meta(name = "keywords", content = "上传mp3")
+        meta(name = "description", content = "上传mp3")
+        title 上传mp3
+        style(type = "text/css")
+            span,a{font-size:12px}
+        script
+            parent.get_upstate('#{r}','#{url}')
+    body(style="background: #e8d2a0")
+
+        - if(r == 'success')
+            span(style="color:#444444") 上传成功!
+            script
+                parent.state_clear()
+        - else
+            span(style="color:#444444") #{r}
+            script
+                parent.state_clear(true)
+        |&nbsp;
+        - if(r == 'success')
+            a(href="javascript:document.location='/nycs/sing/uploadmp3.html';",style="color:#eb4c03") 重新上传
+        else
+            a(href="javascript:document.location='/nycs/sing/uploadmp3.html';",style="color:#eb4c03") 返回

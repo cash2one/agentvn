@@ -1,0 +1,2 @@
+资源文件包括图片和flash文件，放在public目录下，以站点名称建立目录，然后在该目录下建立页面名称的目录，目录下放此页面的图片和flash文件，例如nycs站点下的index页面中test图片地址：
+r.syyx.com/nycs/index/test.jpg

@@ -1,0 +1,221 @@
+//img url
+$path               = 'http://r.syyx.com/events/p009/'
+$bg                 = $path'bg.jpg'
+$btnp               = $path'btn.png'
+$btn                = $path'btn.jpg'
+$success            = $path'success.jpg'
+$fail               = $path'fail.jpg'
+$right_wrong        = $path'right_wrong.png'
+$loader             = $path'ajax-loader.gif'
+
+body
+    margin 0
+    font 12px/16px '宋体'
+    color #b4eeff
+#bg
+    display none
+a
+    color #6986c7
+    text-decoration none
+    outline none
+    &:hover
+        color #87adff
+img
+    border none
+.main
+    background url($bg) no-repeat
+    height 600px
+    width 960px
+    margin 0 auto
+.head
+    height 430px
+    position relative
+.main-head-logo
+    position absolute
+    top 20px
+    left 20px
+    width 140px
+    height 75px
+    display block
+.run_flash
+    top 130px
+    left auto
+    right 35px    
+    position absolute
+    width 192px
+    height 57px
+    .flash_bg
+        width 185px
+        height 42px
+        z-index 2
+        background url($btnp) no-repeat -14px -73px
+    .main-head-mini_down
+        position absolute
+        top 0
+        left 0
+        width 185px
+        height 42px
+        z-index 3
+        background url($btn) no-repeat 1000px
+    #run_flash
+        width 192px
+        height 57px
+        position absolute
+        top 0
+        left 0
+.reg_panel
+    top 195px
+    left 460px
+    width 240px
+    height 241px
+    position relative
+    overflow hidden
+    .reg
+        width 230px
+    table
+        height 162px
+        td
+            height 27px
+            width 20px
+        input
+            background #85bbe5
+            border 1px solid #009cff
+            height 18px
+            color #002c7a
+            line-height 18px
+            width 145px
+        .focus_in_inut
+            background #cce9ff
+    .agreement
+        height 21px
+    .reg_form_item_name
+        width 60px
+    .reg_form_item_input
+        width 150px
+    .validate_num_input
+        height 30px
+        vertical-align top
+        padding-top 3px
+    #txtValidate
+        width 50px
+    #validateimg
+        width 90px
+        margin-left 5px
+        height 27px
+        vertical-align top
+        cursor pointer
+    #reg_step2,#reg_step3,#reg_step4,#reg_step5
+        width 220px
+        margin 0 auto
+        padding-top 10px
+        line-height 25px
+        height 140px
+        display none
+        text-align center
+    #reg_step2
+        height 231px
+        .active
+            height 200px
+            line-height 30px
+        input
+            background #85bbe5
+            border 1px solid #009cff
+            height 18px
+            color #002c7a
+            line-height 18px
+            width 145px
+    p
+        color rgb(78,127,233)
+        margin 5px 0
+    #active_link
+        display block
+        margin 20px auto
+        width 127px
+        height 30px
+        background url($btn) no-repeat -229px -82px
+        &:hover
+            background-position -229px -113px
+    .reg_submit
+        height 55px
+        position relative
+    #reg_button
+        width 127px
+        height 30px
+        position absolute
+        left 51px
+        top 7px
+        background url($btn) no-repeat -399px -8px
+        &:hover
+            background-position -399px -36px
+    .success
+        height 50px
+        line-height 50px
+        background url($success) no-repeat 40px center
+        color rgb(255,191,0)
+    .fail
+        height 50px
+        line-height 50px
+        background url($fail) no-repeat 40px center
+        color rgb(255,191,0)
+    #back
+        text-decoration underline
+        cursor pointer
+        display block
+    .active_info
+        text-align left
+        padding-left 30px
+        color rgb(7, 218, 239)
+    .download_tip
+        text-align center
+        padding-top 50px
+        color rgb(7, 218, 239)
+    .icon
+        position relative
+        width 200px
+        height 97px
+        margin 0 auto
+        .rungame
+            width 127px
+            height 27px
+            display block
+            margin 20px auto
+            background url($btn) no-repeat -366px -83px
+            &:hover
+                background-position -366px -111px
+        .download
+            display none
+.middle
+    position absolute
+    width 980px
+    margin 0 auto
+    height 170px
+
+#img_scroll
+    position absolute
+    top 33px
+    left:27px
+    height 132px
+    a
+        margin-right 12px
+        display block
+        display inline-block
+        width 216px
+        height 130px
+        float left
+        border 1px solid #00469d
+.check_result_wrong
+    background url($right_wrong) no-repeat 0 -32px
+    height 100%
+    width 16px
+.check_result_right 
+    background: url($right_wrong) no-repeat 0 4px
+    height: 25px;
+    width: 16px;
+
+.check_result_loading 
+    background url($loader) no-repeat 0 4px
+    height 25px
+    width 16px
+
+.disnone
+    display none

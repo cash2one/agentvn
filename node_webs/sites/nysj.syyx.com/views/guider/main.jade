@@ -1,0 +1,57 @@
+!!!5
+html
+    include ../include/url
+    head
+        include ./meta
+        link(href='/stylesheets/guider/main.css',rel='stylesheet')
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js")
+        script(src='/javascripts/guider/out.js')
+    body
+        .container
+            .content
+                include ../include/logo_link
+                include ../include/nav
+                .ready
+                    a.reg(href='#')
+                    a.download(href='#')
+                    a.create(href='http://nysj.syyx.com/news_content.html?503deaa17a2d1d287400001a',target="_blank")
+                    a.begin(href='#{nav_pay}', target="_blank")
+                .chose_career
+                    .chose 玩那个职业好呢？这会是你开始玩游戏时问的第一个问题。这里介绍了游戏里的四大职业，快来选择一下你喜欢的职业吧。
+                    a.yineng(href='http://nysj.syyx.com/news_content.html?503deca47a2d1d2874000023', target='_blank')
+                    a.jianwu(href='http://nysj.syyx.com/news_content.html?503decae7a2d1d2874000024', target='_blank')
+                    a.qiangxie(href='http://nysj.syyx.com/news_content.html?503dec927a2d1d2874000022', target='_blank')
+                    a.gedou(href='http://nysj.syyx.com/news_content.html?503decb97a2d1d2874000025', target='_blank')
+                .gonglue
+                    a.btn1(href='http://nysj.syyx.com/news_content.html?503de99d7a2d1d287400000d', target='_blank')
+                    a.btn2(href='http://nysj.syyx.com/news_content.html?503de9a97a2d1d287400000e', target='_blank')
+                    a.btn3(href='http://nysj.syyx.com/news_content.html?503de9de7a2d1d287400000f', target='_blank')
+                    a.btn4(href='http://nysj.syyx.com/news_content.html?503de9f67a2d1d2874000010', target='_blank')
+                .upgrade
+                    .grade
+                        .grade_1
+                            a.btn1(href='http://nysj.syyx.com/news_content.html?503de9fe7a2d1d2874000011', target='_blank')
+                            a.btn2(href='http://nysj.syyx.com/news_content.html?503dea0a7a2d1d2874000012', target='_blank')
+                            a.btn3(href='http://nysj.syyx.com/news_content.html?503dea127a2d1d2874000013', target='_blank')
+                        .grade_2
+                            a.btn1(href='http://nysj.syyx.com/news_content.html?503dea1a7a2d1d2874000014', target='_blank')
+                            a.btn2(href='http://nysj.syyx.com/news_content.html?503dea217a2d1d2874000015', target='_blank')
+                            a.btn3(href='http://nysj.syyx.com/news_content.html?503dea297a2d1d2874000016', target='_blank')
+                        .grade_3
+                            a.btn1(href='http://nysj.syyx.com/news_content.html?503dea347a2d1d2874000017', target='_blank')
+                            a.btn2(href='http://nysj.syyx.com/news_content.html?503dea3b7a2d1d2874000018', target='_blank')
+                            a.btn3(href='http://nysj.syyx.com/news_content.html?503dea447a2d1d2874000019', target='_blank')
+                        a#expand_1(href='#')
+                        a#expand_2(href='#')
+                        a#expand_3(href='#')
+                .try
+                    a.reg(href='#')
+                    a.download(href='#')
+                    a.pay(href='#{nav_pay}', target='_blank')
+                    a.more(href='http://nysj.syyx.com/news_content.html?503deaec7a2d1d287400001d', target='_blank')
+                include ../include/copyright
+        include ../../components/float_reg/reg
+        .download_dialog
+            a.close(href='#')
+            a.full_client(href='/client/full')
+            a.mini_client(href='/client/mini')

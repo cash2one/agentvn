@@ -1,0 +1,307 @@
+//img url
+$path               = 'http://r.syyx.com/events/p001/'
+$bg                 = $path'bg.jpg'
+$main               = $path'main.jpg'
+$bt_hover           = $path'bt_hover.png'
+$feature_tab        = $path'feature_tab.png'
+$right_wrong        = $path'right_wrong.png'
+$loader             = $path'ajax-loader.gif'
+$loading            = $path'loading.gif'
+$close              = $path'close.png'
+body
+    margin 0
+    font 12px/16px '宋体'
+    color #6b8494
+    background  #001c4e
+    color #b4eeff
+#bg
+    display none
+a
+    color #6986c7
+    text-decoration none
+    outline none
+    &:hover
+        color #87adff
+img
+    border none
+.main
+    background url($main) no-repeat center 480px
+    height 1500px
+    min-width 980px
+.main-banner
+    height 480px
+    background url($bg) no-repeat center top
+.main-head
+    width 980px
+    margin 0 auto
+    height 480px
+    position relative
+.main-head-top_nav
+    width 680px
+    text-align right
+    line-height 36px
+    color #6986c7
+    height 36px
+.main-head-logo
+    margin-left 180px
+    width 186px
+    height 75px
+    display block
+.main-head-mini_down
+    left 225px
+    width 184px
+    height 38px
+    top 407px
+    display block
+    position absolute
+    background url($bt_hover) no-repeat -13px -50px
+    &:hover
+        background-position -14px -11px
+#flash,#flash_play,#flash_but
+    width 186px
+    height 105px
+    position absolute
+    left 12px
+    top 348px
+#flash
+    background #000
+#flash_play,#flash_but
+    background url($bt_hover) no-repeat -1000px
+    z-index 50
+#flash_play
+    z-index 100
+    cursor pointer
+.main-head-go_home
+    width 127px
+    height 34px
+    left 762px
+    top 444px
+    position absolute
+.middle
+    position relative
+    width 980px
+    margin 0 auto
+    height 860px
+#img_focus
+    height 396px
+    top 37px
+    left 3px
+    width 680px
+    position absolute
+    background url($loading) center 200px no-repeat
+#img_focus_tab
+    width 680px
+    height 46px
+    position absolute
+    z-index 1
+    a
+        display inline-block
+        margin-right 2px
+        height 100%
+        width 168px
+        background url($feature_tab) no-repeat -1000px
+        cursor pointer
+    .check_0
+        background-position 0
+    .check_1
+        background-position -170px 0
+    .check_2
+        background-position -340px 0
+    .check_3
+        background-position -510px 0
+#img_focus_img
+    top 41px
+    width 678px
+    height 354px
+    overflow hidden
+    background #05132e
+    position relative
+    img
+        display none
+.reg_panel
+    top 80px
+    left 682px
+    width 298px
+    height 350px
+    position relative
+    .reg
+        width 230px
+        margin-left 39px
+    table
+        height 162px
+        td
+            height 27px
+            width 20px
+        input
+            background #85bbe5
+            border 1px solid #009cff
+            height 18px
+            color #002c7a
+            line-height 18px
+            width 145px
+        .focus_in_inut
+            background #cce9ff
+    .agreement
+        height 21px
+    .reg_form_item_name
+        width 60px
+    .reg_form_item_input
+        width 150px
+    .validate_num_input
+        height 30px
+        vertical-align top
+        padding-top 3px
+    #txtValidate
+        width 50px
+    #validateimg
+        width 90px
+        margin-left 5px
+        height 27px
+        vertical-align top
+        cursor pointer
+    #reg_step2,#reg_step3
+        width 220px
+        margin 0 auto
+        padding-top 30px
+        line-height 25px
+        display none
+        span
+            color #13CCEE
+    #active_link
+        display block
+        margin 20px auto
+        width 127px
+        height 30px
+        background url($bt_hover) no-repeat -584px -50px
+        &:hover
+            background-position -584px -11px
+    .download
+        height 30px
+        width 266px
+        position absolute
+        top 298px
+        left 16px
+        .mini_download
+            height 100%
+            width 127px
+            display block
+            float left
+            &:hover
+                background url($bt_hover) no-repeat -328px -11px
+        .full_download
+            height 100%
+            width 127px
+            display block
+            float right
+            &:hover
+                background url($bt_hover) no-repeat -456px -11px
+    .reg_submit
+        height 55px
+        position relative
+    #reg_button
+        width 127px
+        height 30px
+        position absolute
+        left 51px
+        top 7px
+        background url($bt_hover) no-repeat -200px -50px
+        &:hover
+            background-position -200px -11px
+#comment_box
+    top 475px
+    left 696px
+    width 280px
+    height 112px
+    position absolute
+    overflow hidden
+    span
+        color #13ccee
+    p
+        margin 0
+        padding-bottom 16px
+#img_scroll
+    position absolute
+    top 650px
+    height 132px
+    .button
+        width 30px
+        height 100%
+        float left
+        cursor pointer
+    .scroll_box
+        width 920px
+        float left
+        overflow hidden
+    #scroll_body
+        width 2000px
+        a
+            margin-right 16px
+            display block
+            display inline-block
+            background url($loading) center no-repeat
+            width 216px
+            height 135px
+            float left
+            border 1px solid #00469d
+.foot
+    width 980px
+    margin 0 auto
+    padding-top 10px
+    color #3c69a1    
+    .copy_right
+        width 980px
+        text-align center
+        position relative
+        .feet_txt
+            text-align left
+            margin 10px 0 0 380px
+        .feet_logo
+            position absolute
+            width 140px
+            height 60px
+            left 225px
+            top 30px
+.check_result_wrong
+    background url($right_wrong) no-repeat 0 -32px
+    height 100%
+    width 16px
+.check_result_right 
+    background: url($right_wrong) no-repeat 0 4px
+    height: 25px;
+    width: 16px;
+
+.check_result_loading 
+    background url($loader) no-repeat 0 4px
+    height 25px
+    width 16px
+
+.disnone
+    display none
+
+.pop_video_detail
+    background-color: #032e53;
+    border 1px solid #0062b3
+.ui-dialog .ui-dialog-titlebar-close 
+    background: url($close) no-repeat;
+#pop_flash
+    border 1px solid #004680
+    background #000
+    line-height 0
+object
+    outline none
+
+#reg_tips
+    position absolute
+    width 147px
+    height 20px
+    background #010a6f
+    border 1px solid #ffbc0c
+    color #fff
+    z-index 100
+    top 83px
+    left 780px
+    display none
+    overflow hidden
+    line-height 106px
+    font-size 14px
+    text-align center

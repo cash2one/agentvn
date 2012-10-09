@@ -1,0 +1,233 @@
+$path        = "http://r.syyx.com/events/p028/"
+$bg          = $path"bg.jpg"
+$main        = $path"main.jpg"
+$btn         = $path"btn.jpg"
+$run_game    = $path'run_game.jpg'
+$msg_bg      = $path'msg_bg.png'
+$reg_scroll  = $path'reg_scroll.jpg'
+$reg_bg      = $path'reg_bg.jpg'
+$reg_btn     = $path'reg_btn.jpg'
+$right_wrong = $path'right_wrong.png'
+$loader      = $path'ajax-loader.gif'
+$success     = $path'success.jpg'
+$fail        = $path'fail.jpg'
+
+
+body
+    margin 0
+    font 12px/2em "宋体"
+    color #A9C9FF
+a
+    text-decoration none
+    color #D8AF6F
+    outline none
+    &:hover
+        color #fff
+.wrap
+    width 980px
+    margin 0 auto
+    background url($bg) #000 no-repeat
+.main
+    position relative
+    height 1200px
+    background url($main) no-repeat 0 550px
+    overflow hidden
+.nycs
+    position absolute
+    left 50px
+    width 155px
+    height 82px
+    top 5px
+    background url($btn) no-repeat 999cm
+#flash, #flash_but, #flash_btn
+    width 186px
+    height 105px
+    position absolute
+    top 426px
+    left 76px
+#flash_btn
+    background url($btn) no-repeat 999cm
+    cursor pointer
+#img_scroll
+    width 577px
+    height 571px
+    right 0
+    position absolute
+    top 0
+    img
+        position absolute
+        top 0
+        left 0
+    a
+        width 60px
+        height 85px
+        position absolute
+        background url($btn) 999cm
+        top 327px
+    #prev
+        left 138px
+    #next
+        right 36px
+#prize
+    width 284px
+    height 55px
+    position absolute
+    left 200px
+    top 20px
+#to_rungame,#to_rungame2
+    width 221px
+    height 72px
+    position absolute
+    top 451px
+    left 560px
+#to_rungame2
+    visibility hidden
+.rungame1
+    width 221px
+    height 72px
+    position absolute
+    top 451px
+    left 560px
+    text-indent -9999cm
+    opacity 0
+    background #fff
+.reg_box
+    width 298px
+    top 650px
+    right 0
+    position absolute
+.reg_panel
+    width 298px
+    height 350px
+    position relative
+    overflow hidden
+    .reg
+        width 230px
+        margin-left 39px
+    table
+        height 162px
+        td
+            height 27px
+            width 20px
+        input
+            background #85bbe5
+            border 1px solid #009cff
+            height 18px
+            color #002c7a
+            line-height 18px
+            width 145px
+        .focus_in_inut
+            background #cce9ff
+    .agreement
+        height 21px
+    .reg_form_item_name
+        width 60px
+    .reg_form_item_input
+        width 150px
+    .validate_num_input
+        height 30px
+        vertical-align top
+        padding-top 3px
+    #txtValidate
+        width 50px
+    #validateimg
+        width 90px
+        margin-left 5px
+        height 27px
+        vertical-align top
+        cursor pointer
+    #reg_step2,#reg_step3,#reg_step4,#reg_step5
+        width 220px
+        margin 0 auto
+        padding-top 10px
+        line-height 25px
+        height 140px
+        display none
+        text-align center
+    #reg_step2
+        height 231px
+        .active
+            height 200px
+            line-height 30px
+        input
+            background #85bbe5
+            border 1px solid #009cff
+            height 18px
+            color #002c7a
+            line-height 18px
+            width 145px
+    p
+        color rgb(78,127,233)
+        margin 5px 0
+    #active_link
+        display block
+        margin 20px auto
+        width 127px
+        height 30px
+        background url($bt_hover) no-repeat -229px -82px
+        &:hover
+            background-position -229px -113px
+    .reg_submit
+        height 55px
+        position relative
+    #reg_button
+        width 127px
+        height 29px
+        position absolute
+        left 51px
+        top 7px
+        background url($bt_hover) no-repeat -399px -8px
+        &:hover
+            background-position -399px -36px
+    .success
+        height 50px
+        line-height 50px
+        background url($success) no-repeat 40px center
+        color rgb(255,191,0)
+    .fail
+        height 50px
+        line-height 50px
+        background url($fail) no-repeat 40px center
+        color rgb(255,191,0)
+    #back
+        text-decoration underline
+        cursor pointer
+        display block
+    .active_info
+        text-align left
+        padding-left 30px
+        color rgb(7, 218, 239)
+    .download_tip
+        text-align center
+        padding-top 50px
+        color rgb(7, 218, 239)
+    .icon
+        position relative
+        width 200px
+        height 97px
+        margin 0 auto
+        .rungame
+            width 127px
+            height 27px
+            display block
+            margin 20px auto
+            background url($bt_hover) no-repeat -366px -83px
+            &:hover
+                background-position -366px -111px
+        .download
+            display none
+    .check_result_wrong
+        background url($right_wrong) no-repeat 0 -32px
+        height 100%
+        width 16px
+    .check_result_right 
+        background: url($right_wrong) no-repeat 0 4px
+        height: 25px;
+        width: 16px;
+
+    .check_result_loading 
+        background url($loader) no-repeat 0 4px
+        height 25px
+        width 16px
+.disnone
+    display none

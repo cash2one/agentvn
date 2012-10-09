@@ -1,0 +1,73 @@
+!!!5
+html
+    head
+        title 诺亚传说,网游,2012题材,网络游戏,人气,新世界,公平,激爽PK,热门2d新游
+        link(href="/stylesheets/p011/main.css",rel="stylesheet",type="text/css")
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js", type="text/javascript")
+
+    body
+        .main
+            .reg_panel
+                .reg
+                    table.reg_form(border="0",cellpadding="0",cellspacing="0")
+                        tr
+                            td.reg_form_item_name 账&nbsp;&nbsp;&nbsp;&nbsp;号：
+                            td.reg_form_item_input.input_l
+                                input#txtUserAccount(type="text",tabindex="1",maxlength="16")
+                            td
+                                #txtUserAccountTip
+
+                            td.reg_form_item_name 真实姓名：
+                            td.reg_form_item_input
+                                input#txtTrueName(type='text',maxlength="20",tabindex="4")
+                            td
+                                #txtTrueNameTip
+                        tr
+                            td.reg_form_item_name 密&nbsp;&nbsp;&nbsp;&nbsp;码：
+                            td.reg_form_item_input.input_l
+                                input#txtPasswords(type='password',maxlength="16",tabindex="2")
+                                input#txtPasswordsVal.disnone(type="text",tabindex="2")
+                            td
+                                #txtPasswordsTip
+
+                            td.reg_form_item_name 身&nbsp;份&nbsp;证：
+                            td.reg_form_item_input
+                                input#txtCardID(type="text",maxlength="18",tabindex="5")
+                            td
+                                #txtCardIDTip
+                        tr
+                            td.reg_form_item_name 重复密码：
+                            td.reg_form_item_input.input_l
+                                input#txtConfirm(type="password",tabindex="3")
+                                input#txtConfirmVal.disnone(type="text",tabindex="3")
+                            td
+                                #txtConfirmTip
+                            td.reg_form_item_name 验&nbsp;证&nbsp;码：
+                            td.reg_form_item_input.validate_num_input
+                                input#txtValidate(type='text',maxlength='20',tabindex="6")
+                                img#validateimg.disnone(src='',alt='点击刷新验证码')
+                            td
+                                #txtValidateVal
+                    .agreement
+                        input#chk_XieYi(type="checkbox",checked)
+                        | 同意
+                        a(href='http://user.syyx.com/policy/userpolicy.aspx',target="_blank",hidefocus="true")《使用协议及隐私协议》
+                    .reg_submit
+                        a#reg_button(href='#',hidefocus="true")
+                        span#regProcessTip
+                #reg_step2
+                    .active
+                        div 恭喜您，获得礼包激活码。请进入游戏找"礼包大使"领取。
+                        div 您的账号：
+                            span#reg_account
+                            |激活码为：
+                            span#active_code
+                        .link
+                            a#active_link(href='#',hidefocus="true")
+                #reg_step3
+                    .no_card
+                        div 恭喜您，注册成功!
+                        div 今天的礼包卡已发放完毕。
+                        div 您的账号：
+                            span#reg_account3
+        script(src="/javascripts/p011/out.js", type="text/javascript")

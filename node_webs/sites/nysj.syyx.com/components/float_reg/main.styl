@@ -1,0 +1,157 @@
+//pic_url
+$float_reg_bg   = 'http://r.syyx.com/nysj/float_reg/bg.jpg'
+$nysj_btn       = 'http://r.syyx.com/nysj/float_reg/btn.jpg'
+$btn            = 'http://s1.syyx.com/nycs/images/float_reg/btn.jpg'
+$loading        = 'http://s1.syyx.com/nycs/images/float_reg/loader.gif'
+$reg_tip_icon   = 'http://s1.syyx.com/nycs/images/float_reg/right_wrong.png'
+$nysj_btn2      = 'http://s1.syyx.com/nycs/images/float_reg/btn2.jpg'
+//----------------------------------------
+.disnone
+    display none
+#float_reg_btn
+    background url($float_reg_bg) -343px -42px no-repeat
+    width 70px
+    height 291px
+    position fixed
+    _position absolute
+    top 100px
+    right 10px
+    display block
+    overflow hidden
+    &:hover
+        background url($float_reg_bg) -423px -42px no-repeat
+#float_reg_panel
+    position fixed
+    _position absolute
+    top 100px
+    right 10px
+    display none
+    background url($float_reg_bg) -10px -10px no-repeat
+    width 284px
+    height 492px
+    overflow hidden
+    .close
+        height 30px
+        overflow hidden
+        a
+            float right
+            width 30px
+            height 30px
+    #reg_step1
+        padding 40px 0 0 15px
+        width 245px
+        height 235px
+        position relative
+        overflow hidden
+        color #98d9ff
+        display block
+        .reg_form
+            td
+                padding 0 2px
+                height 26px
+                &.reg_form_item_name
+                    width 60px
+                    text-align right
+                &.reg_form_item_input
+                    input
+                        background-color #5b8cb4
+                        border solid 1px #0099ff
+                        height 20px
+                        line-height 20px
+                        color #000
+                        width 146px
+                    input.focus_in_inut
+                        background-color #fff
+                        border solid 1px #C8EDFF
+                        color #000
+                    #validateimg
+                        vertical-align middle
+                        cursor pointer
+                        height 29px
+                        width 100px
+                        margin-left 3px
+                &.validate_num_input
+                    height 35px
+                    input
+                        width 40px
+        .agreement
+            text-align center
+            padding-top 5px
+            a
+                text-align center
+                text-decoration underline
+                color #0ba6c7
+                outline none
+            input
+                margin-right 3px
+        .reg_submit
+            position absolute
+            top 242px
+            left 80px
+            a
+                display inline-block
+                width 107px
+                height 31px
+                background url($nysj_btn2) -5px -6px no-repeat
+                outline none
+                &:hover
+                    background-position -5px -45px
+    #reg_step2
+        display none
+        padding 60px 0 0 0
+        width 200px
+        margin 0 auto
+        overflow hidden
+        color #5bbae6
+        line-height 24px
+        h3
+            font-size 14px
+            text-align center
+            margin-bottom 30px
+            color #fc8900
+        .account
+            text-align center
+            margin-bottom 20px
+        p
+            line-height 22px
+    .download_area
+        position absolute
+        top 380px
+        left 8px
+        height 30px
+        width 276px
+	    .link1
+            float left
+            margin-right 15px
+            width 127px
+            height 30px
+            &:hover
+                background url($nysj_btn) -5px -100px no-repeat
+        .link2
+            float left
+            width 127px
+            height 30px
+            margin-right 0
+            &:hover
+                background url($nysj_btn) -5px -165px no-repeat
+    .get_code
+        position absolute
+        top 420px
+        width 276px
+        left 8px
+        a
+            display block
+            width 270px
+            height 60px
+    .check_result_right
+        background url($reg_tip_icon) 0 4px no-repeat
+        width 16px
+        height 25px
+    .check_result_wrong
+        background url($reg_tip_icon) 0 -32px no-repeat
+        width 16px
+        height 25px
+    .check_result_loading
+        background url($loading) 0 4px no-repeat
+        width 16px
+        height 25px

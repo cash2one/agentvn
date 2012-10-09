@@ -1,0 +1,103 @@
+extends ../include/_frame
+
+//-模板变量----------------------------------------------------------------------------
+block p_variable
+    -var p      = "p001"
+    -var p_css  = ["http://s.syyx.com/nycs/plugin/default_page_plugin/jquery-ui-1.8.13.custom.css","http://s.syyx.com/nycs/plugin/light-box/jquery.lightbox-0.5.css"]
+
+//-模板内容----------------------------------------------------------------------------
+block body
+    .main
+        .main-banner
+            .main-head
+                .main-head-top_nav
+                    include ../include/nav
+                a.main-head-logo(href="#{url_nycs}",hidefocus="true")
+                a.main-head-mini_down(href="#{url_mini_client}",hidefocus="true")
+                block flash
+                    #flash
+                    #flash_but
+                    span(id="flash_play")
+                block go_home
+                    a.main-head-go_home(href="#{url_nycs}",hidefocus="true")
+        .middle
+            #img_focus
+                #img_focus_tab
+                    a(class="check_0")
+                    a
+                    a
+                    a
+                #img_focus_img
+                    img(src="#{img_path}feature1.jpg",width="678",height="354",style="display:inline")
+                    img(delay="#{img_path}feature2.jpg",width="678",height="354")
+                    img(delay="#{img_path}feature3.jpg",width="678",height="354")
+                    img(delay="#{img_path}feature4.jpg",width="678",height="354")
+            include ../include/reg
+            #comment_box
+                #comment
+                    div
+                        span 止战之殇
+                        p 这个游戏本来没怎么注意后来别人叫我玩，现在被它深深的吸引，无法自拔。
+                    div
+                        span 珍惜自己
+                        p 经朋友介绍才开始玩，简单易上手，更新快，是一款值得推荐的经典游戏！
+                    div
+                        span 怡梦灬缘
+                        p 找了很多游戏 只有这个游戏界面看起来很舒服 值得一玩
+                    div
+                        span 一个为情执
+                        p 很不错的游戏，是我玩的最久最有吸引力的游戏
+                    div
+                        span 向前走不回头
+                        p 玩这游戏才终于知道网络游戏是该怎么样玩的 开心 呵呵强烈支持
+                    div
+                        span 我只是供
+                        p 朋友拉我一起玩不来不想玩 结果不知不觉的喜欢上了 这游戏就是有这个魅力与能力
+                    div
+                        span 我系刀仔
+                        p 12年的网游生活我对诺亚非常满意
+                    div
+                        span 天空
+                        p 全部免费，PK很爽，绝对给力的游戏
+                    div
+                        span 三国之王
+                        p 我玩过很多游戏，我喜欢诺亚传说
+                    div
+                        span 人生快乐?
+                        p 设计的非常好，适合各种阶级的人玩
+                    div
+                        span 宁静致远
+                        p 设计可以，自由性比较高，游戏中可选择性也比较灵活，比较适合各种人群。特别是离线经验，让很多上班族升级比较方便。任务也可以根据个人喜好可选择性来做
+                    div
+                        span 尼古丁的诱
+                        p 我玩过的游戏很多，但是玩诺亚传说是最久的！~！~很好！
+                    div
+                        span 麻子
+                        p 不花钱也能玩好的游戏 不错的
+                    div
+                        span 莲
+                        p 小白玩家认真玩过的一款游戏，上手很容易
+            #img_scroll
+                #prev1.button
+                .scroll_box
+                    #scroll_body(style="margin-left:0px")
+                        a(href="#{img_path}la.jpg",hidefocus="true")
+                            img(delay="#{img_path}a.jpg",width="216",height="135")
+                        a(href="#{img_path}lb.jpg",hidefocus="true")
+                            img(delay="#{img_path}b.jpg",width="216",height="135")
+                        a(href="#{img_path}lc.jpg",hidefocus="true")
+                            img(delay="#{img_path}c.jpg",width="216",height="135")
+                        a(href="#{img_path}ld.jpg",hidefocus="true")
+                            img(delay="#{img_path}d.jpg",width="216",height="135")
+                        a(href="#{img_path}le.jpg",hidefocus="true")
+                            img(delay="#{img_path}e.jpg",width="216",height="135")
+                        a(href="#{img_path}lf.jpg",hidefocus="true")
+                            img(delay="#{img_path}f.jpg",width="216",height="135")
+                        a(href="#{img_path}lg.jpg",hidefocus="true")
+                            img(delay="#{img_path}g.jpg",width="216",height="135")
+                        a(href="#{img_path}lh.jpg",hidefocus="true")
+                            img(delay="#{img_path}h.jpg",width="216",height="135")
+                #next1.button
+        .foot
+            include ../include/copyright
+    #pop_flash_dialog.disnone

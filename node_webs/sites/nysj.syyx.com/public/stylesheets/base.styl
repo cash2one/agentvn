@@ -1,0 +1,98 @@
+.clearfix
+    &:after
+        clear both
+    &:before, &:after
+        content ""
+        display table
+.clear
+    clear both
+    height 0
+    overflow hidden
+a
+    text-decoration none
+    outline none
+.hide
+    visibility hidden
+.loading
+    background url($loading) 0 0 no-repeat
+    width 32px
+    height 32px
+    display inline-block
+.disnone
+    display none
+.scrollable
+    overflow-x hidden
+    overflow-y auto
+button
+    outline none
+input[type="text"],input[type='url'],input[type='color'],input[type='password']
+    border 1px solid #DEDEDE
+    border-radius 3px 3px 3px 3px
+    width: 100%
+    padding 2px
+    background-color rgba(255, 255, 255, 0.85)
+    box-shadow 0 1px 0 #FFFFFF
+    &:focus
+        border 1px solid #668FCC
+        box-shadow 0 0 4px #1E63CC, 0 0 4px #1E63CC inset
+button.blue, 
+.dialogue.create button.done, 
+.button.blue, 
+.dialogue.create button.button.done,
+input.blue[type="button"], 
+input.blue[type="submit"]
+    background -webkit-linear-gradient(#3694DF, #0268D8) repeat scroll 0 0 #0268D8
+    background -moz-linear-gradient(#3694DF, #0268D8) repeat scroll 0 0 #0268D8
+    border 1px solid #00489A
+    box-shadow 0 1px 0 #5AA7E5 inset
+    color #FFFFFF
+    border-radius 3px
+    text-align center
+    padding 4px 10px 5px
+    font-weight bold
+    font-size 13px
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.33)
+    cursor pointer
+    outline none
+button.grey, 
+input.grey[type="button"], 
+input.grey[type="submit"]
+    background -webkit-linear-gradient(#F2F2F2, #DADADA) repeat scroll 0 0 transparent
+    background -moz-linear-gradient(#F2F2F2, #DADADA) repeat scroll 0 0 transparent
+    border 1px solid #A2A4A6
+    box-shadow 0 1px 0 rgba(255, 255, 255, 0.18) inset
+    color #555555
+    text-shadow 0 1px 0 #FFFFFF
+    padding 4px 10px 5px
+    cursor pointer
+    border-radius 3px
+    font-weight bold
+    outline none
+button.green, .button.green, input.green[type="button"], input.green[type="submit"]
+    background -webkit-linear-gradient(#72D93F, #57A334) repeat scroll 0 0 transparent
+    background -moz-linear-gradient(#72D93F, #57A334) repeat scroll 0 0 transparent
+    border 1px solid #348234
+    border-radius 3px
+    box-shadow 0 1px 0 #A0E67E inset
+    color rgba(255, 255, 255, 0.95)
+    text-shadow 0 -1px 0 rgba(0, 0, 0, 0.33)
+    cursor pointer
+    padding 2px 10px 3px
+    color: rgba(255, 255, 255, 0.95)
+    text-shadow 0 -1px 0 rgba(0, 0, 0, 0.33)
+    outline none
+textarea
+    -moz-transition all 0.2s ease 0s
+    outline 0 none
+    overflow auto
+    padding 5px 4px
+    resize none
+    border-radius 3px 3px 3px 3px
+    box-shadow 0 1px 0 #FFFFFF
+    min-height 30px
+    width 100%
+    border 1px solid #DEDEDE
+    vertical-align top
+    &:focus
+        border 1px solid #668FCC
+        box-shadow 0 0 4px #1E63CC, 0 0 4px #1E63CC inset

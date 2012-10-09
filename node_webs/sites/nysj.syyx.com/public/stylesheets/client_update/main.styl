@@ -1,0 +1,194 @@
+@import '../reset'
+$path       = "http://r.syyx.com/nysj/client_update/"
+$bg         = $path"bg.jpg"
+$nysj       = $path"nysj.jpg"
+$bbs        = $path"bbs.jpg"
+$pay        = $path"pay.jpg"
+$active     = $path"active.jpg"
+$guide      = $path"guider.jpg"
+$news       = $path"news.jpg"
+$service    = $path"service.jpg"
+$silder_num = $path"silder_num.jpg"
+$silder_num_hover = $path"silder_num_hover.jpg"
+
+html,body
+    overflow hidden
+body
+    margin 0
+    font 12px/25px "宋体"
+ul
+    margin 0
+    padding 0
+li
+    list-style none
+img
+    border 0
+a
+    color #69CBEE
+    text-decoration none
+    &:hover
+        color #01FFF5
+.main
+    padding 22px 27px 0 47px
+    width 523px
+    height 322px
+    overflow hidden
+    background url($bg) no-repeat
+    .left
+        float left
+        height 100%
+        width 330px
+        position relative
+        .menu_1
+            width 145px
+            height 22px
+            padding-left 20px
+            a
+                display block
+                width 71px
+                height 22px
+                float left
+            .nysj
+                background url($nysj) no-repeat 999cm
+                &:hover
+                    background-position -5px -6px
+            .bbs
+                float right
+                background url($bbs) no-repeat 999cm
+                &:hover
+                    background-position -1px -6px
+        .menu_2
+            position absolute
+            top 37px
+            left 8px
+            height 36px
+            width 322px
+            a
+                width 150px
+                height 36px
+                float left
+            .pay
+                background url($pay) no-repeat 999cm
+                &:hover
+                    width 170px
+                    background-position 0 0
+            .active
+                background url($active) no-repeat 999cm
+                float right
+                &:hover
+                    width 170px
+                    background-position 0 0
+        .news_box
+            position absolute
+            top 88px
+            left 0
+            width 100%
+            #tab
+                width 143px
+                height 23px
+                span
+                    display block
+                    height 100%
+                    cursor pointer
+                    float left
+                .news
+                    width 60px
+                .update
+                    width 83px
+                .check_0
+                    background url($news) no-repeat
+                .check_1
+                    background url($news) no-repeat -60px 0
+            #content_box                
+                .content
+                    display none
+                    ul
+                        width 300px
+                        padding-left 15px
+                    li
+                        width 100%
+                        height 26px
+                        color #69CBEE
+                        float left
+                        a
+                            float left
+                            display block
+                            width 252px
+                            overflow hidden
+                            height 26px
+                        span
+                            float right
+                    .text
+                        margin-top 2px
+                        padding 0 0 0 15px
+                        line-height 22px
+                        scrollbar-arrow-color #021b2d
+                        scrollbar-face-color #02a7c5
+                        scrollbar-3dlight-color #216f7d
+                        scrollbar-highlight-color #75a9cf
+                        scrollbar-shadow-color #035a6a
+                        scrollbar-darkshadow-color #035a6a
+                        scrollbar-track-color #216f7d
+                        scrollbar-base-color #035968
+                        height 165px
+                        overflow auto
+                        #edit
+                            width 295px
+                            color #69CBEE
+        .more
+            width 325px
+            text-align right
+    .right
+        float right
+        width 180px
+        height 100%
+        position relative
+        .menu_3
+            width 144px
+            height 22px
+            padding-left 22px
+            a
+                display block
+                width 69px
+                float left
+                height 22px
+            .guide
+                background url($guide) no-repeat 999cm
+                &:hover
+                    background-position -6px -6px
+            .service
+                float right
+                background url($service) no-repeat 999cm
+                &:hover
+                    background-position -3px -6px
+        .img_focus
+            position absolute
+            top 31px
+            width 100%
+            #imgs
+                height 265px
+                a
+                    position absolute
+                    top 0
+                    left 0
+                    display none
+                    img
+                        width 180px
+                        height 265px
+            #bat
+                top 225px
+                left 10px
+                width 100px
+                position absolute
+                a
+                    display inline-block
+                    width 17px
+                    height 16px
+                    cursor pointer
+                    margin-right 3px
+                    background url($silder_num) no-repeat
+                    color #fff
+                    line-height 16px
+                    text-align center
+                .check,a:hover
+                    background url($silder_num_hover) no-repeat

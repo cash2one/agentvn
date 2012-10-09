@@ -1,0 +1,45 @@
+!!!5
+html
+    include ../include/url
+    head
+        include ../include/meta
+        include script_style
+    body
+        include ../include/top_iframe
+        .container
+            .content
+                include ../include/logo_link
+                include ../include/nav
+                include ../include/fn_group_2
+                include ../include/recommended_server
+                .screenshot
+                    a.all(href='#{index_screen}') 所有截图>>
+                    //- .item
+                    //-     a(href='#')
+                    //-         img(src='/images/picture_video/bg.jpg')
+                    //-     | 十面埋伏BOSS
+                .game_video
+                    a.all(href='#{video_info}') 所有视频>>
+                    #video1
+                        a(href='#')
+                            img(src='')
+                        h3
+                        .des
+                    #video2
+                        a(href='#')
+                            img(src='')
+                        h3
+                        .des
+                .wallpaper
+                    a.all(href='#{index_paper}') 查看全部>>
+                    //- .item
+                    //-     a(href='#')
+                    //-         img(src='/images/picture_video/bg.jpg')
+                    //-     | 十面埋伏BOSS
+                .cartoon
+                    a.all(href='#{all_cartoon}') 查看全部>>
+                    //- .item
+                    //-     a(href='#')
+                    //-         img(src='/images/picture_video/bg.jpg')
+                include ../include/copyright
+        include ../include/reg

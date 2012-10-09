@@ -1,0 +1,50 @@
+html
+    head
+        title  游戏KPI
+        include script
+    body
+        .cont_form
+            .f_b_333 游戏KPI
+        .cont_f_lb
+        .cont_link
+            tr 
+                td
+                    span 服务器：
+                        select#serverList
+                td 
+                    span 时间：
+                        input#txtStartDate(type="text")
+                        | 至
+                        input#txtEndDate(type="text")
+                td 
+                    input#btnQuery(type="button",value="查询")
+        div#divGameKpi.table_info
+            table#tableGameKpi.wiki-content-table
+                tr
+                    th(rowspan='2') 日期
+                    th(rowspan='2') 世界BOSS
+                    th(colspan='5') 重点追踪任务
+                    th(colspan='6') 晶体统计
+                    th(colspan='3') 探测器
+                    th(colspan='5') 蓝色图纸产出
+                    th(rowspan='2') 金色图纸产出
+                tr  
+                    th 联邦 
+                    th 虫族
+                    th 人族
+                    th 轮回
+                    th 十面
+                    th 七级产出
+                    th 七级回收
+                    th 八级产出
+                    th 八级回收
+                    th 九级产出
+                    th 九级回收
+                    th Ⅰ型产出
+                    th Ⅱ型产出
+                    th Ⅲ型产出
+                    th 六等
+                    th 七等
+                    th 八等
+                    th 九等
+                    th 十等

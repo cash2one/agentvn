@@ -1,0 +1,59 @@
+body{margin:0;background:#050912}
+a{color:#82522c;text-decoration:none;outline:none}
+a:hover{color:#d4d4d4}
+.container{background:url("http://r.syyx.com/party/nycs/special201208/bg.jpg") no-repeat top center;height:1400px;min-width:980px;overflow:hidden;font-size:12px}
+.main{width:980px;margin:0 auto;position:relative;height:100%}
+.nav{text-align:center;line-height:30px;color:#82522c}
+.logo{position:absolute;width:165px;height:80px;left:50%;margin-left:-83px;text-indent:-999cm}
+.flash{width:356px;height:138px;position:absolute;top:119px;left:312px}
+#play,.flash img{position:absolute;top:0;left:0}
+#banner{width:456px;height:282px;position:absolute;top:280px;left:271px}
+#tab{width:980px;height:104px;position:absolute;top:612px}
+#tab div{position:absolute;height:104px;top:0;display:none}
+.t0{background:url("http://r.syyx.com/party/nycs/special201208/tab0.jpg") no-repeat;width:444px;left:-127px}
+.t1{background:url("http://r.syyx.com/party/nycs/special201208/tab1.jpg") no-repeat;width:374px;left:182px}
+.t2{background:url("http://r.syyx.com/party/nycs/special201208/tab2.jpg") no-repeat;width:375px;left:428px}
+.t3{background:url("http://r.syyx.com/party/nycs/special201208/tab3.jpg") no-repeat;width:350px;left:669px}
+#tab img{position:absolute;z-index:10}
+#con{width:972px;height:476px;border:4px solid #002b6a;position:absolute;top:716px;overflow:hidden}
+#con .scroll{height:1904px}
+#con .con{width:972px;height:476px;position:relative;visibility:hidden}
+.con0{background:url("http://r.syyx.com/party/nycs/special201208/con0.jpg") -4px -4px no-repeat}
+.con1{background:url("http://r.syyx.com/party/nycs/special201208/con1.jpg") -4px -4px no-repeat}
+.con2{background:url("http://r.syyx.com/party/nycs/special201208/con2.jpg") -4px -4px no-repeat}
+.con3{background:url("http://r.syyx.com/party/nycs/special201208/con3.jpg") -4px -4px no-repeat}
+#con .con0{padding-top:100px;height:376px}
+#con .con0 p{width:350px;padding:40px 100px 0 65px;float:left;margin:0;color:#9da0a5;line-height:20px;height:140px;position:relative;font-size:12px}
+#con .con0 a{position:absolute;top:100px;left:180px;background:url("http://r.syyx.com/party/nycs/special201208/btn.jpg") no-repeat -763px -27px;width:98px;height:25px;display:none}
+#con .con0 #a3,#con .con0 #a4{width:146px;height:25px}
+#con .con0 .p1,#con .con0 .p3{padding-right:0}
+#con .con0 .a0,#con .con0 .a2{background-position:-26px -27px}
+#con .con0 .a0:hover,#con .con0 .a2:hover{background-position:-26px -63px}
+#con .con0 .a1{background-position:-127px -27px}
+#con .con0 .a1:hover{background-position:-127px -63px}
+#con .con0 .a3{left:80px;background-position:-26px -98px}
+#con .con0 .a4{left:240px;background-position:-189px -98px}
+#con .p0{margin:0;font-size:14px;color:#f44a00;padding:100px 50px;line-height:30px}
+#con .con1 table{width:800px;color:#a3a8ac;font-size:12px;margin:30px 0}
+#con .con1 td{height:40px}
+#con .con1 .tr{text-align:right}
+#con .con1 input{border:1px solid #037bc9;background:#444;color:#c3e6f9;height:20px;padding:0 4px;width:150px;line-height:20px}
+#server{border:1px solid #037bc9;background:#444;color:#c3e6f9;height:24px;width:160px;padding:2px 0;outline:none}
+#server option{color:#a3a8ac}
+#submits{width:173px;height:32px;margin:0 auto;background:url("http://r.syyx.com/party/nycs/special201208/btn.jpg") no-repeat -229px -20px;display:block}
+#submits:hover{background-position:-229px -56px}
+.share{display:block;width:173px;height:32px;margin-top:30px;background:url("http://r.syyx.com/party/nycs/special201208/btn.jpg") no-repeat -406px -20px}
+.share:hover{background-position:-406px -56px}
+.more{display:block;width:173px;height:32px;margin-top:30px;background:url("http://r.syyx.com/party/nycs/special201208/btn.jpg") no-repeat -583px -20px}
+.more:hover{background-position:-583px -56px}
+.copy_right{position:absolute;text-align:center;width:980px;top:1270px;color:#344557;line-height:25px}
+.copy_right .feet_txt{margin-left:240px;text-align:left}
+.copy_right .feet_logo{position:absolute;top:0;left:100px;width:123px;height:51px;background:url("http://r.syyx.com/party/nycs/special201208/syyx.jpg") no-repeat}
+.weibo{position:absolute;right:0;top:1210px;color:#9da2a8;width:410px}
+.weibo span{color:#005cdd;margin-right:5px}
+.weibo a,.see{color:#005cdd;text-decoration:underline;margin-right:10px}
+.weibo a:hover,.see:hover{color:#9da2a8}
+.pop_video_detail{background-color:#032e53;border:1px solid #0062b3}
+.ui-dialog .ui-dialog-titlebar-close{background:url("http://r.syyx.com/party/nycs/special201208/close.png") no-repeat}
+#pop_flash{background:#000;border:1px solid #004680;line-height:0;overflow:hidden}
+.disnone{display:none}

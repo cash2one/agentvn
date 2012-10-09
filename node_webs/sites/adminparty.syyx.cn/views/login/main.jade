@@ -1,0 +1,22 @@
+!!!5
+html
+    head
+        title 诺亚专题活动管理后台
+        link(href='/stylesheets/login/main.css', rel='stylesheet')
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js")
+        script(src='/javascripts/login/out.js')
+    body
+        .container
+            header
+                .logo 诺亚专题活动管理后台
+                .pop_stripe
+            .content
+                .login_area
+                    form#login_form(action='/login/enter')
+                        input(type='text', name='sUserAccount', placeholder='用户名', required='true', maxlength='40')
+                        input(type='password', name='sPassword',placeholder='密码', required='true',maxlength='40')
+                        .login_btn
+                            input(type='submit', value='登 录')
+                    .clear
+                #message
+                    用户名或密码错误

@@ -1,0 +1,354 @@
+@import '../reset'
+//---------------------------------------------------------------------------------
+$bg               = 'http://r.syyx.com/nysj/guider/top_bg.jpg'
+$hover            = 'http://r.syyx.com/nysj/guider/hover.jpg'
+$profession_hover = 'http://r.syyx.com/nysj/guider/profession_hover.jpg'
+$upgrade_bg       = 'http://r.syyx.com/nysj/guider/upgrade_bg.jpg'
+$grade            = 'http://r.syyx.com/nysj/guider/expansion.jpg'
+$download_dialog  = 'http://r.syyx.com/nysj/guider/download_bg.jpg'
+$copyright_logo   = 'http://r.syyx.com/nysj/guider/copyright_logo.jpg'
+$ready_bg         = 'http://r.syyx.com/nysj/guider/di_05.jpg'
+$chose_career_bg  = 'http://r.syyx.com/nysj/guider/di_11.jpg'
+$gonglue_bg       = 'http://r.syyx.com/nysj/guider/di_17.jpg'
+$try              = 'http://r.syyx.com/nysj/guider/try_bg.jpg'
+$nav              = 'http://r.syyx.com/nysj/guider/nav.jpg'
+$blank            = 'http://r.syyx.com/nysj/index/blank.png'
+//opacity_support------------------------------------------------------------------------------------------
+support-for-ie ?= true
+
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+//------------------------------------------------------------------------------------------
+a
+    text-decoration none
+    outline none
+.disnone
+    display none
+.hide
+    visibility hidden
+.ui-tabs-hide
+    display none
+.clear
+    clear both
+    overflow hidden
+    height 0
+body
+    font-size 12px
+    font-family '宋体'
+    background-color #011329
+    color #65CDCC
+.container
+    min-width 960px
+    background url($bg) center top no-repeat
+    .content
+        width 960px
+        margin 0 auto
+        position relative
+        height 2750px
+        overflow hidden
+        .logo_link
+            position absolute
+            top 70px
+            right 0
+            width 240px
+            height 100px
+        .nav
+            position absolute
+            width 380px
+            height 46px
+            right 48px
+            top 1px
+            overflow hidden
+            a
+                position absolute
+                background url($blank) 0 0 no-repeat
+                top 0px
+                height 46px
+                width 88px
+                display inline-block
+                &.nav_index
+                    width 111px
+                    left 0px
+                    &:hover
+                        background url($nav) 0 0 no-repeat
+                &.nav_guider
+                    left 111px
+                    &:hover
+                        background url($nav) -111px 0 no-repeat
+                &.nav_pay
+                    left 199px
+                    &:hover
+                        background url($nav) -199px 0 no-repeat
+                &.nav_bbs
+                    left 287px
+                    width 111px
+                    &:hover
+                        background url($nav) -287px 0 no-repeat
+        .ready
+            background url($ready_bg) center top no-repeat
+            position absolute
+            top 799px
+            width 701px
+            height 87px
+            left 10px
+            padding 9px 0 0 239px
+            a
+                float left
+                width 168px
+                height 67px
+                &.reg:hover
+                    width 189px
+                    background url($hover) -302px -158px no-repeat
+                &.download:hover
+                    width 189px
+                    background url($hover) -302px -253px no-repeat
+                &.create:hover
+                    width 189px
+                    background url($hover) -302px -348px no-repeat
+                &.begin:hover
+                    width 189px
+                    background url($hover) -303px -443px no-repeat
+        .chose_career
+            background url($chose_career_bg) center top no-repeat
+            position absolute
+            top 901px
+            left 10px
+            width 940px
+            .chose
+                float left
+                width 212px
+                padding 100px 20px 0 20px
+                line-height 22px
+                color #05C2FF
+            a
+                float left
+                width 161px
+                height 476px
+                margin-right 10px
+                &.yineng:hover
+                    background url($profession_hover) 0 0 no-repeat
+                &.jianwu:hover
+                    background url($profession_hover) -161px 0 no-repeat
+                &.qiangxie:hover
+                    background url($profession_hover) -322px 0 no-repeat
+                &.gedou:hover
+                    background url($profession_hover) -484px 0 no-repeat
+        .gonglue
+            background url($gonglue_bg) center top no-repeat
+            position absolute
+            top 1400px
+            left 10px
+            width 940px
+            height 160px
+            a
+                position absolute
+                width 287px
+                height 61px
+                display block
+                &.btn1
+                    left 283px
+                    top 15px
+                &.btn2
+                    left 633px
+                    top 15px
+                &.btn3
+                    left 283px
+                    top 86px
+                &.btn4
+                    left 633px
+                    top 86px
+                &.btn1:hover
+                    background url($hover) -10px -157px no-repeat
+                &.btn2:hover
+                    background url($hover) -10px -224px no-repeat
+                &.btn3:hover
+                    background url($hover) -10px -294px no-repeat
+                &.btn4:hover
+                    background url($hover) -10px -365px no-repeat
+        .upgrade
+            position absolute
+            top 1580px
+            left 10px
+            background url($upgrade_bg) 0 0 no-repeat
+            width 939px
+            height 506px
+            .grade
+                position absolute
+                top 20px
+                left 270px
+                width 658px
+                .grade_1
+                    background url($grade) 0 0 no-repeat
+                    height 378px
+                    position relative
+                    a
+                        display inline-block
+                        width 153px
+                        height 63px
+                        position absolute
+                        top 126px
+                        &.btn1
+                            left 52px
+                            &:hover
+                                background url($hover) -10px -534px no-repeat
+                        &.btn2
+                            left 253px
+                            &:hover
+                                background url($hover) -163px -534px no-repeat
+                        &.btn3
+                            left 453px
+                            &:hover
+                                background url($hover) -316px -534px no-repeat
+                .grade_2
+                    background url($grade) 0 -378px no-repeat
+                    height 378px
+                    display none
+                    position relative
+                    a
+                        display inline-block
+                        width 153px
+                        height 63px
+                        position absolute
+                        top 126px
+                        &.btn1
+                            left 52px
+                            &:hover
+                                background url($hover) -10px -599px no-repeat
+                        &.btn2
+                            left 253px
+                            &:hover
+                                background url($hover) -163px -599px no-repeat
+                        &.btn3
+                            left 453px
+                            &:hover
+                                background url($hover) -316px -599px no-repeat
+                .grade_3
+                    background url($grade) 0 -756px no-repeat
+                    height 378px
+                    display none
+                    position relative
+                    a
+                        display inline-block
+                        width 153px
+                        height 63px
+                        position absolute
+                        top 126px
+                        &.btn1
+                            left 52px
+                            &:hover
+                                background url($hover) -9px -664px no-repeat
+                        &.btn2
+                            left 253px
+                            &:hover
+                                background url($hover) -162px -664px no-repeat
+                        &.btn3
+                            left 453px
+                            &:hover
+                                background url($hover) -315px -664px no-repeat
+                a#expand_1
+                    width 658px
+                    height 45px
+                    display none
+                    background url($hover) -10px -12px no-repeat
+                a#expand_2
+                    width 658px
+                    height 45px
+                    display block
+                    background url($hover) -10px -57px no-repeat
+                a#expand_3
+                    width 658px
+                    height 45px
+                    display block
+                    background url($hover) -10px -102px no-repeat
+        .try
+            position absolute
+            top 2100px
+            left 10px
+            width 939px
+            height 452px
+            background url($try) 0 0 no-repeat
+            a.reg
+                position absolute
+                display block
+                width 156px
+                height 43px
+                top 351px
+                left 306px
+                &:hover
+                    background url($hover) -476px -534px no-repeat
+            a.download
+                position absolute
+                display block
+                width 156px
+                height 43px
+                top 351px
+                left 517px
+                &:hover
+                    background url($hover) -476px -577px no-repeat
+            a.pay
+                position absolute
+                display block
+                width 156px
+                height 43px
+                top 351px
+                left 729px
+                &:hover
+                    background url($hover) -476px -620px no-repeat
+            a.more
+                position absolute
+                display block
+                width 100px
+                height 20px
+                left 640px
+                top 270px
+        #copyright
+            top 2650px
+            left 10px
+            width 939px
+            position absolute
+            .copyright_content
+                background-color #011C37
+                padding 20px 10px 20px 140px
+                line-height 20px
+                color #4A6F9B
+            .syyx_logo
+                background url($copyright_logo) 0 0 no-repeat
+                width 117px
+                height 49px
+                position absolute
+                top 15px
+                left 10px
+.download_dialog
+    position absolute
+    width 258px
+    height 201px
+    background url($download_dialog) 0 0 no-repeat
+    display none
+    a.close
+        position absolute
+        right 0
+        top 0
+        width 25px
+        height 25px
+        display inline-block
+    a.full_client
+        display block
+        width 185px
+        height 42px
+        position absolute
+        top 49px
+        left 34px
+        &:hover
+            background url($hover) -499px -411px no-repeat
+    a.mini_client
+        display block
+        width 185px
+        height 42px
+        position absolute
+        top 107px
+        left 34px
+        &:hover
+            background url($hover) -499px -327px no-repeat
+@import '../../../components/float_reg/main'

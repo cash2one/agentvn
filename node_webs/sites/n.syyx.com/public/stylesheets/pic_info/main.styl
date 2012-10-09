@@ -1,0 +1,247 @@
+@import '../reset'
+$bg         = 'http://s1.syyx.com/nycs/images/pic_info/bg.jpg'
+$btn        = 'http://s1.syyx.com/nycs/images/pic_info/btn.jpg'
+$hightlight = 'http://s1.syyx.com/nycs/images/pic_info/highlight.png'
+$prev_img   = 'http://s1.syyx.com/nycs/images/pic_info/prev_img.cur'
+$next_img   = 'http://s1.syyx.com/nycs/images/pic_info/next_img.cur'
+$login_bg   = 'http://s.syyx.com/nycs/img/login_bg.jpg'
+$close      = 'http://s.syyx.com/nycs/img/div_dialog_close.jpg'
+$blank      = 'http://s1.syyx.com/nycs/images/pic_info/blank.png'
+$dialog_bg  = 'http://s1.syyx.com/nycs/images/pic_info/dialog_bg.jpg'
+//opacity_support------------------------------------------------------------------------------------------
+support-for-ie ?= true
+
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+//------------------------------------------------------------------------------------------
+a
+    text-decoration none
+    outline none
+.disnone
+    display none
+.hide
+    visibility hidden
+//------------------------------------------------------------------------------------------
+body
+    font-size 12px
+    font-family '宋体'
+    background-color #011327
+.container
+    min-width 1000px
+    background url($bg) center top no-repeat
+    .content
+        width 1000px
+        margin 0 auto
+        position relative
+        height 1250px
+        overflow hidden
+        .logo_link
+            position absolute
+            top 20px
+            left 60px
+            width 200px
+            height 80px
+        .nav
+            position absolute
+            width 664px
+            height 62px
+            left 336px
+            top 0px
+            overflow hidden
+        #view
+            position absolute
+            top 802px
+            left 800px
+            color #00b3fe
+            display block
+        #allsize
+            position absolute
+            top 802px
+            right 140px
+            display none
+            color #00b3fe
+            span
+                float left
+            a
+                float left
+                color #00b3fe
+                margin-right 10px
+                &:hover
+                    text-decoration underline
+                    color #2cf3fa
+        #share
+            position absolute
+            top 992px
+            left 740px
+            a
+                float left
+                width 17px
+                height 17px
+                margin-right 12px
+        #title
+            position absolute
+            color #00b3fe
+            top 802px
+            left 150px
+        #switch
+            position absolute
+            top 224px
+            left 73px
+            a
+                float left
+                width 119px
+                height 34px
+                margin-right 8px
+            &.screen
+                #screen
+                    background url($btn) -7px -5px no-repeat
+            &.wallpaper
+                #wallpaper
+                    background url($btn) -134px -5px no-repeat
+        #link
+            position absolute
+            top 990px
+            left 100px
+            display none
+            a
+                float left
+                width 121px
+                height 28px
+                &.all
+                    background url($btn) -7px -41px no-repeat
+                    margin-right 10px
+                    &:hover
+                        background-position -7px -70px
+                &.open
+                    background url($btn) -132px -41px no-repeat
+                    &:hover
+                        background-position -132px -70px
+        #control
+            position absolute
+            top 870px
+            left 90px
+            a
+                position absolute
+                display inline-block
+                width 30px
+                height 70px
+                &#prev
+                    left 0
+                &#next
+                    left 780px
+        #list
+            position absolute
+            top 862px
+            left 135px
+            a
+                float left
+                width 158px
+                height 102px
+                margin-right 20px
+                display inline
+                padding 4px 3px 
+                &.current
+                    background url($hightlight) 0 0 no-repeat  
+                img
+                    float left
+                    width 152px
+                    height 94px
+                    border solid 1px #0079c9
+        #show_img
+            position absolute
+            top 290px
+            left 98px
+            width 782px
+            height 487px
+            img
+                width 782px
+                height 487px
+            a
+                float left
+                position absolute
+                background url($blank) no-repeat
+                &#prev_img
+                    left 0
+                    top 0
+                    width 250px
+                    height 487px
+                    cursor url($prev_img), pointer
+                &#next_img
+                    right 0
+                    width 250px
+                    height 487px
+                    cursor url($next_img), pointer
+            .loading
+                position absolute
+                top 200px
+                left 315px
+                background-color #333
+                opacity 0.6
+                padding 20px 40px
+                color #fff
+                display none
+        #copyright
+            padding 30px 0 50px 0
+            position absolute
+            color #0D779E
+            top 1050px
+            left 230px
+            .copyright_content
+                padding 20px 0px 20px 160px
+                line-height 20px
+                width 430px
+            .syyx_logo
+                width 137px
+                height 49px
+                position absolute
+                top 45px
+                left 10px
+#div_dialog
+    display none
+    padding 30px 0 0 60px
+.dialog_login
+    background url($login_bg) 0 0 no-repeat
+.dialog_upload
+    background #072C59 url($dialog_bg) 0 0 no-repeat
+    #div_dialog
+        padding 0 0 0 30px
+    .ui-dialog-titlebar-close
+        right 15px
+.ui-dialog-titlebar
+    position relative
+.ui-dialog .ui-dialog-title
+    display none
+.dialog_login .ui-dialog-titlebar-close
+    position absolute
+    width 30px
+    height 30px
+    right 30px
+    top 10px
+    margin 0
+    z-index 5000
+    .ui-icon-closethick
+        display none  
+.ui-widget-overlay
+    opacity 0.8
+    background-color #000  
+    position absolute
+    top 0
+    left 0
+.dialog_upload .ui-dialog-titlebar-close
+    position absolute
+    width 35px
+    height 35px
+    right 10px
+    top 10px
+    margin 0
+    z-index 5000
+    .ui-icon-closethick
+        display none  
+.ui-dialog .ui-dialog-titlebar
+    height 34px
+.dialog_upload .ui-dialog-titlebar
+    height 55px
+@import '../float_reg/main'
+@import '../top_iframe/main'

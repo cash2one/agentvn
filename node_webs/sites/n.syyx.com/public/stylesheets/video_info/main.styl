@@ -1,0 +1,164 @@
+@import '../reset'
+$bg  = 'http://s1.syyx.com/nycs/images/video_info/bg.jpg'
+$btn = 'http://s1.syyx.com/nycs/images/video_info/btn.jpg'
+//opacity_support------------------------------------------------------------------------------------------
+support-for-ie ?= true
+
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+//------------------------------------------------------------------------------------------
+a
+    text-decoration none
+    outline none
+.disnone
+    display none
+.hide
+    visibility hidden
+//------------------------------------------------------------------------------------------
+body
+    font-size 12px
+    font-family '宋体'
+    background-color #011327
+.container
+    min-width 1000px
+    background url($bg) center top no-repeat
+    .content
+        width 1000px
+        margin 0 auto
+        position relative
+        height 1164px
+        overflow hidden
+        .logo_link
+            position absolute
+            top 20px
+            left 60px
+            width 200px
+            height 80px
+        .nav
+            position absolute
+            width 664px
+            height 62px
+            left 336px
+            top 0px
+            overflow hidden
+        #play
+            position absolute
+            top 196px
+            left 81px
+            width 636px
+            height 356px
+        #share
+            position absolute
+            top 565px
+            left 138px
+            a
+                float left
+                width 17px
+                height 17px
+                margin-right 12px
+        #title
+            position absolute
+            color #27A6F3
+            top 567px
+            left 500px
+        #switch
+            position absolute
+            top 621px
+            left 100px
+            a
+                float left
+                width 99px
+                height 29px
+                margin-right 10px
+                background url($btn) 0 0 no-repeat
+                &#user
+                    background-position -105px 0
+                &#new
+                    background-position -209px 0
+            &.hot
+                #hot
+                    background-position 0 -31px
+            &.user
+                #user
+                    background-position -105px -31px
+            &.new
+                #new
+                    background-position -209px -31px
+        #list
+            position absolute
+            top 665px
+            left 110px
+            width 800px
+            height 200px
+            ul
+                float left
+                li
+                    float left
+                    margin-right 17px
+                    margin-bottom 5px
+                    width 142px
+                    height 104px
+                    a
+                        display block
+                        border solid 1px #009CE1
+                        width 140px
+                        height 80px
+                        overflow hidden
+                        img
+                            width 140px
+                            height 80px
+                    span
+                        text-align center
+                        height 22px
+                        width 142px
+                        line-height 22px
+                        color #43E1FA
+                        display block
+                        overflow hidden
+        #dispaly_page_num
+            position absolute
+            top 890px
+            left 490px
+            color #2DABE8
+            display none
+            line-height 20px
+            a
+                display inline-block
+                padding 0 5px
+                background-color #0C3D65
+                border solid 1px #08335E
+                color #2DABE8
+                margin-right 5px
+                &.last,&.first,&.next
+                    margin-right 10px
+                    border none
+                    background none
+                &.prev
+                    border none
+                    background none
+                &.current
+                    background-color #1E73B6
+                    color #fff
+                    border solid 1px #105189
+            select
+                margin-right 5px
+        #copyright
+            padding 30px 0 50px 0
+            position absolute
+            color #0D779E
+            top 960px
+            left 230px
+            .copyright_content
+                padding 20px 0px 20px 160px
+                line-height 20px
+                width 430px
+            .syyx_logo
+                width 137px
+                height 49px
+                position absolute
+                top 45px
+                left 10px
+@import '../float_reg/main'
+@import '../top_iframe/main'

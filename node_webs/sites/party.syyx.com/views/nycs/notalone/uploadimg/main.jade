@@ -1,0 +1,16 @@
+!!!5
+html
+    head
+        include ../title
+        link(href="/stylesheets/nycs/notalone/uploadimg/main.css",rel="stylesheet",type="text/css")        
+    body
+        .uploadphoto
+            form#form1(name="form1",method="post",enctype="multipart/form-data",action="/nycs/notalone/upload")
+                div.file
+                    input.input#fake_1(type="text")
+                    input.input#fake_2(type="button",value="浏览..")
+                    input.input2#txtFile(type="file",name='tupian',size="20")
+                .selectimg
+                    a#selectimg.upimgs(type="button",value="上传图片") 上传图片
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js",type="text/javascript")
+        script(src="/javascripts/nycs/notalone/uploadimg/out.js",type="text/javascript")

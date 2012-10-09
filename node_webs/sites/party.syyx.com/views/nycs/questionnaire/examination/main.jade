@@ -1,0 +1,52 @@
+!!!5
+html
+    head
+        meta(http-equiv="Content-Type",content="text/html;charset=utf-8")
+        meta(name="author",content="东尼,火柴（2012-08-05）")
+        title 尚游网络调查问卷
+        link(rel= "shortcut icon", href = "http://s.syyx.com/nycs/img/favicon.ico", type = "image/x-icon")
+        link(href="/stylesheets/nycs/questionnaire/examination/main.css",rel="stylesheet",type="text/css")
+    body
+        .container
+            #main
+                .head
+                    .login 欢迎您，
+                        span#user 游客
+                        a#login(href="#") 登录
+                        a#logout(href="#") 安全退出
+                    .nav
+                        a(href="http://nysj.syyx.com/") 时间版官网
+                        |&nbsp;|
+                        a(href="http://nycs.syyx.com/index.html") 免费版官网
+                #banner
+                #ex_box
+                    .ex_main
+                        #loading 正在加载试题...
+                        #welcome
+                            p
+                            a#ex_start(href="javascript:undefined")
+                        #ex_content &nbsp;
+                        #thanks
+                            p
+                        .ex_check
+                            a#ex_next.ex_next.dis(href="javascript:undefined") 下一题
+                        .speed_main
+                            .ex_speed
+                                #speed_bar
+                                    .left
+                                    .right
+                            .speed_info 问卷进度：
+                            span#percentage 0%
+                            div.speed_num （已完成 
+                                span#ex_cur 0
+                                |&nbsp;题&nbsp;/ 共
+                                span#ex_num
+                                |&nbsp题）
+                .copy_right
+                    p 健康游戏公告: 抵制不良游戏　拒绝盗版游戏　注意自我保护　谨防受骗上当　适度游戏益脑　沉迷游戏伤身　合理安排时间　享受健康生活
+                    |文网游备字[2011]C-RPG014字 | 文网文【2009】263号 | 增值电信业务经营许可证 粤B2-20080061 粤ICP备10029615号
+                    br
+                    | 出版号 ISBN 978-7-900267-01-6 | Copyright@2007-2012 深圳市尚游网络科技有限公司 版权所有
+                    a.feet_logo(href='http://www.syyx.com',target='_blank',hidefocus="true")
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js",type="text/javascript")
+        script(src="/javascripts/nycs/questionnaire/examination/out.js",type="text/javascript")

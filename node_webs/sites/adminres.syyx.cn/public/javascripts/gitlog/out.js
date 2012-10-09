@@ -1,0 +1,1 @@
+$.get("/gitlog_ajax",function(a){""==a.name?alert("\u767b\u5f55\u8d85\u65f6"):($("#name").html(a.name),$("#gitlog").html(a.con))},"json");function clean(){$.get("/gitlog_ajax?a=rm",function(a){""==a.name?alert("\u767b\u5f55\u8d85\u65f6"):(alert(a.con),document.location.reload())},"json")};

@@ -1,0 +1,35 @@
+body{margin:0;background:#0d2d4e;color:#9ea39f;font-size:12px;line-height:22px}
+a{color:#8dd0fa;text-decoration:none;outline:none}
+a:hover{color:#d4d4d4}
+h1{margin:0;font-weight:normal}
+.input{border:solid 1px #017acb;background:#032139;height:20px;color:#8bd3fb;padding-left:2px;width:150px}
+.btn{width:106px;height:27px;background:url("http://r.syyx.com/party/nycs/notalone/btn.png") no-repeat -476px -32px;display:block;font-size:14px;line-height:27px}
+.loginbtn{text-align:center;margin-left:10px;}
+.loginbtn a{margin-right:12px;float:left;margin-top:20px}
+.loginerr{color:#f94304;text-align:center;height:40px}
+.disnone{display:none}
+input,select{vertical-align:middle}
+.selectdiv{position:relative;width:146px;border:medium none;overflow:hidden;position:relative;border:solid 1px #017acb;height:18px;}
+.selectdiv select{border:solid 1px #017acb;position:relative;top:-3px;left:-2px;border:medium none;overflow:hidden}
+#popup_bg{width:100%;min-width:996px;height:1431px;opacity:.7;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);background:#000;position:absolute;top:0;left:0;display:none;z-index:2}
+#div_login{position:absolute;width:850px;overflow:hidden;z-index:3;left:50%;margin-left:-425px;}
+#div_login iframe{z-index:-1}
+.div_close{position:absolute;width:28px;height:28px;left:790px;top:10px;cursor:pointer}
+.logo{position:absolute;width:210px;height:100px;left:670px;top:48px;margin-left:-83px;text-indent:-999cm}
+.container{background:url("http://r.syyx.com/party/nycs/notalone/bg.jpg") no-repeat top center;height:1320px;min-width:980px;overflow:hidden;font-size:12px}
+.main{width:980px;margin:0 auto;position:relative;height:100%}
+.nav{text-align:right;line-height:30px;color:#35648e;margin-right:20px;}
+.nav a{color:#35648e;}
+.nav a:hover{color:#fff}
+#login_a{display:none}
+#user_name{color:#ffa500;font-weight:700}
+.add{background:url("http://r.syyx.com/party/nycs/notalone/btn.png") no-repeat -31px -43px;width:210px;height:47px;display:block;top:874px;left:710px;position:absolute}
+.add:hover{background:url("http://r.syyx.com/party/nycs/notalone/btn.png") no-repeat -31px -92px}
+.more{background:url("http://r.syyx.com/party/nycs/notalone/btn.png") no-repeat -244px -43px;width:210px;height:47px;display:block;top:956px;left:725px;position:absolute}
+.more:hover{background:url("http://r.syyx.com/party/nycs/notalone/btn.png") no-repeat -244px -92px}
+.copy_right{position:absolute;text-align:center;width:980px;top:1230px;line-height:22px}
+.copy_right .feet_txt{margin-left:240px;text-align:left}
+.copy_right .feet_logo{position:absolute;top:0;left:100px;width:123px;height:51px}
+.disnone{display:none}
+#swf{position:absolute;top:585px;left:0}
+.indexlink{position:absolute;top:400px;left:480px;width:480px;height:85px;cursor:pointer}

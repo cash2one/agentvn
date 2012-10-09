@@ -1,0 +1,43 @@
+html
+    head
+        title 实时在线数据
+        include script
+    body
+        .cont_form
+            .f_b_333 实时在线数据
+        .cont_f_lb
+        .cont_link
+            table
+                tbody
+                    tr
+                        td
+                            include ../../include/checkboxserver
+                        //- td 
+                        //-     span 服务器：
+                        //-         select#serverList
+                        td 
+                            span 时间：
+                                input#txtStatDate(type="text")
+                                | 至
+                                input#txtEndDate(type="text")
+                        td 
+                            span 统计频率：
+                                select#queryType
+                                    option(value="0")按分钟统计
+                                    option(value="1")按小时统计
+                                    option(value="2")按天统计
+                        td.rad_ipt
+                            span
+                                input#chkShowValue(type="checkbox") 
+                                lable(for="chkShowValue") 显示数值
+                        td
+                            span
+                                input#btnQuery(type="button",value="查询")
+        #divserverTip.tip.f_orage
+        .tip(style="margin-left:3%")
+            span.f_gr
+                legend(style="font-size: 12px;") 全服人数--每10分钟统计一次在线人数
+        div.table_info.show_flash(style="margin-left:3%")
+            div#allServerChart
+        div#loading(style="top: 50%; right: 50%; position: absolute; padding: 0px;margin: 0px; z-index: 999; display: none;")
+            img(src="http://s1.syyx.com/nysjdm/Script/spinner3-greenie.gif")

@@ -1,0 +1,1 @@
+exports.db = ms.db.mongo['nysj']

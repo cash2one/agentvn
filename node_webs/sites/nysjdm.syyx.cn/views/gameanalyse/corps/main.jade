@@ -1,0 +1,41 @@
+html
+    head
+        title  军团统计
+        include script
+    body
+        .cont_form
+            .f_b_333 军团统计
+        .cont_f_lb
+        .cont_link
+            tr
+                td
+                    span 服务器：
+                        select#serverList
+                td
+                    span 军团名称:
+                        input#txtCorpsName(type="text")
+                td
+                    input#btnQuery(type="button",value="查询")
+        #divCorps.table_info
+            table#tableCorps.wiki-content-table
+                tr
+                    th(rowspan='2') 军团名称
+                    th(rowspan='2') 等级
+                    th(rowspan='2') 资金
+                    th(rowspan='2') 建设度
+                    th(rowspan='2') 现有人数
+                    th(colspan='4') 强化技能
+                    th(colspan='5') 制作技能
+                tr  
+                    th 体质增强 
+                    th 肌肉锻炼
+                    th 身手矫健
+                    th 意志锻炼
+                    th 活化
+                    th 狂暴
+                    th 冥想
+                    th 忍耐
+                    th 镇静
+ #divPagination(style="background: #efefef; border: 0px solid #ccc;width:92%;padding:0 1%;margin:0 auto;")
+div#loading(style="top: 50%; right: 50%; position: absolute; padding: 0px;margin: 0px; z-index: 999; display: none;")
+    img(src="http://s1.syyx.com/nysjdm/Script/spinner3-greenie.gif")

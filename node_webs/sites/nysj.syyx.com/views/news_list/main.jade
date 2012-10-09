@@ -1,0 +1,20 @@
+!!!5
+html
+    include ../include/url
+    head
+        include ./meta
+        include script_style
+    body
+        .container
+            .content
+                include ../include/logo_link
+                include ../include/nav
+                include ../include/fn_group
+                include ../include/promotions
+                .bread_path 
+                    a(href='#{nysj_main}') 首页
+                    |  >
+                    a(href='#{nysj_news}') 新闻中心
+                include news_detail
+            include ../../components/float_reg/reg
+        include ../include/cnzz

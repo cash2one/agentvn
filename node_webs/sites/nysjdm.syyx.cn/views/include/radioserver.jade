@@ -1,0 +1,9 @@
+span 服务器：
+    input#rdAll(type="radio",checked="checked",name="server")
+    input#hiddenServerName(type="hidden")
+    label(for="rdAll")全服
+    input#rdCus(type="radio",name="server")
+    label(for="rdCus")自定义
+    div(style="display:none")        
+        #radioserverList(style="padding: 5px; width: 380px; height: 460px;",title="选择服务器")
+            #radioDetailList

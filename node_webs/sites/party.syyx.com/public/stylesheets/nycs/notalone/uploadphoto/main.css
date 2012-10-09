@@ -1,0 +1,32 @@
+body{margin:0;background:#0d2d4e;color:#9ea39f;font-size:12px;line-height:22px}
+a{color:#8dd0fa;text-decoration:none;outline:none}
+a:hover{color:#d4d4d4}
+h1{margin:0;font-weight:normal}
+.input{border:solid 1px #017acb;background:#032139;height:20px;color:#8bd3fb;padding-left:2px;width:150px}
+.btn{width:106px;height:27px;background:url("http://r.syyx.com/party/nycs/notalone/btn.png") no-repeat -476px -32px;display:block;font-size:14px;line-height:27px}
+.loginbtn{text-align:center;margin-left:10px;}
+.loginbtn a{margin-right:12px;float:left;margin-top:20px}
+.loginerr{color:#f94304;text-align:center;height:40px}
+.disnone{display:none}
+input,select{vertical-align:middle}
+.selectdiv{position:relative;width:146px;border:medium none;overflow:hidden;position:relative;border:solid 1px #017acb;height:18px;}
+.selectdiv select{border:solid 1px #017acb;position:relative;top:-3px;left:-2px;border:medium none;overflow:hidden}
+#popup_bg{width:100%;min-width:996px;height:1431px;opacity:.7;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);background:#000;position:absolute;top:0;left:0;display:none;z-index:2}
+#div_login{position:absolute;width:850px;overflow:hidden;z-index:3;left:50%;margin-left:-425px;}
+#div_login iframe{z-index:-1}
+.div_close{position:absolute;width:28px;height:28px;left:790px;top:10px;cursor:pointer}
+.logo{position:absolute;width:210px;height:100px;left:670px;top:48px;margin-left:-83px;text-indent:-999cm}
+.uploadphoto{background:url("http://r.syyx.com/party/nycs/notalone/framebg.jpg") no-repeat;width:830px;height:486px;overflow:hidden;padding:30px 50px;}
+.uploadphoto h1{font-size:14px;color:#01f8ff;width:740px;text-align:center;line-height:30px;margin-bottom:10px}
+.upnotice{margin-bottom:35px}
+.uprule{width:360px;height:280px}
+.upimg{position:absolute;width:350px;height:320px;top:70px;left:450px}
+.tdleft{width:120px;text-align:right;color:#8bd3fb;line-height:30px}
+.viewimg{width:95px;height:104px;border:dashed 1px #00a9ff;margin-left:10px;overflow:hidden;text-align:center;vertical-align:middle;}
+.viewimg img{width:95px}
+#txtContent{height:50px;width:208px}
+.loginbtn a{margin-top:10px}
+.upbtn{position:absolute;top:375px;width:250px;left:295px}
+iframe{border:0;style:none}
+#txtFile{width:220px;height:22px}
+#txtNickname{width:143px}

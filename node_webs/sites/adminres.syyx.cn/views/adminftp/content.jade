@@ -1,0 +1,41 @@
+table(class="history",border="0",cellpadding="0",cellspacing="0")
+    col(width="180")
+    col(width="180")
+    col(width="180")
+    col(width="180")
+    col(width="180")
+    col(width="60")
+    thead
+        tr
+            th 域名
+            th 版本库路径
+            th IP地址            
+            th 用户名
+            th 密码
+            th 删除
+
+    tbody#con
+.sub
+    a(onclick="addone()") +增加一行+
+    br
+    button(onclick="subftp()") 修改提交    
+    .explain
+        strong 说明
+        br
+        |1、FTP用户需要指定到当前域名的根目录。
+        br
+        |2、域名：不能加“http://”和"/"。
+        br
+        |3、版本库路径：
+        br
+        |&nbsp;&nbsp;·假设版本库为code目录。
+        br
+        |&nbsp;&nbsp;·s.syyx.com根目录在\\code\\resouce\\s.syyx.com\\
+        br
+        |&nbsp;&nbsp;·那么这里写/code/resouce/s.syyx.com/
+        br
+        |4、输入框请不要空，否则本行数据不能保存。
+        br
+        |5、设置的数据保存在/data/ftp.csv。
+        br
+        span(style="color:red") 6、如果不采用ftp上传，请把ftp的内容留空。只需要填写域名和版本库路径。

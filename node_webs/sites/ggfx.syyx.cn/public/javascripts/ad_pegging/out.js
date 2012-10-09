@@ -1,0 +1,2 @@
+$(function(){$("#btnSearch").click(function(){search_adname()})});
+function search_adname(){var a=$("#txtADIDList").val();""==$.trim(a)?alert("\u8bf7\u8f93\u5165\u9700\u8981\u53cd\u67e5\u7684\u5e7f\u544a\u4ee3\u7801"):(a=a.replace(/\n/g,","),$.ajax({url:"http://ggfx.syyx.cn/ad_pegging_search?r="+Math.random(),type:"get",dataType:"json",data:{ADIDList:a},beforeSend:function(){$("#loading").show()},complete:function(){$("#loading").hide()},success:function(a){var b="";$.each(a.rows,function(a,c){b=b+c.ADName+"\n"});$("#txtADNameList").val(b)}}))};

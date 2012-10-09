@@ -1,0 +1,434 @@
+@import '../reset'
+//@import '../base'
+//opacity_support------------------------------------------------------------------------------------------
+support-for-ie ?= true
+
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+//-------------------------------------------------------------------------------------------------------------
+$bg                 = 'http://r.syyx.com/nysj/activate/bg.jpg'
+$blank              = 'http://r.syyx.com/nysj/index/blank.png'
+$btn                = 'http://r.syyx.com/nysj/activate/btn.jpg'
+$question_icon      = 'http://r.syyx.com/nysj/activate/question_icon.jpg'
+$success            = 'http://r.syyx.com/nysj/activate/success.jpg'
+$failure            = 'http://r.syyx.com/nysj/activate/failure.jpg'
+//---------------------------------------------------------------------------------------
+//reg_url
+$loading            = 'http://s1.syyx.com/nycs/images/float_reg/loader.gif'
+$reg_tip_icon       = 'http://s1.syyx.com/nycs/images/float_reg/right_wrong.png'
+//---------------------------------------------------------------------------------------------
+a
+    text-decoration none
+    outline none
+.disnone
+    display none
+.hide
+    visibility hidden
+.ui-tabs-hide
+    display none
+.clear
+    clear both
+    overflow hidden
+    height 0
+body
+    font-size 12px
+    font-family '宋体'
+    background-color #15212F
+.container
+    min-width 1000px
+    background url($bg) center top no-repeat
+    .content
+        width 1000px
+        margin 0 auto
+        height 1470px
+        overflow hidden
+        position relative
+        .logo_link
+            position absolute
+            top 20px
+            left 40px
+            width 200px
+            height 100px
+        .nav
+            position absolute
+            left 565px
+            top 13px
+            overflow hidden
+            a
+                float left
+                margin-right 10px
+                color #37C9FF
+        .activate_btn_hash
+            position absolute
+            width 134px
+            height 35px
+            top 243px
+            left 368px
+            &:hover
+                background url($btn) -428px -10px no-repeat
+        #get_code_step_1
+            position absolute
+            top 475px
+            left 80px
+            color #2761CC
+            font-weight bold
+            font-size 14px
+            .question
+                background url($question_icon) left center no-repeat
+                height 20px
+                line-height 20px
+                padding-left 15px
+                margin-bottom 10px
+            .answer
+                font-size 14px
+                padding 0 0 15px 10px
+                input
+                    vertical-align middle
+                    margin 0 5px 0 15px
+            .mobile
+                padding 0 0 0 15px
+                background url($question_icon) left center no-repeat
+                margin-bottom 10px
+                height 22px
+                input
+                    float left
+                    background-color #151D34
+                    border solid 1px #050C26
+                    height 20px
+                    line-height 20px
+                    width 200px
+                    color #fff
+                span
+                    width 110px
+                    float left
+            .mobile_code
+                height 22px
+                padding 0 0 0 15px
+                background url($question_icon) left center no-repeat
+                span
+                    width 110px
+                    float left
+                input
+                    float left
+                    background-color #151D34
+                    border solid 1px #050C26
+                    height 20px
+                    line-height 20px
+                    width 100px
+                    margin-right 10px
+                    color #fff
+                a
+                    float left
+                    width 97px
+                    height 24px
+                    background url($btn) -396px -51px no-repeat
+                    margin-right 10px
+            .submit_step1
+                padding 10px 0 0 128px
+                height 27px
+                a
+                    background url($btn) -284px -49px no-repeat
+                    width 103px
+                    height 27px
+                    float left
+                    margin-right 10px
+                    &:hover
+                        background url($btn) -10px -48px no-repeat
+        #get_code_result_1,#get_code_result_2,#get_code_result_3
+            position absolute
+            top 490px
+            left 60px
+            display none
+            h3
+                color #ff8600
+                font-size 16px
+                margin-bottom 10px
+            p
+                font-size 14px
+                color #156bff
+                line-height 22px
+                margin-bottom 10px
+        #get_code_result_3
+            a
+                background url($btn) -146px -7px no-repeat
+                width 136px
+                height 36px
+                display block
+        #activate_hash
+            position absolute
+            top 730px
+            left 60px
+            height 30px
+            width 30px
+        #activate_form
+            position absolute
+            top 840px
+            left 60px
+            color #00deff
+            .form_item
+                height 30px
+                margin-bottom 5px
+                span
+                    line-height 22px
+                    float left
+                    width 100px
+                    text-align right
+                    font-size 16px
+                    font-weight bold
+                    margin-right 10px
+                input
+                    float left
+                    width 240px
+                    background-color #092161
+                    color #fff
+                    border solid 1px #034292
+                    height 24px
+                    line-height 24px
+                    font-weight bold
+                    font-size 14px
+                    padding 0 3px
+            .reg_tip
+                padding 0 0 0 110px
+                a
+                    color #186afe
+                    text-decoration underline
+            .activate_form_submit_btn
+                padding 20px 0 0 150px
+                height 36px
+                a
+                    float left
+                    display block
+                    width 136px
+                    height 36px
+                    margin-right 10px
+                    background url($btn) -495px -46px no-repeat
+                    &:hover
+                        background url($btn) -9px -7px no-repeat
+                span
+                    font-size 14px
+        #activate_result_1
+            display none
+            position absolute
+            top 835px
+            left 80px
+            h3
+                height 26px
+                padding 6px 0 0 50px
+                margin 0 0 10px 70px
+                color #ff8500
+                font-size 16px
+                background url($success) 0 0 no-repeat
+            p
+                font-size 14px
+                color #1569ff
+                line-height 22px
+            .download_mini
+                display inline-block
+                margin 20px 0 0 90px
+                width 136px
+                height 36px
+                background url($btn) -283px -7px no-repeat
+        #activate_result_2
+            position absolute
+            top 835px
+            left 80px
+            width 400px
+            display none
+            h3
+                height 26px
+                padding 6px 0 0 50px
+                color #ff8500
+                font-size 16px
+                margin 0 0 10px 70px
+                background url($failure) 0 0 no-repeat
+            p
+                text-align center
+                font-size 14px
+                color #1569ff
+                line-height 22px
+                margin-bottom 20px
+            a
+                width 103px
+                height 27px
+                margin-left 100px
+                display block
+                background url($btn) -114px -48px no-repeat
+        #reg
+            position absolute
+            top 630px
+            right 20px
+            width 265px
+            height 255px
+            overflow hidden
+            #reg_step1
+                height 245px
+                position relative
+                overflow hidden
+                color #6CB6FD
+                display block
+                .reg_form
+                    td
+                        padding 0 2px
+                        height 26px
+                        &.reg_form_item_name
+                            width 60px
+                            text-align right
+                        &.reg_form_item_input
+                            input
+                                background-color #86BBE5
+                                border solid 1px #009BFF
+                                height 20px
+                                line-height 20px
+                                color #000
+                                width 150px
+                            input.focus_in_inut
+                                background-color #fff
+                                border solid 1px #C8EDFF
+                                color #000
+                            #validateimg
+                                vertical-align middle
+                                cursor pointer
+                                height 29px
+                                width 100px
+                                margin-left 3px
+                        &.validate_num_input
+                            height 35px
+                            input
+                                width 40px
+                .agreement
+                    text-align center
+                    padding-top 5px
+                    a
+                        text-align center
+                        text-decoration underline
+                        color #3E6ED0
+                        outline none
+                    input
+                        margin-right 3px
+                .reg_submit
+                    position absolute
+                    top 202px
+                    left 53px
+                    a
+                        display inline-block
+                        width 153px
+                        height 44px
+                        background url($btn) -31px -380px no-repeat
+                        outline none
+                        &:hover
+                            background-position -31px -426px
+            #reg_step2
+                position absolute
+                width 265px
+                height 255px
+                color #6BB8FE
+                display none
+                .success_icon
+                    position absolute
+                    width 39px
+                    height 36px
+                    left 50px
+                    top 10px
+                    background url($btn) -608px -217px no-repeat
+                .success_text
+                    color #FFB900
+                    font-size 14px
+                    position absolute
+                    top 10px
+                    left 100px
+                .success_account
+                    position absolute
+                    color #FFB900
+                    top 35px
+                    left 100px
+                .get_active_code_text_after_reg
+                    position absolute
+                    top 70px
+                    color #6BB8FE
+                    left 0
+                    h3
+                        font-weight bold
+                        padding 0 10px 5px 0
+                    p
+                        text-indent 24px
+                        line-height 20px
+                .get_code_link
+                    background url($btn) -366px -380px no-repeat
+                    width 131px
+                    height 24px
+                    position absolute
+                    top 145px
+                    left 60px
+                    display block
+                    &:hover
+                        background url($btn) -366px -406px no-repeat
+                .download_text_after_reg
+                    position absolute
+                    top 190px
+                    font-weight bold
+                .down_load_mini_client_after_reg
+                    position absolute
+                    width 131px
+                    height 24px
+                    top 220px
+                    left 60px
+                    background url($btn) -499px -380px no-repeat
+                    &:hover
+                        background url($btn) -499px -406px no-repeat
+            .check_result_right
+                background url($reg_tip_icon) 0 4px no-repeat
+                width 16px
+                height 25px
+            .check_result_wrong
+                background url($reg_tip_icon) 0 -32px no-repeat
+                width 16px
+                height 25px
+            .check_result_loading
+                background url($loading) 0 4px no-repeat
+                width 16px
+                height 25px
+        .download_area
+            position absolute
+            top 1112px
+            left 10px
+            a
+                width 293px
+                height 78px
+                float left
+                margin-right 26px
+                &.download_mini
+                    &:hover
+                        background url($btn) -10px -85px no-repeat
+                &.download_full
+                    &:hover
+                        background url($btn) -329px -85px no-repeat
+            span
+                width 293px
+                float left
+                margin-right 26px
+                padding-top 5px
+                text-align right
+                height 20px
+                color #166AFF
+        #copyright
+            position absolute
+            top 1320px
+            left 130px
+            width 981px
+            height 62px
+            overflow hidden
+            .syyx_logo
+                position absolute
+                top 10px
+                left 10px
+                width 130px
+                height 45px
+            .copyright_content
+                position absolute
+                top 10px
+                left 160px
+                line-height 20px
+                color #526F91
+@import '../../../components/activate_float_reg/main'

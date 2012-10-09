@@ -1,0 +1,33 @@
+body{font-size:12px;margin:0}
+a{outline:none}
+.reg_iframe{padding-top:50px;background:url("http://r.syyx.com/events/p005/reg_bg.jpg") no-repeat;position:relative;height:251px;width:296px;}
+.reg_iframe .reg_outer{position:relative;width:250px;height:276px}
+.reg_iframe .reg{position:absolute;top:10px;left:7px;width:240px;height:255px;color:#98d9ff;display:block;}
+.reg_iframe .reg .reg_form td{padding:0 2px;height:25px;vertical-align:top}
+.reg_iframe .reg .reg_form .reg_form_item_name{width:60px;text-align:right;vertical-align:middle}
+.reg_iframe .reg .reg_form .reg_form_item_input input{background-color:#86bbe5;border:solid 1px #009cff;height:18px;line-height:18px;color:#012ead;width:135px}
+.reg_iframe .reg .reg_form .reg_form_item_input input.focus_in_inut{background-color:#fff;border:solid 1px #c8edff;color:#000}
+.reg_iframe .reg .reg_form .reg_form_item_input #validateimg{vertical-align:top;cursor:pointer;height:27px;width:88px;margin-left:3px}
+.reg_iframe .reg .reg_form .validate_num_input{height:30px;}
+.reg_iframe .reg .reg_form .validate_num_input input{width:40px}
+.reg_iframe .reg .agreement{text-align:center;padding-top:3px;color:#0ba5c7;}
+.reg_iframe .reg .agreement a{text-align:center;text-decoration:underline;color:#0ba5c7;outline:none}
+.reg_iframe .reg .agreement input{margin-right:3px}
+.reg_iframe .reg .reg_submit{padding:10px 0 0 65px;}
+.reg_iframe .reg .reg_submit a{float:left;width:127px;height:30px;background:url("http://r.syyx.com/events/p005/reg_btn.jpg") no-repeat -15px -5px;outline:none;}
+.reg_iframe .reg .reg_submit a:hover{background:url("http://r.syyx.com/events/p005/reg_btn.jpg") -15px -36px no-repeat}
+.reg_iframe #reg_account,.reg_iframe #active_code,.reg_iframe #reg_account3{color:#e2cc7c;font-size:14px}
+.reg_iframe #reg_step2{height:275px;position:absolute;top:0;overflow:hidden;display:none;width:240px;left:0;}
+.reg_iframe #reg_step2 #reg_account_outer{color:#98d9ff;font-size:14px;position:absolute;top:10px;width:250px;left:30px;line-height:28px}
+.reg_iframe #reg_step2 #active_link{display:block;position:absolute;width:127px;height:30px;top:160px;left:75px;background:url("http://r.syyx.com/events/p005/reg_btn.jpg") -143px -5px no-repeat;}
+.reg_iframe #reg_step2 #active_link:hover{background:url("http://r.syyx.com/events/p005/reg_btn.jpg") -143px -36px no-repeat}
+.reg_iframe #reg_step2 .game_start{display:block;position:absolute;width:177px;height:64px;top:200px;left:40px}
+.reg_iframe #reg_step3{position:absolute;height:275px;top:0;overflow:hidden;display:none;width:240px;left:0;background:url("$reg_success_panel") left bottom no-repeat;font-size:14px;}
+.reg_iframe #reg_step3 .reg_success_no_card{position:absolute;left:45px;top:20px;line-height:27px;color:#98d9ff;}
+.reg_iframe #reg_step3 .reg_success_no_card a{display:block;position:absolute;width:170px;height:64px;top:178px;left:0}
+.reg_iframe .check_result_right{background:url("http://r.syyx.com/events/p005/right_wrong.png") 0 4px no-repeat;width:16px;height:23px}
+.reg_iframe .check_result_wrong{background:url("http://r.syyx.com/events/p005/right_wrong.png") 0 -32px no-repeat;width:16px;height:23px}
+.reg_iframe .check_result_loading{background:url("http://r.syyx.com/events/p005/ajax-loader.gif") 0 4px no-repeat;width:16px;height:23px}
+.reg_iframe #regProcessTip{float:left;margin:5px 0 0 5px}
+.disnone{display:none}
+#reg_button,#active_link{text-indent:-999px}

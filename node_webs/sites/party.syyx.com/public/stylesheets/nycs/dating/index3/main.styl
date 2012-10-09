@@ -1,0 +1,140 @@
+@import '../reset'
+$path        = "http://r.syyx.com/party/nycs/dating/"
+$bg          = $path"bg.jpg"
+$tencent     = $path"tencent.png"
+$sina        = $path"sina.png"
+$flash_bg    = $path"flash_bg.jpg"
+support-for-ie ?= true
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+
+body
+    background black
+    font-family "宋体"
+
+a
+    text-decoration none
+    outline none
+    font-size 14px
+    text-align center
+    line-height 25px
+    color #CBCBCB
+    cursor pointer
+
+.container
+    background url($bg) no-repeat top center
+    height 715px
+    min-width 1000px
+    overflow hidden
+    font-size 12px
+    display none    
+.main
+    width 1000px
+    margin 0 auto
+    position relative
+    height 100%
+.nav
+    text-align right
+    line-height 25px
+    margin-right 55px
+    a
+        font-size 12px
+        color #778899
+        &:hover
+            color #fff
+.logo
+    position absolute
+    width 220px
+    height 120px
+    left 123px
+    top 17px
+
+#replay
+    // border 1px solid red    
+    position absolute
+    top 464px
+    left 217px
+    width 91px
+    height 25px     
+
+#sina
+    position absolute
+    top 578px
+    left 376px
+    width 97px
+    height 25px 
+    &:hover
+        background url($sina) no-repeat
+
+#tencent
+    position absolute
+    top 578px
+    left 479px
+    width 97px
+    height 25px 
+    &:hover
+        background url($tencent) no-repeat
+
+.copy_right 
+    position absolute
+    text-align center
+    width 980px
+    top 623px
+    line-height 22px
+    .feet_txt 
+        margin-left 260px
+        margin-top 10px
+        color #473E53
+        text-align left
+    .feet_logo 
+        position absolute
+        top 0
+        left 120px
+        width 125px
+        height 60px
+
+.disnone
+    display none            
+
+#little_flash, #flash_player, #flash_div
+    width 127px
+    height 71px
+    position absolute
+    top 450px
+    left 78px
+    cursor pointer
+#flash_div
+    background url($tencent) no-repeat 2048px 2006px    
+
+.pop_video_detail
+    background-color: #032e53
+    border 1px solid #0062b3
+#pop_flash
+    border 1px solid #004680
+    background #000
+    line-height 0
+object
+    outline none    
+
+#flash
+    position absolute
+    top 50%
+    left 50%
+    margin-left -512px
+    margin-top  -288px
+    width 1024px
+    height 576px
+    background url($flash_bg) no-repeat
+    #flash1
+        width 1024px
+        height 576px
+    // #skip
+    //     position absolute
+    //     background red
+    //     top 533px
+    //     left 468px
+    //     width  65px
+    //     height 26px
+    //     opacity 0

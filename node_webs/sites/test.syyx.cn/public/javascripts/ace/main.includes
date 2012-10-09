@@ -1,0 +1,4 @@
+client_modules/ace/ace.js
+client_modules/ace/theme-twilight.js
+client_modules/ace/mode-json.js
+client_modules/ace/mode-javascript.js

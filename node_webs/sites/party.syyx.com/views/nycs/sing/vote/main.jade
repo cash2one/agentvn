@@ -1,0 +1,41 @@
+!!!5
+html
+    head
+        link(rel= "shortcut icon", href = "http://s.syyx.com/nycs/img/favicon.ico", type = "image/x-icon")
+        meta(http-equiv = "Content-Type",content="text/html; charset=utf-8")
+        meta(name = "keywords", content = "用户登录")
+        meta(name = "description", content = "用户登录")
+        title 用户登录-《诺亚传说》官方网站
+        link(href="/stylesheets/nycs/sing/vote/main.css",rel="stylesheet",type="text/css")     
+    body
+        .fmcontent
+            .fmtitle.disnone 填写手机号，投票赢好礼
+            .fmtab
+                .singvote.disnone
+                    #phone 
+                        span#phonetext 您的手机号：
+                        input.input_tc#txtPnone(type="text",maxlength="11",tabindex="1")
+                        |&nbsp;
+                    |每人每天有一次投票机会。
+                    br
+                    |奖品将通过手机号联系发送，为了奖品的
+                    br
+                    |顺利发放，请务必填写正确的手机号。
+
+                    .loginerror#loginerror
+                    a#chkloginrole.fmbtn(hidefocus="true",href="javascript:void(0);",title="确定",tabindex="4") 确 定
+                .fmmsg#fmmsg1.disnone
+                    span 投票成功！
+                        br
+                        |每人每天均有一次投票机会！
+                        br
+                        |投票多多奖品多多哦！
+                    a#chkbtn.fmbtn2.fmbtn(hidefocus="true",href="javascript:void(0);",title="确定",tabindex="4") 确 定
+                .fmmsg#fmmsg2.disnone
+                    span 投票失败！
+                        br
+                        |今天你已经投过票了，请明天继续支持！
+                    a#chkbtn.fmbtn2.fmbtn(hidefocus="true",href="javascript:void(0);",title="确定",tabindex="4") 确 定
+    
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js",type="text/javascript")
+        script(src="/javascripts/nycs/sing/vote/out.js",type="text/javascript")

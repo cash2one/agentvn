@@ -1,0 +1,20 @@
+div#loading
+	img(src="/images/spinner3-greenie.gif")
+
+div(class="postion")
+	span.f_b_blue	您的当前位置：
+	span	广告管理 &gt;&gt; 查看排期
+div(class="cont_f_lb")
+
+div#content
+	div#search
+		table
+			tr
+				td	
+					input#btnPreMonth.input_btn(type="button",value="上一个月")
+				td	日期
+					input#txtDateTime(type="text",class="easyui-datebox")
+				td  
+					input#btnNextMonth.input_btn(type="button",value="下一个月")
+
+	table#tt(class="wiki-list-table", style="width:100%")

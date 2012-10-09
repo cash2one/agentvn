@@ -1,0 +1,88 @@
+@import '../reset'
+@import '../url'
+@import '../base'
+//--------------------------------------------------
+body
+    font-size 12px
+    font-family '宋体'
+    color #444
+    background url($login_bg) 0 0 repeat
+    .container
+        position relative
+        header
+            position relative
+            background #fff
+            .logo
+                width 1200px
+                margin 0 auto
+                height 100px
+                font-weight bold
+                font-size 22px
+                line-height 100px
+            .pop_stripe
+                background-color #FF961C
+                background-image linear-gradient(0deg, #E75239 0%, #E75239 12.5%, #FF961C 12.5%, #FF961C 25%, #FFCC27 25%, #FFCC27 37.5%, #FCE62F 37.5%, #FCE62F 50%, #CDE35B 50%, #CDE35B 62.5%, #82CC33 62.5%, #82CC33 75%, #41BECE 75%, #41BECE 87.5%, #049CDB 87.5%, #049CDB 100%)
+                background-image -webkit-linear-gradient(0deg , #E75239 0%, #E75239 12.5%, #FF961C 12.5%, #FF961C 25%, #FFCC27 25%, #FFCC27 37.5%, #FCE62F 37.5%, #FCE62F 50%, #CDE35B 50%, #CDE35B 62.5%, #82CC33 62.5%, #82CC33 75%, #41BECE 75%, #41BECE 87.5%, #049CDB 87.5%, #049CDB 100%)
+                background-image -moz-linear-gradient(0deg, #E75239 0%, #E75239 12.5%, #FF961C 12.5%, #FF961C 25%, #FFCC27 25%, #FFCC27 37.5%, #FCE62F 37.5%, #FCE62F 50%, #CDE35B 50%, #CDE35B 62.5%, #82CC33 62.5%, #82CC33 75%, #41BECE 75%, #41BECE 87.5%, #049CDB 87.5%, #049CDB 100%)
+                background-position 50% 0
+                box-shadow 0 1px 2px rgba(0, 0, 0, 0.063) inset
+                height 6px
+                position relative
+        .content
+            width 1200px
+            margin 0 auto
+            #message
+                width 600px
+                background linear-gradient(#FFF8B5, #FFEE70) repeat 0 0
+                background -webkit-linear-gradient(#FFF8B5, #FFEE70) repeat 0 0
+                background -moz-linear-gradient(#FFF8B5, #FFEE70) repeat 0 0
+                box-shadow 0 1px 0 #FFFFBE inset, 0 4px 0 rgba(255, 255, 255, 0.12) inset, 0 2px 4px rgba(0, 0, 0, 0.12)
+                color rgba(0, 0, 0, 0.8)
+                font-size 14px
+                text-align center
+                margin 40px auto 0 auto
+                text-shadow 0 1px 0 rgba(255, 255, 255, 0.33)
+                border 1px solid #AEA976
+                height 40px
+                line-height 40px
+                display none
+            .login_area
+                background url($login_form) 0 0 repeat
+                margin 80px auto 0 auto
+                width 600px
+                padding 20px 0
+                input[type='text'],input[type='password']
+                    padding 7px 12px
+                    border-radius 3px
+                    box-shadow 0 1px 1px rgba(255, 255, 255, 0.75) inset
+                    text-shadow 0 1px 0 rgba(255, 255, 255, 0.75)
+                    border solid 1px rgba(0,0,0,0.125)
+                    font-size 16px
+                    margin 0 auto 20px auto
+                    width 550px
+                    display block
+                    &:hover
+                        background-color #e0f5fe
+                .login_btn
+                    float right
+                    padding-right 20px
+                    input
+                        background-color rgba(3, 120, 169, 0.75)
+                        background-image -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0))
+                        background-image -moz-linear-gradient(270deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0))
+                        background-repeat repeat-x
+                        border-style solid
+                        border-color rgba(0, 0, 0, 0.125) rgba(0, 0, 0, 0.125) rgba(0, 0, 0, 0.5)
+                        border-radius 3px
+                        border-width: 1px
+                        box-shadow 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 1px 1px rgba(0, 0, 0, 0.125)
+                        color #fff
+                        display inline-block
+                        font-size 16px
+                        padding 3px 32px
+                        text-align center
+                        text-shadow 0 -1px 0 rgba(0, 0, 0, 0.25)
+                        vertical-align middle
+                        white-space nowrap
+                        cursor pointer
+                        font-weight bold

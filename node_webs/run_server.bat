@@ -1,0 +1,1 @@
+@call ..\tools\node\node.exe vhosts.js

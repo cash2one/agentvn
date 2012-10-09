@@ -1,0 +1,12 @@
+html
+	head
+		title	监控-日期段
+		include script
+	body.easyui-layout
+		div(region="north", border="true", style="height: 70px;", class="header")  
+			include ../ad_menu/menu_main
+		div(region="west",icon="icon-reload", border="true",split="true",title="广告管理",style="width: 185px; padding: 10px;")	
+			include ../ad_menu/menu_xiaoguo
+
+		div(region="center")
+			include contents

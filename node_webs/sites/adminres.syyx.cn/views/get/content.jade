@@ -1,0 +1,90 @@
+.head#sd
+    #tab
+        span.check 地址分析
+        span 修改预览
+            em#see_num 0
+        span 资源管理
+            em#all_num 0
+        span 处理列队
+            em#ok_num 0         
+    .menu.
+        <span id="gettime"></span><span id="name"></span>|<a href="/login_out">登出</a><a href="javascript:undefined" class="all" id="git">Git</a><a class="all" href="/mylog" target="_blank">记录</a><span id="record"></span><span id="setftp"></span>
+#main
+    .box.check
+        .urlinput
+            input(name="url",id="url",size="100",value="输入页面地址或单图片、Flash地址，再点击右边的按钮。")
+            button(id="get") 分析地址
+            #ajax_info
+            #wait
+    .box.preview
+        .res_info 提示：您需要完成“地址分析”，才能显示内容，单图模式不显示。
+        iframe(width="100%",id="preview",name="preview",height="100%",scrolling="no")
+        p.ww
+    .box#img_list
+        .res_info 提示：您需要完成“地址分析”，才能显示内容。
+        p.ww
+#mange
+    .mange_bg
+    .mange_box
+        .show_img
+            img(id="b_img",src="/images/noimg.jpg")
+        #img_info
+            .tit 文件信息
+            strong 地址：
+            span
+            |→
+            em
+            br
+            strong 名字：
+            span
+            |→
+            em
+            i
+            br
+            strong 格式：
+            span
+            |→
+            em
+            i
+            br
+            strong 宽度：
+            span
+            |→
+            em
+            i
+            br
+            strong 高度：
+            span
+            |→
+            em
+            i
+            br
+            label#upload_l 替换：
+            br
+            b 请注意：名字、格式、宽高需要完全相同才能上传。
+            .buttons
+                button(id="newsee") 确 定
+                button(id="newurl") 选择新图
+                button(id="oldurl") 选择原图
+        .url
+#time
+    .timebg
+    .timebox
+        h2 您要定时替换吗？
+        #settime
+            input(value="2012",type="text",maxlength="4")
+            |年
+            input(value="1",type="text",maxlength="2")
+            |月
+            input(value="1",type="text",maxlength="2")
+            |日
+            input(value="0",type="text",maxlength="2")
+            |点
+            input(value="0",type="text",maxlength="2")
+            |分
+        button(onclick="settime()") 设定定时
+        button(onclick="cancel()") 取消定时
+        button(onclick="closetime()") 关闭
+        #info
+
+img(src="",id="imgcache")

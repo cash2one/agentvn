@@ -1,0 +1,352 @@
+$path        = "http://r.syyx.com/events/p048/"
+$bg          = $path"bg.jpg"
+$main        = $path"main.jpg"
+$btn         = $path"btn.jpg"
+$cyl         = $path"cyl.jpg"
+$gdj         = $path'gdj.jpg'
+$jws         = $path'jws.jpg'
+$qxs         = $path'qxs.jpg'
+$ynz         = $path'ynz.jpg'
+$reg_scroll  = $path'reg_scroll.jpg'
+$reg_bg      = $path'reg_bg.jpg'
+$reg_btn     = $path'reg_btn.jpg'
+$loading     = $path'loading.gif'
+$right_wrong = $path'right_wrong.png'
+$loader      = $path'ajax-loader.gif'
+$download    = $path'download.jpg'
+
+body
+    margin 0
+    font 12px/2em "宋体"
+    color rgb(114,119,139)
+    background rgb(4,9,29)
+a
+    text-decoration none
+    color rgb(85,149,187)
+    outline none
+    &:hover
+        color #fff
+.container    
+    position relative
+    min-width 980px
+    background url($bg) no-repeat center top 
+.wrap
+    background url($main) no-repeat center 643px 
+    position relative
+.main
+    width 980px
+    margin 0 auto
+    height 1450px
+    position relative
+.nav
+    text-align right
+    position absolute
+    top 0
+    right 100px
+    color rgb(85,149,187)
+    line-height 30px
+#banner
+    height 643px
+    img
+        width 855px
+        height 643px
+        position absolute
+        top 0
+        left 61px
+        display none
+    #swf
+        width 855px
+        height 643px
+        position absolute
+        top 0
+        left 59px
+    a
+        position absolute
+        background url($btn) no-repeat 999cm
+    .cyl
+        width 152px
+        height 43px
+        
+        top 359px
+        left 414px
+    .qxs
+        width 120px
+        height 35px
+        top 336px
+        left 750px
+    .ynz
+        width 96px
+        height 30px
+        top 170px
+        left 814px
+    .jws
+        width 106px
+        height 30px
+        top 245px
+        left 67px
+    .gdj
+        width 127px
+        height 36px
+        left 143px
+        top 364px
+.logo
+    width 152px
+    height 77px
+    position absolute
+    top 15px
+    left 80px
+    background url($btn) no-repeat 999cm
+.mini
+    width 175px
+    height 47px
+    position absolute
+    left 308px
+    top 416px
+    background url($btn) no-repeat 999cm
+    &:hover
+        background-position 0 0
+#reg_1
+    width 175px
+    height 47px
+    position absolute
+    left 494px
+    top 416px
+    background url($btn) 999cm no-repeat
+    &:hover
+        background-position 0 -70px
+#video
+    width 592px
+    height 334px
+    position absolute
+    top 644px
+    left 194px
+#reg_2
+    width 229px
+    height 55px
+    position absolute
+    top 1011px
+    left 376px
+    background url($btn) no-repeat 9999cm
+    &:hover
+        background-position 0 -145px
+.copy_right
+    width 980px
+    text-align center
+    position absolute
+    top 1230px
+    line-height 18px
+    .feet_txt
+        text-align left
+        margin 10px 0 0 400px
+    .feet_logo
+        position absolute
+        width 140px
+        height 60px
+        left 245px
+        top 30px
+.pop_video_detail
+    background: #54200A;
+    border 1px solid #873410
+#pop_flash
+    border 1px solid #873410
+    background #000
+    line-height 0
+    height 350px
+.ui-dialog .ui-dialog-titlebar-close
+    background url($close) no-repeat
+object
+    outline none
+#reg_scroll
+    width 70px
+    height 383px
+    position absolute
+    top 100px
+    right 0
+    overflow hidden
+    #reg_but
+        width 70px
+        height 291px
+        background url($reg_scroll) no-repeat 0 0
+        position absolute
+        &:hover
+            background-position -72px 0
+    #reg_box
+        width 284px
+        height 455px
+        display none
+        background url($reg_bg) no-repeat #221334
+    .reg_panel
+        width 283px
+        padding-top 80px
+        color #c998ff
+        right 3px
+        overflow hidden
+        height 390px
+        .reg
+            margin-left 40px
+        a
+            color #A696C7
+            text-decoration underline
+            &:hover
+                color #fff
+        table
+            height 162px
+            td
+                height 27px
+                width 20px
+            input
+                background #776595
+                border 1px solid #683ec8
+                height 18px
+                color #221334
+                line-height 18px
+                width 145px
+            .focus_in_inut
+                background #af99d4
+        .agreement
+            height 21px
+        .reg_form_item_name
+            width 60px
+        .reg_form_item_input
+            width 150px
+        .validate_num_input
+            height 30px
+            vertical-align top
+            padding-top 3px
+        #txtValidate
+            width 50px
+        #validateimg
+            width 90px
+            margin-left 5px
+            height 27px
+            vertical-align top
+            cursor pointer
+        #reg_step2,#reg_step3,#reg_step4,#reg_step5
+            width 220px
+            margin 0 auto
+            padding-top 30px
+            line-height 25px
+            display none
+            height 120px
+            text-align center
+            input
+                background #776595
+                border 1px solid #683ec8
+                height 18px
+                color #221334
+                line-height 18px
+                width 145px
+        #reg_step2
+            height 211px            
+            .active
+                height 200px
+                line-height 30px
+        #reg_step4 .active_info
+                margin-top 40px
+        #reg_step5
+            height 390px
+            width 100%
+            p
+                padding 0 40px
+        #active_link
+            display block
+            margin 20px auto
+            width 120px
+            height 30px
+            background url($reg_btn) no-repeat -2px -61px
+            &:hover
+                background-position -2px -93px
+        .download
+            height 66px
+            padding 0 10px
+            position relative
+            margin 0 auto
+            background url($download) no-repeat
+            .mini_download
+                height 30px
+                width 125px
+                display block
+                position relative
+                top 80px
+                float left
+                background url($reg_btn) no-repeat -13px -125px
+                &:hover
+                    background-position:-13px -157px
+            .full_download
+                height 30px
+                width 125px
+                display block
+                position relative
+                top 80px
+                float right
+                background url($reg_btn) no-repeat -140px -125px
+                &:hover
+                    background-position:-140px -157px
+        .download_tip
+            height 40px
+            line-height 30px
+            margin-top 80px
+            text-align center
+            font-size 14px
+            padding 0 40px
+            text-align left
+        .reg_submit
+            height 55px
+            position relative
+        #reg_button
+            width 120px
+            height 30px
+            position absolute
+            left 51px
+            top 11px
+            background url($reg_btn) no-repeat -124px -61px
+            &:hover
+                background-position -124px -93px
+        .success
+            background url($success) no-repeat
+            padding 10px 40px
+            display inline
+            color #FAAB10
+        .fail
+            background url($fail) no-repeat
+            padding 10px 40px
+            display inline
+            color #FAAB10
+        .back_bg
+            position absolute
+            top 360px
+            height 20px
+            width 100%
+            background url($download) no-repeat
+            left 0
+        #back
+            width 120px
+            height 30px
+            position absolute
+            top 40px
+            left 81px
+            background url($reg_btn) no-repeat -267px -125px
+            &:hover
+                background-position -267px -157px
+        .check_result_wrong
+            background url($right_wrong) no-repeat 0 -32px
+            height 100%
+            width 16px
+        .check_result_right 
+            background: url($right_wrong) no-repeat 0 4px
+            height: 25px;
+            width: 16px;
+
+        .check_result_loading 
+            background url($loader) no-repeat 0 4px
+            height 25px
+            width 16px
+    #close
+        width 22px
+        height 22px
+        cursor pointer
+        position absolute
+        top 4px
+        right 4px
+.disnone
+    display none

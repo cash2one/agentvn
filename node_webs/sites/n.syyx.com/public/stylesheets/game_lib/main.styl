@@ -1,0 +1,328 @@
+@import '../reset'
+@import 'url'
+//opacity_support------------------------------------------------------------------------------------------
+support-for-ie ?= true
+
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+//------------------------------------------------------------------------------------------
+a
+    text-decoration none
+    outline none
+.disnone
+    display none
+.hide
+    visibility hidden
+.ui-tabs-hide
+    display none
+body
+    font-size 12px
+    font-family '宋体'
+    background-color #1C180F
+    color #76678E
+.container
+    min-width 1000px
+    background url($bg) center top no-repeat
+    .content
+        width 1000px
+        margin 0 auto
+        position relative
+        .logo_link
+            position absolute
+            top 50px
+            left 10px
+            width 210px
+            height 80px
+        .nav
+            position absolute
+            width 600px
+            height 25px
+            left 427px
+            top 12px
+            overflow hidden
+            a
+                display block
+                float left
+                height 21px
+                width 65px
+                margin-right 16px
+                &.fn_main
+                    &:hover
+                        background url($nav_tip) -2px 0px no-repeat
+                &.fn_news
+                    &:hover
+                        background url($nav_tip) -83px 0px no-repeat
+                &.fn_download
+                    &:hover
+                        background url($nav_tip) -164px 0px no-repeat
+                &.fn_usercenter
+                    &:hover
+                        background url($nav_tip) -245px 0px no-repeat
+                &.fn_gameinfo
+                    &:hover
+                        background url($nav_tip) -326px 0px no-repeat
+                 &.fn_service
+                    &:hover
+                        background url($nav_tip) -407px 0px no-repeat
+                 &.fn_bbs
+                    &:hover
+                        background url($nav_tip) -488px 0px no-repeat
+        .fn_group
+            position absolute
+            top 296px
+            left 9px
+            width 203px
+            height 300px
+            a
+                display block
+                height 44px
+                &.fn_download_btn
+                    height 75px
+                    margin-bottom 3px
+                    &:hover
+                        background url($btn) 0 0 no-repeat
+                &.fn_reg_btn:hover
+                    background url($btn) 0 -78px no-repeat
+                &.fn_charge_btn:hover
+                    background url($btn) 0 -122px no-repeat
+                &.fn_active_btn:hover
+                    background url($btn) 0 -210px no-repeat
+                &.fn_get_gift_btn:hover
+                    background url($btn) 0 -166px no-repeat
+        .bread_path
+            position absolute
+            right 30px
+            top 315px
+            color #C0A7EB
+            a
+                color #C0A7EB
+                &:hover
+                   text-decoration underline 
+        #role_info
+            position absolute
+            top 349px
+            left 227px
+            width 505px
+            height 289px
+            padding 1px
+            ul
+                position absolute
+                padding 10px 0 0 172px
+                height 20px
+                width 335px
+                margin-top 3px
+                overflow hidden
+                background url($bg) -688px -351px no-repeat
+                li
+                    float left
+                    a
+                        float left
+                        width 59px
+                        height 22px
+                        line-height 22px
+                        color #BAA4E2
+                        margin-right 5px
+                        text-align center
+                    .role_yineng
+                        background  url($zhiye) 0 -24px no-repeat
+                    .role_qiangxie
+                        background  url($zhiye) -120px -24px no-repeat
+                    .role_jianwu
+                        background  url($zhiye) -60px -24px no-repeat
+                    .role_gedou
+                        background  url($zhiye) -180px -24px no-repeat
+                    &.ui-tabs-selected
+                        .role_yineng
+                            background  url($zhiye) 0 0 no-repeat
+                        .role_qiangxie
+                            background  url($zhiye) -120px 0 no-repeat
+                        .role_jianwu
+                            background  url($zhiye) -60px 0 no-repeat
+                        .role_gedou
+                            background  url($zhiye) -180px 0 no-repeat
+            #yineng,#jianwu,#qiangxie,#gedou
+                width 505px
+                height 289px
+                overflow hidden
+                color #51DCE3
+                margin-left 1px
+                background url($role1) 0 0 no-repeat 
+                .jineng
+                    display inline-block
+                    position absolute
+                    top 250px
+                    right 20px
+                    width 80px
+                    height 20px
+                    line-height 20px
+                    text-align center
+                    color #fff
+                    background url($btn2) -3px -77px no-repeat
+                    &:hover
+                        background-position -3px -57px
+            #jianwu
+                background url($role3) 0 0 no-repeat 
+            #qiangxie
+                background url($role2) 0 0 no-repeat 
+            #gedou
+                background url($role4) 0 0 no-repeat 
+        .user_guider_link
+            position absolute
+            top 394px
+            left 765px
+            display block
+            a
+                display block
+                width 197px
+                margin-bottom 5px
+                background url($blank) 0 0 no-repeat
+                &.large_link
+                    height 93px
+                &.small_link
+                    height 44px
+        .recommend_gameplay
+            position absolute
+            top 710px
+            left 270px
+            width 700px
+            height 70px
+            overflow hidden
+            a
+                width 70px
+                height 70px
+                float left
+                margin-right 15px
+                img
+                    width 70px
+                    height 70px
+        .lib_and_search
+            padding 813px 11px 0 218px
+            .search_content
+                height 35px
+                padding-left 390px
+                background url($search) 0 0 no-repeat
+                input
+                    width 290px
+                    height 26px
+                    border solid 1px #33214B
+                    background-color #33214B
+                    color #BAA3E9
+                    line-height 26px
+                    padding 0 2px
+                    margin-right 5px
+                    margin-top 9px
+                    vertical-align top
+                a
+                    width 72px
+                    height 26px
+                    margin-top 10px
+                    display inline-block
+                    background url($btn2) 0 0 no-repeat 
+                    line-height 27px
+                    color #A6D6ED
+                    text-align center
+                    &:hover
+                        background-position 0 -28px
+            .lib_content
+                background-color #26182F
+                padding 0 8px 10px 9px
+                _height 100px
+                .lib_border
+                    min-height 100px
+                    padding 40px
+                    .title
+                        background #26182F  url($lib_title) 0 0 no-repeat
+                        border-bottom solid 1px #422963
+                        margin-bottom 10px
+                        span
+                            display inline-block
+                            height 23px
+                            line-height 23px
+                            color #B9A4DF
+                            padding 0 20px
+                    .lib_list
+                        padding 10px
+                        a
+                            display inline-block
+                            height 14px
+                            line-height 14px
+                            padding 0 7px
+                            margin-bottom 10px
+                            color #756490
+                            border-right solid 1px #756490
+                            &:hover
+                                color #fff
+        #copyright
+            padding-bottom 60px
+            position relative
+            margin-top 20px
+            .copyright_content
+                background url($copyright_bg)
+                padding 10px 10px 10px 140px
+                line-height 20px
+            .syyx_logo
+                width 117px
+                height 49px
+                position absolute
+                top 10px
+                left 15px
+        #game_lib_nav
+            position absolute
+            top 552px
+            left 9px  
+            border solid 1px #371641
+            width 201px
+            padding-top 42px
+            background #201325 url($lib_nav_title) repeat-x
+            li
+                position relative
+                height 37px
+                .title
+                    position absolute
+                    top 0
+                    left 0
+                    display block
+                    width 131px
+                    height 37px
+                    background url($lib_nav_item) 0 0 no-repeat
+                    color #E3D0FF
+                    font-weight bold
+                    font-size 14px
+                    line-height 37px
+                    padding-left 70px
+                    &:hover
+                        color #fff
+                .lib_nav_content
+                    position absolute
+                    z-index 100
+                    display none
+                    left 203px
+                    top 0
+                    border solid #8542E0 1px
+                    padding 20px 20px 10px 20px
+                    width 320px
+                    background-color #3A1E5B
+                    a
+                        color #C798FF
+                        border-right 1px solid #C798FF
+                        display: inline-block
+                        height 14px
+                        line-height 14px
+                        margin-bottom 10px
+                        padding 0 7px
+                        &:hover
+                            color #fff
+                            text-decoration underline
+                .arrow
+                    position absolute
+                    display none
+                    left 195px
+                    top 12px
+                    width 9px
+                    height 13px
+                    background url($arrow) 0 0 no-repeat
+                    z-index 1000  
+@import '../float_reg/main'
+@import '../top_iframe/main'

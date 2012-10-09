@@ -1,0 +1,102 @@
+@import '../reset'
+@import 'url'
+//opacity_support------------------------------------------------------------------------------------------
+support-for-ie ?= true
+
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+//------------------------------------------------------------------------------------------
+a
+    text-decoration none
+    outline none
+.disnone
+    display none
+.hide
+    visibility hidden
+.ui-tabs-hide
+    display none
+body
+    font-size 12px
+    font-family '宋体'
+    background-color #011327
+.container
+    min-width 1000px
+    background url($bg) center top no-repeat
+    .content
+        width 1000px
+        margin 0 auto
+        position relative
+        height 1300px
+        overflow hidden
+        .flash1,.flash2
+            position absolute
+            width 216px
+            height 120px
+            top 439px
+            left 395px
+        .logo_link
+            position absolute
+            top 70px
+            left 480px
+            width 210px
+            height 80px
+        .nav
+            position absolute
+            width 664px
+            height 62px
+            left 139px
+            top 10px
+            overflow hidden
+            a
+                float left
+                width 55px
+                height 20px
+        .video
+            position absolute
+            top 438px
+            left 395px
+            width 215px
+            height 120px
+            a
+                display block
+                width 215px
+                height 120px
+                background url($blank) 0 0 no-repeat
+        .link1
+            position absolute
+            left 15px
+            top 690px
+            a
+                width 300px
+                height 120px
+                float left
+                margin-left 30px
+                display inline
+                &.first
+                    margin 0
+        .link2
+            position absolute
+            left 15px
+            top 970px
+            a
+                width 230px
+                height 120px
+                float left
+                display inline
+                &.second
+                    width 260px
+                &.third
+                    width 250px
+                &.wait
+                    background url($wait) 91px 67px no-repeat
+                &.wait2
+                    background url($wait) 88px 67px no-repeat
+                &.wait3
+                    background url($wait) 84px 67px no-repeat
+.pop_video_detail
+    background-color #002544
+    border 1px solid #003867
+.ui-dialog .ui-dialog-titlebar-close
+    background url("http://s.syyx.com/events/type1_0502/close_dialog.jpg") no-repeat scroll 0 0 transparent

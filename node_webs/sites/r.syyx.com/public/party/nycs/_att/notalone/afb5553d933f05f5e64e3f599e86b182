@@ -1,0 +1,27 @@
+一、IIS站点应用池需要设置成兼容32位模式
+
+二、修正64位系统不能上传问题
+
+1、下载adsutil.vbs放到
+C:\inetpub\adminscripts下
+
+2、cmd运行：
+cscript %SYSTEMDRIVE%\inetpub\adminscripts\adsutil.vbs set W3SVC/AppPools/Enable32bitAppOnWin64 1
+
+三、IIS分类下，找到并打开“ASP”：展开“编译\调试属性”并设置“将错误发送到浏览器”为True（同时请注意将“启用父路径”选择为True）
+
+四、磁盘或网络错误”或“未指定的错误” 
+Microsoft JET Database Engine 错误 '80004005'
+未指定的错误Microsoft OLE DB Provider for ODBC Drivers 错误 '80004005'
+[Microsoft][ODBC Microsoft Access 驱动程序] 磁盘或网络错误。
+A:产生这样的错误是由于IIS没有读取IE缓存的权限而引起的。（错误取决于你使用哪种方式连接Access数据库）只需设置缓存目录的权限即可：
+
+    打开文件夹：(注意，AppData 文件夹是隐藏文件夹)
+        C:\Windows\ServiceProfiles\NetworkService\AppData\Local\
+    在Temp上点击右键，依次点击“属性”、“安全”、“编辑”、“添加”，然后输入“Authenticated Users”并点击确定。然后在Authenticated Users的权限里面，设置“完全控制”和“修改”的权限。    
+
+五、四的问题我都解决了，但仍然提示错误
+A:此时，估计你的Access驱动已经损坏，需要重新安装或者重新注册msadds.dll（OLE DB Data Shape）提供程序了。
+在运行里面输入下面的命令即可：
+（64位系统的命令）REGSVR32 "C:\Program Files (x86)\Common Files\System\Ole DB\MSDASQL.DLL" （附：32位的命令）REGSVR32 "C:\Program Files\Common Files\System\ole db\MSDASQL.DLL"
+

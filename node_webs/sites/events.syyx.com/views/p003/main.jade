@@ -1,0 +1,29 @@
+extends ../include/_frame
+
+//-模板变量----------------------------------------------------------------------------
+block p_variable
+    -var p          = "p003"
+    -var js_libraby = ["http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js"]
+//-模板内容----------------------------------------------------------------------------
+block body
+    .main
+        .main-banner
+            .main-head
+                .main-head-top_nav
+                    include ../include/nav
+                a.main-head-logo(href="#{url_nycs}",hidefocus="true")
+                a.main-head-mini_down(href="#{url_mini_client}",hidefocus="true")
+        .middle
+            #flash
+            include ../include/reg_2            
+            #img_scroll
+                a
+                    img(delay="#{img_path}s1.jpg",width="216",height="130")
+                a
+                    img(delay="#{img_path}s2.jpg",width="216",height="130")
+                a
+                    img(delay="#{img_path}s3.jpg",width="216",height="130")
+                a
+                    img(delay="#{img_path}s4.jpg",width="216",height="130")
+        .foot
+            include ../include/copyright

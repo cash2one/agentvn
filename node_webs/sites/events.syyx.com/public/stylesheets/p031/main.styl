@@ -1,0 +1,171 @@
+$path        = "http://r.syyx.com/events/p031/"
+$right_wrong = $path'right_wrong.png'
+$loader      = $path'ajax-loader.gif'
+$success     = $path'success.png'
+$fail        = $path'fail.png'
+$btn         = $path"btn.jpg"
+
+body
+    background #160C02
+    color #B5A6B9
+    margin 0
+    font-size 12px
+a
+    color #B5A6B9
+    outline none
+    &:hover
+        color #fff
+.reg_panel
+    width 300px
+    overflow hidden
+    position absolute
+    height 260px
+    .reg
+        padding 0 20px 0 25px
+        height 260px
+    table
+        height 162px
+        td
+            height 28px
+            width 20px
+        input
+            background #665660
+            border 1px solid #27030D
+            height 18px
+            color #160C02
+            line-height 18px
+            width 170px
+        .focus_in_inut
+            background #fff
+    .agreement
+        height 21px
+    .reg_form_item_name
+        width 60px
+    .reg_form_item_input
+        width 175px
+    .validate_num_input
+        height 30px
+        vertical-align top
+        padding-top 3px
+    #txtValidate
+        width 60px
+    #validateimg
+        width 100px
+        margin-left 5px
+        height 27px
+        vertical-align top
+        cursor pointer
+    #reg_step2,#reg_step3,#reg_step4,#reg_step5
+        padding-top 30px
+        display none
+        line-height 25px
+        height 150px
+        text-align center
+        position relative
+        p,.tips
+            padding-left 120px
+            margin 0
+            text-align left
+        .tips
+            color #FF9100
+            font-size 14px
+        input
+            background #665660
+            border 1px solid #27030D
+            height 18px
+            color #160C02
+            line-height 18px
+            width 170px
+    #reg_step2
+        height 241px        
+        .akjsdh
+            margin 30px 0
+        .active
+            height 200px
+            line-height 30px
+    #active_link
+        display block
+        margin 20px auto
+        width 118px
+        height 28px
+        background url($btn) no-repeat -155px -31px
+        &:hover
+            background-position -155px -61px
+    .rungame_bg
+        height 50px
+        width 266px
+        margin 0 auto
+        .rungame
+            display block 
+            width 159px
+            height 38px
+            background url($btn) -556px -95px
+            margin 0 auto
+            &:hover
+                background-position -393px -94px
+    .reg_submit
+        height 55px
+        position relative
+    #reg_button
+        width 118px
+        height 28px
+        position absolute
+        left 70px
+        top 10px
+        background url($btn) no-repeat -35px -31px
+        &:hover
+            background-position -35px -61px
+    .success
+        height 50px
+        width 40px
+        background url($success) no-repeat left center
+        left 70px
+        position absolute
+        top 32px
+    .fail
+        height 50px
+        width 40px
+        left 70px
+        background url($fail) no-repeat left center
+        position absolute
+        top 32px
+    #back
+        width 118px
+        height 28px
+        margin 20px auto 0
+        display block
+        background url($btn) no-repeat -275px -31px
+        &:hover
+            background-position -275px -61px
+    .check_result_wrong
+        background url($right_wrong) no-repeat 0 -32px
+        height 100%
+        width 16px
+    .check_result_right 
+        background: url($right_wrong) no-repeat 0 4px
+        height: 25px;
+        width: 16px;
+
+    .check_result_loading 
+        background url($loader) no-repeat 0 4px
+        height 25px
+        width 16px
+    .download
+        height 40px
+        padding 50px 5px 0
+        a
+            display block
+            width 135px
+            height 40px
+        .dianxin
+            float left
+            background url($btn) -35px -91px
+            &:hover
+                background-position -35px -133px
+        .liantong
+            float right
+            background url($btn) -172px -91px
+            &:hover
+                background-position -172px -133px
+.disnone
+    display none

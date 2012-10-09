@@ -1,0 +1,20 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+div{outline:none}
+a{text-decoration:none;outline:none;color:#cabdd9;}
+a:hover{color:#fff}
+.disnone{display:none}
+.hide{visibility:hidden}
+.ui-tabs-hide{display:none}
+.clear{clear:both;overflow:hidden;height:0}
+body{font-size:12px;font-family:'宋体';background-color:#1c180f;color:#b4a2c8}
+.container1{min-width:1100px;background:url("http://test.syyx.cn/images/p001/bg1.jpg") center top no-repeat;}
+.container1 .container2{min-width:1100px;background:url("http://test.syyx.cn/images/p001/bg2.jpg") center 463px no-repeat;}
+.container1 .container2 .content{width:1100px;height:1610px;margin:0 auto;position:relative}

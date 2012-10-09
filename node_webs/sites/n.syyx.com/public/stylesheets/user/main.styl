@@ -1,0 +1,499 @@
+@import '../reset'
+//pic_url
+$bg               = 'http://s1.syyx.com/nycs/images/user/bg.jpg'
+$btn              = 'http://s1.syyx.com/nycs/images/user/btn.jpg'
+$login_bg         = 'http://s1.syyx.com/nycs/images/user/login.jpg'
+$close            = 'http://s.syyx.com/nycs/img/div_dialog_close.jpg'
+$vote             = 'http://s1.syyx.com/nycs/images/user/vote.jpg'
+$blank            = 'http://s1.syyx.com/nycs/images/pic_info/blank.png'
+$emotion          = 'http://s1.syyx.com/nycs/images/user/emotion.jpg'
+$open_img          = 'http://s1.syyx.com/nycs/images/user/open.jpg'
+//opacity_support------------------------------------------------------------------------------------------
+support-for-ie ?= true
+
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+//------------------------------------------------------------------------------------------
+a
+    text-decoration none
+    outline none
+.disnone
+    display none
+.hide
+    visibility hidden
+.ui-tabs-hide
+    display none
+body
+    font-size 12px
+    font-family '宋体'
+    background-color #1D1812
+.container
+    min-width 1000px
+    background url($bg) center top no-repeat
+    .content
+        width 1000px
+        margin 0 auto
+        height 1460px
+        overflow hidden
+        position relative
+        .logo_link
+            position absolute
+            top 50px
+            left 10px
+            width 210px
+            height 80px
+        .nav
+            position absolute
+            width 600px
+            height 25px
+            left 426px
+            top 10px
+            overflow hidden
+            a
+                display block
+                float left
+                height 21px
+                width 65px
+                margin-right 16px
+                &.fn_main
+                    &:hover
+                        background url($btn) -27px -53px no-repeat
+                &.fn_news
+                    &:hover
+                        background url($btn) -108px -53px no-repeat
+                &.fn_download
+                    &:hover
+                        background url($btn) -189px -53px no-repeat
+                &.fn_usercenter
+                    &:hover
+                        background url($btn) -270px -53px no-repeat
+                &.fn_gameinfo
+                    &:hover
+                        background url($btn) -351px -53px no-repeat
+                 &.fn_service
+                    &:hover
+                        background url($btn) -432px -53px no-repeat
+                 &.fn_bbs
+                    &:hover
+                        background url($btn) -513px -53px no-repeat
+        .fn_group
+            position absolute
+            top 381px
+            left 21px
+            width 580px
+            height 50px
+            a
+                display block
+                float left
+                height 50px
+                width 110px
+                &.fn_download_btn
+                    height 30px
+                    width 110px
+                    &:hover
+                        background url($btn) -25px -21px no-repeat
+                &.fn_reg
+                    height 24px
+                    width 80px
+                    margin-left 54px
+                    margin-top 8px
+                    &:hover
+                        background url($btn) -137px -27px no-repeat
+                &.fn_get_gift
+                    height 24px
+                    width 80px
+                    margin-left 25px
+                    margin-top 8px
+                    &:hover
+                        background url($btn) -242px -27px no-repeat
+                &.fn_active_gift
+                    height 24px
+                    width 80px
+                    margin-left 24px
+                    margin-top 8px
+                    &:hover
+                        background url($btn) -346px -27px no-repeat
+                &.fn_charge
+                    height 24px
+                    width 80px
+                    margin-left 25px
+                    margin-top 8px
+                    &:hover
+                        background url($btn) -451px -27px no-repeat
+        #recommended_server
+            position absolute
+            top 397px
+            left 735px
+            height 29px
+            overflow hidden
+            color #BCA2EB
+            display none
+            .list
+                width 260px
+                span
+                    position absolute
+                    line-height 29px
+                    height 29px
+                    display inline-block
+                    width 120px
+                    margin-right 5px
+        .join_btn
+            position absolute
+            display block
+            width 388px
+            height 64px
+            top 432px
+            left 601px
+            &:hover
+                background url($btn) -27px -77px no-repeat
+        #interview
+            position absolute
+            top 440px
+            left 15px
+            width 575px
+            height 335px
+            a.more
+                position absolute
+                right 8px
+                top 2px
+                color #7F6799
+            a.interview_img
+                position absolute
+                border solid 1px #4C278E
+                width 255px
+                height 185px
+                left 10px
+                top 40px
+                overflow hidden
+                display block
+                img
+                    width 255px
+                    height 185px
+            a.title
+                position absolute
+                width 290px
+                height 25px
+                line-height 25px
+                display block
+                top 40px
+                font-size 14px
+                font-weight bold
+                color #BAA3EB
+                left 280px
+                &:hover
+                    text-decoration underline
+            .top_artical
+                position absolute
+                top 67px
+                left 281px
+                line-height 20px
+                width 285px
+                height 142px
+                overflow hidden
+                color #766695
+                strong
+                    font-weight bold
+                &:hover
+                    text-decoration underline        
+            a.view_all_top_artical
+                position absolute
+                top 215px
+                right 10px
+                color #756894
+            .interview_list
+                position absolute
+                top 250px
+                left 10px
+                width 570px
+                height 85px
+                overflow hidden
+                li
+                    float left
+                    width 270px
+                    margin-right 10px
+                    height 27px
+                    line-height 27px
+                    overflow hidden
+                    a
+                        color #776794
+                        &:hover
+                            text-decoration underline
+        #emotion_artical
+            position absolute
+            width 380px
+            height 295px
+            top 617px
+            left 605px
+            a.more
+                position absolute
+                right 10px
+                top 6px
+                color #7E6897
+            .user_pics
+                position absolute
+                top 45px
+                left 20px
+                a
+                    position absolute
+                    border solid 1px #4C278E
+                    width 170px
+                    height 96px
+                    img
+                        position absolute
+                        top 0
+                        left 0
+                        width 170px
+                        height 96px
+                    &.second
+                        left 177px
+                    .text_bg
+                        position absolute
+                        width 170px
+                        height 24px
+                        left 0 
+                        bottom 0
+                        background-color #000
+                        opacity 0.5
+                    .text
+                        position absolute
+                        width 170px
+                        left 0
+                        bottom 5px
+                        text-align center
+                        color #BAA4EC
+                        overflow hidden
+                        cursor pointer
+            .user_article
+                position absolute
+                top 147px
+                left 20px
+                width 350px
+                li
+                    height 23px
+                    line-height 23px
+                    color #776798
+                    overflow hidden
+                    a
+                        width 315px
+                        overflow hidden
+                        color #776796
+                        float left
+                        &:hover
+                            text-decoration underline
+                    span
+                        float left
+        #war_record
+            position absolute
+            top 790px
+            left 15px
+            width 555px
+            height 455px
+            padding 50px 10px 0 10px
+            a.more
+                position absolute
+                right 10px
+                top 3px
+                color #7E6897
+            .record_info
+                height 155px
+                .record_img
+                    float left
+                    border solid 1px #4C278E
+                    width 210px
+                    height 110px
+                    margin-right 15px
+                    img
+                        width 210px
+                        height 110px
+                .record_artical
+                    width 325px
+                    height 120px
+                    overflow hidden
+                    float left
+                    h3
+                        text-align center
+                        font-weight bold
+                        color #BBA4EC
+                        font-size 14px
+                        padding-bottom 5px
+                        a
+                            color #BBA4EC
+                            &:hover
+                                text-decoration underline
+                    p
+                        text-indent 24px
+                        line-height 24px
+                        color #776893
+                        a
+                            color #776893
+                            &:hover
+                                text-decoration underline
+        #user_interview
+            position absolute
+            top 930px
+            left 610px
+            width 370px
+            height 280px
+            a.more
+                position absolute
+                right 10px
+                top -5px
+                color #7E6897
+            .user_pics
+                position absolute
+                top 30px
+                left 10px
+                a
+                    position absolute
+                    border solid 1px #4C278E
+                    width 170px
+                    height 96px
+                    img
+                        position absolute
+                        top 0
+                        left 0
+                        width 170px
+                        height 96px
+                    &.second
+                        left 177px
+                    &.third
+                        top 106px
+                    &.fouth
+                        left 177px
+                        top 106px
+                    &.five
+                        top 212px
+                     &.six
+                        left 177px
+                        top 212px
+                    .text_bg
+                        position absolute
+                        width 170px
+                        height 24px
+                        left 0 
+                        bottom 0
+                        background-color #000
+                        opacity 0.5
+                    .text
+                        position absolute
+                        width 170px
+                        left 0
+                        bottom 5px
+                        text-align center
+                        color #BAA4EC
+                        overflow hidden
+                        cursor pointer
+        #emotion
+            position absolute
+            top 500px
+            left 602px
+            height 105px
+            a
+                position absolute
+                display inline-block
+                width 65px
+                height 75px
+                top 30px
+                background url($blank) 0 0 no-repeat
+                &.first
+                    left 15px
+                    &:hover
+                        background url($emotion) -1px -4px no-repeat
+                &.second
+                    left 140px
+                    &:hover
+                        background url($emotion) -126px -4px no-repeat
+                &.third
+                    left 265px
+                    &:hover
+                        background url($emotion) -251px -4px no-repeat
+            .result1,.result2,.result3
+                position absolute
+                width 24px
+                bottom 5px
+                background url($vote) 0 0 repeat-y
+                span
+                    position absolute
+                    top -15px
+                    left 0
+                    color #BCA2EB
+                    width 24px
+                    display inline-block
+                    text-align center
+            .result1
+                left 77px
+            .result2
+                left 204px
+            .result3
+                left 328px
+        #copyright
+            position absolute
+            top 1335px
+            left 10px
+            width 981px
+            height 62px
+            overflow hidden
+            .syyx_logo
+                position absolute
+                top 10px
+                left 10px
+                width 120px
+                height 45px
+            .copyright_content
+                position absolute
+                top 20px
+                left 150px
+                line-height 20px
+                color #776893
+#div_logout
+    display none
+#div_dialog
+    display none
+    padding 30px 0 0 60px
+.dialog_login
+    background url($login_bg) 0 0 no-repeat
+.dialog_upload
+    background url($open_img) 0 0 no-repeat
+    #div_dialog
+        padding 10px 0px
+        position relative
+        top -44px
+    .ui-dialog-titlebar-close
+        right 15px
+.ui-dialog-titlebar
+    position relative
+    z-index 400
+.ui-dialog .ui-dialog-title
+    display none
+.dialog_login .ui-dialog-titlebar-close
+    position absolute
+    width 30px
+    height 30px
+    right 30px
+    top 10px
+    margin 0
+    z-index 5000
+    .ui-icon-closethick
+        display none  
+.ui-widget-overlay
+    opacity 0.8
+    background-color #000  
+    position absolute
+    top 0
+    left 0
+.dialog_upload .ui-dialog-titlebar-close
+    position absolute
+    width 38px
+    height 38px
+    right 8px
+    top 2px
+    margin 0
+    z-index 5000
+    .ui-icon-closethick
+        display none  
+.ui-dialog .ui-dialog-titlebar
+    height 34px
+@import '../float_reg/main'
+@import '../top_iframe/main'

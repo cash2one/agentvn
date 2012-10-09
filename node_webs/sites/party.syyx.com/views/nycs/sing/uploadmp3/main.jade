@@ -1,0 +1,20 @@
+!!!5
+html
+    head
+        link(rel= "shortcut icon", href = "http://s.syyx.com/nycs/img/favicon.ico", type = "image/x-icon")
+        meta(http-equiv = "Content-Type",content="text/html; charset=utf-8")
+        meta(name = "keywords", content = "上传文件")
+        meta(name = "description", content = "上传文件")
+        title 上传文件
+        link(href="/stylesheets/nycs/sing/uploadmp3/main.css",rel="stylesheet",type="text/css")
+    body
+        .upload#uploadmp3
+            form#form1(name="form1",method="post",enctype="multipart/form-data",action="/nycs/sing/upload")              
+                div.file
+                    input.input#fake_1(type="text")
+                    input.input#fake_2(type="text",value="浏览")
+                    input.input2#txtFile(type="file",name='tupian',size="20")
+                    a#selectimg.upimgs(type="button",value="上传",hidefocus="true") 上传
+                
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js",type="text/javascript")
+        script(src="/javascripts/nycs/sing/uploadmp3/out.js",type="text/javascript")

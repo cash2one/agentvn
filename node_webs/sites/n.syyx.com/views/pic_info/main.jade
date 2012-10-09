@@ -1,0 +1,56 @@
+!!!5
+html
+    include ../include/url
+    head
+        include ../include/meta
+        title 游戏截图|原画壁纸 --《诺亚传说》官方网站
+        meta(name="description" ,content="2012人气网游《诺亚传说》由蔡依林倾情代言！10月12日战放公测，开创未来星纪元，魔法与科技完美交融，战斗欲望全情释放，玩得公平战得纯粹！战放每个人的宇宙！" )
+        link(rel="stylesheet",href="http://s1.syyx.com/nt_activity/yxx/plugin/jquery-ui/jquery-ui-1.8.13.custom.css")
+        link(href='/stylesheets/pic_info/main.css',rel='stylesheet')
+        include ../include/jquery
+        script(src='http://s1.syyx.com/plugins/swfobject/swfobject.js') 
+        script(src='http://s1.syyx.com/plugins/jquery_cookie/jquery.cookie.js')
+        script(src='http://s1.syyx.com/plugins/jqueryUI/jquery-ui-1.8.19.custom.min.js')
+        script(src='http://s1.syyx.com/plugins/jqueryUI/jquery.bgiframe-2.1.2.js')
+        script(src='/javascripts/pic_info/out.js')
+    body
+        include ../include/top_iframe
+        .container
+            .content
+                include ../include/logo_link
+                include ../include/nav
+                a#view(href='#',target='_blank') 查看原图
+                #allsize
+                #title
+                #switch
+                    a#screen(href='?screen_info')
+                    a#wallpaper(href='?wallpaper_info')
+                #share
+                    a(href="javascript:void(0)", onclick="{ var _t = encodeURI(document.title);var _url = encodeURI(window.location); var _appkey = 'f39b8bdb69614c44b11f0c3ab574314d'; var _site = encodeURI; var _pic = ''; var _u = 'http://v.t.qq.com/share/share.php?title='+_t+'&url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic; window.open( _u,'转播到腾讯微博', 'width=700, height=580, top=180, left=320, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );  };",title="qq微博", class="to_qq")
+                    a(href="javascript:(function(){window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href)+'&source=bookmark','_blank','width=450,height=400');})()",title="新浪微博",class="to_tsina")
+                    a(href="javascript:window.open('http://shuqian.qq.com/post?from=3&title='+encodeURIComponent(document.title)+'&uri='+encodeURIComponent(document.location.href)+'&jumpback=2&noui=1','favit','');void(0)",title="qq空间",class="to_qzone")
+                    a(href="javascript:void((function(s,d,e){if(/xiaonei\.com/.test(d.location))return;var%20f='http://share.xiaonei.com/share/buttonshare.do?link=',u=d.location,l=d.title,p=[e(u),'&amp;title=',e(l)].join('');function%20a(){if(!window.open([f,p].join(''),'xnshare',['toolbar=0,status=0,resizable=1,width=626,height=436,left=',(s.width-626)/2,',top=',(s.height-436)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent));",title="人人网",class="to_renren")
+                    a(href="javascript:d=document;t=d.selection?(d.selection.type!='None'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():'');void(kaixin=window.open('http://www.kaixin001.com/~repaste/repaste.php?&amp;rurl='+escape(d.location.href)+'&amp;rtitle='+escape(d.title)+'&amp;rcontent='+escape(d.title),'kaixin'));kaixin.focus();",title="开心网",class="to_kaixin001")
+                #link
+                    a.all(href='/gamepic_list.html')
+                    a.open(href='#')
+                #control
+                    a#prev(href='#',title='上一页')
+                    a#next(href='#',title='下一页')
+                #list
+                    //- a(href='#')
+                    //-     img(src='')
+                    //- a(href='#')
+                    //-     img(src='')
+                    //- a(href='#')
+                    //-     img(src='')
+                    //- a(href='#')
+                    //-     img(src='')
+                #show_img
+                    img(src='')
+                    a#prev_img(href='#')
+                    a#next_img(href='#')
+                    .loading loading...
+                include ../include/copyright
+        include ../include/reg
+        #div_dialog

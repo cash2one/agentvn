@@ -1,0 +1,168 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+a{text-decoration:none;outline:none}
+.disnone{display:none}
+.hide{visibility:hidden}
+.ui-tabs-hide{display:none}
+body{font-size:12px;font-family:'宋体';background-color:#15212f}
+.container_out{min-width:1000px;background:url("http://r.syyx.com/nysj/index/bg_top.jpg") center top no-repeat}
+.container{min-width:1000px;background:url("http://r.syyx.com/nysj/index/bg.jpg") center 860px no-repeat;}
+.container .content{width:1000px;margin:0 auto;height:1628px;overflow:hidden;position:relative;}
+.container .content .logo_link{position:absolute;top:30px;left:40px;width:280px;height:120px}
+.container .content .flash_banner{position:absolute;width:996px;height:494px;overflow:hidden;top:45px;left:1px}
+.container .content .nav{position:absolute;width:380px;height:39px;left:592px;top:4px;overflow:hidden;}
+.container .content .nav a{position:absolute;background:url("http://r.syyx.com/nysj/index/blank.png") 0 0 no-repeat;top:0;height:39px;width:88px;display:inline-block;}
+.container .content .nav a.nav_index{width:111px;left:0;}
+.container .content .nav a.nav_index:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -403px -175px no-repeat}
+.container .content .nav a.nav_guider{left:111px;}
+.container .content .nav a.nav_guider:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -514px -175px no-repeat}
+.container .content .nav a.nav_pay{left:199px;}
+.container .content .nav a.nav_pay:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -602px -175px no-repeat}
+.container .content .nav a.nav_bbs{left:287px;width:111px;}
+.container .content .nav a.nav_bbs:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -690px -175px no-repeat}
+.container .content .top_video{position:absolute;width:175px;height:98px;left:17px;top:358px;}
+.container .content .top_video #top_video_container{position:absolute;left:0;top:0;width:175px;height:98px}
+.container .content .top_video a.open_top_dialog{cursor:pointer;position:absolute;top:0;left:0;width:175px;height:98px;background:url("http://r.syyx.com/nysj/index/blank.png") 0 0 no-repeat}
+.container .content .fn_group{position:absolute;height:54px;left:10px;top:487px;}
+.container .content .fn_group a{float:left;height:54px;width:152px;}
+.container .content .fn_group a.fn_download_btn:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -31px -37px no-repeat}
+.container .content .fn_group a.fn_active_btn:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -183px -37px no-repeat}
+.container .content .fn_group a.fn_charge_btn:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -335px -37px no-repeat}
+.container .content #tabs_picture_news{position:absolute;top:542px;left:11px;width:678px;height:316px;overflow:hidden;}
+.container .content #tabs_picture_news ul{position:absolute;right:10px;top:295px;}
+.container .content #tabs_picture_news ul li{float:left;}
+.container .content #tabs_picture_news ul li a{width:13px;height:10px;color:#66a4bd;float:left;margin-right:3px;background:url("http://r.syyx.com/nysj/index/tab_index.png") -17px 0 no-repeat}
+.container .content #tabs_picture_news ul li.ui-tabs-selected a{background:url("http://r.syyx.com/nysj/index/tab_index.png") 0 0 no-repeat}
+.container .content #tabs_picture_news img{width:678px;height:316px}
+.container .content #game_hot{position:absolute;top:860px;left:10px;width:680px;height:314px;overflow:hidden;}
+.container .content #game_hot .more{position:absolute;right:10px;top:10px;color:#7a8a99}
+.container .content #game_hot .top_news .thumb{border:solid 1px #004169;width:177px;height:121px;position:absolute;left:20px;top:50px;}
+.container .content #game_hot .top_news .thumb img{width:177px;height:121px}
+.container .content #game_hot .top_news h1{font-size:14px;color:#3d6fd2;border-bottom:solid 1px #1f416e;position:absolute;right:10px;height:22px;left:220px;top:50px;overflow:hidden;}
+.container .content #game_hot .top_news h1 a{float:left;color:#00cbfe;}
+.container .content #game_hot .top_news h1 a:hover{text-decoration:underline}
+.container .content #game_hot .top_news h1 span{float:right;font-size:12px}
+.container .content #game_hot .top_news .summary{position:absolute;line-height:20px;text-indent:24px;left:220px;right:10px;top:80px;height:80px;overflow:hidden;color:#6ab8ff}
+.container .content #game_hot .top_news .view_all{position:absolute;top:165px;right:10px;color:#6ab8ff;}
+.container .content #game_hot .top_news .view_all:hover{text-decoration:underline}
+.container .content #game_hot .text_list{position:absolute;top:190px;left:20px;color:#0096ff;height:115px;overflow:hidden;}
+.container .content #game_hot .text_list li{width:380px;height:22px;line-height:22px;overflow:hidden;}
+.container .content #game_hot .text_list li a{color:#0096ff;float:left;}
+.container .content #game_hot .text_list li a:hover{text-decoration:underline}
+.container .content #game_hot .text_list li span{float:right}
+.container .content #game_hot .img_list{position:absolute;top:195px;right:10px;width:226px;height:110px;}
+.container .content #game_hot .img_list a{display:block;width:226px;height:48px;margin-bottom:10px;}
+.container .content #game_hot .img_list a img{width:226px;height:48px}
+.container .content .down_load_mini_client{position:absolute;width:297px;height:81px;right:9px;top:898px;}
+.container .content .down_load_mini_client:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -32px -95px no-repeat}
+.container .content .get_active_code{position:absolute;width:297px;height:80px;right:9px;top:979px;}
+.container .content .get_active_code:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -331px -94px no-repeat}
+.container .content #tabs_role{width:680px;height:312px;position:absolute;top:1178px;left:10px;overflow:hidden;}
+.container .content #tabs_role ul{position:absolute;top:46px;left:201px;height:27px;}
+.container .content #tabs_role ul li{float:left;}
+.container .content #tabs_role ul li.ui-tabs-selected a{width:91px;}
+.container .content #tabs_role ul li.ui-tabs-selected a.yineng{background:url("http://r.syyx.com/nysj/index/btn.jpg") -31px -175px no-repeat}
+.container .content #tabs_role ul li.ui-tabs-selected a.qiangxie{background:url("http://r.syyx.com/nysj/index/btn.jpg") -124px -175px no-repeat}
+.container .content #tabs_role ul li.ui-tabs-selected a.jianwu{background:url("http://r.syyx.com/nysj/index/btn.jpg") -217px -175px no-repeat}
+.container .content #tabs_role ul li.ui-tabs-selected a.gedou{background:url("http://r.syyx.com/nysj/index/btn.jpg") -310px -175px no-repeat}
+.container .content #tabs_role ul li a{float:left;color:#7db5cc;height:27px;width:83px}
+.container .content #tabs_role #yineng,.container .content #tabs_role #jianwu,.container .content #tabs_role #qiangxie,.container .content #tabs_role #gedou{background:url("http://r.syyx.com/nysj/index/yineng.jpg") 0 40px no-repeat;width:680px;height:315px;}
+.container .content #tabs_role #yineng .video_container,.container .content #tabs_role #jianwu .video_container,.container .content #tabs_role #qiangxie .video_container,.container .content #tabs_role #gedou .video_container{position:absolute;width:238px;height:140px;top:87px;left:200px;border:solid 1px #015a86}
+.container .content #tabs_role #yineng .more,.container .content #tabs_role #jianwu .more,.container .content #tabs_role #qiangxie .more,.container .content #tabs_role #gedou .more{position:absolute;top:269px;left:519px;height:20px;width:80px;display:inline-block;text-decoration:none;}
+.container .content #tabs_role #yineng .more:hover,.container .content #tabs_role #jianwu .more:hover,.container .content #tabs_role #qiangxie .more:hover,.container .content #tabs_role #gedou .more:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -186px -406px no-repeat}
+.container .content #tabs_role #yineng .jineng_name,.container .content #tabs_role #jianwu .jineng_name,.container .content #tabs_role #qiangxie .jineng_name,.container .content #tabs_role #gedou .jineng_name{position:absolute;top:261px;left:200px;}
+.container .content #tabs_role #yineng .jineng_name em,.container .content #tabs_role #jianwu .jineng_name em,.container .content #tabs_role #qiangxie .jineng_name em,.container .content #tabs_role #gedou .jineng_name em{float:left;width:33px;height:33px;margin-right:6px;cursor:pointer}
+.container .content #tabs_role #jianwu{background:url("http://r.syyx.com/nysj/index/jianwu.jpg") 0 40px no-repeat}
+.container .content #tabs_role #qiangxie{background:url("http://r.syyx.com/nysj/index/qiangxie.jpg") 0 40px no-repeat}
+.container .content #tabs_role #gedou{background:url("http://r.syyx.com/nysj/index/gedou.jpg") 0 40px no-repeat}
+.container .content #screenshot{position:absolute;height:174px;top:1110px;right:10px;width:296px;overflow:hidden;}
+.container .content #screenshot .pre{position:absolute;top:63px;left:5px;width:15px;height:30px}
+.container .content #screenshot .next{position:absolute;top:63px;right:5px;width:15px;height:30px}
+.container .content #screenshot .screenshot_list_outer{position:absolute;top:0;left:22px;width:252px;height:174px;overflow:hidden;}
+.container .content #screenshot .screenshot_list_outer .screenshot_list{position:relative;}
+.container .content #screenshot .screenshot_list_outer .screenshot_list a{float:left;height:172px;width:250px;border:solid 1px #0357ba;}
+.container .content #screenshot .screenshot_list_outer .screenshot_list a img{width:250px;height:172px}
+.container .content .service_info{color:#6ab9fe;line-height:20px;position:absolute;right:40px;bottom:215px;}
+.container .content .service_info a.login_service_center{display:inline-block;color:#6ab9fe;}
+.container .content .service_info a.login_service_center:hover{text-decoration:underline}
+.container .content #download_panel{position:absolute;display:none;width:680px;height:318px;top:542px;left:11px;background:url("http://r.syyx.com/nysj/index/download_panel.jpg") 0 0 no-repeat;color:#3d6fce;}
+.container .content #download_panel a.close{position:absolute;background:url("http://r.syyx.com/nysj/index/blank.png") 0 0 no-repeat;right:0;top:0;width:50px;height:50px}
+.container .content #download_panel .mini{position:absolute;left:36px;top:92px}
+.container .content #download_panel .full{position:absolute;left:356px;top:92px}
+.container .content #download_panel .download_btn_mini,.container .content #download_panel .download_btn_full{width:285px;height:78px;display:block}
+.container .content #download_panel .download_btn_mini:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -32px -217px no-repeat}
+.container .content #download_panel .download_btn_full:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -321px -217px no-repeat}
+.container .content #download_panel .des{padding:12px 0 10px 15px;color:#0095ff}
+.container .content #download_panel .size{margin-right:15px}
+.container .content #download_panel .md5{padding:10px 0}
+.container .content #download_panel .get_active_code_in_download_panel{position:absolute;padding:5px 10px;right:10px;bottom:10px;background-color:#031835;}
+.container .content #download_panel .get_active_code_in_download_panel a{text-decoration:underline;color:#0096ff;font-size:12px}
+.container .content #download_panel_not_open{position:absolute;display:none;width:680px;height:318px;top:542px;left:11px;background:url("http://r.syyx.com/nysj/index/download_not_open.jpg") 0 0 no-repeat;}
+.container .content #download_panel_not_open a.close{position:absolute;background:url("http://r.syyx.com/nysj/index/blank.png") 0 0 no-repeat;right:0;top:0;width:50px;height:50px}
+.container .content #activate_form{position:absolute;top:542px;left:11px;width:680px;height:318px;color:#00deff;background:url("http://r.syyx.com/nysj/index/dialog_active.jpg") 0 0 no-repeat;display:none;}
+.container .content #activate_form form{position:absolute;left:110px;top:90px}
+.container .content #activate_form .form_item{height:30px;margin-bottom:5px;}
+.container .content #activate_form .form_item span{line-height:22px;float:left;width:100px;text-align:right;font-size:14px;font-weight:bold;margin-right:10px}
+.container .content #activate_form .form_item input{float:left;width:240px;background-color:#092161;color:#fff;border:solid 1px #034292;height:24px;line-height:24px;font-weight:bold;font-size:14px;padding:0 3px}
+.container .content #activate_form .reg_tip{padding:0 0 10px 110px;color:#186afe;}
+.container .content #activate_form .reg_tip a{color:#0195ff;text-decoration:underline}
+.container .content #activate_form .activate_form_submit_btn{padding:20px 0 0 150px;height:36px;}
+.container .content #activate_form .activate_form_submit_btn a{float:left;display:block;width:136px;height:36px;margin-right:10px;background:url("http://r.syyx.com/nysj/activate/btn.jpg") -495px -46px no-repeat;}
+.container .content #activate_form .activate_form_submit_btn a:hover{background:url("http://r.syyx.com/nysj/activate/btn.jpg") -9px -7px no-repeat}
+.container .content #activate_form .activate_form_submit_btn span{font-size:14px}
+.container .content #activate_form a.close{position:absolute;background:url("http://r.syyx.com/nysj/index/blank.png") 0 0 no-repeat;right:0;top:0;width:50px;height:50px}
+.container .content #activate_result_1{display:none;position:absolute;top:542px;left:11px;width:500px;height:248px;color:#00deff;background:url("http://r.syyx.com/nysj/index/dialog_active.jpg") 0 0 no-repeat;padding:70px 0 0 180px;}
+.container .content #activate_result_1 a.close{position:absolute;background:url("http://r.syyx.com/nysj/index/blank.png") 0 0 no-repeat;right:0;top:0;width:50px;height:50px}
+.container .content #activate_result_1 h3{height:26px;padding:6px 0 0 50px;margin:0 0 10px 70px;color:#ff8500;font-size:16px}
+.container .content #activate_result_1 p{font-size:14px;color:#1569ff;line-height:22px}
+.container .content #activate_result_1 .download_mini{display:inline-block;margin:20px 0 0 90px;width:136px;height:36px;background:url("http://r.syyx.com/nysj/activate/btn.jpg") -283px -7px no-repeat}
+.container .content #activate_result_2{position:absolute;top:542px;left:11px;width:500px;height:248px;color:#00deff;padding:70px 0 0 180px;background:url("http://r.syyx.com/nysj/index/dialog_active.jpg") 0 0 no-repeat;display:none;}
+.container .content #activate_result_2 a.close{position:absolute;background:url("http://r.syyx.com/nysj/index/blank.png") 0 0 no-repeat;right:0;top:0;width:50px;height:50px}
+.container .content #activate_result_2 h3{height:26px;padding:6px 0 0 50px;color:#ff8500;font-size:16px;margin:0 0 10px 70px}
+.container .content #activate_result_2 p{text-align:center;width:300px;font-size:14px;color:#1569ff;line-height:22px;margin-bottom:20px}
+.container .content #activate_result_2 a{width:103px;height:27px;margin-left:100px;display:block;background:url("http://r.syyx.com/nysj/activate/btn.jpg") -114px -48px no-repeat}
+.container .content #reg{position:absolute;top:630px;right:20px;width:265px;height:255px;overflow:hidden;}
+.container .content #reg #reg_step1{height:245px;position:relative;overflow:hidden;color:#6cb6fd;display:block;}
+.container .content #reg #reg_step1 .reg_form td{padding:0 2px;height:26px;}
+.container .content #reg #reg_step1 .reg_form td.reg_form_item_name{width:60px;text-align:right}
+.container .content #reg #reg_step1 .reg_form td.reg_form_item_input input{background-color:#86bbe5;border:solid 1px #009bff;height:20px;line-height:20px;color:#000;width:150px}
+.container .content #reg #reg_step1 .reg_form td.reg_form_item_input input.focus_in_inut{background-color:#fff;border:solid 1px #c8edff;color:#000}
+.container .content #reg #reg_step1 .reg_form td.reg_form_item_input #validateimg{vertical-align:middle;cursor:pointer;height:29px;width:100px;margin-left:3px}
+.container .content #reg #reg_step1 .reg_form td.validate_num_input{height:35px;}
+.container .content #reg #reg_step1 .reg_form td.validate_num_input input{width:40px}
+.container .content #reg #reg_step1 .agreement{text-align:center;padding-top:5px;}
+.container .content #reg #reg_step1 .agreement a{text-align:center;text-decoration:underline;color:#3e6ed0;outline:none}
+.container .content #reg #reg_step1 .agreement input{margin-right:3px}
+.container .content #reg #reg_step1 .reg_submit{position:absolute;top:202px;left:53px;}
+.container .content #reg #reg_step1 .reg_submit a{display:inline-block;width:153px;height:44px;background:url("http://r.syyx.com/nysj/index/btn.jpg") -31px -380px no-repeat;outline:none;}
+.container .content #reg #reg_step1 .reg_submit a:hover{background-position:-31px -426px}
+.container .content #reg #reg_step2{position:absolute;width:265px;height:255px;color:#6bb8fe;display:none;}
+.container .content #reg #reg_step2 .success_icon{position:absolute;width:39px;height:36px;left:50px;top:10px;background:url("http://r.syyx.com/nysj/index/btn.jpg") -608px -217px no-repeat}
+.container .content #reg #reg_step2 .success_text{color:#ffb900;font-size:14px;position:absolute;top:10px;left:100px}
+.container .content #reg #reg_step2 .success_account{position:absolute;color:#ffb900;top:35px;left:100px}
+.container .content #reg #reg_step2 .get_active_code_text_after_reg{position:absolute;top:70px;color:#6bb8fe;left:0;}
+.container .content #reg #reg_step2 .get_active_code_text_after_reg h3{font-weight:bold;padding:0 10px 5px 0}
+.container .content #reg #reg_step2 .get_active_code_text_after_reg p{text-indent:24px;line-height:20px}
+.container .content #reg #reg_step2 .get_code_link{background:url("http://r.syyx.com/nysj/index/btn.jpg") -366px -380px no-repeat;width:131px;height:24px;position:absolute;top:145px;left:60px;display:block;}
+.container .content #reg #reg_step2 .get_code_link:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -366px -406px no-repeat}
+.container .content #reg #reg_step2 .download_text_after_reg{position:absolute;top:190px;font-weight:bold}
+.container .content #reg #reg_step2 .down_load_mini_client_after_reg{position:absolute;width:131px;height:24px;top:220px;left:60px;background:url("http://r.syyx.com/nysj/index/btn.jpg") -499px -380px no-repeat;}
+.container .content #reg #reg_step2 .down_load_mini_client_after_reg:hover{background:url("http://r.syyx.com/nysj/index/btn.jpg") -499px -406px no-repeat}
+.container .content #reg .check_result_right{background:url("http://s1.syyx.com/nycs/images/float_reg/right_wrong.png") 0 4px no-repeat;width:16px;height:25px}
+.container .content #reg .check_result_wrong{background:url("http://s1.syyx.com/nycs/images/float_reg/right_wrong.png") 0 -32px no-repeat;width:16px;height:25px}
+.container .content #reg .check_result_loading{background:url("http://s1.syyx.com/nycs/images/float_reg/loader.gif") 0 4px no-repeat;width:16px;height:25px}
+.container .content #copyright{position:absolute;top:1520px;left:110px;width:981px;height:62px;overflow:hidden;}
+.container .content #copyright .syyx_logo{position:absolute;top:10px;left:10px;width:120px;height:45px}
+.container .content #copyright .copyright_content{position:absolute;top:10px;left:160px;line-height:20px;color:#526f91}
+.pop_video_detail{background-color:#032e53;border:1px solid #0062b3;padding:25px 0 0 20px}
+.ui-dialog-titlebar-close{background:url("http://r.syyx.com/nysj/index/close_dialog.png") no-repeat 0 0;height:24px;padding:1px;position:absolute;right:0;top:10px;width:66px}
+.ui-icon-closethick{display:none}
+.ui-widget-overlay{opacity:.8;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);background-color:#000;position:absolute;top:0;left:0}
+#top_video_detail{_padding-bottom:20px}

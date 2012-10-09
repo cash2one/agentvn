@@ -1,0 +1,80 @@
+div#loading
+	img(src="/images/spinner3-greenie.gif")
+
+div(class="postion")
+	span.f_b_blue	您的当前位置：
+	span	广告管理 &gt;&gt; 阶段分析
+div(class="cont_f_lb")
+
+div#content
+	div#search
+		table
+			tr
+				td	游戏
+					select#ddlGame
+				td	日期
+					input#txtStartTime(type="text",class="easyui-datebox")
+					到
+					input#txtEndTime(type="text",class="easyui-datebox")
+				td  媒体类型
+					select#ddlClass
+				td	媒体
+					select#ddlMedia
+				td  广告
+					select#ddlAd
+				td  子站
+					select#ddlAdWebNumber				
+				td  
+					&nbsp
+					a#btnSearch(href="javascript:void(0)",class="easyui-linkbutton")	查询
+					&nbsp
+					a#btnExcel(href="javascript:void(0)",class="easyui-linkbutton")	导出Excel
+		table
+			tr
+				td
+					a#a_today(href="javascript:void(0)")[今天]
+					a#a_yesterday(href="javascript:void(0)")[昨天]
+					a#a_pre10days(href="javascript:void(0)")[最近10天]
+					a#a_pre20days(href="javascript:void(0)")[最近20天]
+					a#a_pre1month(href="javascript:void(0)")[最近一个月]
+				td
+					input#radDay(type="radio",name="rdtype1", value="0",checked="checked")	
+					按日
+
+					input#radTotal(type="radio",name="rdtype1",value="1")	
+					合计
+				td
+					input#radSchedule(type="radio",name="rdtype2",value="1")	
+					只看排期
+					input#radAll(type="radio",name="rdtype2",checked="checked",value="0")
+					所有
+
+	table#tt(class="wiki-list-table", style="width:100%")
+		tr
+			th	日期
+			th	媒体类型
+			th	媒体
+			th	广告
+			th	展示量
+			th	点击量
+			th	点击IP
+			th	到达IP
+			th	到达IP率
+			th	点击cookies
+			th	到达cookies
+			th	cookies到达率
+			th	进入官网cookies
+			th	客户端安装
+			th	回滚注册
+			th	回滚登录
+			th	广告费
+			th	CPA
+			th	CPL
+			th	注册率
+			th	登录率
+			th	达10级账号数
+			th	达20级账号数
+			th	20级账号比例
+			th	累计充值账号
+			th	累计充值面额
+			th	投资回报率

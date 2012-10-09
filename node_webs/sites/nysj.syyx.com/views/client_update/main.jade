@@ -1,0 +1,64 @@
+!!!5
+html
+    include ../include/url
+    head
+        include ../include/meta
+        link(href="/stylesheets/client_update/main.css",rel="stylesheet",type="text/css")
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js",type="text/javascript")
+        script(src="/javascripts/client_update/out.js",type="text/javascript")
+    body
+        .main
+            .left
+                .menu_1
+                    a.nysj(href="#{nysj_main}", target='_blank')
+                    a.bbs(href="#{nav_bbs}", target='_blank')
+                .menu_2
+                    a.pay(href="#{nav_pay}", target='_blank')
+                    a.active(href="#{activate}", target='_blank')
+                .news_box
+                    #tab
+                        span.news.check_0
+                        span.update
+                    #content_box
+                        .content(style="display:block")
+                            ul#list
+                                //- li
+                                //-     a(href="") 官方下线交易平台“聚宝楼”
+                                //-     span 05-14
+                                //- li
+                                //-     a(href="") 官方下线交易平台“聚宝楼”
+                                //-     span 05-14
+                                //- li
+                                //-     a(href="") 官方下线交易平台“聚宝楼”
+                                //-     span 05-14
+                                //- li
+                                //-     a(href="") 官方下线交易平台“聚宝楼”
+                                //-     span 05-14
+                                //- li
+                                //-     a(href="") 官方下线交易平台“聚宝楼”
+                                //-     span 05-14
+                                //- li
+                                //-     a(href="") 官方下线交易平台“聚宝楼”
+                                //-     span 05-14
+                            .more
+                                a(href="#{nysj_newslist}") 更多>>
+                        .content
+                            .text 
+                                #edit
+            .right
+                .menu_3
+                    a.guide(href="#{nav_guider}", target='_blank')
+                    a.service(href="#{nav_service}", target='_blank')
+                .img_focus
+                    #imgs
+                        //- a(href="http://",style="display:inline")
+                        //-     img(src="http://r.syyx.com/nysj/client_update/1.jpg",width="180",height="265")
+                        //- a(href="http://")
+                        //-     img(src="http://r.syyx.com/nysj/client_update/2.jpg",width="180",height="265")
+                        //- a(href="http://")
+                        //-     img(src="http://r.syyx.com/nysj/client_update/3.jpg",width="180",height="265")
+                    #bat
+                        a.check 1
+                        a 2
+                        a 3
+        

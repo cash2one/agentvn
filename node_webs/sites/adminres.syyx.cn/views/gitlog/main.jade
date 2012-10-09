@@ -1,0 +1,16 @@
+!!!5
+html
+    head
+        include ../include/meta
+        include ../include/title        
+        include style
+        include script
+    body
+        .logo 欢迎(
+            span(id="name")
+            |) | 
+            a(href="/login_out") 登出
+        .main
+            include content
+        include ../include/copyright
+        script(src='/javascripts/gitlog/out.js',type="text/javascript")

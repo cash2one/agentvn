@@ -1,0 +1,142 @@
+$path               = 'http://r.syyx.com/events/p012/'
+$bg                 = $path'bg.jpg'
+$btn                = $path'btn.jpg'
+$right_wrong        = $path'right_wrong.png'
+$loader             = $path'ajax-loader.gif'
+$reg_success        = $path'reg_success.jpg'
+$act_success        = $path'act_success.jpg'
+$act_fail           = $path'act_fail.jpg'
+
+html
+    overflow hidden
+body
+    font-size 12px
+    margin 0
+    color #A794CB
+    overflow hidden
+    background #12041f
+.main
+    background url($bg) no-repeat
+    width 690px
+    height 362px
+    overflow hidden
+    position relative
+a
+    color #A794CB
+    outline none
+a:hover
+    color #fff
+.logo
+    width 394px
+    height 323px
+    position absolute
+    left 15px
+    top 20px
+.reg_panel
+    width 250px
+    left 420px
+    top 65px
+    overflow hidden
+    position absolute
+    height 277px
+    .reg
+        padding-left 15px
+    table
+        height 162px
+        td
+            height 28px
+            width 20px
+        input
+            background #9C80CD
+            border 1px solid #8B35FF
+            height 18px
+            color #321438
+            line-height 18px
+            width 150px
+        .focus_in_inut
+            background #A58AD0
+    .agreement
+        height 21px
+    .reg_form_item_name
+        width 60px
+    .reg_form_item_input
+        width 155px
+    .validate_num_input
+        height 30px
+        vertical-align top
+        padding-top 3px
+    #txtValidate
+        width 50px
+    #validateimg
+        width 95px
+        margin-left 5px
+        height 27px
+        vertical-align top
+        cursor pointer
+    #reg_step2,#reg_step3,#reg_step4,#reg_step5
+        margin 0 auto
+        padding-top 30px
+        display none
+        line-height 30px
+        height 240px
+        font-size 14px
+        text-align center
+        input
+            background #9C80CD
+            border 1px solid #8B35FF
+            height 18px
+            color #321438
+            line-height 18px
+            width 170px
+    .reg_account, .active_code, .reg_account3
+        color #fff
+    #active_link
+        display block
+        margin 60px auto 0
+        width 130px
+        height 37px
+        background url($btn) no-repeat -10px -11px
+        &:hover
+            background-position -142px -11px
+    .reg_submit
+        height 55px
+        position relative
+        margin-top 20px
+    .g
+        color #FFC003
+    #reg_button
+        width 130px
+        height 37px
+        position absolute
+        left 51px
+        background url($btn) no-repeat -10px -48px
+        &:hover
+            background-position -142px -48px
+    .reg_success
+        height 37px
+        background url($reg_success) top center no-repeat
+    .act_success
+        height 37px
+        background url($act_success) top center no-repeat
+    .act_fail
+        height 37px
+        background url($act_fail) top center no-repeat
+    #back
+        text-decoration underline
+        cursor pointer
+        margin-top 20px
+    .check_result_wrong
+        background url($right_wrong) no-repeat 0 -32px
+        height 100%
+        width 16px
+    .check_result_right 
+        background: url($right_wrong) no-repeat 0 4px
+        height: 25px;
+        width: 16px;
+
+    .check_result_loading 
+        background url($loader) no-repeat 0 4px
+        height 25px
+        width 16px
+.disnone
+    display none

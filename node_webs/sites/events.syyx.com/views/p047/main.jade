@@ -1,0 +1,120 @@
+!!!5
+html
+    head
+        include ./title
+        link(href="/stylesheets/p047/main.css",rel="stylesheet",type="text/css")     
+        link(href="http://s.syyx.com/nycs/plugin/default_page_plugin/jquery-ui-1.8.13.custom.css",rel="stylesheet",type="text/css")
+        script(src="http://s1.syyx.com/plugins/jquery/jquery-1.7.1.min.js",type="text/javascript")
+        script(src="http://s1.syyx.com/plugins/jqueryUI/jquery-ui-1.8.19.custom.min.js",type="text/javascript")
+
+    body
+        iframe#stat_ok.disnone(src="")
+        img.disnone(src="http://r.syyx.com/events/p047/bg1.jpg",onload="document.getElementById('stat_ok').src='http://stat.syyx.com/stat_ok.aspx'")
+        .bg1
+            #popup_bg
+            #dialog
+                a.close
+                a.confirm
+                .tag
+            .bg2
+                .main
+                    .nav
+                        include ./nav
+                    a.logo(href="http://nycs.syyx.com/index.shtml",target="_blank",title="诺亚传说")  
+                    #main_flv           
+                    a.register.ignore(href = "#")
+                    input#tel(type = "text", maxlength = "11", autocomplete="false")
+                    a.gift.ignore(href = "#")
+                    .reg_panel
+                        .reg
+                            table.reg_form(border="0",cellpadding="0",cellspacing="0")
+                                tr
+                                    td.reg_form_item_name 账&nbsp;&nbsp;&nbsp;&nbsp;号：
+                                    td.reg_form_item_input
+                                        input#txtUserAccount(type="text",maxlength="16")
+                                    td
+                                        #txtUserAccountTip
+                                tr
+                                    td.reg_form_item_name 密&nbsp;&nbsp;&nbsp;&nbsp;码：
+                                    td.reg_form_item_input
+                                        input#txtPasswords(type='password',maxlength="16")
+                                        input#txtPasswordsVal.disnone(type="text")
+                                    td
+                                        #txtPasswordsTip
+                                tr
+                                    td.reg_form_item_name 重复密码：
+                                    td.reg_form_item_input
+                                        input#txtConfirm(type="password")
+                                        input#txtConfirmVal.disnone(type="text")
+                                    td
+                                        #txtConfirmTip
+                                tr
+                                    td.reg_form_item_name 真实姓名：
+                                    td.reg_form_item_input
+                                        input#txtTrueName(type='text',maxlength="20")
+                                    td
+                                        #txtTrueNameTip
+                                tr
+                                    td.reg_form_item_name 身&nbsp;份&nbsp;证：
+                                    td.reg_form_item_input
+                                        input#txtCardID(type="text",maxlength="18")
+                                    td
+                                        #txtCardIDTip
+                                tr
+                                    td.reg_form_item_name 验&nbsp;证&nbsp;码：
+                                    td.reg_form_item_input.validate_num_input
+                                        input#txtValidate(type='text',maxlength='20')
+                                        img#validateimg.disnone(src='',alt='点击刷新验证码')
+                                    td
+                                        #txtValidateVal
+                            .agreement
+                                input#chk_XieYi(type="checkbox",checked)
+                                | 同意
+                                a(href='http://user.syyx.com/policy/userpolicy.aspx',target="_blank",hidefocus="true")
+                                    《使用协议及隐私协议》
+                            .reg_submit
+                                a#reg_button(href='#',hidefocus="true")
+                                span#regProcessTip
+                        #reg_step2
+                            .active
+                                div.success 恭喜您获得
+                                    span#card_type 公测战放礼包 
+                                div 您的账号：
+                                    input#reg_account(type="text")
+                                div 激活码为：
+                                    input#active_code(type="text")
+                                a#active_link(href='#',hidefocus="true")
+                        #reg_step3
+                            .no_card
+                                div.success 恭喜您，注册成功!
+                                div 今天的礼包卡已发放完毕。
+                        #reg_step4
+                            .active_success
+                                div.success 恭喜您，激活成功!
+                                div 请在游戏中礼包大使
+                                div 坐标（235，130）处领取礼包
+                        #reg_step5
+                            .active_fail
+                                div.fail 激活失败!
+                                div#active_tip
+                                span#back 返回
+                    a.download1(href = "http://nycs.syyx.com/DownLoad/miniDownLoadUrl.aspx")
+                    a.download2(href = "http://nycs.syyx.com/DownLoad/miniDownLoadUrl.aspx")
+                    .intro
+                        p 1、填写手机号有机会通过短信方式获得限量蔡依林活动礼包，该礼包可与迅雷特权礼包同时使用；
+                        p 2、在10月12日《诺亚传说》战放公测时激活本礼包卡，即有机会获得蔡依林演唱会门票，签名专版CD等多重豪礼！
+                    a#first.tab.ignore.hover(href = "#")
+                    a#second.tab.ignore(href = "#")
+                    a#third.tab.ignore(href = "#")
+                    a#fourth.tab.ignore(href = "#")
+                    img#main_img(src="http://r.syyx.com/events/p047/first.jpg")
+                    include ./flash
+                    .copy_right
+                        include ./copyright
+        .disnone#stat
+            img.first(src="http://r.syyx.com/events/p047/first.jpg")
+            img.second(src="http://r.syyx.com/events/p047/second.jpg")
+            img.third(src="http://r.syyx.com/events/p047/third.jpg")
+            img.fourth(src="http://r.syyx.com/events/p047/fourth.jpg")
+            script(src="/javascripts/p047/out.js",type="text/javascript")
+            iframe(src="http://stat.syyx.com/stat.aspx")

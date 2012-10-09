@@ -1,0 +1,78 @@
+html
+    head
+        title  角色信息统计
+        include script
+    body
+        .cont_form
+            .f_b_333 角色信息统计
+        .cont_f_lb
+        .cont_link
+            tr
+                td
+                    span 服务器：
+                        select#serverList
+                td
+                    span 时间：
+                        input#txtStartDate(type="text")
+                        | 至
+                        input#txtEndDate(type="text")
+                td
+                    input#btnQuery(type="button",value="查询")
+        #divPlayerInfo.table_info
+            table#tablePlayerInfo.wiki-content-table
+                tr
+                    th(rowspan='2') 日期
+                    th(rowspan='2') 服务器
+                    th(colspan='4') 1-10
+                    th(colspan='4') 11-20
+                    th(colspan='4') 21-30
+                    th(colspan='4') 31-40
+                    th(colspan='4') 41-50
+                    th(colspan='4') 51-60
+                    th(colspan='4') 61-70
+                    th(colspan='4') 71-80
+                    th(colspan='4') 81-90
+                    th(colspan='4') 91-99
+                tr  
+                    th 格斗 
+                    th 剑武
+                    th 枪械
+                    th 异能
+                    th 格斗 
+                    th 剑武
+                    th 枪械
+                    th 异能
+                    th 格斗 
+                    th 剑武
+                    th 枪械
+                    th 异能
+                    th 格斗 
+                    th 剑武
+                    th 枪械
+                    th 异能
+                    th 格斗 
+                    th 剑武
+                    th 枪械
+                    th 异能
+                    th 格斗 
+                    th 剑武
+                    th 枪械
+                    th 异能
+                    th 格斗 
+                    th 剑武
+                    th 枪械
+                    th 异能
+                    th 格斗 
+                    th 剑武
+                    th 枪械
+                    th 异能
+                    th 格斗 
+                    th 剑武
+                    th 枪械
+                    th 异能
+                    th 格斗 
+                    th 剑武
+                    th 枪械
+                    th 异能
+    div#loading(style="top: 50%; right: 50%; position: absolute; padding: 0px;margin: 0px; z-index: 999; display: none;")
+        img(src="http://s1.syyx.com/nysjdm/Script/spinner3-greenie.gif")

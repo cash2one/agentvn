@@ -1,0 +1,177 @@
+@import '../reset'
+@import 'url'
+a
+    outline none
+    text-decoration none
+.clear
+    clear both
+    overflow hidden
+    height 0
+body
+    font-size 12px
+    font-family '宋体'
+    color #99B9D0
+.container
+    min-width 1000px
+    background #14202e url($bg) center top no-repeat
+    .content
+        min-height 800px
+        width 1000px
+        margin 0 auto
+        position relative
+        .logo_link
+            position absolute
+            top 20px
+            left 45px
+            width 250px
+            height 90px
+        .nav
+            position absolute
+            width 380px
+            height 39px
+            left 592px
+            top 4px
+            overflow hidden
+            a
+                position absolute
+                background url($blank) 0 0 no-repeat
+                top 0px
+                height 39px
+                width 88px
+                display inline-block
+                &.nav_index
+                    width 111px
+                    left 0px
+                    &:hover
+                        background url($btn) -4px -198px no-repeat
+                &.nav_guider
+                    left 111px
+                    &:hover
+                        background url($btn) -115px -198px no-repeat
+                &.nav_pay
+                    left 199px
+                    &:hover
+                        background url($btn) -203px -198px no-repeat
+                &.nav_bbs
+                    left 287px
+                    width 111px
+                    &:hover
+                        background url($btn) -291px -198px no-repeat
+        .fn_group
+            position absolute
+            top 308px
+            left 11px
+            width 201px
+            height 300px
+            a
+                display block
+                height 45px
+                &.fn_download_btn
+                    height 60px
+                    &:hover
+                        background url($btn) -5px -5px no-repeat
+                &.fn_reg_btn:hover
+                    background url($btn) -5px -65px no-repeat
+                &.fn_activate_btn:hover
+                    background url($btn) -5px -110px no-repeat
+                &.fn_pay_btn:hover
+                    height 40px
+                    background url($btn) -5px -155px no-repeat
+        .promotions
+            position absolute
+            top 551px
+            left 16px
+            a
+                display block
+                width 190px
+                height 92px
+                border solid 1px #003E4D
+                margin-bottom 1px
+                img
+                    width 190px
+                    height 92px
+        .bread_path
+            position absolute
+            top 345px
+            right 160px
+            color #75c4ff
+            a
+                color #75c4ff
+        .news_detail
+            padding 390px 0 0 219px
+            top 380px
+            left 220px
+            width 771px
+            .news_class
+                padding 10px 40px 10px 30px
+                .border
+                    margin-left 20px
+                    height 22px
+                    border-bottom solid 1px #016891
+                a
+                    float left
+                    width 50px
+                    height 22px
+                    line-height 22px
+                    margin 0 10px 0 0
+                    color #9BBBD4
+                    text-align center
+                    &.selected
+                        color #fff
+                        background url($tab) no-repeat scroll 0 0 transparent
+            .news_list
+                padding 20px 50px 20px 50px
+                font-size 12px
+                background-color #031231
+                min-height 250px
+                _height 300px
+                li
+                    line-height 25px
+                    height 25px
+                    span
+                        float right
+                    a
+                        float left
+                        color #9EBED5
+                        max-width 630px
+                        &:hover
+                            color #b5f1f1
+                    &.gap
+                        border-bottom dashed 1px #50728E
+                        height 20px
+                        margin-bottom 20px
+            .paging
+                text-align center
+                background-color #031231
+                margin-bottom 20px
+                padding 12px 0
+                height 22px
+                line-height 22px
+                a
+                    display inline-block
+                    margin-right 5px
+                    background-color #0D3F64
+                    color #9DC4E1
+                    border solid 1px #245075
+                    height 20px
+                    line-height 20px
+                    padding 0 5px
+                    &.current
+                        color #fff
+                        background-color #276EA4
+                span
+                    margin-right 5px
+            #copyright
+                padding-bottom 10px
+                position relative
+                margin-top 20px
+                .copyright_content
+                    background-color #031231
+                    padding 20px 10px 20px 140px
+                    line-height 20px
+                .syyx_logo
+                    background url($copyright_logo) 0 0 no-repeat
+                    width 130px
+                    height 60px
+                    position absolute
+@import '../../../components/float_reg/main'

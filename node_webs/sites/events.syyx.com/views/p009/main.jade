@@ -1,0 +1,28 @@
+extends ../include/_frame
+
+//-模板变量----------------------------------------------------------------------------
+block p_variable
+    -var p      = "p009"
+    -var p_css  = ["http://s.syyx.com/nycs/plugin/default_page_plugin/jquery-ui-1.8.13.custom.css","http://s.syyx.com/nycs/plugin/light-box/jquery.lightbox-0.5.css"]
+    
+//-模板内容----------------------------------------------------------------------------
+block body
+    iframe#phone_result.disnone(src="")
+    .main
+        .head
+            a.main-head-logo(href="#{url_nycs}",hidefocus="true")
+            include ../include/reg_6
+            .run_flash
+                .flash_bg
+                #run_flash
+                a.main-head-mini_down(href="javascript:rungame()",hidefocus="true")
+        .middle          
+            #img_scroll
+                a
+                    img(src="#{img_path}s1.jpg",width="216",height="130")
+                a
+                    img(src="#{img_path}s2.jpg",width="216",height="130")
+                a
+                    img(src="#{img_path}s3.jpg",width="216",height="130")
+                a
+                    img(src="#{img_path}s4.jpg",width="216",height="130")

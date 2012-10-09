@@ -1,0 +1,27 @@
+body{margin:0;font-size:14px}
+a{outline:none}
+img{border:none}
+.wrapper{background:url("/images/tshirt/bg.png") top center repeat-y;min-width:980px;position:relative}
+.container{background:url("/images/tshirt/head.jpg") top center no-repeat;height:5100px}
+.main{width:980px margin 0 auto;padding-top:510px}
+ul{padding:0;width:960px;overflow:hidden;zoom:1;margin:0 auto;}
+ul li{width:320px;height:370px;float:left;list-style:none;text-align:center;}
+ul li h4{margin:0;font-family:georgia;text-align:left;padding-left:15px;font-size:14px;line-height:20px;color:#f64905}
+ul li img{border:1px solid #999;border-width:0 1px 1px 0;border-top:1px solid #fff;border-left:1px solid #fff;background:#dfdfdf;padding:5px;cursor:pointer}
+ul li div{margin:0;margin:0 15px;overflow:hidden;zoom:1;color:#414141;border-bottom:2px;dotted:#909090;padding:5px 0 8px;line-height:20px;}
+ul li div h2{margin:0;font-size:14px;text-align:left;float:left}
+ul li div span{float:right;font-size:12px;font-weight:700}
+ul li a{display:block;margin:15px auto;background:url("/images/tshirt/icon1.png") no-repeat;width:135px;height:32px;}
+ul li a:hover{background-image:url("/images/tshirt/icon2.png")}
+ul li a.disable{background-image:url("/images/tshirt/icon3.png");}
+ul li a.disable:hover{background-image:url("/images/tshirt/icon3.png")}
+ul li em{font-size:18px;color:#000;font-weight:700}
+#puple_bg{opacity:.85;filter:alpha(opacity=85);height:5100px;position:absolute;min-width:980px;width:100%;background:#000;top:0;display:none}
+#puple{position:absolute;left:50%;margin-left:-170px;top:50px;padding:0 20px 20px;width:300px;height:350px;background:url("/images/tshirt/loading.gif") #fff center center no-repeat;display:none;border-radius:5px;}
+#puple #img_box{opacity:0;filter:alpha(opacity=0);zoom:1;overflow:hidden;height:100%;width:100%;position:relative;}
+#puple #img_box #title{font-weight:700;height:40px;line-height:40px;text-align:center;font-size:16px}
+#puple #img_box .img{overflow:hidden}
+#puple #img_box p{font-weight:700;margin:10px 0 0;}
+#puple #img_box p span{font-weight:100;font-size:12px;display:block;text-indent:2em;color:#444;padding-top:5px}
+#puple #img_box #close{position:absolute;top:10px;right:0;width:17px;height:22px;background:url("/images/tshirt/close.gif") no-repeat;cursor:pointer}
+.copyright{text-align:center;width:100%;color:#666;font-size:12px}

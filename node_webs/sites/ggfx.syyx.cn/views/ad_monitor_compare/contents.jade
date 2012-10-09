@@ -1,0 +1,27 @@
+div#loading(style="top: 50%; right: 50%; position: absolute; padding: 0px;margin: 0px; z-index: 999; display: none;")
+	img(src="/images/spinner3-greenie.gif")
+
+div#search
+	table
+		tr
+			td	游戏
+				select#ddlGame
+			td	日期
+				input#txtStartTime(type="text",class="easyui-datebox")
+				到
+				input#txtEndTime(type="text",class="easyui-datebox")
+			td  媒体类型
+				select#ddlClass
+			td	媒体
+				select#ddlMedia
+			td  广告
+				select#ddlAd
+			td  子站
+				select#ddlAdWebNumber
+			td  
+				&nbsp
+				a#btnAdd(href="#",class="easyui-linkbutton")	增加
+				&nbsp
+				a#btnCompare(href="#",class="easyui-linkbutton")	对比
+
+div#divChart

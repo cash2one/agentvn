@@ -1,0 +1,102 @@
+div#loading
+	img(src="/images/spinner3-greenie.gif")
+
+div(class="postion")
+	span.f_b_blue	您的当前位置：
+	span	广告管理 &gt;&gt; 广告管理
+div(class="cont_f_lb")
+
+br
+div#content
+
+	div#search
+		table
+			tr			
+				td 	游戏
+					select#ddlGame
+				td 	媒体类型
+					select#ddlClass
+				td 	媒体名称
+					select#ddlMedia
+				td	是否启用
+					select#ddlIsEnabled
+						option(value="-1")	全部
+						option(value="1")	启用
+						option(value="0")	禁用
+				td	是否显示
+					select#ddlIsShow
+						option(value="-1")	全部
+						option(value="1")	启用
+						option(value="0")	禁用
+				td  
+					&nbsp
+					a#btnSearch(href="javascript:void(0)",class="easyui-linkbutton")	查询
+
+	table#tt(class="wiki-list-table", style="width:100%")
+		tr
+			th	媒体类型
+			th	媒体
+			th	广告名称
+			th	广告位置
+			th	广告地址
+			th	展示代码
+			th	是否禁用
+			th	是否显示
+			th	操作
+	div#pp(class="pager")
+
+	br
+	div(style="padding:5px;")
+		a#btnAdd(href="javascript:void(0)",class="easyui-linkbutton",onclick="clear_form();")	新增
+	
+	input#hidID(type="hidden", value="0")
+
+	table(class="wiki-content-table")
+		tr
+			th	游戏
+			td
+				select#ddlSelectGame
+		tr
+			th	媒体类型
+			td
+				select#ddlSelectClass	
+		tr
+			th	所属媒体
+			td
+				select#ddlSelectMedia
+		tr
+			th	起止时间
+			td
+				input#txtDate1(class="easyui-datebox", style="width:100px;")
+				input#txtTime1(class="easyui-timespinner",value="08:00:00",showSeconds="true",style="width:80px;")
+				到
+				input#txtDate2(type="text",class="easyui-datebox", style="width:100px;")
+				input#txtTime2(class="easyui-timespinner",value="08:00:00", showSeconds="true",style="width:80px;")
+		tr
+			th	广告名称
+			td
+				input#txtADName(type="text")
+		tr
+			th	广告位置
+			td
+				input#txtADPlace(type="text")	
+		tr
+			th	到达地址
+			td
+				input#txtADEndUrl(type="text")
+		tr
+			th	备注
+			td
+				input#txtADRemark(type="text")
+		tr
+			th	是否禁用
+			td	
+				input#chkIsDelete(type="checkbox")
+		tr
+			th	是否显示
+			td	
+				input#chkIsShow(type="checkbox")
+		tr
+			td
+			td
+				input#btnOK.input_btn(type="button", value="确定")

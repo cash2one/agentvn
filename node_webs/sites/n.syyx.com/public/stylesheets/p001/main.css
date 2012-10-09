@@ -1,0 +1,95 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+div{outline:none}
+a{text-decoration:none;outline:none;color:#cabdd9;}
+a:hover{color:#fff}
+.disnone{display:none}
+.hide{visibility:hidden}
+.ui-tabs-hide{display:none}
+.clear{clear:both;overflow:hidden;height:0}
+body{font-size:12px;font-family:'宋体';background-color:#1c180f;color:#b4a2c8}
+.pop_video_detail{background:#54200a;border:1px solid #873410}
+#pop_flash{border:1px solid #873410;background:#000;line-height:0;height:355px}
+.ui-dialog .ui-dialog-titlebar-close{background:url("http://s.syyx.com/nycs/img/index_html/close.jpg") no-repeat}
+object{outline:none}
+.container1{min-width:1000px;background:url("http://s.syyx.com/nycs/img/index_html/bg1.jpg") center top no-repeat;}
+.container1 .container2{min-width:1000px;background:url("http://s.syyx.com/nycs/img/index_html/bg2.jpg") center 375px no-repeat;}
+.container1 .container2 .content{width:1000px;height:1450px;margin:0 auto;position:relative;}
+.container1 .container2 .content .logo_link{position:absolute;top:45px;left:0;width:220px;height:110px}
+.container1 .container2 .content .nav{position:absolute;width:368px;height:41px;left:574px;top:0;padding-left:18px;padding-top:10px;overflow:hidden;}
+.container1 .container2 .content .nav a{display:block;float:left;height:23px;width:84px;}
+.container1 .container2 .content .nav a.fn_main{width:81px;}
+.container1 .container2 .content .nav a.fn_main:hover{background:url("http://s.syyx.com/nycs/img/index_html/button.jpg") -30px -32px no-repeat}
+.container1 .container2 .content .nav a.fn_register:hover{background:url("http://s.syyx.com/nycs/img/index_html/button.jpg") -111px -32px no-repeat}
+.container1 .container2 .content .nav a.fn_download:hover{background:url("http://s.syyx.com/nycs/img/index_html/button.jpg") -195px -32px no-repeat}
+.container1 .container2 .content .nav a.fn_bbs:hover{background:url("http://s.syyx.com/nycs/img/index_html/button.jpg") -279px -32px no-repeat}
+.container1 .container2 .content #flash_video,.container1 .container2 .content #flash_cover,.container1 .container2 .content a#bigger_video{position:absolute;width:186px;height:105px;left:22px;top:376px}
+.container1 .container2 .content a#bigger_video{background:url("http://s.syyx.com/nycs/img/index_html/button.jpg") no-repeat 999cm}
+.container1 .container2 .content .mini_download a{position:absolute;width:183px;height:42px;left:222px;top:440px;}
+.container1 .container2 .content .mini_download a.fn_minidownload:hover{background:url("http://s.syyx.com/nycs/img/index_html/button.jpg") -365px -13px no-repeat}
+.container1 .container2 .content .home_entry a{position:absolute;width:163px;height:39px;left:761px;top:477px;}
+.container1 .container2 .content .home_entry a.fn_homeentry:hover{background:url("http://s.syyx.com/nycs/img/index_html/button.jpg") -550px -15px no-repeat}
+.container1 .container2 .content .game_intro{position:absolute;left:11px;top:516px;width:684px;height:401px;}
+.container1 .container2 .content .game_intro #game_intro_bar{position:absolute;width:684px;height:41px;}
+.container1 .container2 .content .game_intro #game_intro_bar a{float:left;width:171px;height:41px;background:url("http://s.syyx.com/nycs/img/index_html/button.jpg") no-repeat 999cm;cursor:pointer;}
+.container1 .container2 .content .game_intro #game_intro_bar a.check_0{background-position:-29px -57px}
+.container1 .container2 .content .game_intro #game_intro_bar a.check_1{background-position:-200px -57px}
+.container1 .container2 .content .game_intro #game_intro_bar a.check_2{background-position:-371px -57px}
+.container1 .container2 .content .game_intro #game_intro_bar a.check_3{width:170px;background-position:-542px -57px}
+.container1 .container2 .content .game_intro #game_intro_pic{position:absolute;top:41px;width:680px;height:360px;}
+.container1 .container2 .content .game_intro #game_intro_pic img{position:absolute;display:none}
+.container1 .container2 .content .reg_panel{position:absolute;padding:15px 10px 0 30px;left:694px;top:556px;width:256px;height:250px;}
+.container1 .container2 .content .reg_panel table{height:162px;}
+.container1 .container2 .content .reg_panel table td{height:27px;width:20px}
+.container1 .container2 .content .reg_panel table input{background:#675761;border:1px solid #2b0014;height:20px;color:#ffef87;line-height:20px;width:145px}
+.container1 .container2 .content .reg_panel table .focus_in_inut{background:#7e6b77}
+.container1 .container2 .content .reg_panel #chk_XieYi{margin:5px 5px 0 0}
+.container1 .container2 .content .reg_panel .agreement{height:21px}
+.container1 .container2 .content .reg_panel .reg_form_item_name{width:60px}
+.container1 .container2 .content .reg_panel .reg_form_item_input{width:150px}
+.container1 .container2 .content .reg_panel .validate_num_input{height:30px;vertical-align:top;padding-top:3px}
+.container1 .container2 .content .reg_panel #txtValidate{width:50px}
+.container1 .container2 .content .reg_panel #validateimg{width:90px;margin-left:5px;height:27px;vertical-align:top;cursor:pointer}
+.container1 .container2 .content .reg_panel #reg_step2,.container1 .container2 .content .reg_panel #reg_step3,.container1 .container2 .content .reg_panel #reg_step4,.container1 .container2 .content .reg_panel #reg_step5{width:220px;margin-left:10px;padding-top:30px;line-height:25px;display:none;height:120px;text-align:center;}
+.container1 .container2 .content .reg_panel #reg_step2 input,.container1 .container2 .content .reg_panel #reg_step3 input,.container1 .container2 .content .reg_panel #reg_step4 input,.container1 .container2 .content .reg_panel #reg_step5 input{background:#675761;border:1px solid #2b0014;height:18px;color:#ffef87;line-height:18px;width:145px}
+.container1 .container2 .content .reg_panel #reg_step2{height:auto;}
+.container1 .container2 .content .reg_panel #reg_step2 .active{height:200px;line-height:30px}
+.container1 .container2 .content .reg_panel #active_link{display:block;margin:20px auto;width:120px;height:30px;background:url("http://s.syyx.com/nycs/img/index_html/button.jpg") no-repeat -412px -106px;}
+.container1 .container2 .content .reg_panel #active_link:hover{background-position:-412px -138px}
+.container1 .container2 .content .reg_panel .reg_submit{height:55px;position:relative}
+.container1 .container2 .content .reg_panel #reg_button{width:120px;height:30px;position:absolute;left:50px;top:15px;background:url("http://s.syyx.com/nycs/img/index_html/button.jpg") no-repeat -28px -106px;}
+.container1 .container2 .content .reg_panel #reg_button:hover{background-position:-28px -138px}
+.container1 .container2 .content .reg_panel .success{font-size:16px;height:50px;padding:0 40px;line-height:50px;background:url("http://s.syyx.com/nycs/img/index_html/success.png") no-repeat left center;color:#eee;display:inline-block;font-weight:700}
+.container1 .container2 .content .reg_panel .fail{font-size:16px;height:50px;padding:0 40px;line-height:50px;text-align:left;background:url("http://s.syyx.com/nycs/img/index_html/fail.png") no-repeat left center;color:#eee;margin-left:50px;font-weight:700}
+.container1 .container2 .content .reg_panel #back{display:block;text-decoration:underline;cursor:pointer;margin:20px auto}
+.container1 .container2 .content .reg_panel .check_result_wrong{background:url("http://s.syyx.com/nycs/img/index_html/right_wrong.png") no-repeat 0 -32px;height:100%;width:16px}
+.container1 .container2 .content .reg_panel .check_result_right{background:url("http://s.syyx.com/nycs/img/index_html/right_wrong.png") no-repeat 0 4px;height:25px;width:16px}
+.container1 .container2 .content .reg_panel .check_result_loading{background:url("http://s.syyx.com/nycs/img/index_html/ajax-loader.gif") no-repeat 0 4px;height:25px;width:16px}
+.container1 .container2 .content .area_download{position:absolute;left:694px;top:820px;width:296px;height:128px;background:url("http://s.syyx.com/nycs/img/index_html/download.jpg") no-repeat;}
+.container1 .container2 .content .area_download .mini_client{position:absolute;left:18px;top:73px;width:128px;height:30px;}
+.container1 .container2 .content .area_download .mini_client a{position:absolute;width:128px;height:30px;background:url("http://s.syyx.com/nycs/img/index_html/button.jpg") -151px -106px no-repeat;}
+.container1 .container2 .content .area_download .mini_client a:hover{background-position:-151px -138px}
+.container1 .container2 .content .area_download .full_client{position:absolute;left:154px;top:73px;width:129px;height:30px;}
+.container1 .container2 .content .area_download .full_client a{position:absolute;width:129px;height:30px;background:url("http://s.syyx.com/nycs/img/index_html/button.jpg") -281px -106px no-repeat;}
+.container1 .container2 .content .area_download .full_client a:hover{background-position:-281px -138px}
+.container1 .container2 .content .area_party{position:absolute;left:694px;top:952px;width:296px;height:128px;background:url("http://s.syyx.com/nycs/img/index_html/party.jpg") no-repeat;}
+.container1 .container2 .content .area_party .url_party{display:block;height:100%}
+.container1 .container2 .content .award_intro{position:absolute;left:11px;top:916px;width:680px;height:163px}
+.container1 .container2 .content .game_snapshot{position:absolute;left:11px;top:1081px;width:978px;height:199px;a}
+.container1 .container2 .content .game_snapshot a#snapshot_left{position:absolute;left:0;top:75px;width:35px;height:55px}
+.container1 .container2 .content .game_snapshot a#snapshot_right{position:absolute;right:0;top:74px;width:35px;height:55px}
+.container1 .container2 .content .game_snapshot .snapshot_frame{position:absolute;left:35px;top:50px;width:908px;height:132px;overflow:hidden;}
+.container1 .container2 .content .game_snapshot .snapshot_frame .snapshot_imgs{width:2080px;height:136px;}
+.container1 .container2 .content .game_snapshot .snapshot_frame .snapshot_imgs a{display:inline-block;margin-right:12px;}
+.container1 .container2 .content .game_snapshot .snapshot_frame .snapshot_imgs a img{border:1px solid #f00}
+.container1 .container2 .content .page_foot{position:absolute;left:99px;top:1344px;width:801px;height:59px;}
+.container1 .container2 .content .page_foot .foot_logo{float:left;width:131px;height:59px;}
+.container1 .container2 .content .page_foot .foot_logo a{display:block;height:100%}
+.container1 .container2 .content .page_foot .copyright_info{float:right;padding-left:20px;padding-top:10px;width:650px;height:49px;line-height:21px}

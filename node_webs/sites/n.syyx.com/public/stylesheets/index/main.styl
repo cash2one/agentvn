@@ -1,0 +1,726 @@
+@import '../reset'
+@import 'url'
+//opacity_support------------------------------------------------------------------------------------------
+support-for-ie ?= true
+
+opacity(n)
+    opacity n
+    if support-for-ie
+        filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+//------------------------------------------------------------------------------------------
+a
+    text-decoration none
+    outline none
+.disnone
+    display none
+.hide
+    visibility hidden
+.ui-tabs-hide
+    display none
+body
+    font-size 12px
+    font-family '宋体'
+    background-color #1C180F
+.container
+    min-width 1000px
+    background url($index_bg) center top no-repeat
+    .content
+        width 1000px
+        margin 0 auto
+        height 2300px
+        position relative
+        .flash_banner
+            position absolute
+            top 59px
+            left 37px
+            width 865px
+            height 455px
+        .logo_link
+            position absolute
+            top 50px
+            left 10px
+            width 210px
+            height 80px
+        .nav
+            position absolute
+            width 664px
+            height 62px
+            left 426px
+            top 10px
+            overflow hidden
+            a
+                display block
+                float left
+                height 21px
+                width 65px
+                margin-right 16px
+                &.fn_main
+                    &:hover
+                        background url($index_new_btn) -27px -53px no-repeat
+                &.fn_news
+                    &:hover
+                        background url($index_new_btn) -108px -53px no-repeat
+                &.fn_download
+                    &:hover
+                        background url($index_new_btn) -189px -53px no-repeat
+                &.fn_usercenter
+                    &:hover
+                        background url($index_new_btn) -270px -53px no-repeat
+                &.fn_gameinfo
+                    &:hover
+                        background url($index_new_btn) -351px -53px no-repeat
+                 &.fn_service
+                    &:hover
+                        background url($index_new_btn) -432px -53px no-repeat
+                 &.fn_bbs
+                    &:hover
+                        background url($index_new_btn) -513px -53px no-repeat
+        .fn_group
+            position absolute
+            top 505px
+            left 21px
+            width 580px
+            height 50px
+            a
+                display block
+                float left
+                height 50px
+                width 110px
+                &.fn_download_btn
+                    height 30px
+                    width 110px
+                    &:hover
+                        background url($index_new_btn) -25px -21px no-repeat
+                &.fn_reg
+                    height 24px
+                    width 80px
+                    margin-left 54px
+                    margin-top 8px
+                    &:hover
+                        background url($index_new_btn) -137px -27px no-repeat
+                &.fn_get_gift
+                    height 24px
+                    width 80px
+                    margin-left 25px
+                    margin-top 8px
+                    &:hover
+                        background url($index_new_btn) -242px -27px no-repeat
+                &.fn_active_gift
+                    height 24px
+                    width 80px
+                    margin-left 24px
+                    margin-top 8px
+                    &:hover
+                        background url($index_new_btn) -346px -27px no-repeat
+                &.fn_charge
+                    height 24px
+                    width 80px
+                    margin-left 25px
+                    margin-top 8px
+                    &:hover
+                        background url($index_new_btn) -451px -27px no-repeat
+        #recommended_server
+            position absolute
+            top 521px
+            left 735px
+            height 29px
+            overflow hidden
+            color #BDA3EC
+            display none
+            .list
+                width 260px
+                span
+                    position absolute
+                    line-height 29px
+                    height 29px
+                    display inline-block
+                    width 120px
+                    margin-right 5px
+        #tabs_picture_news
+            position absolute
+            top 557px
+            left 11px
+            width 586px
+            height 271px
+            overflow hidden
+            ul
+                position absolute
+                right 5px
+                top 250px
+                width 70px
+                height 20px
+                padding 0 15px 0 18px
+                li
+                    float left
+                    &.ui-tabs-selected
+                        a
+                            background url($fanye) -18px 0 no-repeat
+                    a
+                        background url($fanye) 0 0 no-repeat
+                        float left
+                        padding 0 3px
+                        width 10px
+                        height 10px
+            img
+                width 586px
+                height 271px
+        #top_news
+            position absolute
+            top 570px
+            left 610px
+            width 370px
+            height 36px
+            overflow hidden
+            text-align center
+            h1
+                font-size 14px
+                font-weight bold
+                color #FFFFFF
+                padding-bottom 5px
+                a
+                    color #FFFFFF
+                    &:hover
+                        color #bddae8
+            span
+                margin 0 5px
+                background url($midot) 0 5px no-repeat
+                display inline-block
+                padding-left 7px
+                a
+                    color #C9BAFF
+                    &:hover
+                        color #bddae8
+        #news_category
+            position absolute
+            top 618px
+            left 615px
+            width 360px
+            height 202px
+            overflow hidden
+            display none
+            .more_news
+                position absolute
+                right 3px
+                top 5px
+                color #796894
+            ul.news_category_selector
+                position absolute
+                width 230px
+                height 22px
+                background url($index_new_btn) -25px -76px no-repeat
+                li
+                    margin-right 5px
+                    float left
+                    &.ui-tabs-selected
+                        a.news_all
+                            background url($index_new_btn) -25px -100px no-repeat
+                        a.news_notice
+                            background url($index_new_btn) -81px -100px no-repeat
+                        a.news_news
+                            background url($index_new_btn) -137px -100px no-repeat
+                        a.news_promotion
+                            background url($index_new_btn) -193px -100px no-repeat
+                    a
+                        float left
+                        width 51px
+                        height 22px
+            .new_list
+                position absolute
+                top 25px
+                left 0
+                ul
+                    li
+                        background url($news_icon) 1px 11px no-repeat
+                        padding-left 10px
+                        color #776794
+                        a
+                            width 310px
+                            display inline-block
+                            height 26px
+                            line-height 26px
+                            color #BCA2EB
+                            padding-right 5px
+                            &:hover
+                                color #BDDAE8
+        #images_ad
+            position absolute
+            top 830px
+            left 11px
+            a
+                float left
+                margin-right 3px
+                img
+                    width 191px
+                    height 91px
+                    border solid 1px #4C278E
+        #tabs_role
+            background url($group_bg) -470px 0 no-repeat
+            width 588px
+            height 291px
+            padding-left 1px
+            position absolute
+            top 925px
+            left 10px
+            overflow hidden
+            ul
+                position absolute
+                top 8px
+                left 195px
+                height 30px
+                li
+                    float left
+                    &.ui-tabs-selected
+                        a
+                            background url($tab_hover_arrow) center 25px repeat-x
+                            color #BEDAE6
+                    a
+                        float left
+                        color #BAA3EB
+                        height 30px
+                        line-height 25px
+                        margin-right 20px
+            #yineng,#jianwu,#qiangxie,#gedou
+                width 587px
+                height 291px
+                position absolute
+                top 35px
+                .role_intro
+                    position relative
+                    .video_container
+                        position absolute
+                        width 238px
+                        height 140px
+                        top 25px
+                        left 190px
+                        border solid 1px #4C278E
+                    .more
+                        position absolute
+                        top 207px
+                        left 445px
+                        padding 0 10px
+                        height 20px
+                        width 60px
+                        line-height 25px
+                        text-align center
+                        display inline-block
+                        color #A8D4EF
+                        text-decoration none
+                        &:hover
+                            background url($index_new_btn) -314px -102px repeat-x
+            #yineng
+                background url($role_yineng) 0 0 no-repeat
+            #jianwu
+                background url($role_jianwu) 0 0 no-repeat
+            #qiangxie
+                background url($role_qiangxie) 0 0 no-repeat
+            #gedou
+                background url($role_gedou) 0 0 no-repeat
+        #game_lib
+            position absolute
+            width 390px
+            height 291px
+            top 925px
+            left 600px
+            background url($group_bg) -1060px 0 no-repeat
+            .more
+                position absolute
+                right 18px
+                top 10px
+                color #7E6897
+            .lib_images
+                position absolute
+                top 60px
+                right 20px
+                a
+                    width 115px
+                    height 98px
+                    display block
+                    margin-bottom 8px
+                a.ad1
+                    background url($game_lib_ad1)
+                a.ad2
+                    background url($game_lib_ad2)
+            .lib_class
+                position absolute
+                top 50px
+                left 16px
+                width 230px
+                height 220px
+                overflow hidden
+                .item
+                    margin-bottom 10px
+                    padding-bottom 10px
+                    height 38px
+                    overflow hidden
+                    border-bottom solid 1px #4C278E
+                    .name
+                        border solid 1px #4F3D57
+                        background-color #351E52
+                        float left
+                        width 32px
+                        height 30px
+                        font-size 13px
+                        line-height 15px
+                        color #BFD9E8
+                        font-weight bold
+                        text-align center
+                        padding 3px
+                    .content
+                        width 185px
+                        height 38px
+                        line-height 18px
+                        float right
+                        color #79C2D3
+                        overflow hidden
+                        a
+                           color #776796
+                           float left
+                           border-right 1px solid #776796
+                           height 14px
+                           line-height 14px
+                           margin-bottom 7px
+                           padding 0 5px
+                           &:hover
+                                color #BBA3EB
+                .lib_class_last
+                    border-bottom none
+        #game_features
+            position absolute
+            top 1218px
+            left 10px
+            width 590px
+            height 381px
+            background url($group_bg) -471px -293px no-repeat
+            overflow hidden
+            ul
+                position absolute
+                top 7px
+                left 193px
+                height 30px
+                li
+                    float left
+                    margin-right 5px
+                    &.ui-tabs-selected
+                        a
+                            background url($tab_hover_arrow) center 25px repeat-x
+                            color #CADAFE
+                    a
+                        float left
+                        color #BBA4EA
+                        height 30px
+                        line-height 25px
+                        margin-right 10px
+            #feature1,#feature2,#feature3,#feature4
+                padding 35px 2px 1px 9px
+                img
+                    height 250px
+                    width 571px
+        #user_center
+            position absolute
+            top 1218px
+            left 600px
+            width 390px
+            height 302px
+            overflow hidden
+            background url($group_bg) -1060px -293px no-repeat
+            .more
+                position absolute
+                right 18px
+                top 10px
+                color #7E6897
+            .user_pics
+                position absolute
+                top 45px
+                left 20px
+                a
+                    position absolute
+                    border solid 1px #4C278E
+                    width 170px
+                    height 96px
+                    img
+                        position absolute
+                        top 0
+                        left 0
+                        width 170px
+                        height 96px
+                    &.second
+                        left 177px
+                    .text_bg
+                        position absolute
+                        width 170px
+                        height 24px
+                        left 0 
+                        bottom 0
+                        background-color #000
+                        opacity 0.5
+                    .text
+                        position absolute
+                        width 170px
+                        left 0
+                        bottom 5px
+                        text-align center
+                        color #BBA3ED
+                        overflow hidden
+                        cursor pointer
+            .user_article
+                position absolute
+                top 146px
+                left 20px
+                width 350px
+                li
+                    height 22px
+                    line-height 22px
+                    color #5B859B
+                    overflow hidden
+                    a
+                        width 315px
+                        overflow hidden
+                        color #776794
+                        float left
+                        &:hover
+                            color #BBA3EB
+                    span
+                        float left
+                        color #776794
+        #screenshot
+            position absolute
+            width 589px
+            height 292px
+            top 1510px
+            left 10px
+            background url($group_bg) -471px -586px no-repeat
+            overflow hidden
+            .more
+                position absolute
+                right 18px
+                top -30px
+                color #7E6897
+            ul
+                position absolute
+                left 192px
+                height 30px
+                top 6px
+                li
+                    float left
+                    margin-right 10px
+                    &.ui-tabs-selected
+                        a
+                            background url($tab_hover_arrow) center 25px repeat-x
+                            color #CADAFE
+                    a
+                        float left
+                        color #BAA3E9
+                        height 30px
+                        line-height 25px
+                        margin-right 10px
+            #game_screenshot,#wallpaper,#user_photo
+                position absolute
+                top 40px
+                left 0
+                padding-left 20px
+                a.item
+                    float left
+                    margin-right 10px
+                    img
+                        border solid 1px #4C278E
+                        width 174px
+                        height 93px
+                        display block
+                    span
+                        text-align center
+                        color #776794
+                        padding 5px 0 10px 0
+                        display block
+                        &:hover
+                            color #BBA3EB
+        #game_video
+            position absolute
+            width 390px
+            height 291px
+            top 1510px
+            left 600px
+            overflow hidden
+            background url($group_bg) -1060px -586px no-repeat
+            .more
+                position absolute
+                right 18px 
+                top 10px
+                color #776794
+            .video_1,.video_2
+                position absolute
+                top 45px
+                left 20px
+                .video_container
+                    position absolute
+                    border solid 1px #4C278E
+                    width 174px
+                    height 93px
+                    top 0
+                    left 0
+                    img
+                        width 174px
+                        height 93px
+                h3
+                    position absolute
+                    left 185px
+                    color #BAA3E7
+                    height 24px
+                    line-height 24px
+                    font-size 13px
+                    font-weight bold
+                    width 160px
+                    overflow hidden
+                    a
+                        color #BAA3E7
+                        &:hover
+                            color #bddae8
+                .video_intro
+                    position absolute
+                    top 25px
+                    left 185px
+                    color #766792
+                    line-height 22px
+                    width 160px
+                    height 65px
+                    overflow hidden
+            .video_2
+                top 165px
+        #media
+            position absolute
+            top 1803px
+            left 10px
+            width 589px
+            height 288px
+            overflow hidden
+            background url($group_bg) -471px -879px no-repeat
+            ul
+                position absolute
+                top 5px
+                left 193px
+                height 30px
+                li
+                    float left
+                    margin-right 10px
+                    &.ui-tabs-selected
+                        a
+                            background url($tab_hover_arrow) center 25px repeat-x
+                            color #CADAFE
+                    a
+                        float left
+                        color #7DB5CC
+                        height 30px
+                        line-height 25px
+                        margin-right 10px
+            div
+                position absolute
+                left 15px
+                top 45px
+            #fixed_img
+                top 45px
+                left 400px
+                width 177px
+                height 214px
+                overflow hidden
+                a
+                    position absolute
+                    width 175px
+                    height 100px
+                    border solid 1px #4C278E
+                    display inline-block
+                    img
+                        width 175px
+                        height 100px
+        #common_feature
+            position absolute
+            top 1803px
+            left 600px
+            width 390px
+            height 287px
+            overflow hidden
+            color #756896
+            background url($group_bg) -1060px -879px no-repeat
+            .feature_link
+                position absolute
+                top 45px
+                left 25px
+                width 350px
+                height 70px
+                .feature_btn
+                    float left
+                    width 108px
+                    height 30px
+                    line-height 30px
+                    text-align center
+                    color #BBA4EA
+                    margin 0 7px 7px 0
+                    overflow hidden
+                    background url($index_new_btn) -401px -80px no-repeat
+                    &:hover
+                        background-position -401px -112px
+            .service_info
+                position absolute
+                top 125px
+                left 155px
+                line-height 16px
+                span
+                    color #C2A046
+            .healthy_info
+                position absolute
+                top 210px
+                left 33px
+                width 330px
+                .title
+                    text-align center
+                    padding-bottom 3px
+                .content
+                    width 350px
+                    line-height 17px
+        #link
+            position absolute
+            top 2095px
+            left 10px
+            background url($group_bg) -469px -1168px
+            height 42px
+            width 981px
+            .more
+                position absolute
+                right 15px
+                top 15px
+                color #776794
+            .content
+                position absolute
+                width 800px
+                top 15px
+                left 120px
+                height 20px
+                overflow hidden
+                a
+                    display inline-block
+                    color #776794
+                    margin-right 13px
+                    padding-left 8px
+                    background url($news_icon) 0 5px no-repeat
+                    &:hover
+                        color #bba3eb
+        #copyright
+            position absolute
+            top 2180px
+            left 10px
+            background url($group_bg) -471px -1257px
+            width 981px
+            height 62px
+            overflow hidden
+            .syyx_logo
+                position absolute
+                top 10px
+                left 10px
+                width 120px
+                height 45px
+            .copyright_content
+                position absolute
+                top 15px
+                left 160px
+                line-height 20px
+                color #564C67
+@import '../float_reg/main'
+@import '../top_iframe/main'

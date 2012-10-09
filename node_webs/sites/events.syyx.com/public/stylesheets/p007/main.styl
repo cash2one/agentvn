@@ -1,0 +1,235 @@
+//img url
+$path               = 'http://r.syyx.com/events/p007/'
+$bg                 = $path'bg.jpg'
+$main               = $path'main.jpg'
+$bt_hover           = $path'btn.jpg'
+$gohome             = $path'gohome.jpg'
+$feature_tab        = $path'feature_tab.png'
+$right_wrong        = $path'right_wrong.png'
+$loader             = $path'ajax-loader.gif'
+
+body
+    margin 0
+    font 12px/16px '宋体'
+    color #6b8494
+    background  #080441
+    color #b7acfb
+#bg
+    display none
+a
+    color #6986c7
+    text-decoration none
+    outline none
+    &:hover
+        color #87adff
+img
+    border none
+.main
+    background url($main) no-repeat center 385px
+    height 970px
+    min-width 980px
+.main-banner
+    height 385px
+    background url($bg) no-repeat center top
+.main-head
+    width 980px
+    margin 0 auto
+    height 380px
+    position relative
+.main-head-top_nav
+    width 960px
+    text-align right
+    line-height 36px
+    color #6986c7
+    height 36px
+.main-head-logo
+    margin-left 410px
+    width 186px
+    height 75px
+    display block
+.main-head-mini_down
+    left 426px
+    width 146px
+    height 34px
+    top 322px
+    display block
+    position absolute
+#flash
+    width 293px
+    height 161px
+    position absolute
+    left 363px
+    top 3px
+    background #000
+.middle
+    position relative
+    width 980px
+    margin 0 auto
+    height 420px
+.reg_panel
+    top -45px
+    left 682px
+    width 298px
+    height 350px
+    position relative
+    .reg
+        width 230px
+        margin-left 39px
+    table
+        height 162px
+        td
+            height 27px
+            width 20px
+        input
+            background #413392
+            border 1px solid #8e84f7
+            height 18px
+            color #b7acfb
+            line-height 18px
+            width 145px
+        .focus_in_inut
+            background #6251c5
+    .agreement
+        height 21px
+        a
+            color #b7abfd
+            text-decoration underline
+            &:hover
+                color #fff
+    .reg_form_item_name
+        width 60px
+    .reg_form_item_input
+        width 150px
+    .validate_num_input
+        height 30px
+        vertical-align top
+        padding-top 3px
+    #txtValidate
+        width 50px
+    #validateimg
+        width 90px
+        margin-left 5px
+        height 27px
+        vertical-align top
+        cursor pointer
+    #reg_step2,#reg_step3
+        width 220px
+        margin 0 auto
+        padding-top 30px
+        line-height 25px
+        display none
+        span
+            color #8e84f7
+    #active_link
+        display block
+        margin 20px auto
+        width 109px
+        height 30px
+        background url($bt_hover) no-repeat -6px -6px
+    .download
+        height 30px
+        width 266px
+        position absolute
+        top 320px
+        left 16px
+        .mini_download
+            height 100%
+            width 124px
+            display block
+            float left
+            background url($bt_hover) no-repeat -6px -76px
+        .full_download
+            height 100%
+            width 127px
+            display block
+            float right
+            background url($bt_hover) no-repeat -6px -112px
+    .reg_submit
+        height 55px
+        position relative
+    #reg_button
+        width 127px
+        height 30px
+        position absolute
+        left 51px
+        top 7px
+        background url($bt_hover) no-repeat -6px -41px
+#comment_box
+    top 704px
+    left 712px
+    width 260px
+    position absolute
+    line-height 23px
+#img_scroll
+    position absolute
+    top 220px
+    height 117px
+    left 26px
+    a
+        margin-right 10px
+        display block
+        display inline-block
+        width 226px
+        height 126px
+        float left
+.foot
+    width 980px
+    margin 0 auto
+    padding-top 10px
+    .copy_right
+        width 980px
+        text-align center
+        position relative
+        .feet_txt
+            text-align left
+            margin 10px 0 0 380px
+        .feet_logo
+            position absolute
+            width 140px
+            height 60px
+            left 225px
+            top 30px
+.check_result_wrong
+    background url($right_wrong) no-repeat 0 -32px
+    height 100%
+    width 16px
+.check_result_right 
+    background: url($right_wrong) no-repeat 0 4px
+    height: 25px;
+    width: 16px;
+
+.check_result_loading 
+    background url($loader) no-repeat 0 4px
+    height 25px
+    width 16px
+
+.disnone
+    display none
+
+.pop_video_detail
+    background-color: #032e53;
+    border 1px solid #0062b3
+.ui-dialog .ui-dialog-titlebar-close 
+    background: url($close_dialog) no-repeat;
+#pop_flash
+    border 1px solid #004680
+    background #000
+    line-height 0
+object
+    outline none
+
+#reg_tips
+    position absolute
+    width 147px
+    height 20px
+    background #010a6f
+    border 1px solid #ffbc0c
+    color #fff
+    z-index 100
+    top 83px
+    left 780px
+    display none
+    overflow hidden
+    line-height 106px
+    font-size 14px
+    text-align center

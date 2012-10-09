@@ -1,0 +1,41 @@
+extends ../include/_frame
+
+//-模板变量----------------------------------------------------------------------------
+block p_variable
+    -var p      = "p008"
+    -var p_css  = ["http://s.syyx.com/nycs/plugin/default_page_plugin/jquery-ui-1.8.13.custom.css","http://s.syyx.com/nycs/plugin/light-box/jquery.lightbox-0.5.css"]
+    
+//-模板内容----------------------------------------------------------------------------
+block body
+    iframe#phone_result.disnone(src="")
+    .main
+        .main-banner
+            .main-head
+                .main-head-top_nav
+                    include ../include/nav
+                a.main-head-logo(href="#{url_nycs}",hidefocus="true")
+                block run_game
+                    .run_flash
+                        .flash_bg
+                        #run_flash
+                        a.main-head-mini_down(href="javascript:rungame()",hidefocus="true")
+                block flash
+                    #flash
+                    #flash_but
+                    span(id="flash_play")
+                block go_home
+                    a.main-head-go_home(href="#{url_nycs}",hidefocus="true")
+        .middle
+            include ../include/reg_6
+            #img_scroll
+                a
+                    img(src="#{img_path}s1.jpg",width="216",height="130")
+                a
+                    img(src="#{img_path}s2.jpg",width="216",height="130")
+                a
+                    img(src="#{img_path}s3.jpg",width="216",height="130")
+                a
+                    img(src="#{img_path}s4.jpg",width="216",height="130")
+        .foot
+            include ../include/copyright
+    #pop_flash_dialog.disnone

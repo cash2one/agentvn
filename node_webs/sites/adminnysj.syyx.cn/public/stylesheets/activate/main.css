@@ -1,0 +1,88 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+.clearfix:after{clear:both}
+.clearfix:before,.clearfix:after{content:"";display:table}
+.clear{clear:both;height:0;overflow:hidden}
+a{text-decoration:none;outline:none}
+.hide{visibility:hidden}
+.loading{background:url("http://r.syyx.com/adminnysj/loading.gif") 0 0 no-repeat;width:32px;height:32px;display:inline-block}
+.disnone{display:none}
+.scrollable{overflow-x:hidden;overflow-y:auto}
+button{outline:none}
+input[type="text"],input[type='url'],input[type='color'],input[type='password']{border:1px solid #dedede;border-radius:3px 3px 3px 3px;width:100%;padding:2px;background-color:rgba(255,255,255,0.85);box-shadow:0 1px 0 #fff;}
+input[type="text"]:focus,input[type='url']:focus,input[type='color']:focus,input[type='password']:focus{border:1px solid #668fcc;box-shadow:0 0 4px #1e63cc,0 0 4px #1e63cc inset}
+button.blue,.dialogue.create button.done,.button.blue,.dialogue.create button.button.done,input.blue[type="button"],input.blue[type="submit"]{background:-webkit-linear-gradient(#3694df,#0268d8) repeat scroll 0 0 #0268d8;background:-moz-linear-gradient(#3694df,#0268d8) repeat scroll 0 0 #0268d8;border:1px solid #00489a;box-shadow:0 1px 0 #5aa7e5 inset;color:#fff;border-radius:3px;text-align:center;padding:4px 10px 5px;font-weight:bold;font-size:13px;text-shadow:0 -1px 1px rgba(0,0,0,0.33);cursor:pointer;outline:none}
+button.grey,input.grey[type="button"],input.grey[type="submit"]{background:-webkit-linear-gradient(#f2f2f2,#dadada) repeat scroll 0 0 transparent;background:-moz-linear-gradient(#f2f2f2,#dadada) repeat scroll 0 0 transparent;border:1px solid #a2a4a6;box-shadow:0 1px 0 rgba(255,255,255,0.18) inset;color:#555;text-shadow:0 1px 0 #fff;padding:4px 10px 5px;cursor:pointer;border-radius:3px;font-weight:bold;outline:none}
+button.green,.button.green,input.green[type="button"],input.green[type="submit"]{background:-webkit-linear-gradient(#72d93f,#57a334) repeat scroll 0 0 transparent;background:-moz-linear-gradient(#72d93f,#57a334) repeat scroll 0 0 transparent;border:1px solid #348234;border-radius:3px;box-shadow:0 1px 0 #a0e67e inset;color:rgba(255,255,255,0.95);text-shadow:0 -1px 0 rgba(0,0,0,0.33);cursor:pointer;padding:2px 10px 3px;color:rgba(255,255,255,0.95);text-shadow:0 -1px 0 rgba(0,0,0,0.33);outline:none}
+textarea{-moz-transition:all .2s ease 0;outline:0 none;overflow:auto;padding:5px 4px;resize:none;border-radius:3px 3px 3px 3px;box-shadow:0 1px 0 #fff;min-height:30px;width:100%;border:1px solid #dedede;vertical-align:top;}
+textarea:focus{border:1px solid #668fcc;box-shadow:0 0 4px #1e63cc,0 0 4px #1e63cc inset}
+body{font-size:12px;font-family:'宋体';color:#222;background:url("http://r.syyx.com/adminnysj/bg.png") 0 0 repeat}
+.container{min-width:1200px;}
+.container #header{background:#222 url("http://r.syyx.com/adminnysj/header_bg.png") 0 0 repeat-x;border-bottom:1px solid #010101;box-shadow:0 1px 20px rgba(0,0,0,0.85);height:48px;}
+.container #header #logo{color:#d0d0d0;font-weight:bold;font-size:22px;padding:12px 0 0 20px}
+.container #main{bottom:0;left:0;min-width:1200px;overflow:hidden;position:absolute;right:0;top:49px;}
+.container #main #sidebar{background:#edf2ff url("http://r.syyx.com/adminnysj/sidebar_bg.png") 0 0 repeat;border-right:1px solid #a3a09e;float:left;height:100%;position:relative;width:180px;}
+.container #main #sidebar .content{background-color:#edf2ff;overflow-y:auto;position:absolute;top:0;bottom:34px;width:100%;}
+.container #main #sidebar .content a.workspace_name{border-bottom:1px solid rgba(0,0,0,0.18);border-top:1px solid rgba(255,255,255,0.18);font-weight:bold;letter-spacing:.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-shadow:0 1px 0 rgba(255,255,255,0.66);background-color:#d3dae5;display:block;line-height:35px;padding:0 30px 0 10px;color:rgba(0,0,0,0.50);}
+.container #main #sidebar .content a.workspace_name.selected{-moz-transition:color 0 ease 0;color:rgba(0,0,0,0.85)}
+.container #main #sidebar .content .sub_elements{border-bottom:1px solid rgba(0,0,0,0.18);padding:6px 0;}
+.container #main #sidebar .content .sub_elements a{color:rgba(0,0,0,0.50);display:block;line-height:35px;padding-left:38px;}
+.container #main #sidebar .content .sub_elements a.selected{color:rgba(0,0,0,0.85);background:url("http://r.syyx.com/adminnysj/page_selected.png") 10px center no-repeat}
+.container #main #content{bottom:0;left:181px;position:absolute;right:0;top:0;}
+.container #main #content #edit_article{position:absolute;top:0;left:0;bottom:0;right:0;box-shadow:0 1px 16px rgba(0,0,0,0.75),0 1px 0 rgba(255,255,255,0.15) inset;z-index:9999;background-color:rgba(0,0,0,0.50);-moz-transition:opacity .5s ease-in-out 0;visibility:hidden;}
+.container #main #content #edit_article .inner{position:absolute;top:20px;left:30px;bottom:30px;right:400px;background-color:#f4f3f1;box-shadow:0 1px 16px rgba(255,255,255,0.25),0 1px 0 rgba(255,255,255,0.15) inset;border-radius:5px;}
+.container #main #content #edit_article .inner header{background:-webkit-linear-gradient(#474747,#151515) repeat 0 0;background:-moz-linear-gradient(#474747,#151515) repeat 0 0;border-color:rgba(0,0,0,0.85) rgba(0,0,0,0.85) #111;border-style:solid;border-top-left-radius:5px;border-top-right-radius:5px;border-width:1px;box-shadow:0 1px 0 #666 inset;padding:6px;text-align:center;color:#fff;font-weight:bold;opacit:.9;text-shadow:0 1px 1px rgba(0,0,0,0.33)}
+.container #main #content #edit_article .inner footer{text-align:right;padding:5px 10px 0 10px;height:32px;overflow:hidden;background:#e8e8e8;border-radius:0 0 3px 3px;border-top:1px solid #d1d1d1;position:absolute;bottom:0;left:0;right:0;}
+.container #main #content #edit_article .inner footer button{float:right;margin-left:10px}
+.container #main #content #edit_article .inner footer input{float:right;margin-left:10px}
+.container #main #content #edit_article .inner footer .loading{float:right;display:none}
+.container #main #content #edit_article .inner footer .show_result{float:right;font-weight:bold;color:#57a334;height:28px;line-height:28px;display:none}
+.container #main #content #edit_article .inner .edit_article_area{position:absolute;top:40px;left:20px;right:20px;bottom:50px;}
+.container #main #content #edit_article .inner .edit_article_area #article_title_input{height:32px;line-height:32px;font-size:14px;padding:0 3px;background:#f4f3f1;border:none;border-bottom:solid 1px #ddd;width:99%;font-weight:bold}
+.container #main #content #edit_article .inner .edit_article_area .article_text_wrapper{position:absolute;top:50px;left:0;right:0;bottom:20px;}
+.container #main #content #edit_article .inner .edit_article_area .article_text_wrapper #article_text{position:absolute;top:0;left:0;right:0;bottom:0;width:99%;height:100%}
+.container #main #content .content_layout{height:100%;}
+.container #main #content .content_layout .detail_wrapper{float:right;height:100%;position:relative;width:432px;z-index:99;}
+.container #main #content .content_layout .detail_wrapper #detail{bottom:28px;left:0;position:absolute;right:28px;top:37px}
+.container #main #content .content_layout .detail_wrapper #detail_overlay{background-color:#f5f5f5;border-bottom-right-radius:4px;border-top-right-radius:4px;bottom:28px;left:-394px;width:404px;position:absolute;right:28px;top:37px;}
+.container #main #content .content_layout .detail_wrapper #detail_overlay #save_client_option_panel{display:none;}
+.container #main #content .content_layout .detail_wrapper #detail_overlay #save_client_option_panel .panel{background-color:#f5f5f5;border-bottom-right-radius:4px;border-top-right-radius:4px;height:100%;}
+.container #main #content .content_layout .detail_wrapper #detail_overlay #save_client_option_panel .panel .panel_action{background:url("http://r.syyx.com/adminnysj/panel_controls_bg.png") left top repeat;border-bottom:solid 1px #bbb;border-top-right-radius:4px;padding:5px 5px 4px 4px;text-align:right;}
+.container #main #content .content_layout .detail_wrapper #detail_overlay #save_client_option_panel .panel .panel_action .progress{padding-right:10px;font-weight:bold;color:#57a334;display:none}
+.container #main #content .content_layout .detail_wrapper #detail_overlay #save_client_option_panel .panel .panel_action_bottom{border-top:1px solid #bbb;padding:5px 10px 4px;box-shadow:0 2px 4px -2px rgba(0,0,0,0.40);border-bottom-right-radius:4px;bottom:0;display:block;left:0;position:absolute;right:0;background:url("http://r.syyx.com/adminnysj/panel_controls_bg.png") left top repeat;}
+.container #main #content .content_layout .detail_wrapper #detail_overlay #save_client_option_panel .panel .panel_action_bottom .close_panel{background:url("http://r.syyx.com/adminnysj/close_panel.png") 0 0 no-repeat;width:20px;height:20px;display:inline-block}
+.container #main #content .content_layout .detail_wrapper #detail_overlay #save_client_option_panel .panel .panel_action_bottom .trash_item{background:url("http://r.syyx.com/adminnysj/trash.png") 0 0 no-repeat;height:20px;width:20px;float:right}
+.container #main #content .content_layout .detail_wrapper #detail_overlay #save_client_option_panel .panel .panel_content{bottom:36px;left:0;position:absolute;right:0;top:33px;color:#444;font-size:13px;}
+.container #main #content .content_layout .detail_wrapper #detail_overlay #save_client_option_panel .panel .panel_content .inner{padding:12px 15px 10px 10px;}
+.container #main #content .content_layout .detail_wrapper #detail_overlay #save_client_option_panel .panel .panel_content .inner input[type='text']{height:24px;line-height:24px;margin-bottom:15px}
+.container #main #content .content_layout .detail_wrapper #detail_overlay #save_client_option_panel .panel .panel_content .inner #client_link_group{font-size:13px;line-height:18px;height:100px}
+.container #main #content .content_layout .list{background-color:#fff;box-shadow:4px 0 11px rgba(0,0,0,0.33);height:100%;overflow:hidden;position:relative;z-index:100;}
+.container #main #content .content_layout .list .action_bar{box-shadow:0 2px 4px -2px rgba(0,0,0,0.40);line-height:28px;height:36px;background:url("http://r.syyx.com/adminnysj/controls_bg.png") 0 0 repeat;}
+.container #main #content .content_layout .list .action_bar .controls{padding:4px 10px 0 8px;border-bottom:1px solid #9e9fa0;height:32px;}
+.container #main #content .content_layout .list .action_bar .controls #activate_setting_form{float:right;}
+.container #main #content .content_layout .list .action_bar .controls #activate_setting_form input[type='number']{height:20px;line-height:20px;margin-right:10px;width:100px}
+.container #main #content .content_layout .list .list_body{bottom:0;left:0;position:absolute;right:0;top:37px;}
+.container #main #content .content_layout .list .list_body .section_bar{background:-webkit-linear-gradient(#ccc,#bbb) 0 0 repeat;background:-moz-linear-gradient(#ccc,#bbb) 0 0 repeat;border:solid 1px #999;border-left:none;border-right:none;border-top:none;box-shadow:0 1px rgba(255,255,255,0.33) inset;height:30px;line-height:30px;padding:0 7px;position:relative;}
+.container #main #content .content_layout .list .list_body .section_bar button{float:left;border:none;background:url("http://r.syyx.com/adminnysj/open.png") center center no-repeat;width:9px;height:30px;cursor:pointer;margin-right:10px;margin-left:5px;}
+.container #main #content .content_layout .list .list_body .section_bar button.closed{background:url("http://r.syyx.com/adminnysj/closed.png") center center no-repeat}
+.container #main #content .content_layout .list .list_body .section_bar .section_name{color:#444;font-size:12px;text-shadow:0 1px 1px #ddd;font-weight:bold;float:left}
+.container #main #content .content_layout .list .list_body .section_bar a{float:right;border:none;width:60px;height:22px;line-height:22px;font-size:12px;cursor:pointer;margin:4px 2px 0 10px;color:#444;border-radius:3px;border:solid 1px #dfdfdf;text-align:center;background-color:#efefef}
+.container #main #content .content_layout .list .list_body #client_list .item_wrapper li{background-color:#f8f8f8;border:1px solid #dcdcdc;padding:12px 16px 5px 16px;height:20px;}
+.container #main #content .content_layout .list .list_body #client_list .item_wrapper li span{float:left;margin-right:10px}
+.container #main #content .content_layout .list .list_body #client_list .item_wrapper li a{display:block;margin:8px;padding:12px 16px 5px 16px;background-color:#f8f8f8;border:1px solid #dcdcdc;border-radius:3px;box-shadow:0 1px 0 rgba(255,255,255,0.66) inset;color:#444;}
+.container #main #content .content_layout .list .list_body #client_list .item_wrapper li a.editing{background-color:#0e72da;color:#fff;}
+.container #main #content .content_layout .list .list_body #client_list .item_wrapper li a.editing .downloads,.container #main #content .content_layout .list .list_body #client_list .item_wrapper li a.editing .install,.container #main #content .content_layout .list .list_body #client_list .item_wrapper li a.editing .client_size,.container #main #content .content_layout .list .list_body #client_list .item_wrapper li a.editing .client_version{color:#fff}
+.container #main #content .content_layout .list .list_body #client_list .item_wrapper li a h3{font-size:14px;font-weight:bold;padding-bottom:10px}
+.container #main #content .content_layout .list .list_body #client_list .item_wrapper li a .downloads,.container #main #content .content_layout .list .list_body #client_list .item_wrapper li a .install,.container #main #content .content_layout .list .list_body #client_list .item_wrapper li a .client_size,.container #main #content .content_layout .list .list_body #client_list .item_wrapper li a .client_version{color:#999;display:inline-block;width:100px;overflow:hidden;margin-right:20px}
+.container #main #content .content_layout .list .list_body #client_list table{width:100%;background-color:#fff;border:1px solid #dcdcdc;}
+.container #main #content .content_layout .list .list_body #client_list table th{background-color:#f8f8f8;color:#444;border-bottom:1px solid #dcdcdc;height:26px;line-height:26px;padding:0 5px;}
+.container #main #content .content_layout .list .list_body #client_list table th span{font-weight:bold;margin-left:5px}
+.container #main #content .content_layout .list .list_body #client_list table td{border-bottom:1px solid #dcdcdc;height:26px;line-height:26px;padding:0 5px}
+.container #main #content .content_layout .list #get_more_detail{margin:10px auto 0 5px;display:inline-block}

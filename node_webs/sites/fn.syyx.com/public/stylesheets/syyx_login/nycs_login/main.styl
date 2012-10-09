@@ -1,0 +1,129 @@
+$btn     = "/images/syyx_login/btn.png"
+$top_bg  = "/images/syyx_login/top_bg.png"
+$loading = "/images/syyx_login/loading.gif"
+$tips    = "/images/syyx_login/tips.png"
+
+body
+    margin 0
+    font 14px "宋体"
+    color #000
+    line-height 20px
+    background #fff
+a
+    outline none
+    text-decoration none
+    color #0077cc
+    &:hover
+        color #000
+img
+    border none
+    vertical-align top
+    cursor pointer
+.main
+    width 400px
+    height 300px
+    position relative
+    .title
+        border-bottom 1px solid #b3b3b3
+        height 35px
+        background url($top_bg) repeat-x
+        line-height 34px
+        padding 0 30px
+        margin-bottom 25px
+        font-weight 700
+        span
+            width 30px
+            height 34px
+            position absolute
+            right 5px
+            top 0
+            background url($btn) -1px -150px
+    .int
+        background url($loading) center center no-repeat
+        height 170px
+    .login
+        padding 0 55px
+        display none
+        div 
+            padding 5px 0
+            height 27px
+            line-height 27px
+        input
+            background url($btn) -1px 0
+            height 17px
+            line-height 17px
+            padding 4px
+            width 160px
+            border 1px solid #ccc
+            font 14px Monaco,Consolas,monospace,arial
+        a
+            font-size 12px
+            margin-left 10px
+        .verify_code
+            background url($btn) -1px -30px
+            width 60px
+        .err
+            border-color #c00
+        .focus
+            border-color #0082de
+        #err_tip
+            color red
+            font-size 12px
+            line-height 12px
+            padding 9px 0 9px 20px
+            background url($tips) no-repeat left center
+            color #c00
+            display none
+        .center
+            text-align center
+            height 30px
+            line-height 30px
+    .login_out
+        display none
+        .center
+            text-align center
+            height 30px
+            line-height 30px
+        .user
+            font 700 30px Monaco,Consolas,monospace,arial
+            line-height 80px
+            height 100px
+        .right
+            margin-top 20px
+            font-size 12px
+            text-align right
+            padding-right 10px
+            #to_login
+                color #666
+                text-decoration underline
+                &:hover
+                    color #000
+                    text-decoration undeline
+    a.sub
+        height 29px
+        width 90px
+        background url($btn) -1px -60px
+        color #fff
+        font-size 14px
+        line-height 29px
+        display block
+        margin 0 auto
+        &:hover
+            background-position -1px -90px
+    a.dis,a.dis:hover
+        background-position -1px -120px
+        cursor default
+    .nav
+        position absolute
+        bottom 0
+        left 0
+        background #e5e5e5
+        border-top 1px solid #b3b3b3
+        width 100%
+        font-size 14px
+        height 30px
+        line-height 30px
+        text-align center
+        color #0077cc
+        a
+            margin 0 5px

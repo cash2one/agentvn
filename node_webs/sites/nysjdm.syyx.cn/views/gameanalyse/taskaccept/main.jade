@@ -1,0 +1,34 @@
+html
+    head
+        title  日常任务细分统计
+        include script
+    body
+        .cont_form
+            .f_b_333 日常任务细分统计
+        .cont_f_lb
+        .cont_link
+            tr 
+                td 
+                    span 服务器：
+                        select#serverList
+                td 
+                    span 时间：
+                        input#txtStartDate(type="text")
+                        | 至
+                        input#txtEndDate(type="text")
+                td
+                    input#btnQuery(type="button",value="查询")
+        div
+            #divTaskAccept.easyui-tabs(fit="fales",plain="true",style="margin-left:3%")
+                #divTask004(style="padding: 10px;",title="联邦") 
+                    #divTask004Detail
+                #divTask003(style="padding: 10px;",title="虫族") 
+                    #divTask003Detail
+                #divTaskLoop(style="padding: 10px;",title="任务链") 
+                    #divTaskLoopDetail
+                #divTask014(style="padding: 10px;",title="十面埋伏") 
+                    #divTask014Detail
+                #divTaskFiveColor(style="padding: 10px;",title="五色任务") 
+                    #divTaskFiveColorDetail
+div#loading(style="top: 50%; right: 50%; position: absolute; padding: 0px;margin: 0px; z-index: 999; display: none;")
+    img(src="http://s1.syyx.com/nysjdm/Script/spinner3-greenie.gif")

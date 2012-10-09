@@ -1,0 +1,57 @@
+!!!5
+html
+    include ../include/url
+    head
+        meta(charset="utf-8")
+        meta(name="keywords", content="新手指南,升级指引,诺亚传说")
+        meta(name="description", content="《诺亚传说》新手指南专题将引导新手玩家快速了解游戏，10分钟玩转诺亚！" )
+        link(rel="shortcut icon", href="http://s1.syyx.com/nycs/images/favicon.ico",type="image/x-icon")
+        title 新手指南-《诺亚传说》官方网站
+        include script_style
+    body
+        include ../include/top_iframe
+        .container
+            .content
+                include ../include/logo_link
+                include ../include/nav
+                .ready
+                    a.reg(href='#')
+                    a.download(href='#')
+                    a.create(href='http://nycs.syyx.com/GameInfo/info_16.shtml')
+                    a.begin(href='http://nycs.syyx.com/GameInfo/info_19.shtml')
+                .chose_career
+                    .chose 玩那个职业好呢？这会是你开始玩游戏时问的第一个问题。这里介绍了游戏里的四大职业，快来选择一下你喜欢的职业吧。
+                    a.yineng(href="#{yineng_intro}")
+                    a.jianwu(href='#{jianwu_intro}')
+                    a.qiangxie(href='#{qiangxie_intro}')
+                    a.gedou(href='#{gedou_intro}')
+                .gonglue
+                    a.btn1(href='http://nycs.syyx.com/GameInfo/info_183.shtml')
+                    a.btn2(href='http://nycs.syyx.com/GameInfo/info_184.shtml')
+                    a.btn3(href='http://activity.syyx.com/gift/index.html')
+                    a.btn4(href='http://nycs.syyx.com/GameInfo/info_62.shtml')
+                .upgrade
+                    a.reg(href='#')
+                    a.download(href='#')
+                    .grade
+                        .grade_1
+                            a.btn1(href='http://nycs.syyx.com/GameInfo/info_43.shtml')
+                            a.btn2(href='http://nycs.syyx.com/GameInfo/info_44.shtml')
+                            a.btn3(href='http://nycs.syyx.com/GameInfo/info_72.shtml')
+                        .grade_2
+                            a.btn1(href='http://nycs.syyx.com/GameInfo/info_70.shtml')
+                            a.btn2(href='http://nycs.syyx.com/GameInfo/info_144.shtml')
+                            a.btn3(href='http://nycs.syyx.com/GameInfo/info_63.shtml')
+                        .grade_3
+                            a.btn1(href='http://nycs.syyx.com/GameInfo/info_78.shtml')
+                            a.btn2(href='http://nycs.syyx.com/GameInfo/info_71.shtml')
+                            a.btn3(href='http://nycs.syyx.com/GameInfo/info_55.shtml')
+                        a#expand_1(href='#')
+                        a#expand_2(href='#')
+                        a#expand_3(href='#')
+                include ../include/copyright
+        include ../include/reg
+        .download_dialog
+            a.close(href='#')
+            a.full_client(href='http://nycs.syyx.com/DownLoad/DownLoadUrl.aspx')
+            a.mini_client(href='http://nycs.syyx.com/DownLoad/MiniDownLoadUrl.aspx')

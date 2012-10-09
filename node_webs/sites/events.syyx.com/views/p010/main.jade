@@ -1,0 +1,145 @@
+extends ../include/_frame
+
+//-模板变量----------------------------------------------------------------------------
+block p_variable
+    -var p      = "p010"
+    -var p_css  = ["http://s.syyx.com/nycs/plugin/default_page_plugin/jquery-ui-1.8.13.custom.css","http://s.syyx.com/nycs/plugin/light-box/jquery.lightbox-0.5.css"]
+
+//-模板内容----------------------------------------------------------------------------
+block stat_ok
+
+block body
+    .container
+        .container_inner
+            .content
+                .links_topbar
+                    a(href="http://nycs.syyx.com/index.shtml",target="_blank")
+                        span.hide 首页
+                    a(href="http://user.syyx.com/reg.aspx",target="_blank")  
+                        span.hide 注册
+                    a(href="http://nycs.syyx.com/DownLoad/Index.shtml",target="_blank") 
+                        span.hide 下载
+                    a(href="http://bbs.nycs.syyx.com/",target="_blank")  
+                        span.hide 论坛
+                a.logo_to_index(href="http://nycs.syyx.com/index.shtml",hidefocus="true")
+                    span.hide 进入官网
+                .link_to_offical_index
+                    #link_to_offical_index_flash
+                        a(href="http://nycs.syyx.com/index.shtml",hidefocus="true")
+                            span.hide 进入诺亚传说官网
+                a#logo_360(href="http://www.360.cn/",target="_blank")
+                    span.hide 360logo
+                #flash_video
+                    #video_info
+                    a.flash_cusor(href="#", hidefocus="true", onclick="return false;")
+                a.top_min_down_load(href="http://nycs.syyx.com/DownLoad/miniDownLoadUrl.aspx")
+                a.top_down_load(href="http://nycs.syyx.com/DownLoad/DownLoadUrl.aspx")
+                .gamefeature_tabs
+                    #gamefeature
+                        ul
+                            li
+                                a.first_selected_btn(href='#feature1',hidefocus="true")
+                            li
+                                a.second_selected_btn(href='#feature2',hidefocus="true")
+                            li
+                                a.third_selected_btn(href='#feature3',hidefocus="true")
+                            li
+                                a.fourth_selected_btn(href='#feature4',hidefocus='true')
+                        .feature_content
+                            #feature1
+                                img(src='http://s.syyx.com/events/type1_0502/nycs360/106.jpg')
+                            #feature2.disnone
+                                img(src='http://s.syyx.com/events/type1_0502/nycs360/206.jpg')
+                            #feature3.disnone
+                                img(src='http://s.syyx.com/events/type1_0502/nycs360/306.jpg')
+                            #feature4.disnone
+                                img(src='http://s.syyx.com/events/type1_0502/nycs360/406.jpg')
+                .reg
+                    table.reg_form
+                        tr
+                            td.reg_form_item_name 账号：
+                            td.reg_form_item_input
+                                input#txtUserAccount(type="text",maxlength="16") 
+                            td
+                                #txtUserAccountTip
+                        tr
+                            td.reg_form_item_name 密码：
+                            td.reg_form_item_input
+                                input#txtPasswords(type="password",onpaste="return false",maxlength="16",textmode="Password")
+                                input#txtPasswordsVal.disnone(type="text")
+                            td
+                                #txtPasswordsTip
+                        tr
+                            td.reg_form_item_name 重复密码：
+                            td.reg_form_item_input
+                                input#txtConfirm(type="password",onpaste="return false", maxlength="16", textmode="Password")
+                                input#txtConfirmVal.disnone(type="text")
+                            td
+                                #txtConfirmTip
+                        tr
+                            td.reg_form_item_name 真实姓名：
+                            td.reg_form_item_input
+                                input#txtTrueName(type="text",maxlength="20")
+                            td
+                                #txtTrueNameTip
+                        tr
+                            td.reg_form_item_name 身份证：
+                            td.reg_form_item_input
+                                input#txtCardID(type="text",maxlength="18")
+                            td
+                                #txtCardIDTip
+                        tr
+                            td.reg_form_item_name 验证码：
+                            td.reg_form_item_input.validate_num_input
+                                input#txtValidate(type="text", maxlength="20")
+                                img#validateimg.disnone(alt="点击刷新验证码",src="")
+                            td
+                                #txtValidateVal
+                    .agreement
+                        input#chk_XieYi(type="checkbox",checked="checked")
+                        | 同意
+                        a(target="_blank",href="http://user.syyx.com/policy/userpolicy.aspx")《使用协议及隐私协议》
+                    .reg_submit
+                        a#reg_button(href="#",hidefocus="true") 
+                            span.hide 注册账号
+                        span#regProcessTip
+                #reg_step2
+                    | 恭喜您，注册成功，并获得特权礼包，请立即激活礼包。
+                    br
+                    | 您的账号：
+                    span#reg_account
+                    br
+                    | 激活码为：
+                    span#active_code
+                    a#active_link(href='http://activity.syyx.com/nycs_activate/activate_giftbag.shtml')
+                        span.hide 激活礼包
+                #reg_step3
+                    | 恭喜您，注册成功!
+                    br
+                    | 今天的礼包卡已发放完毕。
+                    br
+                    | 您的账号：
+                    span#reg_account3
+                    br
+                    br
+                    a(href='http://events.syyx.com/nycs360/Index.html')
+                        span.hide 返回
+                #olduser_get_code
+                    .validate_area_old_user
+                        | 验证码：
+                        input#olduser_get_code_input(type="text",value='')
+                        img#olduser_get_code_validate_img
+                    a.olduser_get_code_btn(href='#')
+                #olduser_get_code_success
+                    | 恭喜您获得礼包，请立即激活。
+                    br
+                    | 礼包卡号：
+                    span#old_user_code_num
+                    a#old_user_active(href='http://activity.syyx.com/nycs_activate/activate_giftbag.shtml')
+                        span.hide 立即激活
+                .down
+                    a.download_min_client(href="http://nycs.syyx.com/DownLoad/miniDownLoadUrl.aspx",hidefocus="true")
+                    a.download_client(href="http://nycs.syyx.com/DownLoad/DownLoadUrl.aspx",hidefocus="true")
+                a.nycs360_intor(href="http://nycs.syyx.com/news/NewsInfo.aspx?id=1482",target="_blank")
+                include ../include/copyright
+    #pop_flash_dialog.disnone

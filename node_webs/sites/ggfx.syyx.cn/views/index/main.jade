@@ -1,0 +1,41 @@
+html
+	head
+		title	广告系统
+		include script
+	body.easyui-layout
+		div(region="north", border="true", style="height: 70px;", class="header")  
+			include ../ad_menu/menu_main
+
+		div(region="west",icon="icon-reload", border="true",split="true",title="广告管理",style="width: 185px; padding: 10px;")	
+			include ../ad_menu/menu_toufang
+
+		div(region="center")
+			div#content
+				ul
+					li	展示量：根据展示代码统计，有一次展示即记录展示量1，不去重，累加计算
+					li	点击量：实时记录当日自然点击，点击一次即记1次，不去重，累加计算
+					li	点击IP：实时记录当日实时的点击IP数据，全天去重
+					li	到达IP：对应点击IP数据中，触发到达代码的IP数量
+					li	IP到达率：到达IP/点击IP
+					li	点击cookies：实时记录当日实时的点击cookies数据，全天去重
+					li	到达cookies：对应点击cookies数据中，触发到达代码的cookies数量
+					li	cookies到达率：到达cookies/点击cookies
+					li	进入官网cookies：当日点击的cookie中，当日有到达官网首页的cookies，全天去重
+					li	客户端安装：对应点击cookies发生的客户端安装成功次数
+					li	当日注册：点击当日内的注册账号数量
+					li	回滚注册：当日点击产生的cookies中，有效期72小时内有注册账号的数量
+					li	注册率：注册账号/点击cookies
+					li	当日登陆：发生在当日24小时内，新增登陆的账号数量
+					li	回滚登陆：对应之前的回滚注册，截至查询当日的登陆总账号数量，追踪账号注册后7日
+					li	登陆率：登陆账号/注册账号
+					li	广告费：根据费用表添加的费用数值
+					li	CPA：广告费/注册账号
+					li	CPL：广告费/登陆账号
+					li	达10级账号数量：截至查询日前一天，根据之前的注册账号数量提取并记录账号内有等级大于等于10级的账号数量
+					li	累计充值账号：截至查询日前一天，对应之前的注册账号提取有过充值记录的账号数量，追踪账号注册后6个月
+					li	累计充值面额：截至查询日前一天，对应之前的注册账号所发生的充值总金额，追踪账号注册后6个月
+					li	固定收费：每天固定收费金额
+					li	按CPC收费：点击cookies数  x 单价
+					li	按CPM收费：展示量 X 单价
+					li	按CPA收费：回滚注册帐号X单价
+					li	按20级收费：达到20级帐号数X 单价
